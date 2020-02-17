@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:METS xmlns:mets="http://www.loc.gov/METS/" xmlns:xlink="http://www.w3.org/TR/xlink/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dim="http://www.dspace.org/xmlns/dspace/dim" PROFILE="DSPACE METS SIP Profile 1.0" LABEL="DSpace Item" OBJID="/handle/1721.1/12815" ID="hdl:1721.1/12815" OBJEDIT="/admin/item?itemID=6557dcf1-0669-4fdf-876c-868ac80e96cc">
+<mets:dmdSec GROUPID="group_dmd_0" ID="dmd_1">
+<mets:mdWrap OTHERMDTYPE="DIM" MDTYPE="OTHER">
+<mets:xmlData>
+<dim:dim dspaceType="ITEM">
+<dim:field qualifier="advisor" mdschema="dc" language="en_US" element="contributor">Arthur T. Ippen.</dim:field>
+<dim:field qualifier="author" authority="954c5f7054b4147a5c1b86fb47b0de37" confidence="UNSET" mdschema="dc" language="en_US" element="contributor">Stone, Archie Allan</dim:field>
+<dim:field qualifier="accessioned" mdschema="dc" element="date">2005-08-15T18:56:39Z</dim:field>
+<dim:field qualifier="available" mdschema="dc" element="date">2005-08-15T18:56:39Z</dim:field>
+<dim:field qualifier="issued" mdschema="dc" language="en_US" element="date">1946</dim:field>
+<dim:field qualifier="uri" mdschema="dc" element="identifier">http://hdl.handle.net/1721.1/12815</dim:field>
+<dim:field mdschema="dc" language="en_US" element="description">Thesis (M.S.) Massachusetts Institute of Technology. Dept. of Civil Engineering, 1946.</dim:field>
+<dim:field mdschema="dc" language="en_US" element="description">Bibliography: leaves 57-58.</dim:field>
+<dim:field qualifier="statementofresponsibility" mdschema="dc" language="en_US" element="description">by Archie Allan Stone.</dim:field>
+<dim:field qualifier="extent" mdschema="dc" language="en_US" element="format">58 leaves</dim:field>
+<dim:field qualifier="extent" mdschema="dc" element="format">3878486 bytes</dim:field>
+<dim:field qualifier="extent" mdschema="dc" element="format">3878245 bytes</dim:field>
+<dim:field qualifier="mimetype" mdschema="dc" element="format">application/pdf</dim:field>
+<dim:field qualifier="mimetype" mdschema="dc" element="format">application/pdf</dim:field>
+<dim:field qualifier="iso" mdschema="dc" language="en_US" element="language">eng</dim:field>
+<dim:field mdschema="dc" language="en_US" element="publisher">Massachusetts Institute of Technology</dim:field>
+<dim:field mdschema="dc" language="en_US" element="rights">M.I.T. theses are protected by copyright. They may be viewed from this source for any purpose, but reproduction or distribution in any format is prohibited without written permission. See provided URL for inquiries about permission.</dim:field>
+<dim:field qualifier="uri" mdschema="dc" element="rights">http://dspace.mit.edu/handle/1721.1/7582</dim:field>
+<dim:field mdschema="dc" language="en_US" element="subject">Civil and Environmental Engineering</dim:field>
+<dim:field mdschema="dc" language="en_US" element="title">Theoretical investigation of standing waves in hydraulic structures</dim:field>
+<dim:field mdschema="dc" language="en_US" element="type">Thesis</dim:field>
+<dim:field qualifier="degree" mdschema="dc" language="en_US" element="description">M.S.</dim:field>
+<dim:field qualifier="department" mdschema="dc" language="en_US" element="contributor">Massachusetts Institute of Technology. Dept. of Civil and Environmental Engineering</dim:field>
+<dim:field qualifier="oclc" mdschema="dc" language="en_US" element="identifier">27416872</dim:field>
+</dim:dim>
+</mets:xmlData>
+</mets:mdWrap>
+</mets:dmdSec>
+<mets:fileSec>
+<mets:fileGrp USE="THUMBNAIL">
+<mets:file GROUPID="group_file_57ba3ab9-5968-4859-a9a4-17ca9d41dbb5" CHECKSUM="c567f706e44592c4e7b54a3589f7f488" MIMETYPE="image/jpeg" SIZE="2468" ID="file_79547566-5070-4f72-81aa-51cd1adb76f1" CHECKSUMTYPE="MD5">
+<mets:FLocat LOCTYPE="URL" xlink:label="Generated Thumbnail" xlink:href="/bitstream/handle/1721.1/12815/27416872-MIT.pdf.jpg?sequence=5&amp;isAllowed=y" xlink:type="locator" xlink:title="27416872-MIT.pdf.jpg"/>
+</mets:file>
+</mets:fileGrp>
+<mets:fileGrp USE="COVERPAGE"/>
+<mets:fileGrp USE="CONTENT">
+<mets:file GROUPID="group_file_57ba3ab9-5968-4859-a9a4-17ca9d41dbb5" CHECKSUM="c6d60f6b6f781dc7842d85c6d7b98e90" MIMETYPE="application/pdf" SIZE="3878245" ID="file_57ba3ab9-5968-4859-a9a4-17ca9d41dbb5" CHECKSUMTYPE="MD5">
+<mets:FLocat LOCTYPE="URL" xlink:label="Full printable version" xlink:href="/bitstream/handle/1721.1/12815/27416872-MIT.pdf?sequence=2&amp;isAllowed=y" xlink:type="locator" xlink:title="27416872-MIT.pdf"/>
+</mets:file>
+</mets:fileGrp>
+<mets:fileGrp USE="TEXT">
+<mets:file GROUPID="group_file_57ba3ab9-5968-4859-a9a4-17ca9d41dbb5" CHECKSUM="43a462bb883b95b3dc69083893c1def1" MIMETYPE="text/plain" SIZE="95" ID="file_14d46fa3-7ed6-41b8-8a8e-4a1fbd090df6" CHECKSUMTYPE="MD5">
+<mets:FLocat LOCTYPE="URL" xlink:label="Extracted text" xlink:href="/bitstream/handle/1721.1/12815/27416872-MIT.pdf.txt?sequence=4&amp;isAllowed=y" xlink:type="locator" xlink:title="27416872-MIT.pdf.txt"/>
+</mets:file>
+</mets:fileGrp>
+</mets:fileSec>
+<mets:structMap LABEL="DSpace" TYPE="LOGICAL">
+<mets:div DMDID="dmd_1" TYPE="DSpace Item">
+<mets:div ID="div_2" TYPE="DSpace Content Bitstream">
+<mets:fptr FILEID="file_57ba3ab9-5968-4859-a9a4-17ca9d41dbb5"/>
+</mets:div>
+</mets:div>
+</mets:structMap>
+</mets:METS>

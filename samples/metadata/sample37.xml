@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:METS xmlns:mets="http://www.loc.gov/METS/" xmlns:xlink="http://www.w3.org/TR/xlink/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dim="http://www.dspace.org/xmlns/dspace/dim" PROFILE="DSPACE METS SIP Profile 1.0" LABEL="DSpace Item" OBJID="/handle/1721.1/33238" ID="hdl:1721.1/33238" OBJEDIT="/admin/item?itemID=5cb82f88-cd05-4e9c-a717-f8ef4462e4bb">
+<mets:dmdSec GROUPID="group_dmd_0" ID="dmd_1">
+<mets:mdWrap OTHERMDTYPE="DIM" MDTYPE="OTHER">
+<mets:xmlData>
+<dim:dim dspaceType="ITEM">
+<dim:field qualifier="advisor" mdschema="dc" language="en_US" element="contributor">David N. Wormley.</dim:field>
+<dim:field qualifier="author" authority="6399bc526d9a23ba38d49cd8348ebb4a" confidence="UNSET" mdschema="dc" language="en_US" element="contributor">Azuma, Alberto</dim:field>
+<dim:field qualifier="accessioned" mdschema="dc" element="date">2006-07-13T15:08:21Z</dim:field>
+<dim:field qualifier="available" mdschema="dc" element="date">2006-07-13T15:08:21Z</dim:field>
+<dim:field qualifier="issued" mdschema="dc" language="en_US" element="date">1975</dim:field>
+<dim:field qualifier="uri" mdschema="dc" element="identifier">http://hdl.handle.net/1721.1/33238</dim:field>
+<dim:field mdschema="dc" language="en_US" element="description">Thesis. 1975. M.S.--Massachusetts Institute of Technology. Dept. of Mechanical Engineering.</dim:field>
+<dim:field mdschema="dc" language="en_US" element="description">Includes bibliographical references.</dim:field>
+<dim:field qualifier="extent" mdschema="dc" language="en_US" element="format">97 leaves</dim:field>
+<dim:field qualifier="extent" mdschema="dc" element="format">2974955 bytes</dim:field>
+<dim:field qualifier="extent" mdschema="dc" element="format">3118089 bytes</dim:field>
+<dim:field qualifier="mimetype" mdschema="dc" element="format">application/pdf</dim:field>
+<dim:field qualifier="mimetype" mdschema="dc" element="format">application/pdf</dim:field>
+<dim:field qualifier="iso" mdschema="dc" language="en_US" element="language">eng</dim:field>
+<dim:field mdschema="dc" language="en_US" element="publisher">Massachusetts Institute of Technology</dim:field>
+<dim:field mdschema="dc" language="en_US" element="rights">M.I.T. theses are protected by copyright. They may be viewed from this source for any purpose, but reproduction or distribution in any format is prohibited without written permission. See provided URL for inquiries about permission.</dim:field>
+<dim:field qualifier="uri" mdschema="dc" element="rights">http://dspace.mit.edu/handle/1721.1/7582</dim:field>
+<dim:field mdschema="dc" language="en_US" element="subject">Mechanical Engineering</dim:field>
+<dim:field qualifier="lcsh" mdschema="dc" language="en_US" element="subject">Steam power plants Mathematical models</dim:field>
+<dim:field qualifier="lcsh" mdschema="dc" language="en_US" element="subject">Steam-boilers</dim:field>
+<dim:field qualifier="lcsh" mdschema="dc" language="en_US" element="subject">Steam-turbines</dim:field>
+<dim:field mdschema="dc" language="en_US" element="title">Modeling and simulation of a steam power station.</dim:field>
+<dim:field mdschema="dc" language="en_US" element="type">Thesis</dim:field>
+<dim:field qualifier="degree" mdschema="dc" language="en_US" element="description">M.S.</dim:field>
+<dim:field qualifier="department" mdschema="dc" language="en_US" element="contributor">Massachusetts Institute of Technology. Dept. of Mechanical Engineering</dim:field>
+<dim:field qualifier="oclc" mdschema="dc" language="en_US" element="identifier">02282025</dim:field>
+</dim:dim>
+</mets:xmlData>
+</mets:mdWrap>
+</mets:dmdSec>
+<mets:fileSec>
+<mets:fileGrp USE="THUMBNAIL">
+<mets:file GROUPID="group_file_5829fbe0-7127-4c95-b4e2-c9a52b131027" CHECKSUM="2e5e24a357907f0056970383f7daed3d" MIMETYPE="image/jpeg" SIZE="3429" ID="file_019e486f-75ef-4f92-a6b9-5e95c345d605" CHECKSUMTYPE="MD5">
+<mets:FLocat LOCTYPE="URL" xlink:label="Generated Thumbnail" xlink:href="/bitstream/handle/1721.1/33238/02282025-MIT.pdf.jpg?sequence=5&amp;isAllowed=y" xlink:type="locator" xlink:title="02282025-MIT.pdf.jpg"/>
+</mets:file>
+</mets:fileGrp>
+<mets:fileGrp USE="COVERPAGE"/>
+<mets:fileGrp USE="CONTENT">
+<mets:file GROUPID="group_file_5829fbe0-7127-4c95-b4e2-c9a52b131027" CHECKSUM="ca37b0f9f7c6dcf417be200782757660" MIMETYPE="application/pdf" SIZE="3118089" ID="file_5829fbe0-7127-4c95-b4e2-c9a52b131027" CHECKSUMTYPE="MD5">
+<mets:FLocat LOCTYPE="URL" xlink:label="Full printable version" xlink:href="/bitstream/handle/1721.1/33238/02282025-MIT.pdf?sequence=2&amp;isAllowed=y" xlink:type="locator" xlink:title="02282025-MIT.pdf"/>
+</mets:file>
+</mets:fileGrp>
+<mets:fileGrp USE="TEXT">
+<mets:file GROUPID="group_file_5829fbe0-7127-4c95-b4e2-c9a52b131027" CHECKSUM="133823b37b9e9317e65f140ea8fd9652" MIMETYPE="text/plain" SIZE="71326" ID="file_d5af197b-a1ac-4df7-af73-9c67131320f6" CHECKSUMTYPE="MD5">
+<mets:FLocat LOCTYPE="URL" xlink:label="Extracted text" xlink:href="/bitstream/handle/1721.1/33238/02282025-MIT.pdf.txt?sequence=4&amp;isAllowed=y" xlink:type="locator" xlink:title="02282025-MIT.pdf.txt"/>
+</mets:file>
+</mets:fileGrp>
+</mets:fileSec>
+<mets:structMap LABEL="DSpace" TYPE="LOGICAL">
+<mets:div DMDID="dmd_1" TYPE="DSpace Item">
+<mets:div ID="div_2" TYPE="DSpace Content Bitstream">
+<mets:fptr FILEID="file_5829fbe0-7127-4c95-b4e2-c9a52b131027"/>
+</mets:div>
+</mets:div>
+</mets:structMap>
+</mets:METS>

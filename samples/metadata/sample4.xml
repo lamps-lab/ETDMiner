@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:METS xmlns:mets="http://www.loc.gov/METS/" xmlns:xlink="http://www.w3.org/TR/xlink/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dim="http://www.dspace.org/xmlns/dspace/dim" PROFILE="DSPACE METS SIP Profile 1.0" LABEL="DSpace Item" OBJID="/handle/1721.1/70641" ID="hdl:1721.1/70641" OBJEDIT="/admin/item?itemID=6f486be8-4f34-4b43-9630-e07ce5e81a13">
+<mets:dmdSec GROUPID="group_dmd_0" ID="dmd_1">
+<mets:mdWrap OTHERMDTYPE="DIM" MDTYPE="OTHER">
+<mets:xmlData>
+<dim:dim dspaceType="ITEM">
+<dim:field qualifier="advisor" mdschema="dc" language="en_US" element="contributor">Ernst G. Frankel.</dim:field>
+<dim:field qualifier="author" authority="4314151ad1539a777948ed5cea40f3c2" confidence="UNSET" mdschema="dc" language="en_US" element="contributor">Chryssostomidis, Chryssostomos</dim:field>
+<dim:field qualifier="accessioned" mdschema="dc" element="date">2012-05-15T20:59:49Z</dim:field>
+<dim:field qualifier="available" mdschema="dc" element="date">2012-05-15T20:59:49Z</dim:field>
+<dim:field qualifier="issued" mdschema="dc" language="en_US" element="date">1970</dim:field>
+<dim:field qualifier="uri" mdschema="dc" element="identifier">http://hdl.handle.net/1721.1/70641</dim:field>
+<dim:field mdschema="dc" language="en_US" element="description">Massachusetts Institute of Technology. Dept. of Naval Architecture and Marine Engineering. Thesis. 1970. Ph.D.</dim:field>
+<dim:field mdschema="dc" language="en_US" element="description">MICROFICHE COPY ALSO AVAILABLE IN BARKER ENGINEERING LIBRARY.</dim:field>
+<dim:field mdschema="dc" language="en_US" element="description">Vita.</dim:field>
+<dim:field mdschema="dc" language="en_US" element="description">Bibliography: leaves 198-200.</dim:field>
+<dim:field qualifier="extent" mdschema="dc" language="en_US" element="format">307 leaves</dim:field>
+<dim:field qualifier="iso" mdschema="dc" language="en_US" element="language">eng</dim:field>
+<dim:field mdschema="dc" language="en_US" element="publisher">Massachusetts Institute of Technology</dim:field>
+<dim:field mdschema="dc" language="en_US" element="rights">M.I.T. theses are protected by 
+copyright. They may be viewed from this source for any purpose, but 
+reproduction or distribution in any format is prohibited without written 
+permission. See provided URL for inquiries about permission.</dim:field>
+<dim:field qualifier="uri" mdschema="dc" language="en_US" element="rights">http://dspace.mit.edu/handle/1721.1/7582</dim:field>
+<dim:field mdschema="dc" language="en_US" element="subject">Naval Architecture and Marine Engineering</dim:field>
+<dim:field mdschema="dc" language="en_US" element="title">Digital simulation of a transportation interface.</dim:field>
+<dim:field mdschema="dc" language="en_US" element="type">Thesis</dim:field>
+<dim:field qualifier="degree" mdschema="dc" language="en_US" element="description">Ph.D.</dim:field>
+<dim:field qualifier="department" mdschema="dc" language="en_US" element="contributor">Massachusetts Institute of Technology. Dept. of Naval Architecture and Marine Engineering</dim:field>
+<dim:field qualifier="oclc" mdschema="dc" language="en_US" element="identifier">24584124</dim:field>
+</dim:dim>
+</mets:xmlData>
+</mets:mdWrap>
+</mets:dmdSec>
+<mets:fileSec>
+<mets:fileGrp USE="THUMBNAIL">
+<mets:file GROUPID="group_file_4435ef46-2fa1-404a-98a5-af6236172bc3" CHECKSUM="49ba51f12869eaa5d7d9b453fa350120" MIMETYPE="image/jpeg" SIZE="3540" ID="file_e10073c9-5cf3-4676-b830-4129fba04d5b" CHECKSUMTYPE="MD5">
+<mets:FLocat LOCTYPE="URL" xlink:label="Generated Thumbnail" xlink:href="/bitstream/handle/1721.1/70641/24584124-MIT.pdf.jpg?sequence=5&amp;isAllowed=y" xlink:type="locator" xlink:title="24584124-MIT.pdf.jpg"/>
+</mets:file>
+</mets:fileGrp>
+<mets:fileGrp USE="COVERPAGE"/>
+<mets:fileGrp USE="CONTENT">
+<mets:file GROUPID="group_file_4435ef46-2fa1-404a-98a5-af6236172bc3" CHECKSUM="0af015f6d7c0a96e7e89f9234b1042bf" MIMETYPE="application/pdf" SIZE="16277026" ID="file_4435ef46-2fa1-404a-98a5-af6236172bc3" CHECKSUMTYPE="MD5">
+<mets:FLocat LOCTYPE="URL" xlink:label="Full printable version" xlink:href="/bitstream/handle/1721.1/70641/24584124-MIT.pdf?sequence=2&amp;isAllowed=y" xlink:type="locator" xlink:title="24584124-MIT.pdf"/>
+</mets:file>
+</mets:fileGrp>
+<mets:fileGrp USE="TEXT">
+<mets:file GROUPID="group_file_4435ef46-2fa1-404a-98a5-af6236172bc3" CHECKSUM="be315fc9af9fd9581f4724720ef71656" MIMETYPE="text/plain" SIZE="330881" ID="file_252c2eab-abfc-466b-b82d-30b03df3ea55" CHECKSUMTYPE="MD5">
+<mets:FLocat LOCTYPE="URL" xlink:label="Extracted text" xlink:href="/bitstream/handle/1721.1/70641/24584124-MIT.pdf.txt?sequence=4&amp;isAllowed=n" xlink:type="locator" xlink:title="24584124-MIT.pdf.txt"/>
+</mets:file>
+</mets:fileGrp>
+</mets:fileSec>
+<mets:structMap LABEL="DSpace" TYPE="LOGICAL">
+<mets:div DMDID="dmd_1" TYPE="DSpace Item">
+<mets:div ID="div_2" TYPE="DSpace Content Bitstream">
+<mets:fptr FILEID="file_4435ef46-2fa1-404a-98a5-af6236172bc3"/>
+</mets:div>
+</mets:div>
+</mets:structMap>
+</mets:METS>

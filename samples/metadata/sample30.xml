@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:METS xmlns:mets="http://www.loc.gov/METS/" xmlns:xlink="http://www.w3.org/TR/xlink/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dim="http://www.dspace.org/xmlns/dspace/dim" PROFILE="DSPACE METS SIP Profile 1.0" LABEL="DSpace Item" OBJID="/handle/1721.1/12076" ID="hdl:1721.1/12076" OBJEDIT="/admin/item?itemID=6ebf69a9-592f-48a7-b79d-1a581bb6b6b5">
+<mets:dmdSec GROUPID="group_dmd_0" ID="dmd_1">
+<mets:mdWrap OTHERMDTYPE="DIM" MDTYPE="OTHER">
+<mets:xmlData>
+<dim:dim dspaceType="ITEM">
+<dim:field qualifier="advisor" mdschema="dc" language="en_US" element="contributor">Richard S. Bear.</dim:field>
+<dim:field qualifier="author" authority="c74706cd51d1c0ec81ad9d4b345990a8" confidence="UNSET" mdschema="dc" language="en_US" element="contributor">Wyckoff, Harold W</dim:field>
+<dim:field qualifier="accessioned" mdschema="dc" element="date">2005-08-16T22:21:07Z</dim:field>
+<dim:field qualifier="available" mdschema="dc" element="date">2005-08-16T22:21:07Z</dim:field>
+<dim:field qualifier="issued" mdschema="dc" language="en_US" element="date">1955</dim:field>
+<dim:field qualifier="uri" mdschema="dc" element="identifier">http://hdl.handle.net/1721.1/12076</dim:field>
+<dim:field mdschema="dc" language="en_US" element="description">Thesis (Ph.D.) Massachusetts Institute of Technology. Dept. of Biology, 1955.</dim:field>
+<dim:field mdschema="dc" language="en_US" element="description">Vita.</dim:field>
+<dim:field mdschema="dc" language="en_US" element="description">Bibliography: leaves 158-160.</dim:field>
+<dim:field qualifier="statementofresponsibility" mdschema="dc" language="en_US" element="description">by Harold Winfield Wyckoff.</dim:field>
+<dim:field qualifier="extent" mdschema="dc" language="en_US" element="format">161 leaves</dim:field>
+<dim:field qualifier="extent" mdschema="dc" element="format">13538624 bytes</dim:field>
+<dim:field qualifier="extent" mdschema="dc" element="format">13538383 bytes</dim:field>
+<dim:field qualifier="mimetype" mdschema="dc" element="format">application/pdf</dim:field>
+<dim:field qualifier="mimetype" mdschema="dc" element="format">application/pdf</dim:field>
+<dim:field qualifier="iso" mdschema="dc" language="en_US" element="language">eng</dim:field>
+<dim:field mdschema="dc" language="en_US" element="publisher">Massachusetts Institute of Technology</dim:field>
+<dim:field mdschema="dc" language="en_US" element="rights">M.I.T. theses are protected by copyright. They may be viewed from this source for any purpose, but reproduction or distribution in any format is prohibited without written permission. See provided URL for inquiries about permission.</dim:field>
+<dim:field qualifier="uri" mdschema="dc" element="rights">http://dspace.mit.edu/handle/1721.1/7582</dim:field>
+<dim:field mdschema="dc" language="en_US" element="subject">Biology</dim:field>
+<dim:field mdschema="dc" language="en_US" element="title">X-ray diffraction analysis of the structure of deoxyribonucleic acid</dim:field>
+<dim:field mdschema="dc" language="en_US" element="type">Thesis</dim:field>
+<dim:field qualifier="degree" mdschema="dc" language="en_US" element="description">Ph.D.</dim:field>
+<dim:field qualifier="department" mdschema="dc" language="en_US" element="contributor">Massachusetts Institute of Technology. Dept. of Biology</dim:field>
+<dim:field qualifier="oclc" mdschema="dc" language="en_US" element="identifier">31492975</dim:field>
+</dim:dim>
+</mets:xmlData>
+</mets:mdWrap>
+</mets:dmdSec>
+<mets:fileSec>
+<mets:fileGrp USE="THUMBNAIL">
+<mets:file GROUPID="group_file_d18ec2cc-3299-46a6-b23e-36fe79c35c68" CHECKSUM="bb01f24817687392ef3ac4d36ac6edb9" MIMETYPE="image/jpeg" SIZE="2845" ID="file_b9e62de7-70b8-4fa9-b734-35dbcee48d36" CHECKSUMTYPE="MD5">
+<mets:FLocat LOCTYPE="URL" xlink:label="Generated Thumbnail" xlink:href="/bitstream/handle/1721.1/12076/31492975-MIT.pdf.jpg?sequence=5&amp;isAllowed=y" xlink:type="locator" xlink:title="31492975-MIT.pdf.jpg"/>
+</mets:file>
+</mets:fileGrp>
+<mets:fileGrp USE="COVERPAGE"/>
+<mets:fileGrp USE="CONTENT">
+<mets:file GROUPID="group_file_d18ec2cc-3299-46a6-b23e-36fe79c35c68" CHECKSUM="e6b37cfe0d5e54cad0e5f737605dcb91" MIMETYPE="application/pdf" SIZE="13538383" ID="file_d18ec2cc-3299-46a6-b23e-36fe79c35c68" CHECKSUMTYPE="MD5">
+<mets:FLocat LOCTYPE="URL" xlink:label="Full printable version" xlink:href="/bitstream/handle/1721.1/12076/31492975-MIT.pdf?sequence=2&amp;isAllowed=y" xlink:type="locator" xlink:title="31492975-MIT.pdf"/>
+</mets:file>
+</mets:fileGrp>
+<mets:fileGrp USE="TEXT">
+<mets:file GROUPID="group_file_d18ec2cc-3299-46a6-b23e-36fe79c35c68" CHECKSUM="c0c2a8770e2d07448dfcfaf032abf1c6" MIMETYPE="text/plain" SIZE="162" ID="file_c9dba611-c7c1-4338-b9d6-1fc1e1e59f3f" CHECKSUMTYPE="MD5">
+<mets:FLocat LOCTYPE="URL" xlink:label="Extracted text" xlink:href="/bitstream/handle/1721.1/12076/31492975-MIT.pdf.txt?sequence=4&amp;isAllowed=y" xlink:type="locator" xlink:title="31492975-MIT.pdf.txt"/>
+</mets:file>
+</mets:fileGrp>
+</mets:fileSec>
+<mets:structMap LABEL="DSpace" TYPE="LOGICAL">
+<mets:div DMDID="dmd_1" TYPE="DSpace Item">
+<mets:div ID="div_2" TYPE="DSpace Content Bitstream">
+<mets:fptr FILEID="file_d18ec2cc-3299-46a6-b23e-36fe79c35c68"/>
+</mets:div>
+</mets:div>
+</mets:structMap>
+</mets:METS>

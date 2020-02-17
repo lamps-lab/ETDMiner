@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:METS xmlns:mets="http://www.loc.gov/METS/" xmlns:xlink="http://www.w3.org/TR/xlink/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dim="http://www.dspace.org/xmlns/dspace/dim" PROFILE="DSPACE METS SIP Profile 1.0" LABEL="DSpace Item" OBJID="/handle/1721.1/44675" ID="hdl:1721.1/44675" OBJEDIT="/admin/item?itemID=0ca1d1f9-74d6-4c70-8e2d-239c15b49bae">
+<mets:dmdSec GROUPID="group_dmd_0" ID="dmd_1">
+<mets:mdWrap OTHERMDTYPE="DIM" MDTYPE="OTHER">
+<mets:xmlData>
+<dim:dim dspaceType="ITEM">
+<dim:field qualifier="advisor" mdschema="dc" language="en_US" element="contributor">Neil E. Todreas.</dim:field>
+<dim:field qualifier="author" authority="faba0e28f411b72a69f7475f03528566" confidence="UNSET" mdschema="dc" language="en_US" element="contributor">Tso, Chih-Ping</dim:field>
+<dim:field qualifier="accessioned" mdschema="dc" element="date">2009-03-16T19:27:40Z</dim:field>
+<dim:field qualifier="available" mdschema="dc" element="date">2009-03-16T19:27:40Z</dim:field>
+<dim:field qualifier="issued" mdschema="dc" language="en_US" element="date">1970</dim:field>
+<dim:field qualifier="uri" mdschema="dc" element="identifier">http://hdl.handle.net/1721.1/44675</dim:field>
+<dim:field mdschema="dc" language="en_US" element="description">Massachusetts Institute of Technology. Dept. of Nuclear Engineering. Thesis. 1970. M.S.</dim:field>
+<dim:field mdschema="dc" language="en_US" element="description">Bibliography: leaves 105-106.</dim:field>
+<dim:field qualifier="extent" mdschema="dc" language="en_US" element="format">106 leaves</dim:field>
+<dim:field qualifier="iso" mdschema="dc" language="en_US" element="language">eng</dim:field>
+<dim:field mdschema="dc" language="en_US" element="publisher">Massachusetts Institute of Technology</dim:field>
+<dim:field mdschema="dc" language="en_US" element="rights">M.I.T. theses are protected by 
+copyright. They may be viewed from this source for any purpose, but 
+reproduction or distribution in any format is prohibited without written 
+permission. See provided URL for inquiries about permission.</dim:field>
+<dim:field qualifier="uri" mdschema="dc" language="en_US" element="rights">http://dspace.mit.edu/handle/1721.1/7582</dim:field>
+<dim:field mdschema="dc" language="en_US" element="subject">Nuclear Engineering</dim:field>
+<dim:field mdschema="dc" language="en_US" element="title">Some aspects of radiation induced nucleation in water.</dim:field>
+<dim:field mdschema="dc" language="en_US" element="type">Thesis</dim:field>
+<dim:field qualifier="degree" mdschema="dc" language="en_US" element="description">M.S.</dim:field>
+<dim:field qualifier="department" mdschema="dc" language="en_US" element="contributor">Massachusetts Institute of Technology. Dept. of Nuclear Engineering</dim:field>
+<dim:field qualifier="oclc" mdschema="dc" language="en_US" element="identifier">25251407</dim:field>
+</dim:dim>
+</mets:xmlData>
+</mets:mdWrap>
+</mets:dmdSec>
+<mets:fileSec>
+<mets:fileGrp USE="THUMBNAIL">
+<mets:file GROUPID="group_file_eacf3679-4778-4b71-8480-b6b830f1d1ee" CHECKSUM="413f65bb7f585bdc6d34af4ee75e0a72" MIMETYPE="image/jpeg" SIZE="3497" ID="file_62ad6e6e-0a82-43c7-a4e6-bf89bf1a4066" CHECKSUMTYPE="MD5">
+<mets:FLocat LOCTYPE="URL" xlink:label="Generated Thumbnail" xlink:href="/bitstream/handle/1721.1/44675/25251407-MIT.pdf.jpg?sequence=5&amp;isAllowed=y" xlink:type="locator" xlink:title="25251407-MIT.pdf.jpg"/>
+</mets:file>
+</mets:fileGrp>
+<mets:fileGrp USE="COVERPAGE"/>
+<mets:fileGrp USE="CONTENT">
+<mets:file GROUPID="group_file_eacf3679-4778-4b71-8480-b6b830f1d1ee" CHECKSUM="45b60da52099017af2f7312979062eaf" MIMETYPE="application/pdf" SIZE="4227213" ID="file_eacf3679-4778-4b71-8480-b6b830f1d1ee" CHECKSUMTYPE="MD5">
+<mets:FLocat LOCTYPE="URL" xlink:label="Full printable version" xlink:href="/bitstream/handle/1721.1/44675/25251407-MIT.pdf?sequence=2&amp;isAllowed=y" xlink:type="locator" xlink:title="25251407-MIT.pdf"/>
+</mets:file>
+</mets:fileGrp>
+<mets:fileGrp USE="TEXT">
+<mets:file GROUPID="group_file_eacf3679-4778-4b71-8480-b6b830f1d1ee" CHECKSUM="6e493c801e622089aa1da46939fb7ec4" MIMETYPE="text/plain" SIZE="95777" ID="file_c4d9719b-e9d6-403d-bce8-c80a5d637ab7" CHECKSUMTYPE="MD5">
+<mets:FLocat LOCTYPE="URL" xlink:label="Extracted text" xlink:href="/bitstream/handle/1721.1/44675/25251407-MIT.pdf.txt?sequence=4&amp;isAllowed=n" xlink:type="locator" xlink:title="25251407-MIT.pdf.txt"/>
+</mets:file>
+</mets:fileGrp>
+</mets:fileSec>
+<mets:structMap LABEL="DSpace" TYPE="LOGICAL">
+<mets:div DMDID="dmd_1" TYPE="DSpace Item">
+<mets:div ID="div_2" TYPE="DSpace Content Bitstream">
+<mets:fptr FILEID="file_eacf3679-4778-4b71-8480-b6b830f1d1ee"/>
+</mets:div>
+</mets:div>
+</mets:structMap>
+</mets:METS>

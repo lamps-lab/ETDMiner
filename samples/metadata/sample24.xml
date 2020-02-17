@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:METS xmlns:mets="http://www.loc.gov/METS/" xmlns:xlink="http://www.w3.org/TR/xlink/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dim="http://www.dspace.org/xmlns/dspace/dim" PROFILE="DSPACE METS SIP Profile 1.0" LABEL="DSpace Item" OBJID="/handle/1721.1/39041" ID="hdl:1721.1/39041" OBJEDIT="/admin/item?itemID=6d997e69-53e8-4171-843a-f6ac0dbc60c5">
+<mets:dmdSec GROUPID="group_dmd_0" ID="dmd_1">
+<mets:mdWrap OTHERMDTYPE="DIM" MDTYPE="OTHER">
+<mets:xmlData>
+<dim:dim dspaceType="ITEM">
+<dim:field qualifier="advisor" mdschema="dc" language="en_US" element="contributor">Edward S. Taylor.</dim:field>
+<dim:field qualifier="author" authority="9583d1a50acd997b293cf98e61521c73" confidence="UNSET" mdschema="dc" language="en_US" element="contributor">Stenning, Alan H. (Alan Hugh)</dim:field>
+<dim:field qualifier="accessioned" mdschema="dc" element="date">2007-09-28T13:39:41Z</dim:field>
+<dim:field qualifier="available" mdschema="dc" element="date">2007-09-28T13:39:41Z</dim:field>
+<dim:field qualifier="issued" mdschema="dc" language="en_US" element="date">1955</dim:field>
+<dim:field qualifier="uri" mdschema="dc" element="identifier">http://hdl.handle.net/1721.1/39041</dim:field>
+<dim:field mdschema="dc" language="en_US" element="description">Thesis (Sc.D.) Massachusetts Institute of Technology. Dept. of Mechanical Engineering, 1955.</dim:field>
+<dim:field mdschema="dc" language="en_US" element="description">Bibliography: leaf 59.</dim:field>
+<dim:field qualifier="statementofresponsibility" mdschema="dc" language="en_US" element="description">by Alan H. Stenning.</dim:field>
+<dim:field qualifier="extent" mdschema="dc" language="en_US" element="format">59, [36] leaves</dim:field>
+<dim:field qualifier="iso" mdschema="dc" language="en_US" element="language">eng</dim:field>
+<dim:field mdschema="dc" language="en_US" element="publisher">Massachusetts Institute of Technology</dim:field>
+<dim:field mdschema="dc" language="en_US" element="rights">M.I.T. theses are protected by copyright. They may be viewed from this source for any purpose, but reproduction or distribution in any format is prohibited without written permission. See provided URL for inquiries about permission.</dim:field>
+<dim:field qualifier="uri" mdschema="dc" element="rights">http://dspace.mit.edu/handle/1721.1/7582</dim:field>
+<dim:field mdschema="dc" language="en_US" element="subject">Mechanical Engineering</dim:field>
+<dim:field mdschema="dc" language="en_US" element="title">Stall propagation in axial compressors</dim:field>
+<dim:field mdschema="dc" language="en_US" element="type">Thesis</dim:field>
+<dim:field qualifier="degree" mdschema="dc" language="en_US" element="description">Sc.D.</dim:field>
+<dim:field qualifier="department" mdschema="dc" language="en_US" element="contributor">Massachusetts Institute of Technology. Dept. of Mechanical Engineering</dim:field>
+<dim:field qualifier="oclc" mdschema="dc" language="en_US" element="identifier">31477199</dim:field>
+</dim:dim>
+</mets:xmlData>
+</mets:mdWrap>
+</mets:dmdSec>
+<mets:fileSec>
+<mets:fileGrp USE="THUMBNAIL">
+<mets:file GROUPID="group_file_9c8f5d40-aa48-4c86-b8d1-612fc2e67c50" CHECKSUM="1e37a5327fcb296162a8e855189d0a87" MIMETYPE="image/jpeg" SIZE="3251" ID="file_7f193c0d-62cd-4e0b-8761-eec92e326d62" CHECKSUMTYPE="MD5">
+<mets:FLocat LOCTYPE="URL" xlink:label="Generated Thumbnail" xlink:href="/bitstream/handle/1721.1/39041/31477199-MIT.pdf.jpg?sequence=5&amp;isAllowed=y" xlink:type="locator" xlink:title="31477199-MIT.pdf.jpg"/>
+</mets:file>
+</mets:fileGrp>
+<mets:fileGrp USE="COVERPAGE"/>
+<mets:fileGrp USE="CONTENT">
+<mets:file GROUPID="group_file_9c8f5d40-aa48-4c86-b8d1-612fc2e67c50" CHECKSUM="251501702438ea7d347fafdc2c12d7e8" MIMETYPE="application/pdf" SIZE="9967780" ID="file_9c8f5d40-aa48-4c86-b8d1-612fc2e67c50" CHECKSUMTYPE="MD5">
+<mets:FLocat LOCTYPE="URL" xlink:label="Full printable version" xlink:href="/bitstream/handle/1721.1/39041/31477199-MIT.pdf?sequence=2&amp;isAllowed=y" xlink:type="locator" xlink:title="31477199-MIT.pdf"/>
+</mets:file>
+</mets:fileGrp>
+<mets:fileGrp USE="TEXT">
+<mets:file GROUPID="group_file_9c8f5d40-aa48-4c86-b8d1-612fc2e67c50" CHECKSUM="e51af22ab723e81410c5cb5e18202f57" MIMETYPE="text/plain" SIZE="92959" ID="file_cfae0284-26a8-4939-8db8-69bae7dade69" CHECKSUMTYPE="MD5">
+<mets:FLocat LOCTYPE="URL" xlink:label="Extracted text" xlink:href="/bitstream/handle/1721.1/39041/31477199-MIT.pdf.txt?sequence=4&amp;isAllowed=n" xlink:type="locator" xlink:title="31477199-MIT.pdf.txt"/>
+</mets:file>
+</mets:fileGrp>
+</mets:fileSec>
+<mets:structMap LABEL="DSpace" TYPE="LOGICAL">
+<mets:div DMDID="dmd_1" TYPE="DSpace Item">
+<mets:div ID="div_2" TYPE="DSpace Content Bitstream">
+<mets:fptr FILEID="file_9c8f5d40-aa48-4c86-b8d1-612fc2e67c50"/>
+</mets:div>
+</mets:div>
+</mets:structMap>
+</mets:METS>

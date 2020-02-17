@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:METS xmlns:mets="http://www.loc.gov/METS/" xmlns:xlink="http://www.w3.org/TR/xlink/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dim="http://www.dspace.org/xmlns/dspace/dim" PROFILE="DSPACE METS SIP Profile 1.0" LABEL="DSpace Item" OBJID="/handle/1721.1/54375" ID="hdl:1721.1/54375" OBJEDIT="/admin/item?itemID=70b95a12-90a4-4df8-bd0d-84afd51339b1">
+<mets:dmdSec GROUPID="group_dmd_0" ID="dmd_1">
+<mets:mdWrap OTHERMDTYPE="DIM" MDTYPE="OTHER">
+<mets:xmlData>
+<dim:dim dspaceType="ITEM">
+<dim:field qualifier="advisor" mdschema="dc" language="en_US" element="contributor">Sigurdur Helgason.</dim:field>
+<dim:field qualifier="author" authority="7902a9fc259ecbe45fd2f2d3f4be268f" confidence="UNSET" mdschema="dc" language="en_US" element="contributor">Kelly, Edmund Francis Aloysius</dim:field>
+<dim:field qualifier="accessioned" mdschema="dc" element="date">2010-04-28T15:22:29Z</dim:field>
+<dim:field qualifier="available" mdschema="dc" element="date">2010-04-28T15:22:29Z</dim:field>
+<dim:field qualifier="issued" mdschema="dc" language="en_US" element="date">1970</dim:field>
+<dim:field qualifier="uri" mdschema="dc" element="identifier">http://hdl.handle.net/1721.1/54375</dim:field>
+<dim:field mdschema="dc" language="en_US" element="description">Thesis (Ph. D.)--Massachusetts Institute of Technology, Dept. of Mathematics, 1970.</dim:field>
+<dim:field mdschema="dc" language="en_US" element="description">Vita.</dim:field>
+<dim:field mdschema="dc" language="en_US" element="description">Bibliography: leaves 61-63.</dim:field>
+<dim:field qualifier="statementofresponsibility" mdschema="dc" language="en_US" element="description">by Edmund Francis Kelly.</dim:field>
+<dim:field qualifier="extent" mdschema="dc" language="en_US" element="format">vi, 64 leaves</dim:field>
+<dim:field qualifier="iso" mdschema="dc" language="en_US" element="language">eng</dim:field>
+<dim:field mdschema="dc" language="en_US" element="publisher">Massachusetts Institute of Technology</dim:field>
+<dim:field mdschema="dc" language="en_US" element="rights">M.I.T. theses are protected by 
+copyright. They may be viewed from this source for any purpose, but 
+reproduction or distribution in any format is prohibited without written 
+permission. See provided URL for inquiries about permission.</dim:field>
+<dim:field qualifier="uri" mdschema="dc" language="en_US" element="rights">http://dspace.mit.edu/handle/1721.1/7582</dim:field>
+<dim:field mdschema="dc" language="en_US" element="subject">Mathematics</dim:field>
+<dim:field mdschema="dc" language="en_US" element="title">Immersions of symmetric spaces,</dim:field>
+<dim:field mdschema="dc" language="en_US" element="type">Thesis</dim:field>
+<dim:field qualifier="degree" mdschema="dc" language="en_US" element="description">Ph.D.</dim:field>
+<dim:field qualifier="department" mdschema="dc" language="en_US" element="contributor">Massachusetts Institute of Technology. Dept. of Mathematics</dim:field>
+<dim:field qualifier="oclc" mdschema="dc" language="en_US" element="identifier">30042711</dim:field>
+</dim:dim>
+</mets:xmlData>
+</mets:mdWrap>
+</mets:dmdSec>
+<mets:fileSec>
+<mets:fileGrp USE="THUMBNAIL">
+<mets:file GROUPID="group_file_471efe7a-bb90-467a-bbb8-dd99cac99f54" CHECKSUM="d9a97c9b4242a60719896e86007d419f" MIMETYPE="image/jpeg" SIZE="3397" ID="file_dc211bf1-70ac-4d6c-9d87-fdac999c35e2" CHECKSUMTYPE="MD5">
+<mets:FLocat LOCTYPE="URL" xlink:label="Generated Thumbnail" xlink:href="/bitstream/handle/1721.1/54375/30042711-MIT.pdf.jpg?sequence=5&amp;isAllowed=y" xlink:type="locator" xlink:title="30042711-MIT.pdf.jpg"/>
+</mets:file>
+</mets:fileGrp>
+<mets:fileGrp USE="COVERPAGE"/>
+<mets:fileGrp USE="CONTENT">
+<mets:file GROUPID="group_file_471efe7a-bb90-467a-bbb8-dd99cac99f54" CHECKSUM="5a6dc2f8cb44652f1f8b76ae93800199" MIMETYPE="application/pdf" SIZE="3302497" ID="file_471efe7a-bb90-467a-bbb8-dd99cac99f54" CHECKSUMTYPE="MD5">
+<mets:FLocat LOCTYPE="URL" xlink:label="Full printable version" xlink:href="/bitstream/handle/1721.1/54375/30042711-MIT.pdf?sequence=2&amp;isAllowed=y" xlink:type="locator" xlink:title="30042711-MIT.pdf"/>
+</mets:file>
+</mets:fileGrp>
+<mets:fileGrp USE="TEXT">
+<mets:file GROUPID="group_file_471efe7a-bb90-467a-bbb8-dd99cac99f54" CHECKSUM="b02f5647566da2ee35f07e32cc1f09ea" MIMETYPE="text/plain" SIZE="52720" ID="file_b5b85ee4-28b2-4ee7-890f-7eb382332aa8" CHECKSUMTYPE="MD5">
+<mets:FLocat LOCTYPE="URL" xlink:label="Extracted text" xlink:href="/bitstream/handle/1721.1/54375/30042711-MIT.pdf.txt?sequence=4&amp;isAllowed=n" xlink:type="locator" xlink:title="30042711-MIT.pdf.txt"/>
+</mets:file>
+</mets:fileGrp>
+</mets:fileSec>
+<mets:structMap LABEL="DSpace" TYPE="LOGICAL">
+<mets:div DMDID="dmd_1" TYPE="DSpace Item">
+<mets:div ID="div_2" TYPE="DSpace Content Bitstream">
+<mets:fptr FILEID="file_471efe7a-bb90-467a-bbb8-dd99cac99f54"/>
+</mets:div>
+</mets:div>
+</mets:structMap>
+</mets:METS>

@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:METS xmlns:mets="http://www.loc.gov/METS/" xmlns:xlink="http://www.w3.org/TR/xlink/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dim="http://www.dspace.org/xmlns/dspace/dim" PROFILE="DSPACE METS SIP Profile 1.0" LABEL="DSpace Item" OBJID="/handle/1721.1/73209" ID="hdl:1721.1/73209" OBJEDIT="/admin/item?itemID=039f7b12-7d6d-43a7-8ea1-b6a44315633e">
+<mets:dmdSec GROUPID="group_dmd_0" ID="dmd_1">
+<mets:mdWrap OTHERMDTYPE="DIM" MDTYPE="OTHER">
+<mets:xmlData>
+<dim:dim dspaceType="ITEM">
+<dim:field qualifier="advisor" mdschema="dc" language="en_US" element="contributor">Stanford Anderson.</dim:field>
+<dim:field qualifier="author" authority="e275845d65fd02a77c6f64d80bee6287" confidence="UNSET" mdschema="dc" language="en_US" element="contributor">Cylkowski, David</dim:field>
+<dim:field qualifier="accessioned" mdschema="dc" element="date">2012-09-27T15:11:43Z</dim:field>
+<dim:field qualifier="available" mdschema="dc" element="date">2012-09-27T15:11:43Z</dim:field>
+<dim:field qualifier="issued" mdschema="dc" language="en_US" element="date">1975</dim:field>
+<dim:field qualifier="uri" mdschema="dc" element="identifier">http://hdl.handle.net/1721.1/73209</dim:field>
+<dim:field mdschema="dc" language="en_US" element="description">Thesis. 1975. M.Arch.--Massachusetts Institute of Technology. Dept. of Architecture.</dim:field>
+<dim:field mdschema="dc" language="en_US" element="description">Includes bibliographical references.</dim:field>
+<dim:field qualifier="extent" mdschema="dc" language="en_US" element="format">47 leaves</dim:field>
+<dim:field qualifier="iso" mdschema="dc" language="en_US" element="language">eng</dim:field>
+<dim:field mdschema="dc" language="en_US" element="publisher">Massachusetts Institute of Technology</dim:field>
+<dim:field mdschema="dc" language="en_US" element="rights">M.I.T. theses are protected by 
+copyright. They may be viewed from this source for any purpose, but 
+reproduction or distribution in any format is prohibited without written 
+permission. See provided URL for inquiries about permission.</dim:field>
+<dim:field qualifier="uri" mdschema="dc" language="en_US" element="rights">http://dspace.mit.edu/handle/1721.1/7582</dim:field>
+<dim:field mdschema="dc" language="en_US" element="subject">Architecture</dim:field>
+<dim:field qualifier="lcsh" mdschema="dc" language="en_US" element="subject">Streets</dim:field>
+<dim:field qualifier="lcsh" mdschema="dc" language="en_US" element="subject">City planning</dim:field>
+<dim:field qualifier="lcsh" mdschema="dc" language="en_US" element="subject">Pedestrian facilities design</dim:field>
+<dim:field mdschema="dc" language="en_US" element="title">An additive approach to the design of urban paths and edges.</dim:field>
+<dim:field mdschema="dc" language="en_US" element="type">Thesis</dim:field>
+<dim:field qualifier="degree" mdschema="dc" language="en_US" element="description">M.Arch.</dim:field>
+<dim:field qualifier="department" mdschema="dc" language="en_US" element="contributor">Massachusetts Institute of Technology. Dept. of Architecture</dim:field>
+<dim:field qualifier="oclc" mdschema="dc" language="en_US" element="identifier">02199592</dim:field>
+</dim:dim>
+</mets:xmlData>
+</mets:mdWrap>
+</mets:dmdSec>
+<mets:fileSec>
+<mets:fileGrp USE="THUMBNAIL">
+<mets:file GROUPID="group_file_fc9485ad-6d97-4bb0-b9be-d5f2fd7a81a4" CHECKSUM="04ae513541e1a707442cb45305d0a6e1" MIMETYPE="image/jpeg" SIZE="3284" ID="file_08127efe-974d-45ae-b8ea-e890e0a57c3c" CHECKSUMTYPE="MD5">
+<mets:FLocat LOCTYPE="URL" xlink:label="Generated Thumbnail" xlink:href="/bitstream/handle/1721.1/73209/02199592-MIT.pdf.jpg?sequence=5&amp;isAllowed=y" xlink:type="locator" xlink:title="02199592-MIT.pdf.jpg"/>
+</mets:file>
+</mets:fileGrp>
+<mets:fileGrp USE="COVERPAGE"/>
+<mets:fileGrp USE="CONTENT">
+<mets:file GROUPID="group_file_fc9485ad-6d97-4bb0-b9be-d5f2fd7a81a4" CHECKSUM="ab4e92ad309ec48176c58412f9f093c6" MIMETYPE="application/pdf" SIZE="5293055" ID="file_fc9485ad-6d97-4bb0-b9be-d5f2fd7a81a4" CHECKSUMTYPE="MD5">
+<mets:FLocat LOCTYPE="URL" xlink:label="Full printable version" xlink:href="/bitstream/handle/1721.1/73209/02199592-MIT.pdf?sequence=2&amp;isAllowed=y" xlink:type="locator" xlink:title="02199592-MIT.pdf"/>
+</mets:file>
+</mets:fileGrp>
+<mets:fileGrp USE="TEXT">
+<mets:file GROUPID="group_file_fc9485ad-6d97-4bb0-b9be-d5f2fd7a81a4" CHECKSUM="82ac0f83cb3716519b5b0e188da2d1c2" MIMETYPE="text/plain" SIZE="61597" ID="file_668ef437-2af4-439a-a997-1544462a840d" CHECKSUMTYPE="MD5">
+<mets:FLocat LOCTYPE="URL" xlink:label="Extracted text" xlink:href="/bitstream/handle/1721.1/73209/02199592-MIT.pdf.txt?sequence=4&amp;isAllowed=n" xlink:type="locator" xlink:title="02199592-MIT.pdf.txt"/>
+</mets:file>
+</mets:fileGrp>
+</mets:fileSec>
+<mets:structMap LABEL="DSpace" TYPE="LOGICAL">
+<mets:div DMDID="dmd_1" TYPE="DSpace Item">
+<mets:div ID="div_2" TYPE="DSpace Content Bitstream">
+<mets:fptr FILEID="file_fc9485ad-6d97-4bb0-b9be-d5f2fd7a81a4"/>
+</mets:div>
+</mets:div>
+</mets:structMap>
+</mets:METS>

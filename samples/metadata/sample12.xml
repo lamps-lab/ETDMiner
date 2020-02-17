@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:METS xmlns:mets="http://www.loc.gov/METS/" xmlns:xlink="http://www.w3.org/TR/xlink/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dim="http://www.dspace.org/xmlns/dspace/dim" PROFILE="DSPACE METS SIP Profile 1.0" LABEL="DSpace Item" OBJID="/handle/1721.1/72926" ID="hdl:1721.1/72926" OBJEDIT="/admin/item?itemID=635f9a70-3e0a-4c30-835f-9f71f9db35dd">
+<mets:dmdSec GROUPID="group_dmd_0" ID="dmd_1">
+<mets:mdWrap OTHERMDTYPE="DIM" MDTYPE="OTHER">
+<mets:xmlData>
+<dim:dim dspaceType="ITEM">
+<dim:field qualifier="advisor" mdschema="dc" language="en_US" element="contributor">Bertram Kostant.</dim:field>
+<dim:field qualifier="author" authority="56db8b41411ddc578432daaef3aa3d18" confidence="UNSET" mdschema="dc" language="en_US" element="contributor">Sweedler, Moss Eisenberg</dim:field>
+<dim:field qualifier="accessioned" mdschema="dc" element="date">2012-09-13T19:35:57Z</dim:field>
+<dim:field qualifier="available" mdschema="dc" element="date">2012-09-13T19:35:57Z</dim:field>
+<dim:field qualifier="issued" mdschema="dc" language="en_US" element="date">1965</dim:field>
+<dim:field qualifier="uri" mdschema="dc" element="identifier">http://hdl.handle.net/1721.1/72926</dim:field>
+<dim:field mdschema="dc" language="en_US" element="description">Massachusetts Institute of Technology. Dept. of Mathematics. Thesis. 1965. Ph.D.</dim:field>
+<dim:field qualifier="extent" mdschema="dc" language="en_US" element="format">166 leaves</dim:field>
+<dim:field qualifier="iso" mdschema="dc" language="en_US" element="language">eng</dim:field>
+<dim:field mdschema="dc" language="en_US" element="publisher">Massachusetts Institute of Technology</dim:field>
+<dim:field mdschema="dc" language="en_US" element="rights">M.I.T. theses are protected by 
+copyright. They may be viewed from this source for any purpose, but 
+reproduction or distribution in any format is prohibited without written 
+permission. See provided URL for inquiries about permission.</dim:field>
+<dim:field qualifier="uri" mdschema="dc" language="en_US" element="rights">http://dspace.mit.edu/handle/1721.1/7582</dim:field>
+<dim:field mdschema="dc" language="en_US" element="subject">Mathematics</dim:field>
+<dim:field mdschema="dc" language="en_US" element="title">Cocommutative Hopf algebras with antipode.</dim:field>
+<dim:field mdschema="dc" language="en_US" element="type">Thesis</dim:field>
+<dim:field qualifier="degree" mdschema="dc" language="en_US" element="description">Ph.D.</dim:field>
+<dim:field qualifier="department" mdschema="dc" language="en_US" element="contributor">Massachusetts Institute of Technology. Dept. of Mathematics</dim:field>
+<dim:field qualifier="oclc" mdschema="dc" language="en_US" element="identifier">25783357</dim:field>
+</dim:dim>
+</mets:xmlData>
+</mets:mdWrap>
+</mets:dmdSec>
+<mets:fileSec>
+<mets:fileGrp USE="THUMBNAIL">
+<mets:file GROUPID="group_file_49ba9ef5-86c9-4f9e-bc1c-d293dc33c8cf" CHECKSUM="39414a317a029860147dddb4d5defdd4" MIMETYPE="image/jpeg" SIZE="3441" ID="file_8d59ee5f-646e-49f9-b5fc-fbbf56933d8c" CHECKSUMTYPE="MD5">
+<mets:FLocat LOCTYPE="URL" xlink:label="Generated Thumbnail" xlink:href="/bitstream/handle/1721.1/72926/25783357-MIT.pdf.jpg?sequence=5&amp;isAllowed=y" xlink:type="locator" xlink:title="25783357-MIT.pdf.jpg"/>
+</mets:file>
+</mets:fileGrp>
+<mets:fileGrp USE="COVERPAGE"/>
+<mets:fileGrp USE="CONTENT">
+<mets:file GROUPID="group_file_49ba9ef5-86c9-4f9e-bc1c-d293dc33c8cf" CHECKSUM="002ba49a9fcf7b6d2e02b8ac3e1b9c52" MIMETYPE="application/pdf" SIZE="11052488" ID="file_49ba9ef5-86c9-4f9e-bc1c-d293dc33c8cf" CHECKSUMTYPE="MD5">
+<mets:FLocat LOCTYPE="URL" xlink:label="Full printable version" xlink:href="/bitstream/handle/1721.1/72926/25783357-MIT.pdf?sequence=2&amp;isAllowed=y" xlink:type="locator" xlink:title="25783357-MIT.pdf"/>
+</mets:file>
+</mets:fileGrp>
+<mets:fileGrp USE="TEXT">
+<mets:file GROUPID="group_file_49ba9ef5-86c9-4f9e-bc1c-d293dc33c8cf" CHECKSUM="9775975a42e77952ac1b3cc0130f8e07" MIMETYPE="text/plain" SIZE="108463" ID="file_33a2bc94-36da-404b-85ac-8e06052d0a30" CHECKSUMTYPE="MD5">
+<mets:FLocat LOCTYPE="URL" xlink:label="Extracted text" xlink:href="/bitstream/handle/1721.1/72926/25783357-MIT.pdf.txt?sequence=4&amp;isAllowed=n" xlink:type="locator" xlink:title="25783357-MIT.pdf.txt"/>
+</mets:file>
+</mets:fileGrp>
+</mets:fileSec>
+<mets:structMap LABEL="DSpace" TYPE="LOGICAL">
+<mets:div DMDID="dmd_1" TYPE="DSpace Item">
+<mets:div ID="div_2" TYPE="DSpace Content Bitstream">
+<mets:fptr FILEID="file_49ba9ef5-86c9-4f9e-bc1c-d293dc33c8cf"/>
+</mets:div>
+</mets:div>
+</mets:structMap>
+</mets:METS>

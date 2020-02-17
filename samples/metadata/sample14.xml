@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:METS xmlns:mets="http://www.loc.gov/METS/" xmlns:xlink="http://www.w3.org/TR/xlink/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dim="http://www.dspace.org/xmlns/dspace/dim" PROFILE="DSPACE METS SIP Profile 1.0" LABEL="DSpace Item" OBJID="/handle/1721.1/77356" ID="hdl:1721.1/77356" OBJEDIT="/admin/item?itemID=9042ce16-cccf-4fc7-b99c-0080394f837a">
+<mets:dmdSec GROUPID="group_dmd_0" ID="dmd_1">
+<mets:mdWrap OTHERMDTYPE="DIM" MDTYPE="OTHER">
+<mets:xmlData>
+<dim:dim dspaceType="ITEM">
+<dim:field qualifier="advisor" mdschema="dc" language="en_US" element="contributor">Nishan Bichajian.</dim:field>
+<dim:field qualifier="author" authority="bd3dc984c42e3a620c2f77bd6621c30d" confidence="UNSET" mdschema="dc" language="en_US" element="contributor">Opitz, Calvin Fred</dim:field>
+<dim:field qualifier="accessioned" mdschema="dc" element="date">2013-03-01T14:54:03Z</dim:field>
+<dim:field qualifier="available" mdschema="dc" element="date">2013-03-01T14:54:03Z</dim:field>
+<dim:field qualifier="issued" mdschema="dc" language="en_US" element="date">1965</dim:field>
+<dim:field qualifier="uri" mdschema="dc" element="identifier">http://hdl.handle.net/1721.1/77356</dim:field>
+<dim:field mdschema="dc" language="en_US" element="description">Massachusetts Institute of Technology. Dept. of Architecture. Thesis. 1965. B.Arch.</dim:field>
+<dim:field mdschema="dc" language="en_US" element="description">Accompanying drawings held by MIT Museum.</dim:field>
+<dim:field mdschema="dc" language="en_US" element="description">One unnumbered page inserted.</dim:field>
+<dim:field mdschema="dc" language="en_US" element="description">Bibliography: leaf 23.</dim:field>
+<dim:field qualifier="extent" mdschema="dc" language="en_US" element="format">vi, 23, 13 leaves</dim:field>
+<dim:field qualifier="iso" mdschema="dc" language="en_US" element="language">eng</dim:field>
+<dim:field mdschema="dc" language="en_US" element="publisher">Massachusetts Institute of Technology</dim:field>
+<dim:field mdschema="dc" language="en_US" element="rights">M.I.T. theses are protected by 
+copyright. They may be viewed from this source for any purpose, but 
+reproduction or distribution in any format is prohibited without written 
+permission. See provided URL for inquiries about permission.</dim:field>
+<dim:field qualifier="uri" mdschema="dc" language="en_US" element="rights">http://dspace.mit.edu/handle/1721.1/7582</dim:field>
+<dim:field mdschema="dc" language="en_US" element="subject">Architecture</dim:field>
+<dim:field mdschema="dc" language="en_US" element="title">A museum of history for Boston.</dim:field>
+<dim:field mdschema="dc" language="en_US" element="type">Thesis</dim:field>
+<dim:field qualifier="degree" mdschema="dc" language="en_US" element="description">B.Arch.</dim:field>
+<dim:field qualifier="department" mdschema="dc" language="en_US" element="contributor">Massachusetts Institute of Technology. Dept. of Architecture</dim:field>
+<dim:field qualifier="oclc" mdschema="dc" language="en_US" element="identifier">24998559</dim:field>
+</dim:dim>
+</mets:xmlData>
+</mets:mdWrap>
+</mets:dmdSec>
+<mets:fileSec>
+<mets:fileGrp USE="THUMBNAIL">
+<mets:file GROUPID="group_file_20c6ecc1-d0b8-4b82-b62e-f10e2247d25a" CHECKSUM="f2d45559af7af17ab285257a3ac6d335" MIMETYPE="image/jpeg" SIZE="2491" ID="file_92d5147e-cc17-4f78-b169-dbe66ceb78f3" CHECKSUMTYPE="MD5">
+<mets:FLocat LOCTYPE="URL" xlink:label="Generated Thumbnail" xlink:href="/bitstream/handle/1721.1/77356/24998559-MIT.pdf.jpg?sequence=5&amp;isAllowed=y" xlink:type="locator" xlink:title="24998559-MIT.pdf.jpg"/>
+</mets:file>
+</mets:fileGrp>
+<mets:fileGrp USE="COVERPAGE"/>
+<mets:fileGrp USE="CONTENT">
+<mets:file GROUPID="group_file_20c6ecc1-d0b8-4b82-b62e-f10e2247d25a" CHECKSUM="492c9bce51814ba4313577b6d2fd52de" MIMETYPE="application/pdf" SIZE="4816802" ID="file_20c6ecc1-d0b8-4b82-b62e-f10e2247d25a" CHECKSUMTYPE="MD5">
+<mets:FLocat LOCTYPE="URL" xlink:label="Full printable version" xlink:href="/bitstream/handle/1721.1/77356/24998559-MIT.pdf?sequence=2&amp;isAllowed=y" xlink:type="locator" xlink:title="24998559-MIT.pdf"/>
+</mets:file>
+</mets:fileGrp>
+<mets:fileGrp USE="TEXT">
+<mets:file GROUPID="group_file_20c6ecc1-d0b8-4b82-b62e-f10e2247d25a" CHECKSUM="a28710f7c2b5ff14dbab1a357e45d626" MIMETYPE="text/plain" SIZE="41766" ID="file_5d4f762c-171d-44dc-81e5-5220015126be" CHECKSUMTYPE="MD5">
+<mets:FLocat LOCTYPE="URL" xlink:label="Extracted text" xlink:href="/bitstream/handle/1721.1/77356/24998559-MIT.pdf.txt?sequence=4&amp;isAllowed=n" xlink:type="locator" xlink:title="24998559-MIT.pdf.txt"/>
+</mets:file>
+</mets:fileGrp>
+</mets:fileSec>
+<mets:structMap LABEL="DSpace" TYPE="LOGICAL">
+<mets:div DMDID="dmd_1" TYPE="DSpace Item">
+<mets:div ID="div_2" TYPE="DSpace Content Bitstream">
+<mets:fptr FILEID="file_20c6ecc1-d0b8-4b82-b62e-f10e2247d25a"/>
+</mets:div>
+</mets:div>
+</mets:structMap>
+</mets:METS>

@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:METS xmlns:mets="http://www.loc.gov/METS/" xmlns:xlink="http://www.w3.org/TR/xlink/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dim="http://www.dspace.org/xmlns/dspace/dim" PROFILE="DSPACE METS SIP Profile 1.0" LABEL="DSpace Item" OBJID="/handle/1721.1/60733" ID="hdl:1721.1/60733" OBJEDIT="/admin/item?itemID=7b48b942-14a6-484d-8091-92828c34a5f0">
+<mets:dmdSec GROUPID="group_dmd_0" ID="dmd_1">
+<mets:mdWrap OTHERMDTYPE="DIM" MDTYPE="OTHER">
+<mets:xmlData>
+<dim:dim dspaceType="ITEM">
+<dim:field qualifier="advisor" mdschema="dc" language="en_US" element="contributor">D. B. Broughton.</dim:field>
+<dim:field qualifier="author" authority="d8bcc6680b2f8b821940d444f4466319" confidence="UNSET" mdschema="dc" language="en_US" element="contributor">Neuhaus, Sanford J</dim:field>
+<dim:field qualifier="accessioned" mdschema="dc" element="date">2011-01-26T14:16:10Z</dim:field>
+<dim:field qualifier="available" mdschema="dc" element="date">2011-01-26T14:16:10Z</dim:field>
+<dim:field qualifier="issued" mdschema="dc" language="en_US" element="date">1945</dim:field>
+<dim:field qualifier="uri" mdschema="dc" element="identifier">http://hdl.handle.net/1721.1/60733</dim:field>
+<dim:field mdschema="dc" language="en_US" element="description">Massachusetts Institute of Technology. Dept. of Chemical Engineering. Thesis. 1945. S.B.</dim:field>
+<dim:field mdschema="dc" language="en_US" element="description">MIT Institute Archives copy bound with: Solvent extraction of tung oil press cake, by Arthur Jacques Lacroix, Jr. (1945).</dim:field>
+<dim:field mdschema="dc" language="en_US" element="description">Bibliography: leaf 65.</dim:field>
+<dim:field qualifier="extent" mdschema="dc" language="en_US" element="format">66 leaves</dim:field>
+<dim:field qualifier="iso" mdschema="dc" language="en_US" element="language">eng</dim:field>
+<dim:field mdschema="dc" language="en_US" element="publisher">Massachusetts Institute of Technology</dim:field>
+<dim:field mdschema="dc" language="en_US" element="rights">M.I.T. theses are protected by 
+copyright. They may be viewed from this source for any purpose, but 
+reproduction or distribution in any format is prohibited without written 
+permission. See provided URL for inquiries about permission.</dim:field>
+<dim:field qualifier="uri" mdschema="dc" language="en_US" element="rights">http://dspace.mit.edu/handle/1721.1/7582</dim:field>
+<dim:field mdschema="dc" language="en_US" element="subject">Chemical Engineering</dim:field>
+<dim:field mdschema="dc" language="en_US" element="title">The corrosion of steel in saline solutions of hydrogen sulfide.</dim:field>
+<dim:field mdschema="dc" language="en_US" element="type">Thesis</dim:field>
+<dim:field qualifier="degree" mdschema="dc" language="en_US" element="description">S.B.</dim:field>
+<dim:field qualifier="department" mdschema="dc" language="en_US" element="contributor">Massachusetts Institute of Technology. Dept. of Chemical Engineering</dim:field>
+<dim:field qualifier="oclc" mdschema="dc" language="en_US" element="identifier">26660934</dim:field>
+</dim:dim>
+</mets:xmlData>
+</mets:mdWrap>
+</mets:dmdSec>
+<mets:fileSec>
+<mets:fileGrp USE="THUMBNAIL">
+<mets:file GROUPID="group_file_56179861-356f-4a63-be0e-4d4ebead2043" CHECKSUM="3e49e4d1067d0fbbe731befa119931aa" MIMETYPE="image/jpeg" SIZE="2910" ID="file_7a915d62-a752-45ce-9db3-29dd9d1b12b2" CHECKSUMTYPE="MD5">
+<mets:FLocat LOCTYPE="URL" xlink:label="Generated Thumbnail" xlink:href="/bitstream/handle/1721.1/60733/26660934-MIT.pdf.jpg?sequence=5&amp;isAllowed=y" xlink:type="locator" xlink:title="26660934-MIT.pdf.jpg"/>
+</mets:file>
+</mets:fileGrp>
+<mets:fileGrp USE="COVERPAGE"/>
+<mets:fileGrp USE="CONTENT">
+<mets:file GROUPID="group_file_56179861-356f-4a63-be0e-4d4ebead2043" CHECKSUM="c3128bace3c9a63e2749e12cf58e22c3" MIMETYPE="application/pdf" SIZE="3635219" ID="file_56179861-356f-4a63-be0e-4d4ebead2043" CHECKSUMTYPE="MD5">
+<mets:FLocat LOCTYPE="URL" xlink:label="Full printable version" xlink:href="/bitstream/handle/1721.1/60733/26660934-MIT.pdf?sequence=2&amp;isAllowed=y" xlink:type="locator" xlink:title="26660934-MIT.pdf"/>
+</mets:file>
+</mets:fileGrp>
+<mets:fileGrp USE="TEXT">
+<mets:file GROUPID="group_file_56179861-356f-4a63-be0e-4d4ebead2043" CHECKSUM="7e3d3d7d196ecedd31864b0c4c881196" MIMETYPE="text/plain" SIZE="54483" ID="file_0cb01baa-6c23-4f4e-b609-b0fc602fb434" CHECKSUMTYPE="MD5">
+<mets:FLocat LOCTYPE="URL" xlink:label="Extracted text" xlink:href="/bitstream/handle/1721.1/60733/26660934-MIT.pdf.txt?sequence=4&amp;isAllowed=n" xlink:type="locator" xlink:title="26660934-MIT.pdf.txt"/>
+</mets:file>
+</mets:fileGrp>
+</mets:fileSec>
+<mets:structMap LABEL="DSpace" TYPE="LOGICAL">
+<mets:div DMDID="dmd_1" TYPE="DSpace Item">
+<mets:div ID="div_2" TYPE="DSpace Content Bitstream">
+<mets:fptr FILEID="file_56179861-356f-4a63-be0e-4d4ebead2043"/>
+</mets:div>
+</mets:div>
+</mets:structMap>
+</mets:METS>

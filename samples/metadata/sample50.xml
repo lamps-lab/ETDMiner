@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:METS xmlns:mets="http://www.loc.gov/METS/" xmlns:xlink="http://www.w3.org/TR/xlink/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dim="http://www.dspace.org/xmlns/dspace/dim" PROFILE="DSPACE METS SIP Profile 1.0" LABEL="DSpace Item" OBJID="/handle/1721.1/45198" ID="hdl:1721.1/45198" OBJEDIT="/admin/item?itemID=76021712-bc82-498f-81c3-b57c2c22dfff">
+<mets:dmdSec GROUPID="group_dmd_0" ID="dmd_1">
+<mets:mdWrap OTHERMDTYPE="DIM" MDTYPE="OTHER">
+<mets:xmlData>
+<dim:dim dspaceType="ITEM">
+<dim:field qualifier="author" authority="5e5eb9ebf65b5e2f265b60c10ae46dde" confidence="UNSET" mdschema="dc" language="en_US" element="contributor">Maack, Viggo E</dim:field>
+<dim:field qualifier="accessioned" mdschema="dc" element="date">2009-04-29T17:06:45Z</dim:field>
+<dim:field qualifier="available" mdschema="dc" element="date">2009-04-29T17:06:45Z</dim:field>
+<dim:field qualifier="issued" mdschema="dc" language="en_US" element="date">1947</dim:field>
+<dim:field qualifier="uri" mdschema="dc" element="identifier">http://hdl.handle.net/1721.1/45198</dim:field>
+<dim:field mdschema="dc" language="en_US" element="description">Thesis (B.S.) Massachusetts Institute of Technology. Dept. of Naval Architecture and Marine Engineering, 1947.</dim:field>
+<dim:field mdschema="dc" language="en_US" element="description">MIT copy bound with: An investigation of current drydocking practice / Richard P. Knapp. 1947.</dim:field>
+<dim:field qualifier="statementofresponsibility" mdschema="dc" language="en_US" element="description">by Viggo E. Maack.</dim:field>
+<dim:field qualifier="extent" mdschema="dc" language="en_US" element="format">43 leaves</dim:field>
+<dim:field qualifier="iso" mdschema="dc" language="en_US" element="language">eng</dim:field>
+<dim:field mdschema="dc" language="en_US" element="publisher">Massachusetts Institute of Technology</dim:field>
+<dim:field mdschema="dc" language="en_US" element="rights">M.I.T. theses are protected by 
+copyright. They may be viewed from this source for any purpose, but 
+reproduction or distribution in any format is prohibited without written 
+permission. See provided URL for inquiries about permission.</dim:field>
+<dim:field qualifier="uri" mdschema="dc" language="en_US" element="rights">http://dspace.mit.edu/handle/1721.1/7582</dim:field>
+<dim:field mdschema="dc" language="en_US" element="subject">Naval Architecture and Marine Engineering</dim:field>
+<dim:field mdschema="dc" language="en_US" element="title">Trawler design</dim:field>
+<dim:field mdschema="dc" language="en_US" element="type">Thesis</dim:field>
+<dim:field qualifier="degree" mdschema="dc" language="en_US" element="description">B.S.</dim:field>
+<dim:field qualifier="department" mdschema="dc" language="en_US" element="contributor">Massachusetts Institute of Technology. Dept. of Naval Architecture and Marine Engineering</dim:field>
+<dim:field qualifier="oclc" mdschema="dc" language="en_US" element="identifier">28034793</dim:field>
+</dim:dim>
+</mets:xmlData>
+</mets:mdWrap>
+</mets:dmdSec>
+<mets:fileSec>
+<mets:fileGrp USE="THUMBNAIL">
+<mets:file GROUPID="group_file_c815a84e-6f25-4669-b753-b072c9e74cca" CHECKSUM="ea7d57768e5e840d79ed20c1cca97b37" MIMETYPE="image/jpeg" SIZE="2169" ID="file_42987658-9a30-4cb5-87a4-9c8532267ed0" CHECKSUMTYPE="MD5">
+<mets:FLocat LOCTYPE="URL" xlink:label="Generated Thumbnail" xlink:href="/bitstream/handle/1721.1/45198/28034793-MIT.pdf.jpg?sequence=5&amp;isAllowed=y" xlink:type="locator" xlink:title="28034793-MIT.pdf.jpg"/>
+</mets:file>
+</mets:fileGrp>
+<mets:fileGrp USE="COVERPAGE"/>
+<mets:fileGrp USE="CONTENT">
+<mets:file GROUPID="group_file_c815a84e-6f25-4669-b753-b072c9e74cca" CHECKSUM="f57d04588a7188afaf5db5ea8da0ea88" MIMETYPE="application/pdf" SIZE="13895423" ID="file_c815a84e-6f25-4669-b753-b072c9e74cca" CHECKSUMTYPE="MD5">
+<mets:FLocat LOCTYPE="URL" xlink:label="Full printable version" xlink:href="/bitstream/handle/1721.1/45198/28034793-MIT.pdf?sequence=2&amp;isAllowed=y" xlink:type="locator" xlink:title="28034793-MIT.pdf"/>
+</mets:file>
+</mets:fileGrp>
+<mets:fileGrp USE="TEXT">
+<mets:file GROUPID="group_file_c815a84e-6f25-4669-b753-b072c9e74cca" CHECKSUM="dca5d472cab3c0fe346a37acb30793da" MIMETYPE="text/plain" SIZE="38506" ID="file_b36bb802-f2b1-474a-ba33-3c50a5f9d245" CHECKSUMTYPE="MD5">
+<mets:FLocat LOCTYPE="URL" xlink:label="Extracted text" xlink:href="/bitstream/handle/1721.1/45198/28034793-MIT.pdf.txt?sequence=4&amp;isAllowed=n" xlink:type="locator" xlink:title="28034793-MIT.pdf.txt"/>
+</mets:file>
+</mets:fileGrp>
+</mets:fileSec>
+<mets:structMap LABEL="DSpace" TYPE="LOGICAL">
+<mets:div DMDID="dmd_1" TYPE="DSpace Item">
+<mets:div ID="div_2" TYPE="DSpace Content Bitstream">
+<mets:fptr FILEID="file_c815a84e-6f25-4669-b753-b072c9e74cca"/>
+</mets:div>
+</mets:div>
+</mets:structMap>
+</mets:METS>
