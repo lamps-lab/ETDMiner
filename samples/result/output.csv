@@ -1,0 +1,101 @@
+,first_name1,middle_name1,last_name1,first_name2,middle_name2,last_name2,first_name_status,middle_name_status,last_name_status
+0,chih-ping,,tso,chih-ping,,tso,1,1,1
+1,,,,anton,keats,simson,1,1,0
+2,joseph,m.,desimone,johannes,philipp,holschneider,1,0,0
+3,johannes,philipp,holschneider,moss,eisenberg,sweedler,1,1,1
+4,moss,eisenberg,sweedler,aly,mahmoud,el-shiekh,1,1,1
+5,,,,calvin,fred,opitz,1,1,0
+6,,,,ary,mochtar,pedju,1,1,0
+7,ary,m.,pedju,james,robert,bonar,1,0,1
+8,james,robert,bonar,gerald,,gruber,1,1,1
+9,gerald,,gruber,robert,hamilton,cannon,1,1,1
+10,,,,gerhardt,christopher,clementson,1,1,0
+11,gerhardt,c.,clementson,terry,,winograd,1,0,1
+12,terry,,winograd,george,,nez,1,1,1
+13,george,,nez,charles,winfred,washburn,1,1,1
+14,charles,winfred,washburn,douglas,s,powell,1,1,1
+15,,,,frederick,h,reuter,1,1,0
+16,frederick,h.,reuter,alan,,stenning,1,0,1
+17,,,,paul,r,paslay,1,1,0
+18,paul,r.,paslay,watt,wetmore,webb,1,0,1
+19,watt,wetmore,webb,,,reiner,1,1,1
+20,thomas,a.,reiner,vivaldis,,paukulis,1,0,1
+21,,,,richard,m,horowitz,1,1,0
+22,richard,m.,horowitz,walter,,suchon,1,0,1
+23,walter,,suchon,harold,w,wyckoff,1,1,1
+24,harold,winfield,wyckoff,norman,keith,scott,1,0,1
+25,,,,george,barwick,wilmot,1,1,0
+26,george,barwick,wilmot,richard,h,lyon,1,1,1
+27,,,,robert,edward,coughlin,1,1,0
+28,,,,robert,lee,jeffcoat,1,1,0
+29,robert,lee,jeffcoat,eric,herschler,bott,1,1,1
+30,eric,hershler,bott,alberto,,azuma,1,0,1
+31,alberto,,azuma,octavio,,maizza neto,1,1,1
+32,octavio,maizza,neto,leon,gardner,shiman,1,0,0
+33,leon,gardner,shiman,chryssostomos,,chryssostomidis,1,1,1
+34,chryssostomos,,chryssostomidis,steven,coburn,hayes,1,1,1
+35,steven,c.,hayes,william,harold,soupcoff,1,0,1
+36,william,harold,soupcoff,david,,cylkowski,1,1,1
+37,david,,cylkowskt,vivian,ellen,loftness,1,1,0
+38,vivian,ellen,loftness,sanford,j,neuhaus,1,1,1
+39,sanford,j.,neuhaus,xinmin,,chen,1,0,1
+40,hsin-min,,chen,arnold,,gangnes,0,1,1
+41,,,,archie,allan,stone,1,1,0
+42,archie,allan,stone,richard,y,newton,1,1,1
+43,richard,y.,newton,stephen,h,crandall,1,0,1
+44,stephen,harry,crandall,edmund,aloysius,kelly,1,0,1
+45,edmund,francis,kelly,viggo,e,maack,1,0,1
+46,viggo,e.,maack,peter,joseph,palmer,1,0,1
+47,james,a.,holmes,satyaki,,basu,1,0,0
+48,kenneth,l.,kienas,enrique,,kilayko,1,0,0
+49,margaret,mary,sheridan,alfred,israel,raff,1,1,0
+50,richard,j.fenchak,,james,,holmes ,1,0,0
+51,john,william,hellgeth,henry,van tuyl,cotter ,1,1,0
+52,walid,khaled,eid,melissa,clare,connaway ,1,1,0
+53,mutasim,fuad,baba,claire,elaine,crutchley ,1,1,0
+54,thomas,a.,dingus,sterling,,marshall ,1,0,0
+55,mickey,e.,gunter,mohammad,ali,saed ,1,0,0
+56,peter,joseph,palmer,bruce,shiu-leung,tang ,1,1,1
+57,henry,,van tuyl cotter,james,richard,mckenna ,1,1,0
+58,melissa,clare,connaway,joanna,,grymes ,1,1,0
+59,claire,elaine,crutchley,,,randall ,1,1,0
+60,sterling,i.,marshall,doron,,shalev ,1,0,0
+61,mohammad,ali,saed,kenneth,lee,kienas ,1,1,0
+62,bruce,s.,tang,robert,nicholas,antenucci ,1,0,0
+63,james,r.,mckenna,lena,,hall ,1,0,0
+64,joanna,m.,grymes,brian,victor,bredenkamp ,1,0,0
+65,,,,ronald,eugene,hawkins ,1,1,0
+66,doron,,shalev,lin-ying,,lai ,1,1,0
+67,satyaki,,basu,william,,yurochko ,1,1,1
+68,robert,nicholas,antenucci,helene,sarah,aiello ,1,1,0
+69,lena,,hall,beryle,crockett,santon ,1,1,0
+70,brian,victor,bredenkamp,,,clemons ,1,1,0
+71,ronald,e.,hawkins,ann,marie,hellstern ,1,0,0
+72,lin-,ying,lai,margaret,mary,sheridan ,0,0,0
+73,william,p.,yurochko,cynthia,ann,arnold ,1,0,0
+74,helene,,aiello,libra,cleveland,gysel ,1,1,0
+75,beryle,crockett,santon,juan,pedro,arhancet ,1,1,0
+76,,,,ha,chul,kim ,1,1,0
+77,ann,marie,hellstern,jorge,luis,yordan hernandez ,1,1,0
+78,enrique,l.,kilayko,john,alan,chermak ,1,0,1
+79,cynthia,a.,arnold,robert,thomas,arenburg ,1,0,0
+80,libra,jan cleveland,gysel,christine,mae,gruhn ,1,0,0
+81,juan,p.,arhancet,gbemiga,adekunmi,ayangbile ,1,0,0
+82,ha,chul,kim,david,henry,cohen ,1,1,0
+83,jorge,luis yordan,hernandez,richard,john,fenchak ,1,0,0
+84,john,alan,chermak,linda,ellen,morris ,1,1,0
+85,robert,thomas,arenburg,anthony,joseph,oliveira ,1,1,0
+86,christine,mae,gruhn,lillie,mae,anderton ,1,1,0
+87,gbemiga,a.,ayangbile,kimberly,dean,bennett ,1,0,0
+88,david,h.,cohen,susan,ann,semanic-lauth ,1,0,0
+89,alfred,i.,raff,chian-yeun,,chang ,1,0,1
+90,linda,e.,morris,allen,lee,sehn ,1,0,0
+91,anthony,j.,oliveira,zhiqiang,,wang ,1,0,0
+92,lillie,mae,anderton,william,john,chism ,1,1,0
+93,k.d.,,bennett,thomas,,barton ,0,1,0
+94,susan,,semanic-lauth,john,william,hellgeth ,1,1,0
+95,chian-yeun,,chang,joseph,mark,desimone ,1,1,0
+96,allen,lee,sehn,walid,khaled,eid ,1,1,0
+97,zhiqiang,,wang,mutasim,fuad,baba ,1,1,0
+98,william,john,chism,thomas,,dingus ,1,1,0
+99,thomas,f.,barton,mickey,,gunter ,1,0,0
