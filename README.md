@@ -37,7 +37,7 @@ It contains the sample dataset which has been tested out in the above process
 # src:
 It contains the "tesseract.py" script. After executing the Dockerfile, run this script on the sample output (.tif format)
 
-# images:
+# ocr_experimented_images:
 It contains the sample output images in .tif format (paper-1 to paper-7) along with the output of the tesseract result (HOCR_result and paper-1_result)   
 	
 	
