@@ -114,36 +114,92 @@ concatDf.to_csv("extracted_degree.csv",index = None)
 
 https://regex101.com/r/kX5EcM/1
 """
-
+#
 f1 = open("degree_appendix.csv", 'r', encoding = "ISO-8859-1")
 reader = csv.reader(f1)
-f2 = open("extracted_degree.csv", 'r', encoding = "ISO-8859-1")
-reader1 = csv.reader(f2)
-
+##f2 = open("extracted_degree.csv", 'r', encoding = "ISO-8859-1")
+##reader1 = csv.reader(f2)
+#
+#def dict_degree():
+#    deg_appendix = {}
+#    for row in reader:
+#        deg_appendix.append(row[0]:row[1])
+#    return deg_appendix
+#
+#dict_check = dict_degree()
+#print(dict_check)
+        
 #reading the degree appendix file as a dictionary
 def dict_degree():
     degree_appendix = {}
     for row in reader:
-        degree_appendix[row[0]] = {'abb': row[1]}
+        degree_appendix[row[0]] = row[1]
     return degree_appendix
 
 dict_check = dict_degree()
+#print(dict_check)
 
-#unpacking the keys and values and save the key result
-def key_check(dict_data):
-    keys = [key for key, value in dict_check.items()]
-    if keys is not None:
-        return keys
-    
-key_result = key_check(dict_check)
+df = pd.read_csv("extracted_degree.csv")
+frame = pd.DataFrame(df)
+#print(frame)
 
-#unpacking the keys and values and save the value result
-def value_check(dict_data):
-    values = [value['abb'] for key, value in dict_check.items()]
-    if values is not None:
-        return values
+#mapping a dictionary to a dataframe
+frame['extracted_degree'] = frame['extracted_degree'].map(dict_check)
+frame.to_csv("extracted_degree-mapped.csv", index = None)
+#print(frame)
 
-value_result = value_check(dict_check)
+df1 = pd.read_csv("extracted_degree-mapped.csv")
+frame1 = pd.read_csv("metadata_degree.csv")
+df2 = pd.DataFrame(frame1)
+
+df3 = pd.DataFrame(columns=['degree_match'])
+df3['degree_match'] = df1['extracted_degree'].eq(df2['degree']).replace([True, False], ['1', '0'])
+
+result = pd.concat([df1, df2, df3], axis = 1, sort = False)
+result.to_csv("degree_output.csv")
+
+df4 = pd.read_csv("degree_output.csv")
+count = df4['degree_match'].value_counts()
+print(count)
+
+
+
+#dfList=[]
+#colname=['degree_major', 'abb']
+#frame = pd.read_csv("degree_appendix.csv", header = None)
+#dfList.append(frame)
+#concatDf = pd.concat(dfList, axis =0)
+#concatDf.columns=colname
+#concatDf.to_csv("degree_appendix-v1.csv",index = None)
+#
+#frame1 = pd.read_csv("degree_appendix-v1.csv")
+#frame2 = pd.read_csv("extracted_degree.csv")
+
+
+             
+
+
+##unpacking the keys and values and save the key result
+#def key_check(dict_data):
+#    keys = [key for key, value in dict_check.items()]
+#    if keys is not None:
+#        return keys
+#    
+#key_result = key_check(dict_check)
+#
+##unpacking the keys and values and save the value result
+#def value_check(dict_data):
+#    values = [value['abb'] for key, value in dict_check.items()]
+#    if values is not None:
+#        return values
+#
+#value_result = value_check(dict_check)
+##print(value_result)
+#
+#df1 = pd.read_csv("extracted_degree.csv")
+#df2 = df1['extracted_degree'].all()
+
+        
     
 
 #df = pd.read_csv("extracted_degree.csv")
