@@ -1,0 +1,101 @@
+,extracted_academic-program,academic-program,academic-program_visual-inspect,program_match,visual-inspected-match
+0,['nuclear engineering'],['nuclear engineering'],['nuclear engineering'],1,1
+1,['mathematics'],['mathematics'],['mathematics'],1,1
+2,['mechanical engineering'],['mechanical engineering'],['mechanical engineering'],1,1
+3,['naval architecture and marine engineering'],['naval architecture and marine engineering'],['naval architecture and marine engineering'],1,1
+4,['mathematics'],['mathematics'],['mathematics'],1,1
+5,['aeronautics and astronautics'],['aeronautics and astronautics'],['aeronautics and astronautics'],1,1
+6,['mechanical engineering'],['mechanical engineering'],['mechanical engineering'],1,1
+7,['mechanical engineering'],['mechanical engineering'],['mechanical engineering'],1,1
+8,['naval architecture and marine engineering'],['naval architecture and marine engineering'],['naval architecture and marine engineering'],1,1
+9,['mechanical engineering'],['mechanical engineering'],['mechanical engineering'],1,1
+10,[''],['architecture'],[''],0,1
+11,['mathematics'],['mathematics'],['mathematics'],1,1
+12,['mechanical engineering fibers and polymers division'],['mechanical engineering'],['mechanical engineering fibers and polymers division'],0,1
+13,['architecture'],['architecture'],['architecture'],1,1
+14,['architecture'],['architecture'],['architecture'],1,1
+15,['architecture'],['architecture'],['architecture'],1,1
+16,['chemical engineering'],['chemical engineering'],['chemical engineering'],1,1
+17,['mechanical engineering'],['mechanical engineering'],['mechanical engineering'],1,1
+18,[''],['aeronautical engineering dept.'],[''],0,1
+19,['city and regional planning'],['architecture'],['city and regional planning'],0,1
+20,[''],['architecture'],[''],0,1
+21,[''],['architecture'],[''],0,1
+22,['city and regional planning'],['architecture'],['city and regional planning'],0,1
+23,['mechanical engineering'],['mechanical engineering'],['mechanical engineering'],1,1
+24,['mechanical engineering'],['mechanical engineering'],['mechanical engineering'],1,1
+25,['metal-carbon systems'],['metallurgy'],['metallurgy'],0,0
+26,['city and regional planning'],['architecture'],['city and regional planning'],0,1
+27,['architecture'],['architecture'],['architecture'],1,1
+28,['architecture'],['architecture'],['architecture'],1,1
+29,['biology'],['biology'],['biology'],1,1
+30,[''],['architecture'],[''],0,1
+31,['chemistry'],['chemistry'],['chemistry'],1,1
+32,['physics'],['physics'],['physics'],1,1
+33,['city and regional planning'],['city and regional planning'],['city and regional planning'],1,1
+34,['mechanical engineering'],['mechanical engineering'],['mechanical engineering'],1,1
+35,['mechanical engineering and physics'],['mechanical engineering'],['mechanical engineering and physics'],0,1
+36,['mechanical engineering'],['mechanical engineering'],['mechanical engineering'],1,1
+37,['mechanical engineering'],['mechanical engineering'],['mechanical engineering'],1,1
+38,['mathematics'],['mathematics'],['mathematics'],1,1
+39,['architecture'],['architecture'],['architecture'],1,1
+40,['architecture'],['architecture'],['architecture'],1,1
+41,['architecture'],['architecture'],['architecture'],1,1
+42,['architecture'],['architecture'],['architecture'],1,1
+43,['chemical engineering'],['chemical engineering'],['chemical engineering'],1,1
+44,['metallurgy'],['metallurgy'],['metallurgy'],1,1
+45,[''],['architecture'],['architecture and planning'],0,0
+46,[''],['civil and environmental engineering'],[''],0,1
+47,[''],['mechanical engineering'],[''],0,1
+48,['mathematics'],['mathematics'],['mathematics'],1,1
+49,[''],['naval architecture and marine engineering'],[''],0,1
+50,['vocational and technical education'],['marketing'],['vocational and technical education'],0,1
+51,['administration and supervision of special education'],['special education'],['administration and supervision of special education'],0,1
+52,['chemistry'],['polymers'],['chemistry'],0,1
+53,['educational administration'],['education history'],['educational administration'],0,1
+54,['chemistry'],['analytical chemistry'],['chemistry'],0,1
+55,['civil engineering'],['civil engineering'],['civil engineering'],1,1
+56,['electrical engineering'],['electrical engineering'],['electrical engineering'],1,1
+57,['industrial engineering and operations research'],['industrial engineering'],['industrial engineering and operations research'],0,1
+58,['geological sciences'],['geology'],['geological sciences'],0,1
+59,['botany'],['botany'],['botany'],1,1
+60,['chemistry'],['chemistry'],['chemistry'],1,1
+61,['finance'],['finance'],['finance'],1,1
+62,['educational administration'],['school administration'],['educational administration'],0,1
+63,['electrical engineering'],['electrical engineering'],['electrical engineering'],1,1
+64,['engineering mechanics'],['materials science'],['engineering mechanics'],0,1
+65,['agronomy'],['agronomy'],['agronomy'],1,1
+66,['family and child development'],['home economics'],['family and child development'],0,1
+67,['botany'],['botany'],['botany'],1,1
+68,['engineering science and mechanics'],['mechanics'],['engineering science and mechanics'],0,1
+69,['food science and technology'],['food science'],['food science and technology'],0,1
+70,['educational administration'],['school administration'],['educational administration'],0,1
+71,['forestry'],['forestry'],['forestry'],1,1
+72,['counselor education'],['academic guidance counseling'],['counselor education'],0,1
+73,['aerospace and ocean engineering'],['aerospace materials'],['aerospace and ocean engineering'],0,1
+74,['curriculum and instruction'],['curricula'],['curriculum and instruction'],0,1
+75,['administration and supervision of special education'],['academic guidance counseling'],['administration and supervision of special education'],0,1
+76,['curriculum and instruction'],['curricula'],['curriculum and instruction'],0,1
+77,['counseling and student personnel services'],['academic guidance counseling'],['counseling and student personnel services'],0,1
+78,['chemistry'],['polymers'],['chemistry'],0,1
+79,['materials engineering science'],['polymers'],['materials engineering science'],0,1
+80,['adult and continuing education'],['adult education'],['adult and continuing education'],0,1
+81,['chemical engineering'],['chemical engineering'],['chemical engineering'],1,1
+82,['chemical engineering'],['chemical engineering'],['chemical engineering'],1,1
+83,['mining and minerals engineering'],['mining'],['mining and minerals engineering'],0,1
+84,['geology'],['geochemistry'],['geology'],0,1
+85,['engineering mechanics'],['mechanics'],['engineering mechanics'],0,1
+86,['biology'],['botany'],['biology'],0,1
+87,['animal science'],['livestock'],['animal science'],0,1
+88,['wood science and forest products'],['forestry'],['wood science and forest products'],0,1
+89,[''],['developmental psychology'],['adult and continuing education'],0,0
+90,['educational administration'],['school administration'],['educational administration'],0,1
+91,['vocational and technical education'],['vocational education'],['vocational and technical education'],0,1
+92,['electrical engineering'],['optics'],['electrical engineering'],0,1
+93,['family and child development'],['preschool education'],['family and child development'],0,1
+94,['environmental design and planning'],['architecture'],['environmental design and planning'],0,1
+95,['civil engineering'],['civil engineering'],['civil engineering'],1,1
+96,['engineering mechanics'],['materials science'],['engineering mechanics'],0,1
+97,['weed science'],['botany'],['weed science'],0,1
+98,['chemistry'],['chemistry'],['chemistry'],1,1
+99,['chemistry'],['polymers'],['chemistry'],0,1
