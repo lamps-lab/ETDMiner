@@ -4,8 +4,6 @@ Created on Fri Mar 20 00:20:22 2020
 
 @author: Muntabir Choudhury
 
-https://regex101.com/r/r2bMqp/2
-
 Trial 1:
     (at the[\n| ]|from the\n|at[\n| ]|faculty of the\n)(\w.+[\n]?\w+[^,]?\w+)
 Trial 2:
@@ -15,12 +13,15 @@ Trial 3:
 Trial 4:
     (at the[\n| ]|from the\n|at[\n| ]|faculty of the[\n| ]|faculty of\n)(\w.+[\n]?\w+[^,]?\w+[ ]\w+)
 Trial 5:
-    (at the[\n| ]|from the\n|at[\n| ]|faculty of the\n)(\w.+[\n]?\w+[^,]?\w+[ ]?\w+) -- most likely final
+    (at the[\n| ]|from the\n|at[\n| ]|faculty of the\n)(\w.+[\n]?\w+[^,]?\w+[ ]?\w+)
 
-Final one:
-    (at the[\n| ]|from the\n|at[\n| ]|faculty of the[\n| ]|faculty of\n)(\w.+[\n]?\w+[^,]?\w+[ ]?\w+[ ]?\w+[ ]?\w+)
+Trial 6:
+    (at the[\n| ]|from the\n|at[\n| ]|faculty of the[\n| ]|faculty of\n)(\w.+[\n]?\w+[^,]?\w+[ ]?\w+[ ]?\w+[ ]?\w+) --most likely final
+
+Fine tuned and final:
+    (at the[\n| ]|from the\n|at[\n| ]|faculty of the[\n| ]|faculty of\n)(\w.+[\n]?\w+[ ]?\w+[ ]?\w+[ ]?\w+[ ]?\w+[^(Jan(uary)?|Sep(tember)?(\s\d{4})?|(,)?|author?|(fulfillment)?|laminates]\w+)
     
-    https://regex101.com/r/r2bMqp/3
+    https://regex101.com/r/r2bMqp/5
 """
 
 import os, os.path
@@ -86,8 +87,9 @@ for name in files:
     tokenized_string = listToString(sent_tokens)
 
     #extracting degree from each text document
-    institution_data = re.compile(r'(at the[\n| ]|from the\n|at[\n| ]|faculty of the[\n| ]|faculty of\n)(\w.+[\n]?\w+[^,]?\w+[ ]?\w+[ ]?\w+[ ]?\w+)')
-            
+    institution_data = re.compile(r'(at the[\n| ]|from the\n|at[\n| ]|faculty of the[\n| ]|faculty of\n)(\w.+[\n]?\w+[ ]?\w+[ ]?\w+[ ]?\w+[ ]?\w+[^(jan(uary)?|'
+                                    'sep(tember)?(\s\d{4})?|(,)?|(author)?|(fullfillment)?|(laminates)?]\w+)')
+    
     def matched(tokenized_string):
         ins = institution_data.match(tokenized_string) #giving the none values
         ins = institution_data.search(tokenized_string) #searching for the values which has a match
@@ -96,16 +98,11 @@ for name in files:
         return ins.group(2) #the 2nd capturing group which is a value (i.e degree) will be returned
             
     check = matched(tokenized_string)
-#    print(check)
+    #print(check)
 
-    stopwords = ['august,', 'keith', 'scott', 'thesis', 'n.','january', 'february', 'march', 'april', 'may','in', '.', '1975', '1955', '1945', '1946',
-                         'june', 'july', 'august', 'september', 'october', 'november', 'december', '1', '2', '3', '4', '5', '6', '7',
-                         '8', '9', '10', '11', '12', '13', '14', '15', '16', '17', '18', '19', '20', '21', '22', '23', '24', 'n',
-                         '25', '26', '27', '28', '29', '30', '31', '1970', '1965', '1950', '1964', 's.b.,', '5.m.,', 'mech.', 'e.,', 'author','redacted',
-                         'spring', 'signature', 'partial', 'fulfillment', 'his/her', 'initial', 'appointment', 'holes', 'composite', 'laminates',
-                         'by', 'doron', 'shalev', 'moment', 'solution', 'linda', 'e', 'the']
+    stopwords = ['s.b.,', '5.m.,', 'mech.', 'e.,']
     key = check.split() #spliting the strings
-#    print(key)
+    #print(key)
     resultwords = [word for word in key if word not in stopwords] #iterating through words in each row and checking the stopwords that needs to be removed
     result = ' '.join(resultwords).rstrip('of').strip() #joining the words with a space after removing the stopwords
 
@@ -135,4 +132,3 @@ result.to_csv("ins_output.csv")
 df4 = pd.read_csv("ins_output.csv")
 count = df4['ins_match'].value_counts()
 print(count)
-
