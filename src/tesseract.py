@@ -43,7 +43,7 @@ cv2.imwrite(filename, gray)
 # the temporary file
 text = pytesseract.image_to_string(Image.open(filename))
 os.remove(filename)  
-print(text)
+print(text.encode('utf-8'))
 
 # show the output images
 # cv2.imshow("Image", image)
