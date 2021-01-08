@@ -1,0 +1,16 @@
+PREDICTION MODEL FOR THE ONSET OF EDGE-EFFECT DELAMINATION
+AT HOLES IN COMPOSITE LAMINATES
+by
+Doron Shalev
+Dissertation submitted to the Faculty of the
+Virginia Polytechnic Institute and State University
+in partial fulfillment of the requirements for the degree of
+DOCTOR OF PHILOSOPHY
+in
+Engineering Science and Mechanics
+APPROVED:
+K. L. Reifsnider
+C. W. Smith R. T. Haftka
+R. M. Jones R. A. Heller
+July, 1988
+Blacksburg, Virginia

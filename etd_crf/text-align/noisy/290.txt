@@ -1,0 +1,22 @@
+GLOBAL PROGRAM OPTIMIZATIONS
+
+Charles Matthew Geschke
+
+Department of Computer Science
+Carnegie-Mellon University
+Pittsburgh, Pennsylvania 15213
+October, 1972
+
+Submitted to Carnegie-Mellon University in
+partial fulfillment of the requirements for
+the degree of Doctor of Philosophy.
+
+This work was supported by the Advanced Research Projects Agency of the
+Office of the Secretary of defense (F44620-70-C-9197) and is monitored by
+‘the Air Force Office of Scientific Research. This document has been
+approved for public release and sale; its distribution is unlimited.
+
+.
+
+R ; . ;
+eproduced with permission of the copyright owner. Further reproduction prohibited without permission

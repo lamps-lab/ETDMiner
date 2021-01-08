@@ -1,0 +1,13 @@
+CONTROL STRUCTURES
+FOR PROGRAMMING LANGUAGES
+by
+David A. Fisher
+Computer Science Department
+Carnegie-Mellon University
+Pittsburgh, Pennsylvania
+May 1970
+Submitted to Carnegie-Mellon University
+in partial fulfillment of the requirements
+for the degree of Doctor of Philosophy
+This work was supported by the Advanced Research Projects
+Agency of the Office of the Secretary of Defense (SD-146).

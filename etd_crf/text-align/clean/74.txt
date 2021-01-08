@@ -1,0 +1,15 @@
+Suboptimal Period Design for a Maneuvering Missile to Evade Tracking Filters
+by
+Lin- Ying Lai
+Dissertation submitted to the Faculty of the
+Virginia Polytechnic Institute and State University
+in partial fulfillment of the requirements for the degree of
+Doctor of Philosophy
+in
+Aerospace and Ocean Engineering
+APPROVED:
+Harold L. Stalford, Chairman
+Eugene M. Cliff Frederick H. uty,
+John A. Burns Scott L. Hendricks
+July, 1988
+Blacksburg, Virginia
