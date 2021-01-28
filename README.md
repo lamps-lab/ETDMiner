@@ -39,6 +39,9 @@ It contains the "tesseract.py" script. After executing the Dockerfile, run this 
 
 # ocr_experimented_images:
 It contains the sample output images in .tif format (paper-1 to paper-7) along with the output of the tesseract result (HOCR_result and paper-1_result)   
+
+# webcrawler
+Contains the crawlers & parsers for different universities developed to collect ETDs and extract metadata from the webpages.
 	
 	
 		
