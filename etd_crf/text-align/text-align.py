@@ -8,12 +8,19 @@ Created on Thu Jan  7 18:37:26 2021
 
 
 #import libraries
+import bs4
 import edlib
 import glob
 import re
+from xml.etree import ElementTree as ET
+from itertools import zip_longest
+import nltk
+from nltk import word_tokenize
 
-clean = '/Users/muntabir/Documents/text-align_data/clean/4.txt'
-noisy = '/Users/muntabir/Documents/text-align_data/noisy/4.txt'
+
+clean = '/Users/muntabir/Documents/etdExtraction/etd_crf_result/text-align/annotated-test/*.xml'
+noisy_hocr = '/Users/muntabir/Documents/etdExtraction/etd_crf_result/text-align/hocr/*.html'
+
 
 numbers = re.compile(r'(\d+)')
 def numericalSort(value):
@@ -23,94 +30,105 @@ def numericalSort(value):
 
 
 target_files = sorted(glob.glob(clean), key=numericalSort)
-query_files = sorted(glob.glob(noisy), key=numericalSort)
+hocr_files = sorted(glob.glob(noisy_hocr), key=numericalSort)
 
-def query():
-    for files in query_files:
-        with open(files, mode='r') as query:
-            texts = []
-            for lines in query:
-                text = lines
-                texts.append(text)
-            return texts
 
-def target():
+def hocr_parser():
+    for files in hocr_files:
+        with open(files, mode='r', encoding='utf-8') as html_input:
+            soup = bs4.BeautifulSoup(html_input,'lxml')
+            ocr_words = soup.findAll("span", {"class": "ocrx_word"})
+            tokens_bbox = []
+            for line in ocr_words:
+                words = line.text.replace("\n"," ").strip()
+                title = line['title']
+                #The coordinates of the bounding box
+                x1,y1,x2,y2 = map(int, title[5:title.find(";")].split())
+                tokens_bbox.append({"x1":x1,"y1":y1,"x2":x2,"y2":y2,"text": words})
+                
+            return tokens_bbox
+
+def ann():
     for files in target_files:
-        with open(files, mode='r') as target:
-            texts = []
-            for lines in target:
-                texts.append(lines)   
-            
-            return texts
-        
+        new_data = b''
+        data = ET.parse(files).getroot()
+        temp = ET.tostring(data)
+        new_data = new_data+temp
+    return new_data
+
+
+def parser(text):
+    regex = r'(<\S*?>)*(\w+[^<>]*?\w)(<\S*?>)(\s?|<\S*?>?|\,?|\, ?|\n?)(\n?\w.?[^<]*|[>]?\.*[\s?]*\n)'
+    pattern = re.compile(regex)
+    html = text.decode('utf-8')
+    doc = re.findall(pattern, html)
+    return doc
+    
+
+def tuplesTolist(tuple_text):
+    list_of_tuples = list(map(list, tuple_text))
+    flat_list = [item for sublist in list_of_tuples for item in sublist]
+    return flat_list
+
 def listToString(text):
         _string = ""
-        return(_string.join(text))
+        return _string.join(text)
 
-query_text = query()
-query_ = listToString(query_text)
-target_text = target()
-target_ = listToString(target_text)
-result = edlib.align(query_, target_, task="path")
+def align(text):
+    stopwords = ['<title>', '</title>', '<author>', '</author>', '<university>', '</university>', '<degree>', '</degree>', '<advisor>', '\n',
+             '</advisor>', '<year>', '</year>', '<program>', '</program>']
+    result_list = [word for word in text if word not in stopwords]
+    token_list = []
+    for items in result_list:
+        tokens = word_tokenize(items)
+        token_list.append(tokens)
+    
+    flat_list = [item for sublist in token_list for item in sublist]
+    target_ = [words for words in flat_list]
+    target_ = " ".join(target_)
+        
+    
+    query_text = hocr_parser()
+    query_ = [texts['text'].replace("\n"," ").strip() for texts in query_text]
+    query_ = " ".join(query_)
 
-alignment = edlib.getNiceAlignment(result, query_, target_)
-#print("\n".join(alignment.values()))
-print(alignment['target_aligned'])
-#import re
+    
+    result = edlib.align(query_, target_, task="path", additionalEqualities=[])
+    alignment = edlib.getNiceAlignment(result, query_, target_)
+    aligned = alignment['target_aligned']
+    return aligned
+
+
+def merge(lines, pos):
+    l3 = [{**u, **v} for u, v in zip_longest(lines, pos, fillvalue={})]
+    return l3
+
+
+ann_text = ann()
+
+target_text = parser(ann_text)
+#print(target_text)
+
+convert_tuples = tuplesTolist(target_text)
+
+text_align = align(convert_tuples)
+
+tokenized = text_align.split()
+#print(tokenized)
+
+lines = []
+for elements in tokenized:
+    lines.append({"text":elements})
+#print(lines)
+
+pos_info = hocr_parser()
+
+keys = ['x1','y1','x2','y2']
+pos = [dict((k, d[k]) for k in keys) for d in pos_info]
+##print(pos[0].values())
 #
-#import edlib
-#
-#
-#def edlib2pair(query: str, ref: str, mode: str = "NW") -> str:
-#    """
-#    input:
-#    query and ref sequence
-#
-#    output:
-#    TAAGGATGGTCCCAT TC
-#     ||||  ||||.||| ||
-#     AAGG  GGTCTCATATC
-#    """
-#
-#    a = edlib.align(query, ref, mode=mode, task="path")
-#    ref_pos = a["locations"][0][0]
-#    query_pos = 0
-#    ref_aln = match_aln = query_aln = ""
-#
-#    for step, code in re.findall("(\d+)(\D)", a["cigar"]):
-#        step = int(step)
-#        if code == "=":
-#            ref_aln += ref[ref_pos : ref_pos + step]
-#            ref_pos += step
-#            query_aln += query[query_pos : query_pos + step]
-#            query_pos += step
-#            match_aln += "|" * step
-#        elif code == "X":
-#            ref_aln += ref[ref_pos : ref_pos + step]
-#            ref_pos += step
-#            query_aln += query[query_pos : query_pos + step]
-#            query_pos += step
-#            match_aln += "." * step
-#        elif code == "D":
-#            ref_aln += ref[ref_pos : ref_pos + step]
-#            ref_pos += step
-#            query_aln += " " * step
-#            query_pos += 0
-#            match_aln += " " * step
-#        elif code == "I":
-#            ref_aln += " " * step
-#            ref_pos += 0
-#            query_aln += query[query_pos : query_pos + step]
-#            query_pos += step
-#            match_aln += " " * step
-#        else:
-#            pass
-#
-#    return f"{ref_aln}\n{match_aln}\n{query_aln}"
-#
-#
-#if __name__ == "__main__":
-#    REF = "TAAGGATGGTCCCATTC"
-#    QUERY = "AAGGGGTCTCATATC"
-#    PAIR = edlib2pair(QUERY, REF, mode="NW")
-#    print(PAIR)
+merged = merge(lines, pos)
+print(merged)
+
+
+
