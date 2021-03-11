@@ -1,0 +1,151 @@
+predicted-program,gt-program,visual-program,match
+chemistry,organic chemistry,chemistry,0
+mechanical engineering,mechanical engineering,mechanical engineering,1
+chemistry,organic chemistry,chemistry,0
+chemistry,organic chemistry,chemistry,0
+chemical engineering,chemical engineering,chemical engineering,1
+mechanical engineering,mechanical engineering,mechanical engineering,1
+mechanical engineering,mechanical engineering,mechanical engineering,1
+chemistry,organic chemistry,chemistry,0
+chemistry,organic chemistry,chemistry,0
+aerospace engineering,aerospace materials,aerospace engineering,0
+chemistry,organic chemistry,chemistry,0
+chemistry,organic chemistry,chemistry,0
+civil engineering,mechanical engineering,civil engineering,0
+nuclear engineering,nuclear physics;energy,nuclear engineering,0
+aerospace engineering,aerospace materials,aerospace engineering,0
+electrical engineering,electrical engineering,electrical engineering,1
+chemical engineering,metallurgy,chemical engineering,0
+mechanical engineering,mechanical engineering,mechanical engineering,1
+mechanical engineering,chemical engineering,mechanical engineering,0
+chemical engineering,mechanical engineering,chemical engineering,0
+electrical engineering,computer science,electrical engineering,0
+linguistics,linguistics,linguistics,1
+"""""",mathematics,operations research,0
+"""""",business community,business,0
+electrical engineering,mathematics,electrical engineering,0
+geology,geology,geology,1
+statistics,statistics,statistics,1
+economics,finance,economics,0
+"""""",biology,biological sciences,0
+economics,finance,economics,0
+"""""",biology,biology,0
+"""""",engineering,engineering economic systems,0
+"""""",geology,geology,0
+aeronautics,aerospace materials,aeronautics and astronautics,0
+"""""",entomology;ecology,biological sciences,0
+aeronautics,aerospace materials,aeronautics and astronautics,0
+geophysics,geophysics,geophysics,1
+philosophy,philosophy,philosophy,1
+electrical engineering,electrical engineering,electrical engineering,1
+electrical engineering,engineering,engineering economic systems,0
+psychology,psychology;experiments,psychology,0
+"""""",school administration,education,0
+"""""",education,education,0
+"""""",education history;music history;music education,music: music education,0
+physics,physics,physics,1
+metallurgical engineering,metallurgy,metallurgical engineering,0
+linguistics,linguistics,linguistics,1
+"""""",philosophy,philosophy,0
+mathematics,mathematics,mathematics,1
+philosophy,philosophy,philosophy,1
+"""""",chemistry,chemistry,0
+"""""",music,music: musicology,0
+"""""",biochemistry,biological chemistry,0
+"""""",geology,geology,0
+linguistics,linguistics,linguistics,1
+chemical engineering,chemical engineering,chemical engineering,1
+"""""",linguistics,english language & literature,0
+"""""",finance,economics,0
+philosophy,philosophy,philosophy,1
+"""""",political science,political science,0
+"""""",music,"""""",0
+"""""",nuclear physics,"""""",0
+"""""",aerospace materials;energy,"""""",0
+"""""",mechanical engineering,"""""",0
+"""""",music,"""""",0
+"""""",immunology,"""""",0
+"""""",music,"""""",0
+"""""",chemistry,"""""",0
+"""""",education history,"""""",0
+"""""",zoology,"""""",0
+"""""",higher education,"""""",0
+"""""",academic guidance counseling,"""""",0
+"""""",botany,"""""",0
+"""""",international law;international relations,"""""",0
+"""""",educational psychology,"""""",0
+"""""",nuclear physics,"""""",0
+"""""",nuclear physics,"""""",0
+"""""",ancient civilizations,"""""",0
+"""""",history,"""""",0
+"""""",literature,"""""",0
+"""""",biomedical research,"""""",0
+"""""",statistics,"""""",0
+"""""",health,hygine and public health,0
+"""""",geography,"""""",0
+"""""",mechanics,"""""",0
+"""""",geography,"""""",0
+"""""",history,"""""",0
+"""""",fine arts,"""""",0
+"""""",computer science,"""""",0
+"""""",oceanography,"""""",0
+"""""",literature,"""""",0
+"""""",germanic literature,"""""",0
+"""""",religion,"""""",0
+"""""",economics,"""""",0
+"""""",economics,"""""",0
+"""""",materials science,"""""",0
+"""""",ancient civilizations,"""""",0
+"""""",history,"""""",0
+"""""",economic theory,"""""",0
+"""""",mechanical engineering,"""""",0
+"""""",mechanical engineering,"""""",0
+"""""",biomedical research,"""""",0
+"""""",chemical engineering,"""""",0
+"""""",engineering,"""""",0
+"""""",particle physics,"""""",0
+"""""",physics,"""""",0
+"""""",optics,"""""",0
+"""""",electrical engineering,"""""",0
+"""""",mathematics,"""""",0
+"""""",geophysics,"""""",0
+"""""",electrical engineering,"""""",0
+"""""",electrical engineering,"""""",0
+"""""",electrical engineering,"""""",0
+"""""",astronomy;astrophysics,"""""",0
+"""""",civil engineering,"""""",0
+"""""",chemistry,"""""",0
+"""""",mechanics,"""""",0
+"""""",mathematics,"""""",0
+"""""",astronomy;astrophysics,"""""",0
+"""""",physics,"""""",0
+"""""",condensation,"""""",0
+"""""",mathematics,"""""",0
+"""""",mathematics,"""""",0
+"""""",mathematics,"""""",0
+"""""",mechanical engineering,"""""",0
+"""""",vocational education,"""""",0
+"""""",zoology,"""""",0
+"""""",microbiology,"""""",0
+"""""",polymers,"""""",0
+"""""",economics,"""""",0
+"""""",agricultural engineering,"""""",0
+"""""",recreation,"""""",0
+"""""",forestry,"""""",0
+"""""",agricultural engineering,"""""",0
+"""""",civil engineering,"""""",0
+"""""",psychotherapy,"""""",0
+"""""",botany,"""""",0
+"""""",zoology,"""""",0
+"""""",organic chemistry;energy,"""""",0
+"""""",fluid dynamics;gases,"""""",0
+"""""",livestock,"""""",0
+"""""",livestock,"""""",0
+"""""",school administration,"""""",0
+"""""",ecology,"""""",0
+"""""",vocational education,"""""",0
+"""""",economics,"""""",0
+"""""",civil engineering,"""""",0
+"""""",chemistry,"""""",0
+"""""",civil engineering,"""""",0
+,vocational education,"""""",0

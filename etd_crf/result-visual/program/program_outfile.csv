@@ -1,0 +1,151 @@
+predicted-program,gt-program,visual-program,match,visual-match
+chemistry,organic chemistry,chemistry,0,1
+mechanical engineering,mechanical engineering,mechanical engineering,1,1
+chemistry,organic chemistry,chemistry,0,1
+chemistry,organic chemistry,chemistry,0,1
+chemical engineering,chemical engineering,chemical engineering,1,1
+mechanical engineering,mechanical engineering,mechanical engineering,1,1
+mechanical engineering,mechanical engineering,mechanical engineering,1,1
+chemistry,organic chemistry,chemistry,0,1
+chemistry,organic chemistry,chemistry,0,1
+aerospace engineering,aerospace materials,aerospace engineering,0,1
+chemistry,organic chemistry,chemistry,0,1
+chemistry,organic chemistry,chemistry,0,1
+civil engineering,mechanical engineering,civil engineering,0,1
+nuclear engineering,nuclear physics;energy,nuclear engineering,0,1
+aerospace engineering,aerospace materials,aerospace engineering,0,1
+electrical engineering,electrical engineering,electrical engineering,1,1
+chemical engineering,metallurgy,chemical engineering,0,1
+mechanical engineering,mechanical engineering,mechanical engineering,1,1
+mechanical engineering,chemical engineering,mechanical engineering,0,1
+chemical engineering,mechanical engineering,chemical engineering,0,1
+electrical engineering,computer science,electrical engineering,0,1
+linguistics,linguistics,linguistics,1,1
+"""""",mathematics,operations research,0,0
+"""""",business community,business,0,0
+electrical engineering,mathematics,electrical engineering,0,1
+geology,geology,geology,1,1
+statistics,statistics,statistics,1,1
+economics,finance,economics,0,1
+"""""",biology,biological sciences,0,0
+economics,finance,economics,0,1
+"""""",biology,biology,0,0
+"""""",engineering,engineering economic systems,0,0
+"""""",geology,geology,0,0
+aeronautics,aerospace materials,aeronautics and astronautics,0,0
+"""""",entomology;ecology,biological sciences,0,0
+aeronautics,aerospace materials,aeronautics and astronautics,0,0
+geophysics,geophysics,geophysics,1,1
+philosophy,philosophy,philosophy,1,1
+electrical engineering,electrical engineering,electrical engineering,1,1
+electrical engineering,engineering,engineering economic systems,0,0
+psychology,psychology;experiments,psychology,0,1
+"""""",school administration,education,0,0
+"""""",education,education,0,0
+"""""",education history;music history;music education,music: music education,0,0
+physics,physics,physics,1,1
+metallurgical engineering,metallurgy,metallurgical engineering,0,1
+linguistics,linguistics,linguistics,1,1
+"""""",philosophy,philosophy,0,0
+mathematics,mathematics,mathematics,1,1
+philosophy,philosophy,philosophy,1,1
+"""""",chemistry,chemistry,0,0
+"""""",music,music: musicology,0,0
+"""""",biochemistry,biological chemistry,0,0
+"""""",geology,geology,0,0
+linguistics,linguistics,linguistics,1,1
+chemical engineering,chemical engineering,chemical engineering,1,1
+"""""",linguistics,english language & literature,0,0
+"""""",finance,economics,0,0
+philosophy,philosophy,philosophy,1,1
+"""""",political science,political science,0,0
+"""""",music,"""""",0,1
+"""""",nuclear physics,"""""",0,1
+"""""",aerospace materials;energy,"""""",0,1
+"""""",mechanical engineering,"""""",0,1
+"""""",music,"""""",0,1
+"""""",immunology,"""""",0,1
+"""""",music,"""""",0,1
+"""""",chemistry,"""""",0,1
+"""""",education history,"""""",0,1
+"""""",zoology,"""""",0,1
+"""""",higher education,"""""",0,1
+"""""",academic guidance counseling,"""""",0,1
+"""""",botany,"""""",0,1
+"""""",international law;international relations,"""""",0,1
+"""""",educational psychology,"""""",0,1
+"""""",nuclear physics,"""""",0,1
+"""""",nuclear physics,"""""",0,1
+"""""",ancient civilizations,"""""",0,1
+"""""",history,"""""",0,1
+"""""",literature,"""""",0,1
+"""""",biomedical research,"""""",0,1
+"""""",statistics,"""""",0,1
+"""""",health,hygine and public health,0,0
+"""""",geography,"""""",0,1
+"""""",mechanics,"""""",0,1
+"""""",geography,"""""",0,1
+"""""",history,"""""",0,1
+"""""",fine arts,"""""",0,1
+"""""",computer science,"""""",0,1
+"""""",oceanography,"""""",0,1
+"""""",literature,"""""",0,1
+"""""",germanic literature,"""""",0,1
+"""""",religion,"""""",0,1
+"""""",economics,"""""",0,1
+"""""",economics,"""""",0,1
+"""""",materials science,"""""",0,1
+"""""",ancient civilizations,"""""",0,1
+"""""",history,"""""",0,1
+"""""",economic theory,"""""",0,1
+"""""",mechanical engineering,"""""",0,1
+"""""",mechanical engineering,"""""",0,1
+"""""",biomedical research,"""""",0,1
+"""""",chemical engineering,"""""",0,1
+"""""",engineering,"""""",0,1
+"""""",particle physics,"""""",0,1
+"""""",physics,"""""",0,1
+"""""",optics,"""""",0,1
+"""""",electrical engineering,"""""",0,1
+"""""",mathematics,"""""",0,1
+"""""",geophysics,"""""",0,1
+"""""",electrical engineering,"""""",0,1
+"""""",electrical engineering,"""""",0,1
+"""""",electrical engineering,"""""",0,1
+"""""",astronomy;astrophysics,"""""",0,1
+"""""",civil engineering,"""""",0,1
+"""""",chemistry,"""""",0,1
+"""""",mechanics,"""""",0,1
+"""""",mathematics,"""""",0,1
+"""""",astronomy;astrophysics,"""""",0,1
+"""""",physics,"""""",0,1
+"""""",condensation,"""""",0,1
+"""""",mathematics,"""""",0,1
+"""""",mathematics,"""""",0,1
+"""""",mathematics,"""""",0,1
+"""""",mechanical engineering,"""""",0,1
+"""""",vocational education,"""""",0,1
+"""""",zoology,"""""",0,1
+"""""",microbiology,"""""",0,1
+"""""",polymers,"""""",0,1
+"""""",economics,"""""",0,1
+"""""",agricultural engineering,"""""",0,1
+"""""",recreation,"""""",0,1
+"""""",forestry,"""""",0,1
+"""""",agricultural engineering,"""""",0,1
+"""""",civil engineering,"""""",0,1
+"""""",psychotherapy,"""""",0,1
+"""""",botany,"""""",0,1
+"""""",zoology,"""""",0,1
+"""""",organic chemistry;energy,"""""",0,1
+"""""",fluid dynamics;gases,"""""",0,1
+"""""",livestock,"""""",0,1
+"""""",livestock,"""""",0,1
+"""""",school administration,"""""",0,1
+"""""",ecology,"""""",0,1
+"""""",vocational education,"""""",0,1
+"""""",economics,"""""",0,1
+"""""",civil engineering,"""""",0,1
+"""""",chemistry,"""""",0,1
+"""""",civil engineering,"""""",0,1
+,vocational education,"""""",0,0
