@@ -1,0 +1,33 @@
+Rate of Convergence and Optimality Properties of Root Finding
+and Optimization Algorithms
+
+By
+Arthur Ira Cohen
+
+B.S. (Cornell University) 1965
+M.S. (Cornell University) 1967
+
+DISSERTATION
+
+Submitted in partial satisfaction of the requirements for the degree of
+DOCTOR OF PHILOSOPHY
+
+in
+
+Engineering
+in the
+GRADUATE DIVISION
+of the
+
+UNIVERSITY OF CALIFORNIA, BERKELEY
+
+Approved:
+
+  
+  
+
+Committee in Charge
+
+DEGREE CONFERRED SEPT. 18, 1970
+
+eeeerreosneeseeeoeneeoene eee noe ee ee eee reese ee

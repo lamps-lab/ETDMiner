@@ -1,0 +1,36 @@
+A Class of Topologically Free Locally Convex Spaces
+and Related Group Hopf Algebras
+
+By
+Kalman George Brauner, Jr.
+
+B.S. (University of Washington) 1965
+M.A. (University of California) 1967
+
+DISSERTATION
+Submitted in partial satisfaction of the requirements for the
+degree of
+DOCTOR OF PHILOSOPHY
+in
+
+Mathematics
+
+in the
+GRADUATE DIVISION
+of the
+
+UNIVERSITY OF CALIFORNIA, BERKELEY
+
+Approved:
+
+/sa/ Marc A. Rieffel
+
+/s/ John L. Kelley
+
+/s/ Charles A. Desoer
+
+Committee in Charge
+
+DEGREE CONFERRED SEPT. 19, 1972
+
+Reproduced with permission of the copyright owner. Further reproduction prohibited without permission.

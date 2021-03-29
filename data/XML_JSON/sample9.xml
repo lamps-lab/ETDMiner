@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:METS xmlns:mets="http://www.loc.gov/METS/" xmlns:xlink="http://www.w3.org/TR/xlink/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dim="http://www.dspace.org/xmlns/dspace/dim" PROFILE="DSPACE METS SIP Profile 1.0" LABEL="DSpace Item" OBJID="/handle/1721.1/14229" ID="hdl:1721.1/14229" OBJEDIT="/admin/item?itemID=3d1ea639-4604-41c8-b724-dea06e4f5540">
+<mets:dmdSec GROUPID="group_dmd_0" ID="dmd_1">
+<mets:mdWrap OTHERMDTYPE="DIM" MDTYPE="OTHER">
+<mets:xmlData>
+<dim:dim dspaceType="ITEM">
+<dim:field qualifier="advisor" mdschema="dc" language="en_US" element="contributor">Jay W. Forrester.</dim:field>
+<dim:field qualifier="author" authority="e40f83667dd2aa1bf97fe0536953144e" confidence="UNSET" mdschema="dc" language="en_US" element="contributor">Raff, Alfred Israel</dim:field>
+<dim:field qualifier="accessioned" mdschema="dc" element="date">2005-08-10T17:44:59Z</dim:field>
+<dim:field qualifier="available" mdschema="dc" element="date">2005-08-10T17:44:59Z</dim:field>
+<dim:field qualifier="issued" mdschema="dc" language="en_US" element="date">1960</dim:field>
+<dim:field qualifier="uri" mdschema="dc" element="identifier">http://hdl.handle.net/1721.1/14229</dim:field>
+<dim:field mdschema="dc" language="en_US" element="description">Thesis (M.S.)--Massachusetts Institute of Technology, Dept. of Naval Architecture and Marine Engineering, 1960.</dim:field>
+<dim:field mdschema="dc" language="en_US" element="description">Includes bibliographical references (leaves 76-77).</dim:field>
+<dim:field qualifier="statementofresponsibility" mdschema="dc" language="en_US" element="description">by Alfred I. Raff.</dim:field>
+<dim:field qualifier="extent" mdschema="dc" language="en_US" element="format">100 â&#132;&#147;.</dim:field>
+<dim:field qualifier="extent" mdschema="dc" element="format">6750413 bytes</dim:field>
+<dim:field qualifier="extent" mdschema="dc" element="format">6750170 bytes</dim:field>
+<dim:field qualifier="mimetype" mdschema="dc" element="format">application/pdf</dim:field>
+<dim:field qualifier="mimetype" mdschema="dc" element="format">application/pdf</dim:field>
+<dim:field qualifier="iso" mdschema="dc" language="en_US" element="language">eng</dim:field>
+<dim:field mdschema="dc" language="en_US" element="publisher">Massachusetts Institute of Technology</dim:field>
+<dim:field mdschema="dc" language="en_US" element="rights">M.I.T. theses are protected by copyright. They may be viewed from this source for any purpose, but reproduction or distribution in any format is prohibited without written permission. See provided URL for inquiries about permission.</dim:field>
+<dim:field qualifier="uri" mdschema="dc" element="rights">http://dspace.mit.edu/handle/1721.1/7582</dim:field>
+<dim:field mdschema="dc" language="en_US" element="subject">Naval Architecture and Marine Engineering</dim:field>
+<dim:field qualifier="lcc" mdschema="dc" language="en_US" element="subject">HE566.T3 R136</dim:field>
+<dim:field mdschema="dc" language="en_US" element="title">Dynamics of the tankship industry</dim:field>
+<dim:field mdschema="dc" language="en_US" element="type">Thesis</dim:field>
+<dim:field qualifier="degree" mdschema="dc" language="en_US" element="description">M.S.</dim:field>
+<dim:field qualifier="department" mdschema="dc" language="en_US" element="contributor">Massachusetts Institute of Technology. Dept. of Naval Architecture and Marine Engineering</dim:field>
+<dim:field qualifier="oclc" mdschema="dc" language="en_US" element="identifier">22480950</dim:field>
+</dim:dim>
+</mets:xmlData>
+</mets:mdWrap>
+</mets:dmdSec>
+<mets:fileSec>
+<mets:fileGrp USE="THUMBNAIL">
+<mets:file GROUPID="group_file_0428120d-251a-4e07-ac90-1db2e3accfaa" CHECKSUM="f3bb25d61cfdb588c803e96c318b6891" MIMETYPE="image/jpeg" SIZE="3479" ID="file_2432c229-41f1-49fb-b56d-9bf66dea2e11" CHECKSUMTYPE="MD5">
+<mets:FLocat LOCTYPE="URL" xlink:label="Generated Thumbnail" xlink:href="/bitstream/handle/1721.1/14229/22480950-MIT.pdf.jpg?sequence=5&amp;isAllowed=y" xlink:type="locator" xlink:title="22480950-MIT.pdf.jpg"/>
+</mets:file>
+</mets:fileGrp>
+<mets:fileGrp USE="COVERPAGE"/>
+<mets:fileGrp USE="CONTENT">
+<mets:file GROUPID="group_file_0428120d-251a-4e07-ac90-1db2e3accfaa" CHECKSUM="eaa7f1a70a9bc47cce955c020982a9d9" MIMETYPE="application/pdf" SIZE="6750170" ID="file_0428120d-251a-4e07-ac90-1db2e3accfaa" CHECKSUMTYPE="MD5">
+<mets:FLocat LOCTYPE="URL" xlink:label="Full printable version" xlink:href="/bitstream/handle/1721.1/14229/22480950-MIT.pdf?sequence=2&amp;isAllowed=y" xlink:type="locator" xlink:title="22480950-MIT.pdf"/>
+</mets:file>
+</mets:fileGrp>
+<mets:fileGrp USE="TEXT">
+<mets:file GROUPID="group_file_0428120d-251a-4e07-ac90-1db2e3accfaa" CHECKSUM="b0629ffe790346ef33635a28b9241f7c" MIMETYPE="text/plain" SIZE="105" ID="file_3f2374a0-b8e9-4eab-8ef1-bd69ba059a97" CHECKSUMTYPE="MD5">
+<mets:FLocat LOCTYPE="URL" xlink:label="Extracted text" xlink:href="/bitstream/handle/1721.1/14229/22480950-MIT.pdf.txt?sequence=4&amp;isAllowed=y" xlink:type="locator" xlink:title="22480950-MIT.pdf.txt"/>
+</mets:file>
+</mets:fileGrp>
+</mets:fileSec>
+<mets:structMap LABEL="DSpace" TYPE="LOGICAL">
+<mets:div DMDID="dmd_1" TYPE="DSpace Item">
+<mets:div ID="div_2" TYPE="DSpace Content Bitstream">
+<mets:fptr FILEID="file_0428120d-251a-4e07-ac90-1db2e3accfaa"/>
+</mets:div>
+</mets:div>
+</mets:structMap>
+</mets:METS>

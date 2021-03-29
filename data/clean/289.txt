@@ -1,0 +1,11 @@
+AN IMPLEMENTATION OF THE BOUNDARY-INTEGRAL TECHNIQUE FOR PLANAR
+PROBLEMS IN ELASTICITY AND ELASTO-PLASTICITY
+Peter C. Riccardella
+Report SM-73-10                                                              April 1973
+Submitted in partial fulfillment of the
+requirements for the degree of
+Doctor of Philosophy at Carnegie-Mellon University
+Department of Mechanical Engineering
+Carnegie Institute of Technology
+Carnegie-Mellon University
+Pittsburgh, Pennsylvania

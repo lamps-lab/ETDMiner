@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:METS xmlns:mets="http://www.loc.gov/METS/" xmlns:xlink="http://www.w3.org/TR/xlink/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dim="http://www.dspace.org/xmlns/dspace/dim" PROFILE="DSPACE METS SIP Profile 1.0" LABEL="DSpace Item" OBJID="/handle/1721.1/35416" ID="hdl:1721.1/35416" OBJEDIT="/admin/item?itemID=9fe44a1f-231f-4a08-884c-c7cd321441fb">
+<mets:dmdSec GROUPID="group_dmd_0" ID="dmd_1">
+<mets:mdWrap OTHERMDTYPE="DIM" MDTYPE="OTHER">
+<mets:xmlData>
+<dim:dim dspaceType="ITEM">
+<dim:field qualifier="advisor" mdschema="dc" language="en_US" element="contributor">John T. Norton, Carl Wagner.</dim:field>
+<dim:field qualifier="author" authority="ebdd0d5dd16553434dd0ea48f65a43e2" confidence="UNSET" mdschema="dc" language="en_US" element="contributor">Webb, Watt Wetmore, 1927-</dim:field>
+<dim:field qualifier="accessioned" mdschema="dc" element="date">2007-01-10T16:04:47Z</dim:field>
+<dim:field qualifier="available" mdschema="dc" element="date">2007-01-10T16:04:47Z</dim:field>
+<dim:field qualifier="issued" mdschema="dc" language="en_US" element="date">1955</dim:field>
+<dim:field qualifier="uri" mdschema="dc" element="identifier">http://hdl.handle.net/1721.1/35416</dim:field>
+<dim:field mdschema="dc" language="en_US" element="description">Thesis (Sc. D.)--Massachusetts Institute of Technology, Dept. of Metallurgy, 1955.</dim:field>
+<dim:field mdschema="dc" language="en_US" element="description">Vita.</dim:field>
+<dim:field mdschema="dc" language="en_US" element="description">Includes bibliographical references (leaves 110-115).</dim:field>
+<dim:field qualifier="statementofresponsibility" mdschema="dc" language="en_US" element="description">by Watt Wetmore Webb.</dim:field>
+<dim:field qualifier="extent" mdschema="dc" language="en_US" element="format">viii, 128 leaves</dim:field>
+<dim:field qualifier="extent" mdschema="dc" element="format">8805296 bytes</dim:field>
+<dim:field qualifier="extent" mdschema="dc" element="format">8804998 bytes</dim:field>
+<dim:field qualifier="mimetype" mdschema="dc" element="format">application/pdf</dim:field>
+<dim:field qualifier="mimetype" mdschema="dc" element="format">application/pdf</dim:field>
+<dim:field qualifier="iso" mdschema="dc" language="en_US" element="language">eng</dim:field>
+<dim:field mdschema="dc" language="en_US" element="publisher">Massachusetts Institute of Technology</dim:field>
+<dim:field mdschema="dc" language="en_US" element="rights">M.I.T. theses are protected by copyright. They may be viewed from this source for any purpose, but reproduction or distribution in any format is prohibited without written permission. See provided URL for inquiries about permission.</dim:field>
+<dim:field qualifier="uri" mdschema="dc" element="rights">http://dspace.mit.edu/handle/1721.1/7582</dim:field>
+<dim:field mdschema="dc" language="en_US" element="subject">Metallurgy</dim:field>
+<dim:field mdschema="dc" language="en_US" element="title">Oxidation studies in metal-carbon systems</dim:field>
+<dim:field mdschema="dc" language="en_US" element="type">Thesis</dim:field>
+<dim:field qualifier="degree" mdschema="dc" language="en_US" element="description">Sc.D.</dim:field>
+<dim:field qualifier="department" mdschema="dc" language="en_US" element="contributor">Massachusetts Institute of Technology. Dept. of Metallurgy</dim:field>
+<dim:field qualifier="oclc" mdschema="dc" language="en_US" element="identifier">31491581</dim:field>
+</dim:dim>
+</mets:xmlData>
+</mets:mdWrap>
+</mets:dmdSec>
+<mets:fileSec>
+<mets:fileGrp USE="THUMBNAIL">
+<mets:file GROUPID="group_file_add615eb-e26d-4780-9c52-c451b5dd2571" CHECKSUM="5586377d6a15b7b853ab73c2c478d782" MIMETYPE="image/jpeg" SIZE="3472" ID="file_72c47ade-bb81-464a-ac5d-0c15109f8f38" CHECKSUMTYPE="MD5">
+<mets:FLocat LOCTYPE="URL" xlink:label="Generated Thumbnail" xlink:href="/bitstream/handle/1721.1/35416/31491581-MIT.pdf.jpg?sequence=4&amp;isAllowed=y" xlink:type="locator" xlink:title="31491581-MIT.pdf.jpg"/>
+</mets:file>
+</mets:fileGrp>
+<mets:fileGrp USE="COVERPAGE"/>
+<mets:fileGrp USE="CONTENT">
+<mets:file GROUPID="group_file_add615eb-e26d-4780-9c52-c451b5dd2571" CHECKSUM="a9036f2de92dc454f7afce89f410f64a" MIMETYPE="application/pdf" SIZE="8804998" ID="file_add615eb-e26d-4780-9c52-c451b5dd2571" CHECKSUMTYPE="MD5">
+<mets:FLocat LOCTYPE="URL" xlink:label="Full printable version" xlink:href="/bitstream/handle/1721.1/35416/31491581-MIT.pdf?sequence=2&amp;isAllowed=y" xlink:type="locator" xlink:title="31491581-MIT.pdf"/>
+</mets:file>
+</mets:fileGrp>
+<mets:fileGrp USE="TEXT">
+<mets:file GROUPID="group_file_add615eb-e26d-4780-9c52-c451b5dd2571" CHECKSUM="39bf8317ffe8ade63f8027fbceed63e7" MIMETYPE="text/plain" SIZE="149434" ID="file_ae8d7820-3771-4be6-a1d6-e03988ae9c13" CHECKSUMTYPE="MD5">
+<mets:FLocat LOCTYPE="URL" xlink:label="Extracted text" xlink:href="/bitstream/handle/1721.1/35416/31491581-MIT.pdf.txt?sequence=3&amp;isAllowed=y" xlink:type="locator" xlink:title="31491581-MIT.pdf.txt"/>
+</mets:file>
+</mets:fileGrp>
+</mets:fileSec>
+<mets:structMap LABEL="DSpace" TYPE="LOGICAL">
+<mets:div DMDID="dmd_1" TYPE="DSpace Item">
+<mets:div ID="div_2" TYPE="DSpace Content Bitstream">
+<mets:fptr FILEID="file_add615eb-e26d-4780-9c52-c451b5dd2571"/>
+</mets:div>
+</mets:div>
+</mets:structMap>
+</mets:METS>

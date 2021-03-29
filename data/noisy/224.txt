@@ -1,0 +1,18 @@
+Design of a Distributed UNIX Kernel
+and
+
+Ats Modelling in CSP
+
+Trevor I. Dix
+
+Februsry 1984
+
+Department of Computer Science
+University of Melbourne
+Parkville, Australia, 3052.
+
+Submitted to the University of Melbourne in
+fulfilment of the requirements for the degree
+of Doctor of Philosophy.
+
+Reproduced with permission of the copyright owner. Further reproduction prohibited without permission.

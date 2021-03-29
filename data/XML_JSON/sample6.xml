@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:METS xmlns:mets="http://www.loc.gov/METS/" xmlns:xlink="http://www.w3.org/TR/xlink/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dim="http://www.dspace.org/xmlns/dspace/dim" PROFILE="DSPACE METS SIP Profile 1.0" LABEL="DSpace Item" OBJID="/handle/1721.1/58137" ID="hdl:1721.1/58137" OBJEDIT="/admin/item?itemID=0145bb7f-30c7-461d-ba61-5deb7d04db54">
+<mets:dmdSec GROUPID="group_dmd_0" ID="dmd_1">
+<mets:mdWrap OTHERMDTYPE="DIM" MDTYPE="OTHER">
+<mets:xmlData>
+<dim:dim dspaceType="ITEM">
+<dim:field qualifier="advisor" mdschema="dc" language="en_US" element="contributor">Walter Wrigley.</dim:field>
+<dim:field qualifier="author" authority="d5d184c103e1298b1a1e56b4d6156e0f" confidence="UNSET" mdschema="dc" language="en_US" element="contributor">Palmer, Peter Joseph</dim:field>
+<dim:field qualifier="accessioned" mdschema="dc" element="date">2010-09-02T14:38:40Z</dim:field>
+<dim:field qualifier="available" mdschema="dc" element="date">2010-09-02T14:38:40Z</dim:field>
+<dim:field qualifier="issued" mdschema="dc" language="en_US" element="date">1970</dim:field>
+<dim:field qualifier="uri" mdschema="dc" element="identifier">http://hdl.handle.net/1721.1/58137</dim:field>
+<dim:field mdschema="dc" language="en_US" element="description">Massachusetts Institute of Technology. Dept. of Aeronautics and Astronautics. Thesis. 1970. M.S.</dim:field>
+<dim:field mdschema="dc" language="en_US" element="description">MICROFICHE COPY ALSO AVAILABLE IN AERONAUTICS LIBRARY.</dim:field>
+<dim:field mdschema="dc" language="en_US" element="description">Bibliography: p. 98-100.</dim:field>
+<dim:field qualifier="extent" mdschema="dc" language="en_US" element="format">viii, 100 p.</dim:field>
+<dim:field qualifier="iso" mdschema="dc" language="en_US" element="language">eng</dim:field>
+<dim:field mdschema="dc" language="en_US" element="publisher">Massachusetts Institute of Technology</dim:field>
+<dim:field mdschema="dc" language="en_US" element="rights">M.I.T. theses are protected by 
+copyright. They may be viewed from this source for any purpose, but 
+reproduction or distribution in any format is prohibited without written 
+permission. See provided URL for inquiries about permission.</dim:field>
+<dim:field qualifier="uri" mdschema="dc" language="en_US" element="rights">http://dspace.mit.edu/handle/1721.1/7582</dim:field>
+<dim:field mdschema="dc" language="en_US" element="subject">Aeronautics and Astronautics</dim:field>
+<dim:field mdschema="dc" language="en_US" element="title">Inertial gyro life-cycle costs - analysis and management.</dim:field>
+<dim:field mdschema="dc" language="en_US" element="type">Thesis</dim:field>
+<dim:field qualifier="degree" mdschema="dc" language="en_US" element="description">M.S.</dim:field>
+<dim:field qualifier="department" mdschema="dc" language="en_US" element="contributor">Massachusetts Institute of Technology. Dept. of Aeronautics and Astronautics</dim:field>
+<dim:field qualifier="oclc" mdschema="dc" language="en_US" element="identifier">24527904</dim:field>
+</dim:dim>
+</mets:xmlData>
+</mets:mdWrap>
+</mets:dmdSec>
+<mets:fileSec>
+<mets:fileGrp USE="THUMBNAIL">
+<mets:file GROUPID="group_file_b1eaebf2-a967-4e39-8090-fe3ccf97b391" CHECKSUM="b028a51623de5327378edcc883499ce3" MIMETYPE="image/jpeg" SIZE="2903" ID="file_da9b2774-e4dc-4bcf-a936-2e28097a6fad" CHECKSUMTYPE="MD5">
+<mets:FLocat LOCTYPE="URL" xlink:label="Generated Thumbnail" xlink:href="/bitstream/handle/1721.1/58137/24527904-MIT.pdf.jpg?sequence=5&amp;isAllowed=y" xlink:type="locator" xlink:title="24527904-MIT.pdf.jpg"/>
+</mets:file>
+</mets:fileGrp>
+<mets:fileGrp USE="COVERPAGE"/>
+<mets:fileGrp USE="CONTENT">
+<mets:file GROUPID="group_file_b1eaebf2-a967-4e39-8090-fe3ccf97b391" CHECKSUM="7a6932c4a74fb2c105b7d9b01dc5cbd6" MIMETYPE="application/pdf" SIZE="7807459" ID="file_b1eaebf2-a967-4e39-8090-fe3ccf97b391" CHECKSUMTYPE="MD5">
+<mets:FLocat LOCTYPE="URL" xlink:label="Full printable version" xlink:href="/bitstream/handle/1721.1/58137/24527904-MIT.pdf?sequence=2&amp;isAllowed=y" xlink:type="locator" xlink:title="24527904-MIT.pdf"/>
+</mets:file>
+</mets:fileGrp>
+<mets:fileGrp USE="TEXT">
+<mets:file GROUPID="group_file_b1eaebf2-a967-4e39-8090-fe3ccf97b391" CHECKSUM="f0897998193db96698fa6f1cfe74913f" MIMETYPE="text/plain" SIZE="171400" ID="file_d4841b99-01fb-4157-aa5f-48e23d034646" CHECKSUMTYPE="MD5">
+<mets:FLocat LOCTYPE="URL" xlink:label="Extracted text" xlink:href="/bitstream/handle/1721.1/58137/24527904-MIT.pdf.txt?sequence=4&amp;isAllowed=n" xlink:type="locator" xlink:title="24527904-MIT.pdf.txt"/>
+</mets:file>
+</mets:fileGrp>
+</mets:fileSec>
+<mets:structMap LABEL="DSpace" TYPE="LOGICAL">
+<mets:div DMDID="dmd_1" TYPE="DSpace Item">
+<mets:div ID="div_2" TYPE="DSpace Content Bitstream">
+<mets:fptr FILEID="file_b1eaebf2-a967-4e39-8090-fe3ccf97b391"/>
+</mets:div>
+</mets:div>
+</mets:structMap>
+</mets:METS>

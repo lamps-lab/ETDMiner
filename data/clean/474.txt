@@ -1,0 +1,10 @@
+A STRUCTURED DESIGN-METHOD FOR SPECIALIZED PROOF PROCEDURES
+Thesis by
+Thomas Carl Brown, dr.
+In Partial Fulfillment of the Requirements
+for the Degree of
+Doctor of Philosophy
+California Institute of Technology
+Pasadena, California
+1975
+(Submitted December 4, 1974)

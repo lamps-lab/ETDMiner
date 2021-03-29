@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:METS xmlns:mets="http://www.loc.gov/METS/" xmlns:xlink="http://www.w3.org/TR/xlink/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dim="http://www.dspace.org/xmlns/dspace/dim" PROFILE="DSPACE METS SIP Profile 1.0" LABEL="DSpace Item" OBJID="/handle/1721.1/117227" ID="hdl:1721.1/117227" OBJEDIT="/admin/item?itemID=c41f3ca9-1626-4a02-99fe-640ac2fe295c">
+<mets:dmdSec GROUPID="group_dmd_0" ID="dmd_1">
+<mets:mdWrap OTHERMDTYPE="DIM" MDTYPE="OTHER">
+<mets:xmlData>
+<dim:dim dspaceType="ITEM">
+<dim:field qualifier="advisor" mdschema="dc" language="en_US" element="contributor">K. Hoffman.</dim:field>
+<dim:field qualifier="author" authority="7f3a53f95244bbe44f75f67c2b394925" confidence="UNSET" mdschema="dc" language="en_US" element="contributor">Shiman, Leon Gardner</dim:field>
+<dim:field qualifier="accessioned" mdschema="dc" element="date">2018-08-01T14:21:14Z</dim:field>
+<dim:field qualifier="available" mdschema="dc" element="date">2018-08-01T14:21:14Z</dim:field>
+<dim:field qualifier="issued" mdschema="dc" language="en_US" element="date">1975</dim:field>
+<dim:field qualifier="uri" mdschema="dc" element="identifier">http://hdl.handle.net/1721.1/117227</dim:field>
+<dim:field mdschema="dc" language="en_US" element="description">Thesis. 1975. Ph.D.--Massachusetts Institute of Technology. Dept. of Mathematics.</dim:field>
+<dim:field mdschema="dc" language="en_US" element="description">Vita.</dim:field>
+<dim:field qualifier="extent" mdschema="dc" language="en_US" element="format">67 leaves</dim:field>
+<dim:field qualifier="iso" mdschema="dc" language="en_US" element="language">eng</dim:field>
+<dim:field mdschema="dc" language="en_US" element="publisher">Massachusetts Institute of Technology</dim:field>
+<dim:field mdschema="dc" language="en_US" element="rights">MIT theses are protected by copyright. They may be viewed, downloaded, or printed from this source but further reproduction or distribution in any format is prohibited without written permission.</dim:field>
+<dim:field qualifier="uri" mdschema="dc" language="en_US" element="rights">http://dspace.mit.edu/handle/1721.1/7582</dim:field>
+<dim:field mdschema="dc" language="en_US" element="subject">Mathematics</dim:field>
+<dim:field qualifier="lcsh" mdschema="dc" language="en_US" element="subject">Vision Mathematical models</dim:field>
+<dim:field qualifier="lcsh" mdschema="dc" language="en_US" element="subject">Visual perception Mathematical models</dim:field>
+<dim:field mdschema="dc" language="en_US" element="title">Grammar for vision.</dim:field>
+<dim:field mdschema="dc" language="en_US" element="type">Thesis</dim:field>
+<dim:field qualifier="degree" mdschema="dc" language="en_US" element="description">Ph.D.</dim:field>
+<dim:field qualifier="department" authority="4f240f1fa324c9fdd02a0b20de786567" confidence="ACCEPTED" mdschema="dc" language="en_US" element="contributor">Massachusetts Institute of Technology. Department of Mathematics</dim:field>
+<dim:field qualifier="oclc" mdschema="dc" language="en_US" element="identifier">02010740</dim:field>
+</dim:dim>
+</mets:xmlData>
+</mets:mdWrap>
+</mets:dmdSec>
+<mets:fileSec>
+<mets:fileGrp USE="THUMBNAIL">
+<mets:file GROUPID="group_file_37ec5e51-dbb9-478f-82f7-f3a804e09999" CHECKSUM="66c018179c5883fcc9e4879a292a64bd" MIMETYPE="image/jpeg" SIZE="3030" ID="file_890a4efb-3cac-4511-aa60-ade987161d64" CHECKSUMTYPE="MD5">
+<mets:FLocat LOCTYPE="URL" xlink:label="Generated Thumbnail" xlink:href="/bitstream/handle/1721.1/117227/02010740-MIT.pdf.jpg?sequence=3&amp;isAllowed=y" xlink:type="locator" xlink:title="02010740-MIT.pdf.jpg"/>
+</mets:file>
+</mets:fileGrp>
+<mets:fileGrp USE="COVERPAGE"/>
+<mets:fileGrp USE="CONTENT">
+<mets:file GROUPID="group_file_37ec5e51-dbb9-478f-82f7-f3a804e09999" CHECKSUM="f39cf75fa93b62c61c4534e5862037ab" MIMETYPE="application/pdf" SIZE="13781340" ID="file_37ec5e51-dbb9-478f-82f7-f3a804e09999" CHECKSUMTYPE="MD5">
+<mets:FLocat LOCTYPE="URL" xlink:label="Full printable version" xlink:href="/bitstream/handle/1721.1/117227/02010740-MIT.pdf?sequence=1&amp;isAllowed=y" xlink:type="locator" xlink:title="02010740-MIT.pdf"/>
+</mets:file>
+</mets:fileGrp>
+<mets:fileGrp USE="TEXT">
+<mets:file GROUPID="group_file_37ec5e51-dbb9-478f-82f7-f3a804e09999" CHECKSUM="9454c9fac22afeef4806461155d4480e" MIMETYPE="text/plain" SIZE="51225" ID="file_cb2d8a5a-e0bc-4e13-b4ff-5c06cbde4627" CHECKSUMTYPE="MD5">
+<mets:FLocat LOCTYPE="URL" xlink:label="Extracted text" xlink:href="/bitstream/handle/1721.1/117227/02010740-MIT.pdf.txt?sequence=2&amp;isAllowed=y" xlink:type="locator" xlink:title="02010740-MIT.pdf.txt"/>
+</mets:file>
+</mets:fileGrp>
+</mets:fileSec>
+<mets:structMap LABEL="DSpace" TYPE="LOGICAL">
+<mets:div DMDID="dmd_1" TYPE="DSpace Item">
+<mets:div ID="div_2" TYPE="DSpace Content Bitstream">
+<mets:fptr FILEID="file_37ec5e51-dbb9-478f-82f7-f3a804e09999"/>
+</mets:div>
+</mets:div>
+</mets:structMap>
+</mets:METS>

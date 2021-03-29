@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:METS xmlns:mets="http://www.loc.gov/METS/" xmlns:xlink="http://www.w3.org/TR/xlink/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dim="http://www.dspace.org/xmlns/dspace/dim" PROFILE="DSPACE METS SIP Profile 1.0" LABEL="DSpace Item" OBJID="/handle/1721.1/76458" ID="hdl:1721.1/76458" OBJEDIT="/admin/item?itemID=512071b4-4aa1-4b6e-bb02-22fb3953ec9d">
+<mets:dmdSec GROUPID="group_dmd_0" ID="dmd_1">
+<mets:mdWrap OTHERMDTYPE="DIM" MDTYPE="OTHER">
+<mets:xmlData>
+<dim:dim dspaceType="ITEM">
+<dim:field qualifier="advisor" mdschema="dc" language="en_US" element="contributor">L. B. Anderson.</dim:field>
+<dim:field qualifier="author" authority="c4ea9b73faca02d6651d51cf719ed862" confidence="UNSET" mdschema="dc" language="en_US" element="contributor">Scott, Norman Keith</dim:field>
+<dim:field qualifier="accessioned" mdschema="dc" element="date">2013-01-23T19:39:08Z</dim:field>
+<dim:field qualifier="available" mdschema="dc" element="date">2013-01-23T19:39:08Z</dim:field>
+<dim:field qualifier="issued" mdschema="dc" language="en_US" element="date">1955</dim:field>
+<dim:field qualifier="uri" mdschema="dc" element="identifier">http://hdl.handle.net/1721.1/76458</dim:field>
+<dim:field mdschema="dc" language="en_US" element="description">Thesis (M.Arch.) Massachusetts Institute of Technology. Dept. of Architecture, 1955.</dim:field>
+<dim:field mdschema="dc" language="en_US" element="description">Bibliography: leaves 253-256.</dim:field>
+<dim:field qualifier="statementofresponsibility" mdschema="dc" language="en_US" element="description">by N. Keith Scott.</dim:field>
+<dim:field qualifier="extent" mdschema="dc" language="en_US" element="format">256, [50] leaves</dim:field>
+<dim:field qualifier="iso" mdschema="dc" language="en_US" element="language">eng</dim:field>
+<dim:field mdschema="dc" language="en_US" element="publisher">Massachusetts Institute of Technology</dim:field>
+<dim:field mdschema="dc" language="en_US" element="rights">M.I.T. theses are protected by 
+copyright. They may be viewed from this source for any purpose, but 
+reproduction or distribution in any format is prohibited without written 
+permission. See provided URL for inquiries about permission.</dim:field>
+<dim:field qualifier="uri" mdschema="dc" language="en_US" element="rights">http://dspace.mit.edu/handle/1721.1/7582</dim:field>
+<dim:field mdschema="dc" language="en_US" element="subject">Architecture</dim:field>
+<dim:field mdschema="dc" language="en_US" element="title">Toward a new architecture for industry</dim:field>
+<dim:field mdschema="dc" language="en_US" element="type">Thesis</dim:field>
+<dim:field qualifier="degree" mdschema="dc" language="en_US" element="description">M.Arch.</dim:field>
+<dim:field qualifier="department" mdschema="dc" language="en_US" element="contributor">Massachusetts Institute of Technology. Dept. of Architecture</dim:field>
+<dim:field qualifier="oclc" mdschema="dc" language="en_US" element="identifier">31459004</dim:field>
+</dim:dim>
+</mets:xmlData>
+</mets:mdWrap>
+</mets:dmdSec>
+<mets:fileSec>
+<mets:fileGrp USE="THUMBNAIL">
+<mets:file GROUPID="group_file_86a58a0b-4efe-412a-920b-86d793c9c480" CHECKSUM="73c9ee8a7034557bc2a4fb30cbe7fa00" MIMETYPE="image/jpeg" SIZE="2760" ID="file_bcbe6075-354c-4b19-b14a-85177de2236c" CHECKSUMTYPE="MD5">
+<mets:FLocat LOCTYPE="URL" xlink:label="Generated Thumbnail" xlink:href="/bitstream/handle/1721.1/76458/31459004-MIT.pdf.jpg?sequence=4&amp;isAllowed=y" xlink:type="locator" xlink:title="31459004-MIT.pdf.jpg"/>
+</mets:file>
+</mets:fileGrp>
+<mets:fileGrp USE="COVERPAGE"/>
+<mets:fileGrp USE="CONTENT">
+<mets:file GROUPID="group_file_86a58a0b-4efe-412a-920b-86d793c9c480" CHECKSUM="979c4fef43abd36822b8d4372ccaf215" MIMETYPE="application/pdf" SIZE="40777167" ID="file_86a58a0b-4efe-412a-920b-86d793c9c480" CHECKSUMTYPE="MD5">
+<mets:FLocat LOCTYPE="URL" xlink:label="Full printable version" xlink:href="/bitstream/handle/1721.1/76458/31459004-MIT.pdf?sequence=2&amp;isAllowed=y" xlink:type="locator" xlink:title="31459004-MIT.pdf"/>
+</mets:file>
+</mets:fileGrp>
+<mets:fileGrp USE="TEXT">
+<mets:file GROUPID="group_file_86a58a0b-4efe-412a-920b-86d793c9c480" CHECKSUM="afd269ad382391d16365f69977343382" MIMETYPE="text/plain" SIZE="426690" ID="file_70b4ae2e-aa3b-4bdf-bb61-e47c65e6aff9" CHECKSUMTYPE="MD5">
+<mets:FLocat LOCTYPE="URL" xlink:label="Extracted text" xlink:href="/bitstream/handle/1721.1/76458/31459004-MIT.pdf.txt?sequence=3&amp;isAllowed=n" xlink:type="locator" xlink:title="31459004-MIT.pdf.txt"/>
+</mets:file>
+</mets:fileGrp>
+</mets:fileSec>
+<mets:structMap LABEL="DSpace" TYPE="LOGICAL">
+<mets:div DMDID="dmd_1" TYPE="DSpace Item">
+<mets:div ID="div_2" TYPE="DSpace Content Bitstream">
+<mets:fptr FILEID="file_86a58a0b-4efe-412a-920b-86d793c9c480"/>
+</mets:div>
+</mets:div>
+</mets:structMap>
+</mets:METS>

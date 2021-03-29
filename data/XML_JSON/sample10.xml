@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:METS xmlns:mets="http://www.loc.gov/METS/" xmlns:xlink="http://www.w3.org/TR/xlink/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dim="http://www.dspace.org/xmlns/dspace/dim" PROFILE="DSPACE METS SIP Profile 1.0" LABEL="DSpace Item" OBJID="/handle/1721.1/11857" ID="hdl:1721.1/11857" OBJEDIT="/admin/item?itemID=ecbcd62a-b9b4-4f67-80a1-e21538b160c1">
+<mets:dmdSec GROUPID="group_dmd_0" ID="dmd_1">
+<mets:mdWrap OTHERMDTYPE="DIM" MDTYPE="OTHER">
+<mets:xmlData>
+<dim:dim dspaceType="ITEM">
+<dim:field qualifier="advisor" mdschema="dc" language="en_US" element="contributor">Douglas P. Adams.</dim:field>
+<dim:field qualifier="author" authority="69444923aaf3e8aa79e464453a40258e" confidence="UNSET" mdschema="dc" language="en_US" element="contributor">Simson, Anton Keats</dim:field>
+<dim:field qualifier="accessioned" mdschema="dc" element="date">2005-08-17T01:10:43Z</dim:field>
+<dim:field qualifier="available" mdschema="dc" element="date">2005-08-17T01:10:43Z</dim:field>
+<dim:field qualifier="issued" mdschema="dc" language="en_US" element="date">1960</dim:field>
+<dim:field qualifier="uri" mdschema="dc" element="identifier">http://hdl.handle.net/1721.1/11857</dim:field>
+<dim:field mdschema="dc" language="en_US" element="description">Thesis (B.S.)--Massachusetts Institute of Technology, Dept. of Mechanical Engineering, 1960.</dim:field>
+<dim:field mdschema="dc" language="en_US" element="description">MIT copy bound with: A method of smoke generation for the visualization of air flow in natural convection / Ken Louis Richardson. 1960.</dim:field>
+<dim:field qualifier="statementofresponsibility" mdschema="dc" language="en_US" element="description">by Anton Keats Simson.</dim:field>
+<dim:field qualifier="extent" mdschema="dc" language="en_US" element="format">63, [4] leaves</dim:field>
+<dim:field qualifier="extent" mdschema="dc" element="format">4297184 bytes</dim:field>
+<dim:field qualifier="extent" mdschema="dc" element="format">4296945 bytes</dim:field>
+<dim:field qualifier="mimetype" mdschema="dc" element="format">application/pdf</dim:field>
+<dim:field qualifier="mimetype" mdschema="dc" element="format">application/pdf</dim:field>
+<dim:field qualifier="iso" mdschema="dc" language="en_US" element="language">eng</dim:field>
+<dim:field mdschema="dc" language="en_US" element="publisher">Massachusetts Institute of Technology</dim:field>
+<dim:field mdschema="dc" language="en_US" element="rights">M.I.T. theses are protected by copyright. They may be viewed from this source for any purpose, but reproduction or distribution in any format is prohibited without written permission. See provided URL for inquiries about permission.</dim:field>
+<dim:field qualifier="uri" mdschema="dc" element="rights">http://dspace.mit.edu/handle/1721.1/7582</dim:field>
+<dim:field mdschema="dc" language="en_US" element="subject">Mechanical Engineering</dim:field>
+<dim:field mdschema="dc" language="en_US" element="title">Analysis of tape drives</dim:field>
+<dim:field mdschema="dc" language="en_US" element="type">Thesis</dim:field>
+<dim:field qualifier="degree" mdschema="dc" language="en_US" element="description">B.S.</dim:field>
+<dim:field qualifier="department" mdschema="dc" language="en_US" element="contributor">Massachusetts Institute of Technology. Dept. of Mechanical Engineering</dim:field>
+<dim:field qualifier="oclc" mdschema="dc" language="en_US" element="identifier">32903139</dim:field>
+</dim:dim>
+</mets:xmlData>
+</mets:mdWrap>
+</mets:dmdSec>
+<mets:fileSec>
+<mets:fileGrp USE="THUMBNAIL">
+<mets:file GROUPID="group_file_fa95030c-f71a-47ca-b5a0-47426343e186" CHECKSUM="d9f1bf7005699cb112b0f51d40681e43" MIMETYPE="image/jpeg" SIZE="3040" ID="file_cb388029-4e73-479e-9fcc-08c8a6f1a6a6" CHECKSUMTYPE="MD5">
+<mets:FLocat LOCTYPE="URL" xlink:label="Generated Thumbnail" xlink:href="/bitstream/handle/1721.1/11857/32903139-MIT.pdf.jpg?sequence=5&amp;isAllowed=y" xlink:type="locator" xlink:title="32903139-MIT.pdf.jpg"/>
+</mets:file>
+</mets:fileGrp>
+<mets:fileGrp USE="COVERPAGE"/>
+<mets:fileGrp USE="CONTENT">
+<mets:file GROUPID="group_file_fa95030c-f71a-47ca-b5a0-47426343e186" CHECKSUM="3212db1ff949907a02bcd9e8859ce6a0" MIMETYPE="application/pdf" SIZE="4296945" ID="file_fa95030c-f71a-47ca-b5a0-47426343e186" CHECKSUMTYPE="MD5">
+<mets:FLocat LOCTYPE="URL" xlink:label="Full printable version" xlink:href="/bitstream/handle/1721.1/11857/32903139-MIT.pdf?sequence=2&amp;isAllowed=y" xlink:type="locator" xlink:title="32903139-MIT.pdf"/>
+</mets:file>
+</mets:fileGrp>
+<mets:fileGrp USE="TEXT">
+<mets:file GROUPID="group_file_fa95030c-f71a-47ca-b5a0-47426343e186" CHECKSUM="3d0a77522758e01ce48813ee953e1876" MIMETYPE="text/plain" SIZE="69" ID="file_a34fde10-08b5-4425-a544-12dc0035e031" CHECKSUMTYPE="MD5">
+<mets:FLocat LOCTYPE="URL" xlink:label="Extracted text" xlink:href="/bitstream/handle/1721.1/11857/32903139-MIT.pdf.txt?sequence=4&amp;isAllowed=y" xlink:type="locator" xlink:title="32903139-MIT.pdf.txt"/>
+</mets:file>
+</mets:fileGrp>
+</mets:fileSec>
+<mets:structMap LABEL="DSpace" TYPE="LOGICAL">
+<mets:div DMDID="dmd_1" TYPE="DSpace Item">
+<mets:div ID="div_2" TYPE="DSpace Content Bitstream">
+<mets:fptr FILEID="file_fa95030c-f71a-47ca-b5a0-47426343e186"/>
+</mets:div>
+</mets:div>
+</mets:structMap>
+</mets:METS>

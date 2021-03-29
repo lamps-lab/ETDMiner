@@ -1,0 +1,17 @@
+ANALYSIS OF METAL MATRIX COMPOSITE STRUCTURES
+USING A MICROMECHANICAL CONSTITUTIVE THEORY
+by
+Robert Thomas Arenburg
+Dissertation submitted to the Faculty of the
+Virginia Polytechnic Institute and State University
+in partial fulfillment of the requirements for the degree of
+DOCTOR OF PHILOSOPHY
+in
+Engineering Mechanics
+APPROVED:
+J. N. Reddy, Chairman
+J. Aboudi  S. L. Hendricks
+E. G. Henneke E. R. Johnson
+D.T. Mook
+December, 1988
+Blacksburg, Virginia

@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:METS xmlns:mets="http://www.loc.gov/METS/" xmlns:xlink="http://www.w3.org/TR/xlink/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dim="http://www.dspace.org/xmlns/dspace/dim" PROFILE="DSPACE METS SIP Profile 1.0" LABEL="DSpace Item" OBJID="/handle/1721.1/27435" ID="hdl:1721.1/27435" OBJEDIT="/admin/item?itemID=5d465d30-95bd-4900-84dd-835a80f8446f">
+<mets:dmdSec GROUPID="group_dmd_0" ID="dmd_1">
+<mets:mdWrap OTHERMDTYPE="DIM" MDTYPE="OTHER">
+<mets:xmlData>
+<dim:dim dspaceType="ITEM">
+<dim:field qualifier="advisor" mdschema="dc" language="en_US" element="contributor">Woodie Flowers.</dim:field>
+<dim:field qualifier="author" authority="ebbb135aeedd55fccc64abfcc2786227" confidence="UNSET" mdschema="dc" language="en_US" element="contributor">Bott, Eric Herschler</dim:field>
+<dim:field qualifier="accessioned" mdschema="dc" element="date">2005-09-16T21:37:34Z</dim:field>
+<dim:field qualifier="available" mdschema="dc" element="date">2005-09-16T21:37:34Z</dim:field>
+<dim:field qualifier="issued" mdschema="dc" language="en_US" element="date">1975</dim:field>
+<dim:field qualifier="uri" mdschema="dc" element="identifier">http://hdl.handle.net/1721.1/27435</dim:field>
+<dim:field mdschema="dc" language="en_US" element="description">Thesis. 1975. B.S.--Massachusetts Institute of Technology. Dept. of Mechanical Engineering.</dim:field>
+<dim:field mdschema="dc" language="en_US" element="description">Bibliography: leaf 39.</dim:field>
+<dim:field qualifier="statementofresponsibility" mdschema="dc" language="en_US" element="description">by Eric Hershler Bott.</dim:field>
+<dim:field qualifier="extent" mdschema="dc" language="en_US" element="format">39 leaves</dim:field>
+<dim:field qualifier="extent" mdschema="dc" element="format">2137892 bytes</dim:field>
+<dim:field qualifier="extent" mdschema="dc" element="format">2137652 bytes</dim:field>
+<dim:field qualifier="mimetype" mdschema="dc" element="format">application/pdf</dim:field>
+<dim:field qualifier="mimetype" mdschema="dc" element="format">application/pdf</dim:field>
+<dim:field qualifier="iso" mdschema="dc" element="language">en_US</dim:field>
+<dim:field mdschema="dc" language="en_US" element="publisher">Massachusetts Institute of Technology</dim:field>
+<dim:field mdschema="dc" language="en_US" element="rights">M.I.T. theses are protected by copyright. They may be viewed from this source for any purpose, but reproduction or distribution in any format is prohibited without written permission. See provided URL for inquiries about permission.</dim:field>
+<dim:field qualifier="uri" mdschema="dc" element="rights">http://dspace.mit.edu/handle/1721.1/7582</dim:field>
+<dim:field mdschema="dc" language="en_US" element="subject">Mechanical Engineering</dim:field>
+<dim:field qualifier="lcsh" mdschema="dc" language="en_US" element="subject">Knee</dim:field>
+<dim:field qualifier="lcsh" mdschema="dc" language="en_US" element="subject">Damping (Mechanics)</dim:field>
+<dim:field qualifier="lcsh" mdschema="dc" language="en_US" element="subject">Hydraulic control</dim:field>
+<dim:field qualifier="lcsh" mdschema="dc" language="en_US" element="subject">Artificial joints</dim:field>
+<dim:field mdschema="dc" language="en_US" element="title">Hydraulic damper design for a knee prosthesis</dim:field>
+<dim:field mdschema="dc" language="en_US" element="type">Thesis</dim:field>
+<dim:field qualifier="degree" mdschema="dc" language="en_US" element="description">B.S.</dim:field>
+<dim:field qualifier="department" mdschema="dc" language="en_US" element="contributor">Massachusetts Institute of Technology. Dept. of Mechanical Engineering</dim:field>
+<dim:field qualifier="oclc" mdschema="dc" language="en_US" element="identifier">02285215</dim:field>
+</dim:dim>
+</mets:xmlData>
+</mets:mdWrap>
+</mets:dmdSec>
+<mets:fileSec>
+<mets:fileGrp USE="THUMBNAIL">
+<mets:file GROUPID="group_file_fdbaa78a-b063-4c74-9aa8-e5edafe1835b" CHECKSUM="6a25414242bf0691e0471dcfb95e5a0b" MIMETYPE="image/jpeg" SIZE="3467" ID="file_661ca4e7-e8dc-46a2-a335-3fb925a9a6c4" CHECKSUMTYPE="MD5">
+<mets:FLocat LOCTYPE="URL" xlink:label="Generated Thumbnail" xlink:href="/bitstream/handle/1721.1/27435/02285215-MIT.pdf.jpg?sequence=5&amp;isAllowed=y" xlink:type="locator" xlink:title="02285215-MIT.pdf.jpg"/>
+</mets:file>
+</mets:fileGrp>
+<mets:fileGrp USE="COVERPAGE"/>
+<mets:fileGrp USE="CONTENT">
+<mets:file GROUPID="group_file_fdbaa78a-b063-4c74-9aa8-e5edafe1835b" CHECKSUM="e76b0a784f813872f24d2d6637ea7e30" MIMETYPE="application/pdf" SIZE="2137652" ID="file_fdbaa78a-b063-4c74-9aa8-e5edafe1835b" CHECKSUMTYPE="MD5">
+<mets:FLocat LOCTYPE="URL" xlink:label="Full printable version" xlink:href="/bitstream/handle/1721.1/27435/02285215-MIT.pdf?sequence=2&amp;isAllowed=y" xlink:type="locator" xlink:title="02285215-MIT.pdf"/>
+</mets:file>
+</mets:fileGrp>
+<mets:fileGrp USE="TEXT">
+<mets:file GROUPID="group_file_fdbaa78a-b063-4c74-9aa8-e5edafe1835b" CHECKSUM="0e831d9ef90e6cc63a61c5dbdfdd11e0" MIMETYPE="text/plain" SIZE="39" ID="file_febedf75-6449-4899-a1c2-42fbb73ffe80" CHECKSUMTYPE="MD5">
+<mets:FLocat LOCTYPE="URL" xlink:label="Extracted text" xlink:href="/bitstream/handle/1721.1/27435/02285215-MIT.pdf.txt?sequence=4&amp;isAllowed=y" xlink:type="locator" xlink:title="02285215-MIT.pdf.txt"/>
+</mets:file>
+</mets:fileGrp>
+</mets:fileSec>
+<mets:structMap LABEL="DSpace" TYPE="LOGICAL">
+<mets:div DMDID="dmd_1" TYPE="DSpace Item">
+<mets:div ID="div_2" TYPE="DSpace Content Bitstream">
+<mets:fptr FILEID="file_fdbaa78a-b063-4c74-9aa8-e5edafe1835b"/>
+</mets:div>
+</mets:div>
+</mets:structMap>
+</mets:METS>

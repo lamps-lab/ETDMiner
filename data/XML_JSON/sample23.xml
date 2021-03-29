@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:METS xmlns:mets="http://www.loc.gov/METS/" xmlns:xlink="http://www.w3.org/TR/xlink/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dim="http://www.dspace.org/xmlns/dspace/dim" PROFILE="DSPACE METS SIP Profile 1.0" LABEL="DSpace Item" OBJID="/handle/1721.1/71095" ID="hdl:1721.1/71095" OBJEDIT="/admin/item?itemID=b15d84de-05ba-4fc0-900b-d72b5718ef2e">
+<mets:dmdSec GROUPID="group_dmd_0" ID="dmd_1">
+<mets:mdWrap OTHERMDTYPE="DIM" MDTYPE="OTHER">
+<mets:xmlData>
+<dim:dim dspaceType="ITEM">
+<dim:field qualifier="advisor" mdschema="dc" language="en_US" element="contributor">Frederick J. Adams.</dim:field>
+<dim:field qualifier="author" authority="7a1859902b70accd3a6e8e87a899c7ee" confidence="UNSET" mdschema="dc" language="en_US" element="contributor">Reuter, Frederick H</dim:field>
+<dim:field qualifier="accessioned" mdschema="dc" element="date">2012-06-05T13:54:21Z</dim:field>
+<dim:field qualifier="available" mdschema="dc" element="date">2012-06-05T13:54:21Z</dim:field>
+<dim:field qualifier="issued" mdschema="dc" language="en_US" element="date">1950</dim:field>
+<dim:field qualifier="uri" mdschema="dc" element="identifier">http://hdl.handle.net/1721.1/71095</dim:field>
+<dim:field mdschema="dc" language="en_US" element="description">Thesis (M.C.P.) Massachusetts Institute of Technology. Dept. of Architecture, 1950.</dim:field>
+<dim:field mdschema="dc" language="en_US" element="description">Bibliography: leaves 62-64.</dim:field>
+<dim:field qualifier="statementofresponsibility" mdschema="dc" language="en_US" element="description">by Frederick H. Reuter.</dim:field>
+<dim:field qualifier="extent" mdschema="dc" language="en_US" element="format">64, [4] leaves</dim:field>
+<dim:field qualifier="iso" mdschema="dc" language="en_US" element="language">eng</dim:field>
+<dim:field mdschema="dc" language="en_US" element="publisher">Massachusetts Institute of Technology</dim:field>
+<dim:field mdschema="dc" language="en_US" element="rights">M.I.T. theses are protected by 
+copyright. They may be viewed from this source for any purpose, but 
+reproduction or distribution in any format is prohibited without written 
+permission. See provided URL for inquiries about permission.</dim:field>
+<dim:field qualifier="uri" mdschema="dc" language="en_US" element="rights">http://dspace.mit.edu/handle/1721.1/7582</dim:field>
+<dim:field mdschema="dc" language="en_US" element="subject">Architecture</dim:field>
+<dim:field mdschema="dc" language="en_US" element="title">A proposal for the structural reorganization of the planning function in New York City</dim:field>
+<dim:field mdschema="dc" language="en_US" element="type">Thesis</dim:field>
+<dim:field qualifier="degree" mdschema="dc" language="en_US" element="description">M.C.P.</dim:field>
+<dim:field qualifier="department" mdschema="dc" language="en_US" element="contributor">Massachusetts Institute of Technology. Dept. of Architecture</dim:field>
+<dim:field qualifier="oclc" mdschema="dc" language="en_US" element="identifier">29982540</dim:field>
+</dim:dim>
+</mets:xmlData>
+</mets:mdWrap>
+</mets:dmdSec>
+<mets:fileSec>
+<mets:fileGrp USE="THUMBNAIL">
+<mets:file GROUPID="group_file_b2b3a4a1-3beb-4135-b9ef-0f1b94bb83f2" CHECKSUM="c767552643790b4696bcd35ad2d44324" MIMETYPE="image/jpeg" SIZE="3311" ID="file_b36509c8-b9ea-49cb-99bc-ce4c9a7a784c" CHECKSUMTYPE="MD5">
+<mets:FLocat LOCTYPE="URL" xlink:label="Generated Thumbnail" xlink:href="/bitstream/handle/1721.1/71095/29982540-MIT.pdf.jpg?sequence=5&amp;isAllowed=y" xlink:type="locator" xlink:title="29982540-MIT.pdf.jpg"/>
+</mets:file>
+</mets:fileGrp>
+<mets:fileGrp USE="COVERPAGE"/>
+<mets:fileGrp USE="CONTENT">
+<mets:file GROUPID="group_file_b2b3a4a1-3beb-4135-b9ef-0f1b94bb83f2" CHECKSUM="ba717b014c0729ef439ee2ad09b32235" MIMETYPE="application/pdf" SIZE="4948486" ID="file_b2b3a4a1-3beb-4135-b9ef-0f1b94bb83f2" CHECKSUMTYPE="MD5">
+<mets:FLocat LOCTYPE="URL" xlink:label="Full printable version" xlink:href="/bitstream/handle/1721.1/71095/29982540-MIT.pdf?sequence=2&amp;isAllowed=y" xlink:type="locator" xlink:title="29982540-MIT.pdf"/>
+</mets:file>
+</mets:fileGrp>
+<mets:fileGrp USE="TEXT">
+<mets:file GROUPID="group_file_b2b3a4a1-3beb-4135-b9ef-0f1b94bb83f2" CHECKSUM="9593c5d14761a23939b9bb10515d20e9" MIMETYPE="text/plain" SIZE="83225" ID="file_0ebcca35-17b0-4e1c-8122-bc4b52662e01" CHECKSUMTYPE="MD5">
+<mets:FLocat LOCTYPE="URL" xlink:label="Extracted text" xlink:href="/bitstream/handle/1721.1/71095/29982540-MIT.pdf.txt?sequence=4&amp;isAllowed=n" xlink:type="locator" xlink:title="29982540-MIT.pdf.txt"/>
+</mets:file>
+</mets:fileGrp>
+</mets:fileSec>
+<mets:structMap LABEL="DSpace" TYPE="LOGICAL">
+<mets:div DMDID="dmd_1" TYPE="DSpace Item">
+<mets:div ID="div_2" TYPE="DSpace Content Bitstream">
+<mets:fptr FILEID="file_b2b3a4a1-3beb-4135-b9ef-0f1b94bb83f2"/>
+</mets:div>
+</mets:div>
+</mets:structMap>
+</mets:METS>

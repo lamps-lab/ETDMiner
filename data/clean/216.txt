@@ -1,0 +1,16 @@
+MAXIMUM LIKELIHOOD IDENTIFICATION OF LINEAR DISCRETE-TIME SYSTEMS
+by
+Michel De Glas 
+Ingénieur, Ecole Supérieure d'Informatique
+Electronique et Automatique, France 1973,
+A THESIS SUBMITTED IN PARTIAL FULFILMENT OF
+THE REQUIREMENT FOR THE DEGREE OF
+MASTER OF APPLIED SCIENCE
+in the Department
+OF
+Electrical Engineering
+We accept this ead as conforming to
+the required standard
+THE UNIVERSITY OF BRITISH COLUMBIA
+July, 1976
+© Michel De Glas, 1976

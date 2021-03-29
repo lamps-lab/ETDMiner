@@ -1,0 +1,25 @@
+PROCEDURES AS A REPRESENTATION FOR DATA
+IN A COMPUTER PROGRAM FOR UNDERSTANDING
+NATURAL LANGUAGE
+by
+Terry Winograd
+P.A., The Colorado College
+(1966)
+SUBMITTED IN PARTIAL FULFILLMENT
+OF THE REQUIREMENTS FOR THE
+DEGREE OF DOCTOR OF
+PHILOSOPHY
+at the
+MASSACHUSETTS INSTITUTE OF
+TECHNOLOGY
+August, 1970
+Signature of Author
+Department of Mathematics August 24, 1970
+Certified by
+Thesis Supervisor
+Accepted by
+Chairman, Departmental Committee
+on Graduate Students
+MASS. INST.TECH	
+SEP 29 1970
+LIBRARIES

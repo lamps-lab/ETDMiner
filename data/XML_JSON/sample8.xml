@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:METS xmlns:mets="http://www.loc.gov/METS/" xmlns:xlink="http://www.w3.org/TR/xlink/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dim="http://www.dspace.org/xmlns/dspace/dim" PROFILE="DSPACE METS SIP Profile 1.0" LABEL="DSpace Item" OBJID="/handle/1721.1/41332" ID="hdl:1721.1/41332" OBJEDIT="/admin/item?itemID=17b2b138-2e90-47f9-9165-816bf5a65249">
+<mets:dmdSec GROUPID="group_dmd_0" ID="dmd_1">
+<mets:mdWrap OTHERMDTYPE="DIM" MDTYPE="OTHER">
+<mets:xmlData>
+<dim:dim dspaceType="ITEM">
+<dim:field qualifier="advisor" mdschema="dc" language="en_US" element="contributor">Augustus R. Rogowski.</dim:field>
+<dim:field qualifier="author" authority="828793321ef684f97f69e18a5d27014f" confidence="UNSET" mdschema="dc" language="en_US" element="contributor">Kilayko, Enrique</dim:field>
+<dim:field qualifier="accessioned" mdschema="dc" element="date">2008-04-23T14:47:02Z</dim:field>
+<dim:field qualifier="available" mdschema="dc" element="date">2008-04-23T14:47:02Z</dim:field>
+<dim:field qualifier="issued" mdschema="dc" language="en_US" element="date">1960</dim:field>
+<dim:field qualifier="uri" mdschema="dc" element="identifier">http://hdl.handle.net/1721.1/41332</dim:field>
+<dim:field mdschema="dc" language="en_US" element="description">Thesis (M.S.)--Massachusetts Institute of Technology, Dept. of Mechanical Engineering, 1960.</dim:field>
+<dim:field mdschema="dc" language="en_US" element="description">Includes bibliographical references (leaf 39).</dim:field>
+<dim:field qualifier="statementofresponsibility" mdschema="dc" language="en_US" element="description">by Enrique L. Kilayko.</dim:field>
+<dim:field qualifier="extent" mdschema="dc" language="en_US" element="format">47 leaves, [25] leaves of plates</dim:field>
+<dim:field qualifier="iso" mdschema="dc" language="en_US" element="language">eng</dim:field>
+<dim:field mdschema="dc" language="en_US" element="publisher">Massachusetts Institute of Technology</dim:field>
+<dim:field mdschema="dc" language="en_US" element="rights">M.I.T. theses are protected by 
+copyright. They may be viewed from this source for any purpose, but 
+reproduction or distribution in any format is prohibited without written 
+permission. See provided URL for inquiries about permission.</dim:field>
+<dim:field qualifier="uri" mdschema="dc" language="en_US" element="rights">http://dspace.mit.edu/handle/1721.1/7582</dim:field>
+<dim:field mdschema="dc" language="en_US" element="subject">Mechanical Engineering</dim:field>
+<dim:field mdschema="dc" language="en_US" element="title">Ethyl alcohol as fuel for internal combustion engines</dim:field>
+<dim:field mdschema="dc" language="en_US" element="type">Thesis</dim:field>
+<dim:field qualifier="degree" mdschema="dc" language="en_US" element="description">M.S.</dim:field>
+<dim:field qualifier="department" mdschema="dc" language="en_US" element="contributor">Massachusetts Institute of Technology. Dept. of Mechanical Engineering</dim:field>
+<dim:field qualifier="oclc" mdschema="dc" language="en_US" element="identifier">32872757</dim:field>
+</dim:dim>
+</mets:xmlData>
+</mets:mdWrap>
+</mets:dmdSec>
+<mets:fileSec>
+<mets:fileGrp USE="THUMBNAIL">
+<mets:file GROUPID="group_file_fe1786be-216f-4395-bfd6-2dfc648d0d1c" CHECKSUM="c25e7a87889d68e8b573dcbb7e52b680" MIMETYPE="image/jpeg" SIZE="3484" ID="file_a2ffa886-03bd-4265-a57b-2456934a7649" CHECKSUMTYPE="MD5">
+<mets:FLocat LOCTYPE="URL" xlink:label="Generated Thumbnail" xlink:href="/bitstream/handle/1721.1/41332/32872757-MIT.pdf.jpg?sequence=5&amp;isAllowed=y" xlink:type="locator" xlink:title="32872757-MIT.pdf.jpg"/>
+</mets:file>
+</mets:fileGrp>
+<mets:fileGrp USE="COVERPAGE"/>
+<mets:fileGrp USE="CONTENT">
+<mets:file GROUPID="group_file_fe1786be-216f-4395-bfd6-2dfc648d0d1c" CHECKSUM="30de7b24f6d20d372fdf42b43ae1e10f" MIMETYPE="application/pdf" SIZE="14143004" ID="file_fe1786be-216f-4395-bfd6-2dfc648d0d1c" CHECKSUMTYPE="MD5">
+<mets:FLocat LOCTYPE="URL" xlink:label="Full printable version" xlink:href="/bitstream/handle/1721.1/41332/32872757-MIT.pdf?sequence=2&amp;isAllowed=y" xlink:type="locator" xlink:title="32872757-MIT.pdf"/>
+</mets:file>
+</mets:fileGrp>
+<mets:fileGrp USE="TEXT">
+<mets:file GROUPID="group_file_fe1786be-216f-4395-bfd6-2dfc648d0d1c" CHECKSUM="daea7042e0b0317c59ee4a779631e6e8" MIMETYPE="text/plain" SIZE="75164" ID="file_ba7bcbd8-d144-44bf-a6b3-d5845b97b178" CHECKSUMTYPE="MD5">
+<mets:FLocat LOCTYPE="URL" xlink:label="Extracted text" xlink:href="/bitstream/handle/1721.1/41332/32872757-MIT.pdf.txt?sequence=4&amp;isAllowed=n" xlink:type="locator" xlink:title="32872757-MIT.pdf.txt"/>
+</mets:file>
+</mets:fileGrp>
+</mets:fileSec>
+<mets:structMap LABEL="DSpace" TYPE="LOGICAL">
+<mets:div DMDID="dmd_1" TYPE="DSpace Item">
+<mets:div ID="div_2" TYPE="DSpace Content Bitstream">
+<mets:fptr FILEID="file_fe1786be-216f-4395-bfd6-2dfc648d0d1c"/>
+</mets:div>
+</mets:div>
+</mets:structMap>
+</mets:METS>

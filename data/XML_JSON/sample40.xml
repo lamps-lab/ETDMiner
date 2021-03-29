@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:METS xmlns:mets="http://www.loc.gov/METS/" xmlns:xlink="http://www.w3.org/TR/xlink/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dim="http://www.dspace.org/xmlns/dspace/dim" PROFILE="DSPACE METS SIP Profile 1.0" LABEL="DSpace Item" OBJID="/handle/1721.1/66711" ID="hdl:1721.1/66711" OBJEDIT="/admin/item?itemID=a41f14fd-1e03-4579-9db9-4b52397e38bc">
+<mets:dmdSec GROUPID="group_dmd_0" ID="dmd_1">
+<mets:mdWrap OTHERMDTYPE="DIM" MDTYPE="OTHER">
+<mets:xmlData>
+<dim:dim dspaceType="ITEM">
+<dim:field qualifier="advisor" mdschema="dc" language="en_US" element="contributor">I. Halasz.</dim:field>
+<dim:field qualifier="author" authority="869ee520119a089dbff0cba1b8d105c3" confidence="UNSET" mdschema="dc" language="en_US" element="contributor">Hayes, Steven Coburn</dim:field>
+<dim:field qualifier="accessioned" mdschema="dc" element="date">2011-11-01T19:34:55Z</dim:field>
+<dim:field qualifier="available" mdschema="dc" element="date">2011-11-01T19:34:55Z</dim:field>
+<dim:field qualifier="issued" mdschema="dc" language="en_US" element="date">1975</dim:field>
+<dim:field qualifier="uri" mdschema="dc" element="identifier">http://hdl.handle.net/1721.1/66711</dim:field>
+<dim:field mdschema="dc" language="en_US" element="description">Thesis. 1975. M.Arch.--Massachusetts Institute of Technology. Dept. of Architecture.</dim:field>
+<dim:field mdschema="dc" language="en_US" element="description">Bibliography: leaves 50-52.</dim:field>
+<dim:field qualifier="statementofresponsibility" mdschema="dc" language="en_US" element="description">by Steven C. Hayes.</dim:field>
+<dim:field qualifier="extent" mdschema="dc" language="en_US" element="format">52 leaves</dim:field>
+<dim:field qualifier="iso" mdschema="dc" language="en_US" element="language">eng</dim:field>
+<dim:field mdschema="dc" language="en_US" element="publisher">Massachusetts Institute of Technology</dim:field>
+<dim:field mdschema="dc" language="en_US" element="rights">M.I.T. theses are protected by 
+copyright. They may be viewed from this source for any purpose, but 
+reproduction or distribution in any format is prohibited without written 
+permission. See provided URL for inquiries about permission.</dim:field>
+<dim:field qualifier="uri" mdschema="dc" language="en_US" element="rights">http://dspace.mit.edu/handle/1721.1/7582</dim:field>
+<dim:field mdschema="dc" language="en_US" element="subject">Architecture</dim:field>
+<dim:field qualifier="lcsh" mdschema="dc" language="en_US" element="subject">Railroads Airspace utilization</dim:field>
+<dim:field qualifier="lcsh" mdschema="dc" language="en_US" element="subject">Local transit Massachusetts Boston</dim:field>
+<dim:field mdschema="dc" language="en_US" element="title">Air rights development of urban transit corridors</dim:field>
+<dim:field mdschema="dc" language="en_US" element="type">Thesis</dim:field>
+<dim:field qualifier="degree" mdschema="dc" language="en_US" element="description">M.Arch.</dim:field>
+<dim:field qualifier="department" mdschema="dc" language="en_US" element="contributor">Massachusetts Institute of Technology. Dept. of Architecture</dim:field>
+<dim:field qualifier="oclc" mdschema="dc" language="en_US" element="identifier">01939959</dim:field>
+</dim:dim>
+</mets:xmlData>
+</mets:mdWrap>
+</mets:dmdSec>
+<mets:fileSec>
+<mets:fileGrp USE="THUMBNAIL">
+<mets:file GROUPID="group_file_954788d0-2a84-41bc-ba93-34a57d012f69" CHECKSUM="62d590659d2dc5ba9cf08c323ef6ee2d" MIMETYPE="image/jpeg" SIZE="3322" ID="file_2e250e39-b0be-4e0a-9d87-50c5b515e498" CHECKSUMTYPE="MD5">
+<mets:FLocat LOCTYPE="URL" xlink:label="Generated Thumbnail" xlink:href="/bitstream/handle/1721.1/66711/01939959-MIT.pdf.jpg?sequence=5&amp;isAllowed=y" xlink:type="locator" xlink:title="01939959-MIT.pdf.jpg"/>
+</mets:file>
+</mets:fileGrp>
+<mets:fileGrp USE="COVERPAGE"/>
+<mets:fileGrp USE="CONTENT">
+<mets:file GROUPID="group_file_954788d0-2a84-41bc-ba93-34a57d012f69" CHECKSUM="cf59f27121e1b0cb719e067a6b278deb" MIMETYPE="application/pdf" SIZE="5062811" ID="file_954788d0-2a84-41bc-ba93-34a57d012f69" CHECKSUMTYPE="MD5">
+<mets:FLocat LOCTYPE="URL" xlink:label="Full printable version" xlink:href="/bitstream/handle/1721.1/66711/01939959-MIT.pdf?sequence=2&amp;isAllowed=y" xlink:type="locator" xlink:title="01939959-MIT.pdf"/>
+</mets:file>
+</mets:fileGrp>
+<mets:fileGrp USE="TEXT">
+<mets:file GROUPID="group_file_954788d0-2a84-41bc-ba93-34a57d012f69" CHECKSUM="587a901f6365beff4efa9b7bd2ac98c0" MIMETYPE="text/plain" SIZE="30706" ID="file_ad7dc582-f268-466a-bfa0-a9d4e7f25f22" CHECKSUMTYPE="MD5">
+<mets:FLocat LOCTYPE="URL" xlink:label="Extracted text" xlink:href="/bitstream/handle/1721.1/66711/01939959-MIT.pdf.txt?sequence=4&amp;isAllowed=n" xlink:type="locator" xlink:title="01939959-MIT.pdf.txt"/>
+</mets:file>
+</mets:fileGrp>
+</mets:fileSec>
+<mets:structMap LABEL="DSpace" TYPE="LOGICAL">
+<mets:div DMDID="dmd_1" TYPE="DSpace Item">
+<mets:div ID="div_2" TYPE="DSpace Content Bitstream">
+<mets:fptr FILEID="file_954788d0-2a84-41bc-ba93-34a57d012f69"/>
+</mets:div>
+</mets:div>
+</mets:structMap>
+</mets:METS>

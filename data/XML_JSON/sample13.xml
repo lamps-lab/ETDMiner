@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:METS xmlns:mets="http://www.loc.gov/METS/" xmlns:xlink="http://www.w3.org/TR/xlink/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dim="http://www.dspace.org/xmlns/dspace/dim" PROFILE="DSPACE METS SIP Profile 1.0" LABEL="DSpace Item" OBJID="/handle/1721.1/57828" ID="hdl:1721.1/57828" OBJEDIT="/admin/item?itemID=5f8704dc-5670-4684-821f-12ef45ed85b5">
+<mets:dmdSec GROUPID="group_dmd_0" ID="dmd_1">
+<mets:mdWrap OTHERMDTYPE="DIM" MDTYPE="OTHER">
+<mets:xmlData>
+<dim:dim dspaceType="ITEM">
+<dim:field qualifier="advisor" mdschema="dc" language="en_US" element="contributor">Stanley Backer.</dim:field>
+<dim:field qualifier="author" authority="514595e9b903f7031d669cb99897d4c0" confidence="UNSET" mdschema="dc" language="en_US" element="contributor">El-Shiekh, Aly Hassan Mahmoud</dim:field>
+<dim:field qualifier="accessioned" mdschema="dc" element="date">2010-08-31T16:03:02Z</dim:field>
+<dim:field qualifier="available" mdschema="dc" element="date">2010-08-31T16:03:02Z</dim:field>
+<dim:field qualifier="issued" mdschema="dc" language="en_US" element="date">1965</dim:field>
+<dim:field qualifier="uri" mdschema="dc" element="identifier">http://hdl.handle.net/1721.1/57828</dim:field>
+<dim:field mdschema="dc" language="en_US" element="description">Massachusetts Institute of Technology. Dept. of Mechanical Engineering. Thesis. 1965. Sc.D.</dim:field>
+<dim:field mdschema="dc" language="en_US" element="description">Bibliography: leaves 192-195.</dim:field>
+<dim:field qualifier="extent" mdschema="dc" language="en_US" element="format">[8], 195 leaves</dim:field>
+<dim:field qualifier="iso" mdschema="dc" language="en_US" element="language">eng</dim:field>
+<dim:field mdschema="dc" language="en_US" element="publisher">Massachusetts Institute of Technology</dim:field>
+<dim:field mdschema="dc" language="en_US" element="rights">M.I.T. theses are protected by 
+copyright. They may be viewed from this source for any purpose, but 
+reproduction or distribution in any format is prohibited without written 
+permission. See provided URL for inquiries about permission.</dim:field>
+<dim:field qualifier="uri" mdschema="dc" language="en_US" element="rights">http://dspace.mit.edu/handle/1721.1/7582</dim:field>
+<dim:field mdschema="dc" language="en_US" element="subject">Mechanical Engineering</dim:field>
+<dim:field mdschema="dc" language="en_US" element="title">On the mechanics of twist insertion.</dim:field>
+<dim:field mdschema="dc" language="en_US" element="type">Thesis</dim:field>
+<dim:field qualifier="degree" mdschema="dc" language="en_US" element="description">Sc.D.</dim:field>
+<dim:field qualifier="department" mdschema="dc" language="en_US" element="contributor">Massachusetts Institute of Technology. Dept. of Mechanical Engineering</dim:field>
+<dim:field qualifier="oclc" mdschema="dc" language="en_US" element="identifier">25493375</dim:field>
+</dim:dim>
+</mets:xmlData>
+</mets:mdWrap>
+</mets:dmdSec>
+<mets:fileSec>
+<mets:fileGrp USE="THUMBNAIL">
+<mets:file GROUPID="group_file_9a100acd-1e7b-4368-ab20-12d7e059303a" CHECKSUM="9ba251c4f6c33ae9336ad61b5f6ee3ab" MIMETYPE="image/jpeg" SIZE="3874" ID="file_17aabcfc-197f-4bfe-adc6-2d509fa4062c" CHECKSUMTYPE="MD5">
+<mets:FLocat LOCTYPE="URL" xlink:label="Generated Thumbnail" xlink:href="/bitstream/handle/1721.1/57828/25493375-MIT.pdf.jpg?sequence=5&amp;isAllowed=y" xlink:type="locator" xlink:title="25493375-MIT.pdf.jpg"/>
+</mets:file>
+</mets:fileGrp>
+<mets:fileGrp USE="COVERPAGE"/>
+<mets:fileGrp USE="CONTENT">
+<mets:file GROUPID="group_file_9a100acd-1e7b-4368-ab20-12d7e059303a" CHECKSUM="8ba7273d7f6e50ccb27afb4b64e27b02" MIMETYPE="application/pdf" SIZE="14907832" ID="file_9a100acd-1e7b-4368-ab20-12d7e059303a" CHECKSUMTYPE="MD5">
+<mets:FLocat LOCTYPE="URL" xlink:label="Full printable version" xlink:href="/bitstream/handle/1721.1/57828/25493375-MIT.pdf?sequence=2&amp;isAllowed=y" xlink:type="locator" xlink:title="25493375-MIT.pdf"/>
+</mets:file>
+</mets:fileGrp>
+<mets:fileGrp USE="TEXT">
+<mets:file GROUPID="group_file_9a100acd-1e7b-4368-ab20-12d7e059303a" CHECKSUM="3fe4b6ec717469254fe1a8962543e38e" MIMETYPE="text/plain" SIZE="167596" ID="file_ed3667ef-5c57-4ed0-9ece-7516799df38d" CHECKSUMTYPE="MD5">
+<mets:FLocat LOCTYPE="URL" xlink:label="Extracted text" xlink:href="/bitstream/handle/1721.1/57828/25493375-MIT.pdf.txt?sequence=4&amp;isAllowed=n" xlink:type="locator" xlink:title="25493375-MIT.pdf.txt"/>
+</mets:file>
+</mets:fileGrp>
+</mets:fileSec>
+<mets:structMap LABEL="DSpace" TYPE="LOGICAL">
+<mets:div DMDID="dmd_1" TYPE="DSpace Item">
+<mets:div ID="div_2" TYPE="DSpace Content Bitstream">
+<mets:fptr FILEID="file_9a100acd-1e7b-4368-ab20-12d7e059303a"/>
+</mets:div>
+</mets:div>
+</mets:structMap>
+</mets:METS>

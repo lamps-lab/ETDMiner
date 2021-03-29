@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:METS xmlns:mets="http://www.loc.gov/METS/" xmlns:xlink="http://www.w3.org/TR/xlink/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dim="http://www.dspace.org/xmlns/dspace/dim" PROFILE="DSPACE METS SIP Profile 1.0" LABEL="DSpace Item" OBJID="/handle/1721.1/78378" ID="hdl:1721.1/78378" OBJEDIT="/admin/item?itemID=170111a9-171d-46ee-b1ee-6758f746b725">
+<mets:dmdSec GROUPID="group_dmd_0" ID="dmd_1">
+<mets:mdWrap OTHERMDTYPE="DIM" MDTYPE="OTHER">
+<mets:xmlData>
+<dim:dim dspaceType="ITEM">
+<dim:field qualifier="advisor" mdschema="dc" language="en_US" element="contributor">Eduardo Catalano.</dim:field>
+<dim:field qualifier="author" authority="65d342ef378034bbe1113996b8a1786c" confidence="UNSET" mdschema="dc" language="en_US" element="contributor">Soupcoff, William Harold</dim:field>
+<dim:field qualifier="accessioned" mdschema="dc" element="date">2013-04-12T19:18:28Z</dim:field>
+<dim:field qualifier="available" mdschema="dc" element="date">2013-04-12T19:18:28Z</dim:field>
+<dim:field qualifier="issued" mdschema="dc" language="en_US" element="date">1975</dim:field>
+<dim:field qualifier="uri" mdschema="dc" element="identifier">http://hdl.handle.net/1721.1/78378</dim:field>
+<dim:field mdschema="dc" language="en_US" element="description">Thesis. 1975. M.Arch.A.S.--Massachusetts Institute of Technology. Dept. of Architecture.</dim:field>
+<dim:field qualifier="extent" mdschema="dc" language="en_US" element="format">68 leaves</dim:field>
+<dim:field qualifier="iso" mdschema="dc" language="en_US" element="language">eng</dim:field>
+<dim:field mdschema="dc" language="en_US" element="publisher">Massachusetts Institute of Technology</dim:field>
+<dim:field mdschema="dc" language="en_US" element="rights">M.I.T. theses are protected by 
+copyright. They may be viewed from this source for any purpose, but 
+reproduction or distribution in any format is prohibited without written 
+permission. See provided URL for inquiries about permission.</dim:field>
+<dim:field qualifier="uri" mdschema="dc" language="en_US" element="rights">http://dspace.mit.edu/handle/1721.1/7582</dim:field>
+<dim:field mdschema="dc" language="en_US" element="subject">Architecture</dim:field>
+<dim:field qualifier="lcsh" mdschema="dc" language="en_US" element="subject">Architecture, Domestic Designs and plans</dim:field>
+<dim:field qualifier="lcsh" mdschema="dc" language="en_US" element="subject">Modular coordination (Architecture)</dim:field>
+<dim:field qualifier="lcsh" mdschema="dc" language="en_US" element="subject">Buildings, Prefabricated</dim:field>
+<dim:field mdschema="dc" language="en_US" element="title">Housing : box and panel.</dim:field>
+<dim:field mdschema="dc" language="en_US" element="type">Thesis</dim:field>
+<dim:field qualifier="degree" mdschema="dc" language="en_US" element="description">M.Arch.A.S.</dim:field>
+<dim:field qualifier="department" mdschema="dc" language="en_US" element="contributor">Massachusetts Institute of Technology. Dept. of Architecture</dim:field>
+<dim:field qualifier="oclc" mdschema="dc" language="en_US" element="identifier">02161896</dim:field>
+</dim:dim>
+</mets:xmlData>
+</mets:mdWrap>
+</mets:dmdSec>
+<mets:fileSec>
+<mets:fileGrp USE="THUMBNAIL">
+<mets:file GROUPID="group_file_7aa93166-acd7-4a4b-aad2-93cd23a82d81" CHECKSUM="81ea5b98b2a5d9b1467ca032c97faca5" MIMETYPE="image/jpeg" SIZE="2970" ID="file_295553a4-5fe7-4645-b56e-348369223d76" CHECKSUMTYPE="MD5">
+<mets:FLocat LOCTYPE="URL" xlink:label="Generated Thumbnail" xlink:href="/bitstream/handle/1721.1/78378/02161896-MIT.pdf.jpg?sequence=5&amp;isAllowed=y" xlink:type="locator" xlink:title="02161896-MIT.pdf.jpg"/>
+</mets:file>
+</mets:fileGrp>
+<mets:fileGrp USE="COVERPAGE"/>
+<mets:fileGrp USE="CONTENT">
+<mets:file GROUPID="group_file_7aa93166-acd7-4a4b-aad2-93cd23a82d81" CHECKSUM="7e9cfacb2d479e00f49d14bcd767d4d8" MIMETYPE="application/pdf" SIZE="9839678" ID="file_7aa93166-acd7-4a4b-aad2-93cd23a82d81" CHECKSUMTYPE="MD5">
+<mets:FLocat LOCTYPE="URL" xlink:label="Full printable version" xlink:href="/bitstream/handle/1721.1/78378/02161896-MIT.pdf?sequence=2&amp;isAllowed=y" xlink:type="locator" xlink:title="02161896-MIT.pdf"/>
+</mets:file>
+</mets:fileGrp>
+<mets:fileGrp USE="TEXT">
+<mets:file GROUPID="group_file_7aa93166-acd7-4a4b-aad2-93cd23a82d81" CHECKSUM="3f7521fed0872b7312aade8e15760ec3" MIMETYPE="text/plain" SIZE="21682" ID="file_8b477aba-610e-4a82-95df-61f9e620dc12" CHECKSUMTYPE="MD5">
+<mets:FLocat LOCTYPE="URL" xlink:label="Extracted text" xlink:href="/bitstream/handle/1721.1/78378/02161896-MIT.pdf.txt?sequence=4&amp;isAllowed=n" xlink:type="locator" xlink:title="02161896-MIT.pdf.txt"/>
+</mets:file>
+</mets:fileGrp>
+</mets:fileSec>
+<mets:structMap LABEL="DSpace" TYPE="LOGICAL">
+<mets:div DMDID="dmd_1" TYPE="DSpace Item">
+<mets:div ID="div_2" TYPE="DSpace Content Bitstream">
+<mets:fptr FILEID="file_7aa93166-acd7-4a4b-aad2-93cd23a82d81"/>
+</mets:div>
+</mets:div>
+</mets:structMap>
+</mets:METS>
