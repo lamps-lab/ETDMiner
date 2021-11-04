@@ -17,3 +17,8 @@ Inside etds create-
  - ucsf [San Francisco]
  - ucsb [santa barbara]
  - ucsc [santa cruz]
+
+ First run parser1_etdCollector.py
+ Then run parser2_etdExtractor.py
+
+
