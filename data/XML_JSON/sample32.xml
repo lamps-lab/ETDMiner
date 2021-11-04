@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:METS xmlns:mets="http://www.loc.gov/METS/" xmlns:xlink="http://www.w3.org/TR/xlink/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dim="http://www.dspace.org/xmlns/dspace/dim" PROFILE="DSPACE METS SIP Profile 1.0" LABEL="DSpace Item" OBJID="/handle/1721.1/12075" ID="hdl:1721.1/12075" OBJEDIT="/admin/item?itemID=94924d0c-4d73-4cb3-82dc-b90389b5ba90">
+<mets:dmdSec GROUPID="group_dmd_0" ID="dmd_1">
+<mets:mdWrap OTHERMDTYPE="DIM" MDTYPE="OTHER">
+<mets:xmlData>
+<dim:dim dspaceType="ITEM">
+<dim:field qualifier="advisor" mdschema="dc" language="en_US" element="contributor">Richard C. Lord.</dim:field>
+<dim:field qualifier="author" authority="629aa9a2b202ee351a882f8a9b1f9a55" confidence="UNSET" mdschema="dc" language="en_US" element="contributor">Wilmot, George Barwick</dim:field>
+<dim:field qualifier="accessioned" mdschema="dc" element="date">2005-08-16T22:20:32Z</dim:field>
+<dim:field qualifier="available" mdschema="dc" element="date">2005-08-16T22:20:32Z</dim:field>
+<dim:field qualifier="issued" mdschema="dc" language="en_US" element="date">1955</dim:field>
+<dim:field qualifier="uri" mdschema="dc" element="identifier">http://hdl.handle.net/1721.1/12075</dim:field>
+<dim:field mdschema="dc" language="en_US" element="description">Thesis (Ph.D.) Massachusetts Institute of Technology. Dept. of Chemistry, 1955.</dim:field>
+<dim:field mdschema="dc" language="en_US" element="description">Vita.</dim:field>
+<dim:field mdschema="dc" language="en_US" element="description">Bibliography: leaves 81-84.</dim:field>
+<dim:field qualifier="statementofresponsibility" mdschema="dc" language="en_US" element="description">by George Barwick Wilmot.</dim:field>
+<dim:field qualifier="extent" mdschema="dc" language="en_US" element="format">ii, 84, [5] leaves</dim:field>
+<dim:field qualifier="extent" mdschema="dc" element="format">6970509 bytes</dim:field>
+<dim:field qualifier="extent" mdschema="dc" element="format">6970263 bytes</dim:field>
+<dim:field qualifier="mimetype" mdschema="dc" element="format">application/pdf</dim:field>
+<dim:field qualifier="mimetype" mdschema="dc" element="format">application/pdf</dim:field>
+<dim:field qualifier="iso" mdschema="dc" language="en_US" element="language">eng</dim:field>
+<dim:field mdschema="dc" language="en_US" element="publisher">Massachusetts Institute of Technology</dim:field>
+<dim:field mdschema="dc" language="en_US" element="rights">M.I.T. theses are protected by copyright. They may be viewed from this source for any purpose, but reproduction or distribution in any format is prohibited without written permission. See provided URL for inquiries about permission.</dim:field>
+<dim:field qualifier="uri" mdschema="dc" element="rights">http://dspace.mit.edu/handle/1721.1/7582</dim:field>
+<dim:field mdschema="dc" language="en_US" element="subject">Chemistry</dim:field>
+<dim:field mdschema="dc" language="en_US" element="title">The Raman spectra and structure of silica and the soda-silica glasses</dim:field>
+<dim:field mdschema="dc" language="en_US" element="type">Thesis</dim:field>
+<dim:field qualifier="degree" mdschema="dc" language="en_US" element="description">Ph.D.</dim:field>
+<dim:field qualifier="department" mdschema="dc" language="en_US" element="contributor">Massachusetts Institute of Technology. Dept. of Chemistry</dim:field>
+<dim:field qualifier="oclc" mdschema="dc" language="en_US" element="identifier">31492469</dim:field>
+</dim:dim>
+</mets:xmlData>
+</mets:mdWrap>
+</mets:dmdSec>
+<mets:fileSec>
+<mets:fileGrp USE="THUMBNAIL">
+<mets:file GROUPID="group_file_26dea791-a83f-429e-933f-5cbc83d092b7" CHECKSUM="edef219ad002ddac105a141084f9bebb" MIMETYPE="image/jpeg" SIZE="3772" ID="file_e0c7fb3b-e19e-4981-9775-10bd2c695705" CHECKSUMTYPE="MD5">
+<mets:FLocat LOCTYPE="URL" xlink:label="Generated Thumbnail" xlink:href="/bitstream/handle/1721.1/12075/31492469-MIT.pdf.jpg?sequence=5&amp;isAllowed=y" xlink:type="locator" xlink:title="31492469-MIT.pdf.jpg"/>
+</mets:file>
+</mets:fileGrp>
+<mets:fileGrp USE="COVERPAGE"/>
+<mets:fileGrp USE="CONTENT">
+<mets:file GROUPID="group_file_26dea791-a83f-429e-933f-5cbc83d092b7" CHECKSUM="5e1f4ec6386fd118d5218973a83386fa" MIMETYPE="application/pdf" SIZE="6970263" ID="file_26dea791-a83f-429e-933f-5cbc83d092b7" CHECKSUMTYPE="MD5">
+<mets:FLocat LOCTYPE="URL" xlink:label="Full printable version" xlink:href="/bitstream/handle/1721.1/12075/31492469-MIT.pdf?sequence=2&amp;isAllowed=y" xlink:type="locator" xlink:title="31492469-MIT.pdf"/>
+</mets:file>
+</mets:fileGrp>
+<mets:fileGrp USE="TEXT">
+<mets:file GROUPID="group_file_7e2d1e90-d178-4ad2-a4a5-e4063a2e4d4e" CHECKSUM="ae7bfd8939a443518716da0dea5e1585" MIMETYPE="text/plain" SIZE="13" ID="file_7e2d1e90-d178-4ad2-a4a5-e4063a2e4d4e" CHECKSUMTYPE="MD5">
+<mets:FLocat LOCTYPE="URL" xlink:label="Extracted text" xlink:href="/bitstream/handle/1721.1/12075/31492469.pdf.txt?sequence=3&amp;isAllowed=y" xlink:type="locator" xlink:title="31492469.pdf.txt"/>
+</mets:file>
+<mets:file GROUPID="group_file_26dea791-a83f-429e-933f-5cbc83d092b7" CHECKSUM="03b46578e1ba903ccacb696fcdcb7917" MIMETYPE="text/plain" SIZE="96" ID="file_f519a93a-1ef2-448b-850a-be07ec26e9ea" CHECKSUMTYPE="MD5">
+<mets:FLocat LOCTYPE="URL" xlink:label="Extracted text" xlink:href="/bitstream/handle/1721.1/12075/31492469-MIT.pdf.txt?sequence=4&amp;isAllowed=y" xlink:type="locator" xlink:title="31492469-MIT.pdf.txt"/>
+</mets:file>
+</mets:fileGrp>
+</mets:fileSec>
+<mets:structMap LABEL="DSpace" TYPE="LOGICAL">
+<mets:div DMDID="dmd_1" TYPE="DSpace Item">
+<mets:div ID="div_2" TYPE="DSpace Content Bitstream">
+<mets:fptr FILEID="file_26dea791-a83f-429e-933f-5cbc83d092b7"/>
+</mets:div>
+</mets:div>
+</mets:structMap>
+</mets:METS>

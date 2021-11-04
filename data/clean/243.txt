@@ -1,0 +1,8 @@
+AN ANALYSIS OF DISCRETISATION METHODS
+FOR ORDINARY DIFFERENTIAL EQUATIONS.
+Neil Pitcher ,
+The Queen's College,
+Oxford.
+D. Phil, thesis submitted in 1980.
+"Unto the pure all things are pure."
+The apostle Paul ... Titus 1:15 (A.V.)

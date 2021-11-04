@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:METS xmlns:mets="http://www.loc.gov/METS/" xmlns:xlink="http://www.w3.org/TR/xlink/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dim="http://www.dspace.org/xmlns/dspace/dim" PROFILE="DSPACE METS SIP Profile 1.0" LABEL="DSpace Item" OBJID="/handle/1721.1/76457" ID="hdl:1721.1/76457" OBJEDIT="/admin/item?itemID=34537819-4ad0-4759-bf0a-35804b61147e">
+<mets:dmdSec GROUPID="group_dmd_0" ID="dmd_1">
+<mets:mdWrap OTHERMDTYPE="DIM" MDTYPE="OTHER">
+<mets:xmlData>
+<dim:dim dspaceType="ITEM">
+<dim:field qualifier="advisor" mdschema="dc" language="en_US" element="contributor">Burnham Kelly.</dim:field>
+<dim:field qualifier="author" authority="9f053e306ab14c6e48851614de189c19" confidence="UNSET" mdschema="dc" language="en_US" element="contributor">Reiner, Thomas A. (Thomas Andrew), 1931-</dim:field>
+<dim:field qualifier="accessioned" mdschema="dc" element="date">2013-01-23T19:38:59Z</dim:field>
+<dim:field qualifier="available" mdschema="dc" element="date">2013-01-23T19:38:59Z</dim:field>
+<dim:field qualifier="issued" mdschema="dc" language="en_US" element="date">1955</dim:field>
+<dim:field qualifier="uri" mdschema="dc" element="identifier">http://hdl.handle.net/1721.1/76457</dim:field>
+<dim:field mdschema="dc" language="en_US" element="description">Thesis (M.C.P.) Massachusetts Institute of Technology. Dept. of Architecture, 1955.</dim:field>
+<dim:field mdschema="dc" language="en_US" element="description">Bibliography: leaves [112]-122.</dim:field>
+<dim:field qualifier="statementofresponsibility" mdschema="dc" language="en_US" element="description">by Thomas A. Reiner.</dim:field>
+<dim:field qualifier="extent" mdschema="dc" language="en_US" element="format">111 leaves</dim:field>
+<dim:field qualifier="iso" mdschema="dc" language="en_US" element="language">eng</dim:field>
+<dim:field mdschema="dc" language="en_US" element="publisher">Massachusetts Institute of Technology</dim:field>
+<dim:field mdschema="dc" language="en_US" element="rights">M.I.T. theses are protected by 
+copyright. They may be viewed from this source for any purpose, but 
+reproduction or distribution in any format is prohibited without written 
+permission. See provided URL for inquiries about permission.</dim:field>
+<dim:field qualifier="uri" mdschema="dc" language="en_US" element="rights">http://dspace.mit.edu/handle/1721.1/7582</dim:field>
+<dim:field mdschema="dc" language="en_US" element="subject">Architecture</dim:field>
+<dim:field mdschema="dc" language="en_US" element="title">A critical survey of published physical planning principles</dim:field>
+<dim:field mdschema="dc" language="en_US" element="type">Thesis</dim:field>
+<dim:field qualifier="degree" mdschema="dc" language="en_US" element="description">M.C.P.</dim:field>
+<dim:field qualifier="department" mdschema="dc" language="en_US" element="contributor">Massachusetts Institute of Technology. Dept. of Architecture</dim:field>
+<dim:field qualifier="oclc" mdschema="dc" language="en_US" element="identifier">31441508</dim:field>
+</dim:dim>
+</mets:xmlData>
+</mets:mdWrap>
+</mets:dmdSec>
+<mets:fileSec>
+<mets:fileGrp USE="THUMBNAIL">
+<mets:file GROUPID="group_file_02b37fb0-8f05-4cb9-9f8d-bdca99a42df3" CHECKSUM="36a352f3a254fcf00f6f5a9cc3816916" MIMETYPE="image/jpeg" SIZE="2823" ID="file_0a2f137e-96de-4e60-a238-4871a6d05481" CHECKSUMTYPE="MD5">
+<mets:FLocat LOCTYPE="URL" xlink:label="Generated Thumbnail" xlink:href="/bitstream/handle/1721.1/76457/31441508-MIT.pdf.jpg?sequence=5&amp;isAllowed=y" xlink:type="locator" xlink:title="31441508-MIT.pdf.jpg"/>
+</mets:file>
+</mets:fileGrp>
+<mets:fileGrp USE="COVERPAGE"/>
+<mets:fileGrp USE="CONTENT">
+<mets:file GROUPID="group_file_02b37fb0-8f05-4cb9-9f8d-bdca99a42df3" CHECKSUM="0b72dcb81cdc42dd5861fc04f556c70c" MIMETYPE="application/pdf" SIZE="8269417" ID="file_02b37fb0-8f05-4cb9-9f8d-bdca99a42df3" CHECKSUMTYPE="MD5">
+<mets:FLocat LOCTYPE="URL" xlink:label="Full printable version" xlink:href="/bitstream/handle/1721.1/76457/31441508-MIT.pdf?sequence=2&amp;isAllowed=y" xlink:type="locator" xlink:title="31441508-MIT.pdf"/>
+</mets:file>
+</mets:fileGrp>
+<mets:fileGrp USE="TEXT">
+<mets:file GROUPID="group_file_02b37fb0-8f05-4cb9-9f8d-bdca99a42df3" CHECKSUM="874ff45afc3c57d3abc82e9568a58a62" MIMETYPE="text/plain" SIZE="209701" ID="file_576f88db-e259-41a3-a656-8172df768156" CHECKSUMTYPE="MD5">
+<mets:FLocat LOCTYPE="URL" xlink:label="Extracted text" xlink:href="/bitstream/handle/1721.1/76457/31441508-MIT.pdf.txt?sequence=4&amp;isAllowed=n" xlink:type="locator" xlink:title="31441508-MIT.pdf.txt"/>
+</mets:file>
+</mets:fileGrp>
+</mets:fileSec>
+<mets:structMap LABEL="DSpace" TYPE="LOGICAL">
+<mets:div DMDID="dmd_1" TYPE="DSpace Item">
+<mets:div ID="div_2" TYPE="DSpace Content Bitstream">
+<mets:fptr FILEID="file_02b37fb0-8f05-4cb9-9f8d-bdca99a42df3"/>
+</mets:div>
+</mets:div>
+</mets:structMap>
+</mets:METS>

@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:METS xmlns:mets="http://www.loc.gov/METS/" xmlns:xlink="http://www.w3.org/TR/xlink/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dim="http://www.dspace.org/xmlns/dspace/dim" PROFILE="DSPACE METS SIP Profile 1.0" LABEL="DSpace Item" OBJID="/handle/1721.1/76459" ID="hdl:1721.1/76459" OBJEDIT="/admin/item?itemID=1bde5ffe-b8c7-4259-9d32-6e6c01cda50a">
+<mets:dmdSec GROUPID="group_dmd_0" ID="dmd_1">
+<mets:mdWrap OTHERMDTYPE="DIM" MDTYPE="OTHER">
+<mets:xmlData>
+<dim:dim dspaceType="ITEM">
+<dim:field qualifier="author" authority="b9c3cbedb0e94c37299128444e1afec0" confidence="UNSET" mdschema="dc" language="en_US" element="contributor">Paukulis, Vivaldis</dim:field>
+<dim:field qualifier="accessioned" mdschema="dc" element="date">2013-01-23T19:39:15Z</dim:field>
+<dim:field qualifier="available" mdschema="dc" element="date">2013-01-23T19:39:15Z</dim:field>
+<dim:field qualifier="issued" mdschema="dc" language="en_US" element="date">1955</dim:field>
+<dim:field qualifier="uri" mdschema="dc" element="identifier">http://hdl.handle.net/1721.1/76459</dim:field>
+<dim:field mdschema="dc" language="en_US" element="description">Thesis (M. Arch.)--Massachusetts Institute of Technology, Dept. of Architecture, 1955.</dim:field>
+<dim:field mdschema="dc" language="en_US" element="description">Accompanying drawings held by MIT Museum.</dim:field>
+<dim:field qualifier="statementofresponsibility" mdschema="dc" language="en_US" element="description">submitted by Visvaldis Paukulis.</dim:field>
+<dim:field qualifier="extent" mdschema="dc" language="en_US" element="format">1 v. (unpaged)</dim:field>
+<dim:field qualifier="iso" mdschema="dc" language="en_US" element="language">eng</dim:field>
+<dim:field mdschema="dc" language="en_US" element="publisher">Massachusetts Institute of Technology</dim:field>
+<dim:field mdschema="dc" language="en_US" element="rights">M.I.T. theses are protected by 
+copyright. They may be viewed from this source for any purpose, but 
+reproduction or distribution in any format is prohibited without written 
+permission. See provided URL for inquiries about permission.</dim:field>
+<dim:field qualifier="uri" mdschema="dc" language="en_US" element="rights">http://dspace.mit.edu/handle/1721.1/7582</dim:field>
+<dim:field mdschema="dc" language="en_US" element="subject">Architecture</dim:field>
+<dim:field mdschema="dc" language="en_US" element="title">New YWCA building, Pittsburgh, Pa.</dim:field>
+<dim:field mdschema="dc" language="en_US" element="type">Thesis</dim:field>
+<dim:field qualifier="degree" mdschema="dc" language="en_US" element="description">M.Arch.</dim:field>
+<dim:field qualifier="department" mdschema="dc" language="en_US" element="contributor">Massachusetts Institute of Technology. Dept. of Architecture</dim:field>
+<dim:field qualifier="oclc" mdschema="dc" language="en_US" element="identifier">31467743</dim:field>
+</dim:dim>
+</mets:xmlData>
+</mets:mdWrap>
+</mets:dmdSec>
+<mets:fileSec>
+<mets:fileGrp USE="THUMBNAIL">
+<mets:file GROUPID="group_file_3ccee094-3297-48c0-a845-a990986400fc" CHECKSUM="b48b0b6ed1c8063b54e43fe75e50db6a" MIMETYPE="image/jpeg" SIZE="2524" ID="file_b7862b35-0cb3-4a34-afa0-c455d2573ef7" CHECKSUMTYPE="MD5">
+<mets:FLocat LOCTYPE="URL" xlink:label="Generated Thumbnail" xlink:href="/bitstream/handle/1721.1/76459/31467743-MIT.pdf.jpg?sequence=5&amp;isAllowed=y" xlink:type="locator" xlink:title="31467743-MIT.pdf.jpg"/>
+</mets:file>
+</mets:fileGrp>
+<mets:fileGrp USE="COVERPAGE"/>
+<mets:fileGrp USE="CONTENT">
+<mets:file GROUPID="group_file_3ccee094-3297-48c0-a845-a990986400fc" CHECKSUM="23c1710f5d05d86dba8b4d0b1d0f112b" MIMETYPE="application/pdf" SIZE="3357702" ID="file_3ccee094-3297-48c0-a845-a990986400fc" CHECKSUMTYPE="MD5">
+<mets:FLocat LOCTYPE="URL" xlink:label="Full printable version" xlink:href="/bitstream/handle/1721.1/76459/31467743-MIT.pdf?sequence=2&amp;isAllowed=y" xlink:type="locator" xlink:title="31467743-MIT.pdf"/>
+</mets:file>
+</mets:fileGrp>
+<mets:fileGrp USE="TEXT">
+<mets:file GROUPID="group_file_3ccee094-3297-48c0-a845-a990986400fc" CHECKSUM="3f4c5f8327b801fcb41339999d185153" MIMETYPE="text/plain" SIZE="92685" ID="file_4efdd5c5-6de7-4d25-9385-bdeba98f478b" CHECKSUMTYPE="MD5">
+<mets:FLocat LOCTYPE="URL" xlink:label="Extracted text" xlink:href="/bitstream/handle/1721.1/76459/31467743-MIT.pdf.txt?sequence=4&amp;isAllowed=n" xlink:type="locator" xlink:title="31467743-MIT.pdf.txt"/>
+</mets:file>
+</mets:fileGrp>
+</mets:fileSec>
+<mets:structMap LABEL="DSpace" TYPE="LOGICAL">
+<mets:div DMDID="dmd_1" TYPE="DSpace Item">
+<mets:div ID="div_2" TYPE="DSpace Content Bitstream">
+<mets:fptr FILEID="file_3ccee094-3297-48c0-a845-a990986400fc"/>
+</mets:div>
+</mets:div>
+</mets:structMap>
+</mets:METS>

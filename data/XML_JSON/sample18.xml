@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:METS xmlns:mets="http://www.loc.gov/METS/" xmlns:xlink="http://www.w3.org/TR/xlink/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dim="http://www.dspace.org/xmlns/dspace/dim" PROFILE="DSPACE METS SIP Profile 1.0" LABEL="DSpace Item" OBJID="/handle/1721.1/12435" ID="hdl:1721.1/12435" OBJEDIT="/admin/item?itemID=1bb125eb-6a2a-4702-ab2f-cca15150bda0">
+<mets:dmdSec GROUPID="group_dmd_0" ID="dmd_1">
+<mets:mdWrap OTHERMDTYPE="DIM" MDTYPE="OTHER">
+<mets:xmlData>
+<dim:dim dspaceType="ITEM">
+<dim:field qualifier="advisor" mdschema="dc" language="en_US" element="contributor">J. P. Den Hartog.</dim:field>
+<dim:field qualifier="author" authority="06a817a54fb80a61907497528bafbfe1" confidence="UNSET" mdschema="dc" language="en_US" element="contributor">Cannon, Robert Hamilton</dim:field>
+<dim:field qualifier="accessioned" mdschema="dc" element="date">2005-08-15T23:36:36Z</dim:field>
+<dim:field qualifier="available" mdschema="dc" element="date">2005-08-15T23:36:36Z</dim:field>
+<dim:field qualifier="issued" mdschema="dc" language="en_US" element="date">1950</dim:field>
+<dim:field qualifier="uri" mdschema="dc" element="identifier">http://hdl.handle.net/1721.1/12435</dim:field>
+<dim:field mdschema="dc" language="en_US" element="description">Thesis (Sc.D.) Massachusetts Institute of Technology. Dept. of Mechanical Engineering, 1950.</dim:field>
+<dim:field mdschema="dc" language="en_US" element="description">Vita.</dim:field>
+<dim:field mdschema="dc" language="en_US" element="description">Includes bibliographies.</dim:field>
+<dim:field qualifier="statementofresponsibility" mdschema="dc" language="en_US" element="description">by Robert Hamilton Cannon, Jr.</dim:field>
+<dim:field qualifier="extent" mdschema="dc" language="en_US" element="format">x, 249, [4] leaves</dim:field>
+<dim:field qualifier="extent" mdschema="dc" element="format">58154956 bytes</dim:field>
+<dim:field qualifier="extent" mdschema="dc" element="format">58154715 bytes</dim:field>
+<dim:field qualifier="mimetype" mdschema="dc" element="format">application/pdf</dim:field>
+<dim:field qualifier="mimetype" mdschema="dc" element="format">application/pdf</dim:field>
+<dim:field qualifier="iso" mdschema="dc" language="en_US" element="language">eng</dim:field>
+<dim:field mdschema="dc" language="en_US" element="publisher">Massachusetts Institute of Technology</dim:field>
+<dim:field mdschema="dc" language="en_US" element="rights">M.I.T. theses are protected by copyright. They may be viewed from this source for any purpose, but reproduction or distribution in any format is prohibited without written permission. See provided URL for inquiries about permission.</dim:field>
+<dim:field qualifier="uri" mdschema="dc" element="rights">http://dspace.mit.edu/handle/1721.1/7582</dim:field>
+<dim:field mdschema="dc" language="en_US" element="subject">Mechanical Engineering</dim:field>
+<dim:field mdschema="dc" language="en_US" element="title">Performance of hydrofoil systems</dim:field>
+<dim:field mdschema="dc" language="en_US" element="type">Thesis</dim:field>
+<dim:field qualifier="degree" mdschema="dc" language="en_US" element="description">Sc.D.</dim:field>
+<dim:field qualifier="department" mdschema="dc" language="en_US" element="contributor">Massachusetts Institute of Technology. Dept. of Mechanical Engineering</dim:field>
+<dim:field qualifier="oclc" mdschema="dc" language="en_US" element="identifier">29733166</dim:field>
+</dim:dim>
+</mets:xmlData>
+</mets:mdWrap>
+</mets:dmdSec>
+<mets:fileSec>
+<mets:fileGrp USE="THUMBNAIL">
+<mets:file GROUPID="group_file_7508c1d7-9155-4ddf-b64a-8f16388be56d" CHECKSUM="eafb5dca160721ea2794d76e6c1fac97" MIMETYPE="image/jpeg" SIZE="2872" ID="file_4b135062-a267-4abf-b326-435f12fde73f" CHECKSUMTYPE="MD5">
+<mets:FLocat LOCTYPE="URL" xlink:label="Generated Thumbnail" xlink:href="/bitstream/handle/1721.1/12435/29733166-MIT.pdf.jpg?sequence=5&amp;isAllowed=y" xlink:type="locator" xlink:title="29733166-MIT.pdf.jpg"/>
+</mets:file>
+</mets:fileGrp>
+<mets:fileGrp USE="COVERPAGE"/>
+<mets:fileGrp USE="CONTENT">
+<mets:file GROUPID="group_file_7508c1d7-9155-4ddf-b64a-8f16388be56d" CHECKSUM="5706a1cf386fae31256a8485423a9ca8" MIMETYPE="application/pdf" SIZE="58154715" ID="file_7508c1d7-9155-4ddf-b64a-8f16388be56d" CHECKSUMTYPE="MD5">
+<mets:FLocat LOCTYPE="URL" xlink:label="Full printable version" xlink:href="/bitstream/handle/1721.1/12435/29733166-MIT.pdf?sequence=2&amp;isAllowed=y" xlink:type="locator" xlink:title="29733166-MIT.pdf"/>
+</mets:file>
+</mets:fileGrp>
+<mets:fileGrp USE="TEXT">
+<mets:file GROUPID="group_file_7508c1d7-9155-4ddf-b64a-8f16388be56d" CHECKSUM="8b81038fe9a185bfea84191c49e3b2d6" MIMETYPE="text/plain" SIZE="270" ID="file_19d49a3b-d8eb-423a-be5f-0bd5590332be" CHECKSUMTYPE="MD5">
+<mets:FLocat LOCTYPE="URL" xlink:label="Extracted text" xlink:href="/bitstream/handle/1721.1/12435/29733166-MIT.pdf.txt?sequence=4&amp;isAllowed=y" xlink:type="locator" xlink:title="29733166-MIT.pdf.txt"/>
+</mets:file>
+</mets:fileGrp>
+</mets:fileSec>
+<mets:structMap LABEL="DSpace" TYPE="LOGICAL">
+<mets:div DMDID="dmd_1" TYPE="DSpace Item">
+<mets:div ID="div_2" TYPE="DSpace Content Bitstream">
+<mets:fptr FILEID="file_7508c1d7-9155-4ddf-b64a-8f16388be56d"/>
+</mets:div>
+</mets:div>
+</mets:structMap>
+</mets:METS>

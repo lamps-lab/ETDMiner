@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:METS xmlns:mets="http://www.loc.gov/METS/" xmlns:xlink="http://www.w3.org/TR/xlink/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dim="http://www.dspace.org/xmlns/dspace/dim" PROFILE="DSPACE METS SIP Profile 1.0" LABEL="DSpace Item" OBJID="/handle/1721.1/75593" ID="hdl:1721.1/75593" OBJEDIT="/admin/item?itemID=1f76da7b-b1d4-47cc-b7fe-407f4510ee6f">
+<mets:dmdSec GROUPID="group_dmd_0" ID="dmd_1">
+<mets:mdWrap OTHERMDTYPE="DIM" MDTYPE="OTHER">
+<mets:xmlData>
+<dim:dim dspaceType="ITEM">
+<dim:field qualifier="advisor" mdschema="dc" language="en_US" element="contributor">Laurence B. Anderson.</dim:field>
+<dim:field qualifier="author" authority="9d3ac2e02bd19d0f39820cbb1993b142" confidence="UNSET" mdschema="dc" language="en_US" element="contributor">Horowitz, Richard M</dim:field>
+<dim:field qualifier="accessioned" mdschema="dc" element="date">2012-12-13T18:44:41Z</dim:field>
+<dim:field qualifier="available" mdschema="dc" element="date">2012-12-13T18:44:41Z</dim:field>
+<dim:field qualifier="issued" mdschema="dc" language="en_US" element="date">1955</dim:field>
+<dim:field qualifier="uri" mdschema="dc" element="identifier">http://hdl.handle.net/1721.1/75593</dim:field>
+<dim:field mdschema="dc" language="en_US" element="description">Thesis (M.Arch.) Massachusetts Institute of Technology. Dept. of Architecture, 1955.</dim:field>
+<dim:field mdschema="dc" language="en_US" element="description">Accompanying drawings held by MIT Museum.</dim:field>
+<dim:field mdschema="dc" language="en_US" element="description">Bibliography: leaves 98-101.</dim:field>
+<dim:field qualifier="statementofresponsibility" mdschema="dc" language="en_US" element="description">by Richard M. Horowitz.</dim:field>
+<dim:field qualifier="extent" mdschema="dc" language="en_US" element="format">1 v. in various pagings</dim:field>
+<dim:field qualifier="iso" mdschema="dc" language="en_US" element="language">eng</dim:field>
+<dim:field mdschema="dc" language="en_US" element="publisher">Massachusetts Institute of Technology</dim:field>
+<dim:field mdschema="dc" language="en_US" element="rights">M.I.T. theses are protected by 
+copyright. They may be viewed from this source for any purpose, but 
+reproduction or distribution in any format is prohibited without written 
+permission. See provided URL for inquiries about permission.</dim:field>
+<dim:field qualifier="uri" mdschema="dc" language="en_US" element="rights">http://dspace.mit.edu/handle/1721.1/7582</dim:field>
+<dim:field mdschema="dc" language="en_US" element="subject">Architecture</dim:field>
+<dim:field mdschema="dc" language="en_US" element="title">A development study for North Philadelphia airport</dim:field>
+<dim:field mdschema="dc" language="en_US" element="type">Thesis</dim:field>
+<dim:field qualifier="degree" mdschema="dc" language="en_US" element="description">M.Arch.</dim:field>
+<dim:field qualifier="department" mdschema="dc" language="en_US" element="contributor">Massachusetts Institute of Technology. Dept. of Architecture</dim:field>
+<dim:field qualifier="oclc" mdschema="dc" language="en_US" element="identifier">31386308</dim:field>
+</dim:dim>
+</mets:xmlData>
+</mets:mdWrap>
+</mets:dmdSec>
+<mets:fileSec>
+<mets:fileGrp USE="THUMBNAIL">
+<mets:file GROUPID="group_file_9d0b0fe4-f180-4784-9ece-9aace6eb3f63" CHECKSUM="d1217124222539d23bb803cecc11c5bd" MIMETYPE="image/jpeg" SIZE="2841" ID="file_8637fa48-57b7-4dc8-86a4-0a331e4d5995" CHECKSUMTYPE="MD5">
+<mets:FLocat LOCTYPE="URL" xlink:label="Generated Thumbnail" xlink:href="/bitstream/handle/1721.1/75593/31386308-MIT.pdf.jpg?sequence=4&amp;isAllowed=y" xlink:type="locator" xlink:title="31386308-MIT.pdf.jpg"/>
+</mets:file>
+</mets:fileGrp>
+<mets:fileGrp USE="COVERPAGE"/>
+<mets:fileGrp USE="CONTENT">
+<mets:file GROUPID="group_file_9d0b0fe4-f180-4784-9ece-9aace6eb3f63" CHECKSUM="c097af8602617066023da049ccf47691" MIMETYPE="application/pdf" SIZE="14846379" ID="file_9d0b0fe4-f180-4784-9ece-9aace6eb3f63" CHECKSUMTYPE="MD5">
+<mets:FLocat LOCTYPE="URL" xlink:label="Full printable version" xlink:href="/bitstream/handle/1721.1/75593/31386308-MIT.pdf?sequence=2&amp;isAllowed=y" xlink:type="locator" xlink:title="31386308-MIT.pdf"/>
+</mets:file>
+</mets:fileGrp>
+<mets:fileGrp USE="TEXT">
+<mets:file GROUPID="group_file_9d0b0fe4-f180-4784-9ece-9aace6eb3f63" CHECKSUM="3f5320c8861f0072a1ecc4c414a23e65" MIMETYPE="text/plain" SIZE="125631" ID="file_72d12a7c-73d4-49e3-8bb2-f88e7077b4aa" CHECKSUMTYPE="MD5">
+<mets:FLocat LOCTYPE="URL" xlink:label="Extracted text" xlink:href="/bitstream/handle/1721.1/75593/31386308-MIT.pdf.txt?sequence=3&amp;isAllowed=n" xlink:type="locator" xlink:title="31386308-MIT.pdf.txt"/>
+</mets:file>
+</mets:fileGrp>
+</mets:fileSec>
+<mets:structMap LABEL="DSpace" TYPE="LOGICAL">
+<mets:div DMDID="dmd_1" TYPE="DSpace Item">
+<mets:div ID="div_2" TYPE="DSpace Content Bitstream">
+<mets:fptr FILEID="file_9d0b0fe4-f180-4784-9ece-9aace6eb3f63"/>
+</mets:div>
+</mets:div>
+</mets:structMap>
+</mets:METS>

@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:METS xmlns:mets="http://www.loc.gov/METS/" xmlns:xlink="http://www.w3.org/TR/xlink/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dim="http://www.dspace.org/xmlns/dspace/dim" PROFILE="DSPACE METS SIP Profile 1.0" LABEL="DSpace Item" OBJID="/handle/1721.1/79476" ID="hdl:1721.1/79476" OBJEDIT="/admin/item?itemID=0b137615-08b8-4716-a205-8d8f5e1bf122">
+<mets:dmdSec GROUPID="group_dmd_0" ID="dmd_1">
+<mets:mdWrap OTHERMDTYPE="DIM" MDTYPE="OTHER">
+<mets:xmlData>
+<dim:dim dspaceType="ITEM">
+<dim:field qualifier="advisor" mdschema="dc" language="en_US" element="contributor">Uno Ingard.</dim:field>
+<dim:field qualifier="author" authority="c4b6d023dd3dcf33acf4f7d8774cca52" confidence="UNSET" mdschema="dc" language="en_US" element="contributor">Lyon, Richard H</dim:field>
+<dim:field qualifier="accessioned" mdschema="dc" element="date">2013-07-10T14:47:56Z</dim:field>
+<dim:field qualifier="available" mdschema="dc" element="date">2013-07-10T14:47:56Z</dim:field>
+<dim:field qualifier="issued" mdschema="dc" language="en_US" element="date">1955</dim:field>
+<dim:field qualifier="uri" mdschema="dc" element="identifier">http://hdl.handle.net/1721.1/79476</dim:field>
+<dim:field mdschema="dc" language="en_US" element="description">Thesis (Ph. D.)--Massachusetts Institute of Technology, Dept. of Physics, 1955.</dim:field>
+<dim:field mdschema="dc" language="en_US" element="description">Includes bibliographical references (leaves 127-128).</dim:field>
+<dim:field qualifier="statementofresponsibility" mdschema="dc" language="en_US" element="description">by Richard H. Lyon.</dim:field>
+<dim:field qualifier="extent" mdschema="dc" language="en_US" element="format">viii, 128 leaves</dim:field>
+<dim:field qualifier="iso" mdschema="dc" language="en_US" element="language">eng</dim:field>
+<dim:field mdschema="dc" language="en_US" element="publisher">Massachusetts Institute of Technology</dim:field>
+<dim:field mdschema="dc" language="en_US" element="rights">M.I.T. theses are protected by 
+copyright. They may be viewed from this source for any purpose, but 
+reproduction or distribution in any format is prohibited without written 
+permission. See provided URL for inquiries about permission.</dim:field>
+<dim:field qualifier="uri" mdschema="dc" language="en_US" element="rights">http://dspace.mit.edu/handle/1721.1/7582</dim:field>
+<dim:field mdschema="dc" language="en_US" element="subject">Physics</dim:field>
+<dim:field mdschema="dc" language="en_US" element="title">The response of continuous systems to random noise fields</dim:field>
+<dim:field mdschema="dc" language="en_US" element="type">Thesis</dim:field>
+<dim:field qualifier="degree" mdschema="dc" language="en_US" element="description">Ph.D.</dim:field>
+<dim:field qualifier="department" mdschema="dc" language="en_US" element="contributor">Massachusetts Institute of Technology. Dept. of Physics</dim:field>
+<dim:field qualifier="oclc" mdschema="dc" language="en_US" element="identifier">31443468</dim:field>
+</dim:dim>
+</mets:xmlData>
+</mets:mdWrap>
+</mets:dmdSec>
+<mets:fileSec>
+<mets:fileGrp USE="THUMBNAIL">
+<mets:file GROUPID="group_file_c867e0da-512f-4eef-a3d8-b11b6ff33038" CHECKSUM="78d7cf0f8ffa3bbc82b3a016f467a5fb" MIMETYPE="image/jpeg" SIZE="3261" ID="file_7c00405b-1490-4635-9e30-40d680b536fd" CHECKSUMTYPE="MD5">
+<mets:FLocat LOCTYPE="URL" xlink:label="Generated Thumbnail" xlink:href="/bitstream/handle/1721.1/79476/31443468-MIT.pdf.jpg?sequence=5&amp;isAllowed=y" xlink:type="locator" xlink:title="31443468-MIT.pdf.jpg"/>
+</mets:file>
+</mets:fileGrp>
+<mets:fileGrp USE="COVERPAGE"/>
+<mets:fileGrp USE="CONTENT">
+<mets:file GROUPID="group_file_c867e0da-512f-4eef-a3d8-b11b6ff33038" CHECKSUM="40ede4e14973236b463f70ba3eaab9c9" MIMETYPE="application/pdf" SIZE="7122813" ID="file_c867e0da-512f-4eef-a3d8-b11b6ff33038" CHECKSUMTYPE="MD5">
+<mets:FLocat LOCTYPE="URL" xlink:label="Full printable version" xlink:href="/bitstream/handle/1721.1/79476/31443468-MIT.pdf?sequence=2&amp;isAllowed=y" xlink:type="locator" xlink:title="31443468-MIT.pdf"/>
+</mets:file>
+</mets:fileGrp>
+<mets:fileGrp USE="TEXT">
+<mets:file GROUPID="group_file_c867e0da-512f-4eef-a3d8-b11b6ff33038" CHECKSUM="74b3543ab0a8e3d6c124e51fe1f4b8eb" MIMETYPE="text/plain" SIZE="134237" ID="file_b177d201-08ba-4dce-9e73-6878a3f4127d" CHECKSUMTYPE="MD5">
+<mets:FLocat LOCTYPE="URL" xlink:label="Extracted text" xlink:href="/bitstream/handle/1721.1/79476/31443468-MIT.pdf.txt?sequence=4&amp;isAllowed=n" xlink:type="locator" xlink:title="31443468-MIT.pdf.txt"/>
+</mets:file>
+</mets:fileGrp>
+</mets:fileSec>
+<mets:structMap LABEL="DSpace" TYPE="LOGICAL">
+<mets:div DMDID="dmd_1" TYPE="DSpace Item">
+<mets:div ID="div_2" TYPE="DSpace Content Bitstream">
+<mets:fptr FILEID="file_c867e0da-512f-4eef-a3d8-b11b6ff33038"/>
+</mets:div>
+</mets:div>
+</mets:structMap>
+</mets:METS>

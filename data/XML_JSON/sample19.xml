@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:METS xmlns:mets="http://www.loc.gov/METS/" xmlns:xlink="http://www.w3.org/TR/xlink/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dim="http://www.dspace.org/xmlns/dspace/dim" PROFILE="DSPACE METS SIP Profile 1.0" LABEL="DSpace Item" OBJID="/handle/1721.1/46430" ID="hdl:1721.1/46430" OBJEDIT="/admin/item?itemID=06951ec5-9f3b-48c9-b3c0-6ed8cb727c1b">
+<mets:dmdSec GROUPID="group_dmd_0" ID="dmd_1">
+<mets:mdWrap OTHERMDTYPE="DIM" MDTYPE="OTHER">
+<mets:xmlData>
+<dim:dim dspaceType="ITEM">
+<dim:field qualifier="advisor" mdschema="dc" language="en_US" element="contributor">C. S. Draper, R. C. Seamans, Jr.</dim:field>
+<dim:field qualifier="author" authority="d12072c76d913de25290c29da908c330" confidence="UNSET" mdschema="dc" language="en_US" element="contributor">Clementson, Gerhardt Christopher</dim:field>
+<dim:field qualifier="accessioned" mdschema="dc" element="date">2009-08-26T16:24:42Z</dim:field>
+<dim:field qualifier="available" mdschema="dc" element="date">2009-08-26T16:24:42Z</dim:field>
+<dim:field qualifier="issued" mdschema="dc" language="en_US" element="date">1950</dim:field>
+<dim:field qualifier="uri" mdschema="dc" element="identifier">http://hdl.handle.net/1721.1/46430</dim:field>
+<dim:field mdschema="dc" language="en_US" element="description">Thesis (Sc.D.) Massachusetts Institute of Technology. Dept. of Aeronautical Engineering, 1950.</dim:field>
+<dim:field mdschema="dc" language="en_US" element="description">Vita. Appendix contains numerous pamphlets.</dim:field>
+<dim:field mdschema="dc" language="en_US" element="description">Bibliography: leaves 84-85.</dim:field>
+<dim:field qualifier="statementofresponsibility" mdschema="dc" language="en_US" element="description">by Gerhardt C. Clementson.</dim:field>
+<dim:field qualifier="extent" mdschema="dc" language="en_US" element="format">1 v. in various pagings</dim:field>
+<dim:field qualifier="iso" mdschema="dc" language="en_US" element="language">eng</dim:field>
+<dim:field mdschema="dc" language="en_US" element="publisher">Massachusetts Institute of Technology</dim:field>
+<dim:field mdschema="dc" language="en_US" element="rights">M.I.T. theses are protected by 
+copyright. They may be viewed from this source for any purpose, but 
+reproduction or distribution in any format is prohibited without written 
+permission. See provided URL for inquiries about permission.</dim:field>
+<dim:field qualifier="uri" mdschema="dc" language="en_US" element="rights">http://dspace.mit.edu/handle/1721.1/7582</dim:field>
+<dim:field mdschema="dc" language="en_US" element="subject">Aeronautical Engineering Dept.</dim:field>
+<dim:field mdschema="dc" language="en_US" element="title">An investigation of the power spectral density of atmospheric turbulence</dim:field>
+<dim:field mdschema="dc" language="en_US" element="type">Thesis</dim:field>
+<dim:field qualifier="degree" mdschema="dc" language="en_US" element="description">Sc.D.</dim:field>
+<dim:field qualifier="department" mdschema="dc" language="en_US" element="contributor">Massachusetts Institute of Technology. Aeronautical Engineering Dept.</dim:field>
+<dim:field qualifier="oclc" mdschema="dc" language="en_US" element="identifier">29748010</dim:field>
+</dim:dim>
+</mets:xmlData>
+</mets:mdWrap>
+</mets:dmdSec>
+<mets:fileSec>
+<mets:fileGrp USE="THUMBNAIL">
+<mets:file GROUPID="group_file_f1ed1a1e-79ed-49fb-b296-7e55d21add04" CHECKSUM="ddafe03b2ae74066ee803ad19461a505" MIMETYPE="image/jpeg" SIZE="3131" ID="file_ccaf6d08-4b7b-43ac-b0ed-c02f36ef071f" CHECKSUMTYPE="MD5">
+<mets:FLocat LOCTYPE="URL" xlink:label="Generated Thumbnail" xlink:href="/bitstream/handle/1721.1/46430/29748010-MIT.pdf.jpg?sequence=5&amp;isAllowed=y" xlink:type="locator" xlink:title="29748010-MIT.pdf.jpg"/>
+</mets:file>
+</mets:fileGrp>
+<mets:fileGrp USE="COVERPAGE"/>
+<mets:fileGrp USE="CONTENT">
+<mets:file GROUPID="group_file_f1ed1a1e-79ed-49fb-b296-7e55d21add04" CHECKSUM="f7bbe67bc08bbf8223fb77d9d6249837" MIMETYPE="application/pdf" SIZE="88720526" ID="file_f1ed1a1e-79ed-49fb-b296-7e55d21add04" CHECKSUMTYPE="MD5">
+<mets:FLocat LOCTYPE="URL" xlink:label="Full printable version" xlink:href="/bitstream/handle/1721.1/46430/29748010-MIT.pdf?sequence=2&amp;isAllowed=y" xlink:type="locator" xlink:title="29748010-MIT.pdf"/>
+</mets:file>
+</mets:fileGrp>
+<mets:fileGrp USE="TEXT">
+<mets:file GROUPID="group_file_f1ed1a1e-79ed-49fb-b296-7e55d21add04" CHECKSUM="c6336fdc6dea1246fba94720c243a600" MIMETYPE="text/plain" SIZE="245060" ID="file_2ea356ac-7d1a-4692-bf9a-5b9c18451326" CHECKSUMTYPE="MD5">
+<mets:FLocat LOCTYPE="URL" xlink:label="Extracted text" xlink:href="/bitstream/handle/1721.1/46430/29748010-MIT.pdf.txt?sequence=4&amp;isAllowed=n" xlink:type="locator" xlink:title="29748010-MIT.pdf.txt"/>
+</mets:file>
+</mets:fileGrp>
+</mets:fileSec>
+<mets:structMap LABEL="DSpace" TYPE="LOGICAL">
+<mets:div DMDID="dmd_1" TYPE="DSpace Item">
+<mets:div ID="div_2" TYPE="DSpace Content Bitstream">
+<mets:fptr FILEID="file_f1ed1a1e-79ed-49fb-b296-7e55d21add04"/>
+</mets:div>
+</mets:div>
+</mets:structMap>
+</mets:METS>

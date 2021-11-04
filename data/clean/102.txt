@@ -1,0 +1,16 @@
+A Program Verifier
+by
+James Cornelius King
+Department of Computer Science
+Carnegie-Mellon University
+Pittsburgh, Pennsylvania
+September 1969
+Submitted to the Carnegie-Mellon University
+In partial fulfillment of the requirements
+for the degree of Doctor of Philosophy
+This work was supported in part by the Advanced Research
+Projects Agency of the Office of the Secretary of Defense
+(P44620-67-C-0058) and is monitored by the Air Force Office
+of Scientific Research. This document has been approved for
+public release and sale; distribution of this document is
+unlimited.

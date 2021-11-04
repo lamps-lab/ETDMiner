@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:METS xmlns:mets="http://www.loc.gov/METS/" xmlns:xlink="http://www.w3.org/TR/xlink/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dim="http://www.dspace.org/xmlns/dspace/dim" PROFILE="DSPACE METS SIP Profile 1.0" LABEL="DSpace Item" OBJID="/handle/1721.1/67123" ID="hdl:1721.1/67123" OBJEDIT="/admin/item?itemID=b8c023b3-a004-4531-85a3-e92a1ccb95c3">
+<mets:dmdSec GROUPID="group_dmd_0" ID="dmd_1">
+<mets:mdWrap OTHERMDTYPE="DIM" MDTYPE="OTHER">
+<mets:xmlData>
+<dim:dim dspaceType="ITEM">
+<dim:field qualifier="advisor" mdschema="dc" language="en_US" element="contributor">David P. Hoult.</dim:field>
+<dim:field qualifier="author" authority="134486f3b803a431675839cf98eb0658" confidence="UNSET" mdschema="dc" language="en_US" element="contributor">Suchon, Walter</dim:field>
+<dim:field qualifier="accessioned" mdschema="dc" element="date">2011-11-18T20:49:09Z</dim:field>
+<dim:field qualifier="available" mdschema="dc" element="date">2011-11-18T20:49:09Z</dim:field>
+<dim:field qualifier="issued" mdschema="dc" language="en_US" element="date">1970</dim:field>
+<dim:field qualifier="uri" mdschema="dc" element="identifier">http://hdl.handle.net/1721.1/67123</dim:field>
+<dim:field mdschema="dc" language="en_US" element="description">Thesis (M.S.)--Massachusetts Institute of Technology, Dept. of Mechanical Engineering, 1970.</dim:field>
+<dim:field mdschema="dc" language="en_US" element="description">Bibliography: leaf 15.</dim:field>
+<dim:field qualifier="extent" mdschema="dc" language="en_US" element="format">v, 31 leaves</dim:field>
+<dim:field qualifier="iso" mdschema="dc" language="en_US" element="language">eng</dim:field>
+<dim:field mdschema="dc" language="en_US" element="publisher">Massachusetts Institute of Technology</dim:field>
+<dim:field mdschema="dc" language="en_US" element="rights">M.I.T. theses are protected by 
+copyright. They may be viewed from this source for any purpose, but 
+reproduction or distribution in any format is prohibited without written 
+permission. See provided URL for inquiries about permission.</dim:field>
+<dim:field qualifier="uri" mdschema="dc" language="en_US" element="rights">http://dspace.mit.edu/handle/1721.1/7582</dim:field>
+<dim:field mdschema="dc" language="en_US" element="subject">Mechanical Engineering</dim:field>
+<dim:field mdschema="dc" language="en_US" element="title">An experimental investigation of oil spreading over water.</dim:field>
+<dim:field mdschema="dc" language="en_US" element="type">Thesis</dim:field>
+<dim:field qualifier="degree" mdschema="dc" language="en_US" element="description">M.S.</dim:field>
+<dim:field qualifier="department" mdschema="dc" language="en_US" element="contributor">Massachusetts Institute of Technology. Dept. of Mechanical Engineering</dim:field>
+<dim:field qualifier="oclc" mdschema="dc" language="en_US" element="identifier">28161279</dim:field>
+</dim:dim>
+</mets:xmlData>
+</mets:mdWrap>
+</mets:dmdSec>
+<mets:fileSec>
+<mets:fileGrp USE="THUMBNAIL">
+<mets:file GROUPID="group_file_3da94a83-5caa-4cc7-a11d-6b885cd250b4" CHECKSUM="f7e1373b547d50776dbdfbd406534758" MIMETYPE="image/jpeg" SIZE="3212" ID="file_cbe467ef-2416-4f93-80a8-5a33b9adcc64" CHECKSUMTYPE="MD5">
+<mets:FLocat LOCTYPE="URL" xlink:label="Generated Thumbnail" xlink:href="/bitstream/handle/1721.1/67123/28161279-MIT.pdf.jpg?sequence=5&amp;isAllowed=y" xlink:type="locator" xlink:title="28161279-MIT.pdf.jpg"/>
+</mets:file>
+</mets:fileGrp>
+<mets:fileGrp USE="COVERPAGE"/>
+<mets:fileGrp USE="CONTENT">
+<mets:file GROUPID="group_file_3da94a83-5caa-4cc7-a11d-6b885cd250b4" CHECKSUM="9537dc28c8d3a6eb9c1274e5a449074f" MIMETYPE="application/pdf" SIZE="1353131" ID="file_3da94a83-5caa-4cc7-a11d-6b885cd250b4" CHECKSUMTYPE="MD5">
+<mets:FLocat LOCTYPE="URL" xlink:label="Full printable version" xlink:href="/bitstream/handle/1721.1/67123/28161279-MIT.pdf?sequence=2&amp;isAllowed=y" xlink:type="locator" xlink:title="28161279-MIT.pdf"/>
+</mets:file>
+</mets:fileGrp>
+<mets:fileGrp USE="TEXT">
+<mets:file GROUPID="group_file_3da94a83-5caa-4cc7-a11d-6b885cd250b4" CHECKSUM="5dfd4c3741a1733cf5f0aeacfb14f2d7" MIMETYPE="text/plain" SIZE="24156" ID="file_64c43385-e71b-4248-aed3-958b41950de0" CHECKSUMTYPE="MD5">
+<mets:FLocat LOCTYPE="URL" xlink:label="Extracted text" xlink:href="/bitstream/handle/1721.1/67123/28161279-MIT.pdf.txt?sequence=4&amp;isAllowed=n" xlink:type="locator" xlink:title="28161279-MIT.pdf.txt"/>
+</mets:file>
+</mets:fileGrp>
+</mets:fileSec>
+<mets:structMap LABEL="DSpace" TYPE="LOGICAL">
+<mets:div DMDID="dmd_1" TYPE="DSpace Item">
+<mets:div ID="div_2" TYPE="DSpace Content Bitstream">
+<mets:fptr FILEID="file_3da94a83-5caa-4cc7-a11d-6b885cd250b4"/>
+</mets:div>
+</mets:div>
+</mets:structMap>
+</mets:METS>

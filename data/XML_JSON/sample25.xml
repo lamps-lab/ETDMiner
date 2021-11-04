@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:METS xmlns:mets="http://www.loc.gov/METS/" xmlns:xlink="http://www.w3.org/TR/xlink/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dim="http://www.dspace.org/xmlns/dspace/dim" PROFILE="DSPACE METS SIP Profile 1.0" LABEL="DSpace Item" OBJID="/handle/1721.1/12073" ID="hdl:1721.1/12073" OBJEDIT="/admin/item?itemID=a614b4ac-a38e-443d-ba93-6a3c28a64045">
+<mets:dmdSec GROUPID="group_dmd_0" ID="dmd_1">
+<mets:mdWrap OTHERMDTYPE="DIM" MDTYPE="OTHER">
+<mets:xmlData>
+<dim:dim dspaceType="ITEM">
+<dim:field qualifier="advisor" mdschema="dc" language="en_US" element="contributor">Egon Orowan.</dim:field>
+<dim:field qualifier="author" authority="4fe790217bccfab7cf9a8bf6a6952f8f" confidence="UNSET" mdschema="dc" language="en_US" element="contributor">Paslay, Paul R</dim:field>
+<dim:field qualifier="accessioned" mdschema="dc" element="date">2005-08-16T22:19:29Z</dim:field>
+<dim:field qualifier="available" mdschema="dc" element="date">2005-08-16T22:19:29Z</dim:field>
+<dim:field qualifier="issued" mdschema="dc" language="en_US" element="date">1955</dim:field>
+<dim:field qualifier="uri" mdschema="dc" element="identifier">http://hdl.handle.net/1721.1/12073</dim:field>
+<dim:field mdschema="dc" language="en_US" element="description">Thesis (Sc. D.)--Massachusetts Institute of Technology, Dept. of Mechanical Engineering, 1955.</dim:field>
+<dim:field mdschema="dc" language="en_US" element="description">Vita.</dim:field>
+<dim:field mdschema="dc" language="en_US" element="description">Includes bibliographical references (leaf 30en Edits Sent).</dim:field>
+<dim:field qualifier="statementofresponsibility" mdschema="dc" language="en_US" element="description">by Paul R. Paslay.</dim:field>
+<dim:field qualifier="extent" mdschema="dc" language="en_US" element="format">111 leaves</dim:field>
+<dim:field qualifier="extent" mdschema="dc" element="format">5740084 bytes</dim:field>
+<dim:field qualifier="extent" mdschema="dc" element="format">5739841 bytes</dim:field>
+<dim:field qualifier="mimetype" mdschema="dc" element="format">application/pdf</dim:field>
+<dim:field qualifier="mimetype" mdschema="dc" element="format">application/pdf</dim:field>
+<dim:field qualifier="iso" mdschema="dc" language="en_US" element="language">eng</dim:field>
+<dim:field mdschema="dc" language="en_US" element="publisher">Massachusetts Institute of Technology</dim:field>
+<dim:field mdschema="dc" language="en_US" element="rights">M.I.T. theses are protected by copyright. They may be viewed from this source for any purpose, but reproduction or distribution in any format is prohibited without written permission. See provided URL for inquiries about permission.</dim:field>
+<dim:field qualifier="uri" mdschema="dc" element="rights">http://dspace.mit.edu/handle/1721.1/7582</dim:field>
+<dim:field mdschema="dc" language="en_US" element="subject">Mechanical Engineering</dim:field>
+<dim:field mdschema="dc" language="en_US" element="title">Calendering of an elastic-viscous material</dim:field>
+<dim:field mdschema="dc" language="en_US" element="type">Thesis</dim:field>
+<dim:field qualifier="degree" mdschema="dc" language="en_US" element="description">Sc.D.</dim:field>
+<dim:field qualifier="department" mdschema="dc" language="en_US" element="contributor">Massachusetts Institute of Technology. Dept. of Mechanical Engineering</dim:field>
+<dim:field qualifier="oclc" mdschema="dc" language="en_US" element="identifier">31458227</dim:field>
+</dim:dim>
+</mets:xmlData>
+</mets:mdWrap>
+</mets:dmdSec>
+<mets:fileSec>
+<mets:fileGrp USE="THUMBNAIL">
+<mets:file GROUPID="group_file_53b11794-f141-4973-926b-0aa2f3143806" CHECKSUM="b5580ab38d4d60fa84b447bb84839660" MIMETYPE="image/jpeg" SIZE="3509" ID="file_a9e7126d-3dfe-4ab4-9992-f21dead1a34f" CHECKSUMTYPE="MD5">
+<mets:FLocat LOCTYPE="URL" xlink:label="Generated Thumbnail" xlink:href="/bitstream/handle/1721.1/12073/31458227-MIT.pdf.jpg?sequence=5&amp;isAllowed=y" xlink:type="locator" xlink:title="31458227-MIT.pdf.jpg"/>
+</mets:file>
+</mets:fileGrp>
+<mets:fileGrp USE="COVERPAGE"/>
+<mets:fileGrp USE="CONTENT">
+<mets:file GROUPID="group_file_53b11794-f141-4973-926b-0aa2f3143806" CHECKSUM="3727d07dfcb3f2363721e80e7980d3d7" MIMETYPE="application/pdf" SIZE="5739841" ID="file_53b11794-f141-4973-926b-0aa2f3143806" CHECKSUMTYPE="MD5">
+<mets:FLocat LOCTYPE="URL" xlink:label="Full printable version" xlink:href="/bitstream/handle/1721.1/12073/31458227-MIT.pdf?sequence=2&amp;isAllowed=y" xlink:type="locator" xlink:title="31458227-MIT.pdf"/>
+</mets:file>
+</mets:fileGrp>
+<mets:fileGrp USE="TEXT">
+<mets:file GROUPID="group_file_53b11794-f141-4973-926b-0aa2f3143806" CHECKSUM="26d2646c199ec5c9c3575ccdd65c222c" MIMETYPE="text/plain" SIZE="110" ID="file_133a6727-a6b9-420d-9845-90b6b9bcabbb" CHECKSUMTYPE="MD5">
+<mets:FLocat LOCTYPE="URL" xlink:label="Extracted text" xlink:href="/bitstream/handle/1721.1/12073/31458227-MIT.pdf.txt?sequence=4&amp;isAllowed=y" xlink:type="locator" xlink:title="31458227-MIT.pdf.txt"/>
+</mets:file>
+</mets:fileGrp>
+</mets:fileSec>
+<mets:structMap LABEL="DSpace" TYPE="LOGICAL">
+<mets:div DMDID="dmd_1" TYPE="DSpace Item">
+<mets:div ID="div_2" TYPE="DSpace Content Bitstream">
+<mets:fptr FILEID="file_53b11794-f141-4973-926b-0aa2f3143806"/>
+</mets:div>
+</mets:div>
+</mets:structMap>
+</mets:METS>

@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:METS xmlns:mets="http://www.loc.gov/METS/" xmlns:xlink="http://www.w3.org/TR/xlink/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dim="http://www.dspace.org/xmlns/dspace/dim" PROFILE="DSPACE METS SIP Profile 1.0" LABEL="DSpace Item" OBJID="/handle/1721.1/28012" ID="hdl:1721.1/28012" OBJEDIT="/admin/item?itemID=67c6a96b-1d1c-48d5-963c-88ea2dab260e">
+<mets:dmdSec GROUPID="group_dmd_0" ID="dmd_1">
+<mets:mdWrap OTHERMDTYPE="DIM" MDTYPE="OTHER">
+<mets:xmlData>
+<dim:dim dspaceType="ITEM">
+<dim:field qualifier="advisor" mdschema="dc" language="en_US" element="contributor">Prof. Anderson.</dim:field>
+<dim:field qualifier="author" authority="091b1c62a14b0d1906422840667ae34b" confidence="UNSET" mdschema="dc" language="en_US" element="contributor">Gangnes, Arnold G. (Arnold Gordon), 1918-</dim:field>
+<dim:field qualifier="accessioned" mdschema="dc" element="date">2005-09-26T18:00:26Z</dim:field>
+<dim:field qualifier="available" mdschema="dc" element="date">2005-09-26T18:00:26Z</dim:field>
+<dim:field qualifier="issued" mdschema="dc" language="en_US" element="date">1946</dim:field>
+<dim:field qualifier="uri" mdschema="dc" element="identifier">http://hdl.handle.net/1721.1/28012</dim:field>
+<dim:field mdschema="dc" language="en_US" element="description">Thesis (M.Arch.) Massachusetts Institute of Technology. Dept. of Architecture, 1946.</dim:field>
+<dim:field mdschema="dc" language="en_US" element="description">Accompanying drawings held by MIT Museum.</dim:field>
+<dim:field mdschema="dc" language="en_US" element="description">Bibliography: leaves 77-79.</dim:field>
+<dim:field qualifier="statementofresponsibility" mdschema="dc" language="en_US" element="description">by Arnold Gordon Gangnes.</dim:field>
+<dim:field qualifier="extent" mdschema="dc" language="en_US" element="format">1 v. in various pagings</dim:field>
+<dim:field qualifier="extent" mdschema="dc" element="format">10708656 bytes</dim:field>
+<dim:field qualifier="extent" mdschema="dc" element="format">10721868 bytes</dim:field>
+<dim:field qualifier="mimetype" mdschema="dc" element="format">application/pdf</dim:field>
+<dim:field qualifier="mimetype" mdschema="dc" element="format">application/pdf</dim:field>
+<dim:field qualifier="iso" mdschema="dc" element="language">en_US</dim:field>
+<dim:field mdschema="dc" language="en_US" element="publisher">Massachusetts Institute of Technology</dim:field>
+<dim:field mdschema="dc" language="en_US" element="rights">M.I.T. theses are protected by copyright. They may be viewed from this source for any purpose, but reproduction or distribution in any format is prohibited without written permission. See provided URL for inquiries about permission.</dim:field>
+<dim:field qualifier="uri" mdschema="dc" element="rights">http://dspace.mit.edu/handle/1721.1/7582</dim:field>
+<dim:field mdschema="dc" language="en_US" element="subject">Architecture</dim:field>
+<dim:field mdschema="dc" language="en_US" element="title">A study of a railroad terminal for Seattle</dim:field>
+<dim:field mdschema="dc" language="en_US" element="type">Thesis</dim:field>
+<dim:field qualifier="degree" mdschema="dc" language="en_US" element="description">M.Arch.</dim:field>
+<dim:field qualifier="department" mdschema="dc" language="en_US" element="contributor">Massachusetts Institute of Technology. Dept. of Architecture</dim:field>
+<dim:field qualifier="oclc" mdschema="dc" language="en_US" element="identifier">27183365</dim:field>
+</dim:dim>
+</mets:xmlData>
+</mets:mdWrap>
+</mets:dmdSec>
+<mets:fileSec>
+<mets:fileGrp USE="THUMBNAIL">
+<mets:file GROUPID="group_file_ca41a853-0f1e-435f-9204-d9497e62443e" CHECKSUM="905d27e64053832c8a7a6518d163dc08" MIMETYPE="image/jpeg" SIZE="3064" ID="file_711d2acd-8449-498a-8fec-a3083c76d2be" CHECKSUMTYPE="MD5">
+<mets:FLocat LOCTYPE="URL" xlink:label="Generated Thumbnail" xlink:href="/bitstream/handle/1721.1/28012/27183365-MIT.pdf.jpg?sequence=5&amp;isAllowed=y" xlink:type="locator" xlink:title="27183365-MIT.pdf.jpg"/>
+</mets:file>
+</mets:fileGrp>
+<mets:fileGrp USE="COVERPAGE"/>
+<mets:fileGrp USE="CONTENT">
+<mets:file GROUPID="group_file_ca41a853-0f1e-435f-9204-d9497e62443e" CHECKSUM="11c8c9247d480c927f2dad4984917b99" MIMETYPE="application/pdf" SIZE="10721868" ID="file_ca41a853-0f1e-435f-9204-d9497e62443e" CHECKSUMTYPE="MD5">
+<mets:FLocat LOCTYPE="URL" xlink:label="Full printable version" xlink:href="/bitstream/handle/1721.1/28012/27183365-MIT.pdf?sequence=2&amp;isAllowed=y" xlink:type="locator" xlink:title="27183365-MIT.pdf"/>
+</mets:file>
+</mets:fileGrp>
+<mets:fileGrp USE="TEXT">
+<mets:file GROUPID="group_file_ca41a853-0f1e-435f-9204-d9497e62443e" CHECKSUM="73d1bef35abec301eed6574c7b46bec3" MIMETYPE="text/plain" SIZE="103619" ID="file_ca31d668-eb66-4067-a5e5-4db886bf43ca" CHECKSUMTYPE="MD5">
+<mets:FLocat LOCTYPE="URL" xlink:label="Extracted text" xlink:href="/bitstream/handle/1721.1/28012/27183365-MIT.pdf.txt?sequence=4&amp;isAllowed=y" xlink:type="locator" xlink:title="27183365-MIT.pdf.txt"/>
+</mets:file>
+</mets:fileGrp>
+</mets:fileSec>
+<mets:structMap LABEL="DSpace" TYPE="LOGICAL">
+<mets:div DMDID="dmd_1" TYPE="DSpace Item">
+<mets:div ID="div_2" TYPE="DSpace Content Bitstream">
+<mets:fptr FILEID="file_ca41a853-0f1e-435f-9204-d9497e62443e"/>
+</mets:div>
+</mets:div>
+</mets:structMap>
+</mets:METS>

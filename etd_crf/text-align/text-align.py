@@ -2,18 +2,23 @@
 # -*- coding: utf-8 -*-
 """
 Created on Thu Jan  7 18:37:26 2021
-
 @author: Muntabir Choudhury
 """
 
 
 #import libraries
+import bs4
 import edlib
 import glob
 import re
+from xml.etree import ElementTree as ET
+from itertools import zip_longest
+from nltk import word_tokenize
 
-clean = '/Users/muntabir/Documents/text-align_data/clean/4.txt'
-noisy = '/Users/muntabir/Documents/text-align_data/noisy/4.txt'
+
+clean = '/Users/muntabir/Documents/etdExtraction/etd_crf_result/text-align/annotated-test/*.xml'
+noisy_hocr = '/Users/muntabir/Documents/etdExtraction/etd_crf_result/text-align/hocr/*.html'
+
 
 numbers = re.compile(r'(\d+)')
 def numericalSort(value):
@@ -23,94 +28,199 @@ def numericalSort(value):
 
 
 target_files = sorted(glob.glob(clean), key=numericalSort)
-query_files = sorted(glob.glob(noisy), key=numericalSort)
+hocr_files = sorted(glob.glob(noisy_hocr), key=numericalSort)
 
-def query():
-    for files in query_files:
-        with open(files, mode='r') as query:
-            texts = []
-            for lines in query:
-                text = lines
-                texts.append(text)
-            return texts
-
-def target():
-    for files in target_files:
-        with open(files, mode='r') as target:
-            texts = []
-            for lines in target:
-                texts.append(lines)   
+## This function will extract all the position information for each token from the hOCR files 
+# and return it as a list 
+def hocr_parser():
+    list_ = []
+    for files in hocr_files:
+        with open(files, mode='r', encoding='utf-8') as html_input:
+            soup = bs4.BeautifulSoup(html_input,'lxml')
+            ocr_words = soup.findAll("span", {"class": "ocrx_word"})
+            tokens_bbox = []
+            for line in ocr_words:
+                words = line.text.replace("\n"," ").strip()
+                title = line['title']
+                #The coordinates of the bounding box
+                x1,y1,x2,y2 = map(int, title[5:title.find(";")].split())
+                tokens_bbox.append({"x1":x1,"y1":y1,"x2":x2,"y2":y2,"text": words})
             
-            return texts
-        
+            list_.append(tokens_bbox)
+                           
+    return list_
+
+
+## This function will read all the annotated files and return it as a list
+def ann():
+    list_ = []
+    for files in target_files:
+        new_data = b''
+        data = ET.parse(files).getroot()
+        temp = ET.tostring(data)
+        new_data = new_data+temp    
+        list_.append(new_data)
+    
+    return list_
+
+## This function will parse all the tags from the annotated text files (i.e. xml files) using regular expression
+# and return it as a list
+def parser(text):
+    list_ = []
+    for sent in text:
+        regex = r'(<\S*?>)*(\w+[^<>]*?\w)(<\S*?>)(\s?|<\S*?>?|\,?|\, ?|\n?)(\n?\w.?[^<]*|[>]?\.*[\s?]*\n)'
+        pattern = re.compile(regex)
+        html = sent.decode('utf-8')
+        doc = re.findall(pattern, html)
+        list_.append(doc)
+    
+    return list_
+    
+## This is a preprocessing function which converts list of tuples to a flat list
+def tuplesTolist(tuple_text):
+    list_ = []
+    for elements in tuple_text:
+        #print(elements)
+        list_of_tuples = list(map(list, elements))
+        flat_list = [item for sublist in list_of_tuples for item in sublist]
+        list_.append(flat_list)
+
+    return list_
+
+## This function will convert list to string
 def listToString(text):
         _string = ""
-        return(_string.join(text))
+        return _string.join(text)
 
-query_text = query()
-query_ = listToString(query_text)
-target_text = target()
-target_ = listToString(target_text)
-result = edlib.align(query_, target_, task="path")
+## This function will align all the noisy tokens and clean text tokens using edlib python wrapper
+def align(text):
+    target_list = []
+    for elements in text:
+        stopwords = ['<title>', '</title>', '<author>', '</author>', '<university>', '</university>', '<degree>', '</degree>', '<advisor>', '\n',
+                     '</advisor>', '<year>', '</year>', '<program>', '</program>']
+        result_list = [word for word in elements if word not in stopwords]
+        token_list = []
+        for items in result_list:
+            tokens = word_tokenize(items)
+            token_list.append(tokens)
+    
+        flat_list = [item for sublist in token_list for item in sublist]
+    
+        for target_text in flat_list:
+            target_list.append(target_text)      
+    
+    target_ = " ".join(target_list)
+        
+    list_query = hocr_parser()
+    query_list = []
+    for l in list_query:
+        for texts in l:
+            query_text = texts['text']
+            query_list.append(query_text)
+   
+    query_ = " ".join(query_list)
+  
+    result = edlib.align(query_, target_, task="path", additionalEqualities=[])
+    alignment = edlib.getNiceAlignment(result, query_, target_)
+    aligned = alignment['target_aligned']
+    return aligned
 
-alignment = edlib.getNiceAlignment(result, query_, target_)
-#print("\n".join(alignment.values()))
-print(alignment['target_aligned'])
-#import re
-#
-#import edlib
-#
-#
-#def edlib2pair(query: str, ref: str, mode: str = "NW") -> str:
-#    """
-#    input:
-#    query and ref sequence
-#
-#    output:
-#    TAAGGATGGTCCCAT TC
-#     ||||  ||||.||| ||
-#     AAGG  GGTCTCATATC
-#    """
-#
-#    a = edlib.align(query, ref, mode=mode, task="path")
-#    ref_pos = a["locations"][0][0]
-#    query_pos = 0
-#    ref_aln = match_aln = query_aln = ""
-#
-#    for step, code in re.findall("(\d+)(\D)", a["cigar"]):
-#        step = int(step)
-#        if code == "=":
-#            ref_aln += ref[ref_pos : ref_pos + step]
-#            ref_pos += step
-#            query_aln += query[query_pos : query_pos + step]
-#            query_pos += step
-#            match_aln += "|" * step
-#        elif code == "X":
-#            ref_aln += ref[ref_pos : ref_pos + step]
-#            ref_pos += step
-#            query_aln += query[query_pos : query_pos + step]
-#            query_pos += step
-#            match_aln += "." * step
-#        elif code == "D":
-#            ref_aln += ref[ref_pos : ref_pos + step]
-#            ref_pos += step
-#            query_aln += " " * step
-#            query_pos += 0
-#            match_aln += " " * step
-#        elif code == "I":
-#            ref_aln += " " * step
-#            ref_pos += 0
-#            query_aln += query[query_pos : query_pos + step]
-#            query_pos += step
-#            match_aln += " " * step
-#        else:
-#            pass
-#
-#    return f"{ref_aln}\n{match_aln}\n{query_aln}"
-#
-#
-#if __name__ == "__main__":
-#    REF = "TAAGGATGGTCCCATTC"
-#    QUERY = "AAGGGGTCTCATATC"
-#    PAIR = edlib2pair(QUERY, REF, mode="NW")
-#    print(PAIR)
+## This function save all the aligned tokens into dictionary
+def token_dict(tokens):
+    lines = []
+    for elements in tokenized:
+        lines.append({"aligned-token":elements})
+    return lines
+
+## This function will map all the aligned tokens with the postion information and return the result as a list of dictionaries
+def merge(lines, pos):
+    l3 = [{**u, **v} for u, v in zip_longest(lines, pos, fillvalue={})]
+    return l3
+
+
+def normalized(values):
+    norm = [(float(i) - min(values)) / (max(values) - min(values)) for i in values]
+    return norm
+
+class Features:
+    
+    def __init__(self, merged_dict):
+        self.merged_dict = merged_dict
+        #self.normalize = normalize
+
+    def x1_feature(self):
+        x1_list = []
+        for values in self.merged_dict:
+            x1_features = values['x1']
+            x1_list.append(x1_features)
+        return x1_list
+    
+    def y1_feature(self):
+        y1_list = []
+        for values in self.merged_dict:
+            y1_features = values['y1']
+            y1_list.append(y1_features)
+        return y1_list
+    
+    def y2_feature(self):
+        y2_list = []
+        for values in self.merged_dict:
+            y2_features = values['y2']
+            y2_list.append(y2_features)
+        return y2_list
+    
+
+if __name__ == "__main__":
+    ann_text = ann()
+    
+    target_text = parser(ann_text)
+
+    convert_tuples = tuplesTolist(target_text)
+
+    text_align = align(convert_tuples)
+
+    tokenized = text_align.split()
+    
+    tokens = token_dict(tokenized)
+   
+    ## Reading the hOCR parsed files and saving all the keys to a dictionary
+    pos_info = hocr_parser()
+    pos_list = [item for sublist in pos_info for item in sublist]
+    keys = ['x1','y1','x2','y2']
+    pos = [dict((k, d[k]) for k in keys) for d in pos_list]
+
+    ## mapping all the position information keys and aligned-token into a one single dictionary by calling the merge function 
+    merged = merge(tokens, pos)
+    #print(merged)
+#    bbox_feature = features(merged)
+#    
+#    #Extracting th
+#    left_margin = normalize(bbox_feature)
+#    
+#    print(left_margin)
+    position_feature = []
+    feature = Features(merged)
+    left_margin = feature.x1_feature()
+    normalized_left_margin = normalized(left_margin)
+    yCoordinate1 = feature.y1_feature()
+    normalized_yCoordinate1 = normalized(yCoordinate1)
+    #print(normalized_yCoordinate1)
+    yCoordinate2 = feature.y1_feature()
+    normalized_yCoordinate2 = normalized(yCoordinate2)
+    
+    #position_feature.append
+    #print(position_feature)
+    
+    print(normalized_yCoordinate2)
+    #lines = same_line()
+    #print(lines)
+
+    
+
+    
+
+        
+    
+
+
+

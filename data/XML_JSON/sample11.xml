@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:METS xmlns:mets="http://www.loc.gov/METS/" xmlns:xlink="http://www.w3.org/TR/xlink/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dim="http://www.dspace.org/xmlns/dspace/dim" PROFILE="DSPACE METS SIP Profile 1.0" LABEL="DSpace Item" OBJID="/handle/1721.1/75609" ID="hdl:1721.1/75609" OBJEDIT="/admin/item?itemID=1889fb10-1df2-4508-b9c2-9039bf977fa8">
+<mets:dmdSec GROUPID="group_dmd_0" ID="dmd_1">
+<mets:mdWrap OTHERMDTYPE="DIM" MDTYPE="OTHER">
+<mets:xmlData>
+<dim:dim dspaceType="ITEM">
+<dim:field qualifier="advisor" mdschema="dc" language="en_US" element="contributor">Imre Halasz.</dim:field>
+<dim:field qualifier="author" authority="82e151a88528e16e52db4cbf24fc9bd9" confidence="UNSET" mdschema="dc" language="en_US" element="contributor">Holschneider, Johannes Philipp</dim:field>
+<dim:field qualifier="accessioned" mdschema="dc" element="date">2012-12-13T18:45:55Z</dim:field>
+<dim:field qualifier="available" mdschema="dc" element="date">2012-12-13T18:45:55Z</dim:field>
+<dim:field qualifier="issued" mdschema="dc" language="en_US" element="date">1960</dim:field>
+<dim:field qualifier="uri" mdschema="dc" element="identifier">http://hdl.handle.net/1721.1/75609</dim:field>
+<dim:field mdschema="dc" language="en_US" element="description">Thesis (M.Arch)--Massachusetts Institute of Technology, Dept. of Architecture, 1960.</dim:field>
+<dim:field mdschema="dc" language="en_US" element="description">Accompanying drawings held by MIT Museum.</dim:field>
+<dim:field mdschema="dc" language="en_US" element="description">Includes bibliographical references (leaf 53).</dim:field>
+<dim:field qualifier="statementofresponsibility" mdschema="dc" language="en_US" element="description">by Johannes Philipp Holschneider.</dim:field>
+<dim:field qualifier="extent" mdschema="dc" language="en_US" element="format">53, [23] leaves</dim:field>
+<dim:field qualifier="iso" mdschema="dc" language="en_US" element="language">eng</dim:field>
+<dim:field mdschema="dc" language="en_US" element="publisher">Massachusetts Institute of Technology</dim:field>
+<dim:field mdschema="dc" language="en_US" element="rights">M.I.T. theses are protected by 
+copyright. They may be viewed from this source for any purpose, but 
+reproduction or distribution in any format is prohibited without written 
+permission. See provided URL for inquiries about permission.</dim:field>
+<dim:field qualifier="uri" mdschema="dc" language="en_US" element="rights">http://dspace.mit.edu/handle/1721.1/7582</dim:field>
+<dim:field mdschema="dc" language="en_US" element="subject">Architecture</dim:field>
+<dim:field mdschema="dc" language="en_US" element="title">A headquarters for the World Health Organization in Geneva, Switzerland</dim:field>
+<dim:field mdschema="dc" language="en_US" element="type">Thesis</dim:field>
+<dim:field qualifier="degree" mdschema="dc" language="en_US" element="description">M.Arch</dim:field>
+<dim:field qualifier="department" mdschema="dc" language="en_US" element="contributor">Massachusetts Institute of Technology. Dept. of Architecture</dim:field>
+<dim:field qualifier="oclc" mdschema="dc" language="en_US" element="identifier">32832364</dim:field>
+</dim:dim>
+</mets:xmlData>
+</mets:mdWrap>
+</mets:dmdSec>
+<mets:fileSec>
+<mets:fileGrp USE="THUMBNAIL">
+<mets:file GROUPID="group_file_7f7ecce6-4f77-4afd-bd0a-ad98b400d87a" CHECKSUM="874194b136c91c90d11ba832f0bf04c0" MIMETYPE="image/jpeg" SIZE="3475" ID="file_f593f27b-9e73-43e0-a052-0bee6a186406" CHECKSUMTYPE="MD5">
+<mets:FLocat LOCTYPE="URL" xlink:label="Generated Thumbnail" xlink:href="/bitstream/handle/1721.1/75609/32832364-MIT.pdf.jpg?sequence=4&amp;isAllowed=y" xlink:type="locator" xlink:title="32832364-MIT.pdf.jpg"/>
+</mets:file>
+</mets:fileGrp>
+<mets:fileGrp USE="COVERPAGE"/>
+<mets:fileGrp USE="CONTENT">
+<mets:file GROUPID="group_file_7f7ecce6-4f77-4afd-bd0a-ad98b400d87a" CHECKSUM="36972435d50b1b54eb9d92af335c8e0f" MIMETYPE="application/pdf" SIZE="12220887" ID="file_7f7ecce6-4f77-4afd-bd0a-ad98b400d87a" CHECKSUMTYPE="MD5">
+<mets:FLocat LOCTYPE="URL" xlink:label="Full printable version" xlink:href="/bitstream/handle/1721.1/75609/32832364-MIT.pdf?sequence=2&amp;isAllowed=y" xlink:type="locator" xlink:title="32832364-MIT.pdf"/>
+</mets:file>
+</mets:fileGrp>
+<mets:fileGrp USE="TEXT">
+<mets:file GROUPID="group_file_7f7ecce6-4f77-4afd-bd0a-ad98b400d87a" CHECKSUM="7f92e5521a88a10626e9ee231d591797" MIMETYPE="text/plain" SIZE="66787" ID="file_5a91d9b2-a1fd-4dfe-b68b-5d27af2c9c7f" CHECKSUMTYPE="MD5">
+<mets:FLocat LOCTYPE="URL" xlink:label="Extracted text" xlink:href="/bitstream/handle/1721.1/75609/32832364-MIT.pdf.txt?sequence=3&amp;isAllowed=n" xlink:type="locator" xlink:title="32832364-MIT.pdf.txt"/>
+</mets:file>
+</mets:fileGrp>
+</mets:fileSec>
+<mets:structMap LABEL="DSpace" TYPE="LOGICAL">
+<mets:div DMDID="dmd_1" TYPE="DSpace Item">
+<mets:div ID="div_2" TYPE="DSpace Content Bitstream">
+<mets:fptr FILEID="file_7f7ecce6-4f77-4afd-bd0a-ad98b400d87a"/>
+</mets:div>
+</mets:div>
+</mets:structMap>
+</mets:METS>

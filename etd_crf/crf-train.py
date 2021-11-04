@@ -88,9 +88,9 @@ def get_labels(doc):
 
     
     
-file_path = '/Users/muntabir/Documents/Annotated/annotated-train/*.xml'
+file_path = '/Users/muntabir/Documents/Annotated/train/*.xml'
 allxmlfiles = append_ann(file_path)
-soup = bs(allxmlfiles, "html5lib")
+soup = bs(allxmlfiles, "html.parser")
 
 #idenmtify the tagged element
 docs = []
@@ -128,22 +128,26 @@ for d in soup.find_all("document"):
                     prev_tag = tag
                          
         sents = sents + tags
-        docs.append(sents)  
+
+docs.append(sents)  
         
 data = []
 
 print("\n===================================\nBIO Tag Completed\n===================================\n") 
 
+from collections import Counter
 for i, doc in enumerate(docs):
     tokens = [t for t, label in doc]
     #print(tokens)
     tagged = pos_tag(tokens)
-    #print(tagged)
+    counter = Counter(tag for word, tag in tagged)
+    #print(counter)
     #zipped = zip(tokens, tagged)
     #print(tuple(zipped))
 
     data.append([(w, pos, label) for (w, label), (word, pos) in zip(doc, tagged)])
-    #print(data)
+
+
 
 print("\n===================================\nPOS Tag Completed\n===================================\n") 
 

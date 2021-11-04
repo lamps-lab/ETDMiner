@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:METS xmlns:mets="http://www.loc.gov/METS/" xmlns:xlink="http://www.w3.org/TR/xlink/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dim="http://www.dspace.org/xmlns/dspace/dim" PROFILE="DSPACE METS SIP Profile 1.0" LABEL="DSpace Item" OBJID="/handle/1721.1/36924" ID="hdl:1721.1/36924" OBJEDIT="/admin/item?itemID=e248e5c4-0eec-450e-85e2-d952fbe80d32">
+<mets:dmdSec GROUPID="group_dmd_0" ID="dmd_1">
+<mets:mdWrap OTHERMDTYPE="DIM" MDTYPE="OTHER">
+<mets:xmlData>
+<dim:dim dspaceType="ITEM">
+<dim:field qualifier="advisor" mdschema="dc" language="en_US" element="contributor">Raphael Salem.</dim:field>
+<dim:field qualifier="author" authority="546cfe798180c6d63108ba0c4903e886" confidence="UNSET" mdschema="dc" language="en_US" element="contributor">Crandall, Stephen H</dim:field>
+<dim:field qualifier="accessioned" mdschema="dc" element="date">2007-04-03T16:51:56Z</dim:field>
+<dim:field qualifier="available" mdschema="dc" element="date">2007-04-03T16:51:56Z</dim:field>
+<dim:field qualifier="issued" mdschema="dc" language="en_US" element="date">1946</dim:field>
+<dim:field qualifier="uri" mdschema="dc" element="identifier">http://hdl.handle.net/1721.1/36924</dim:field>
+<dim:field mdschema="dc" language="en_US" element="description">Thesis (Ph.D.) Massachusetts Institute of Technology. Dept. of Mathematics, 1946.</dim:field>
+<dim:field mdschema="dc" language="en_US" element="description">Vita.</dim:field>
+<dim:field mdschema="dc" language="en_US" element="description">Bibliography: leaf 14.</dim:field>
+<dim:field qualifier="statementofresponsibility" mdschema="dc" language="en_US" element="description">by Stephen Harry Crandall.</dim:field>
+<dim:field qualifier="extent" mdschema="dc" language="en_US" element="format">ii, 15 leaves</dim:field>
+<dim:field qualifier="iso" mdschema="dc" language="en_US" element="language">eng</dim:field>
+<dim:field mdschema="dc" language="en_US" element="publisher">Massachusetts Institute of Technology</dim:field>
+<dim:field mdschema="dc" language="en_US" element="rights">M.I.T. theses are protected by copyright. They may be viewed from this source for any purpose, but reproduction or distribution in any format is prohibited without written permission. See provided URL for inquiries about permission.</dim:field>
+<dim:field qualifier="uri" mdschema="dc" element="rights">http://dspace.mit.edu/handle/1721.1/7582</dim:field>
+<dim:field mdschema="dc" language="en_US" element="subject">Mathematics</dim:field>
+<dim:field mdschema="dc" language="en_US" element="title">On the fourier series of the square of a function</dim:field>
+<dim:field mdschema="dc" language="en_US" element="type">Thesis</dim:field>
+<dim:field qualifier="degree" mdschema="dc" language="en_US" element="description">Ph.D.</dim:field>
+<dim:field qualifier="department" mdschema="dc" language="en_US" element="contributor">Massachusetts Institute of Technology. Dept. of Mathematics</dim:field>
+<dim:field qualifier="oclc" mdschema="dc" language="en_US" element="identifier">27142234</dim:field>
+</dim:dim>
+</mets:xmlData>
+</mets:mdWrap>
+</mets:dmdSec>
+<mets:fileSec>
+<mets:fileGrp USE="THUMBNAIL">
+<mets:file GROUPID="group_file_da777a06-729c-4604-bd73-27e1e56ac385" CHECKSUM="16e09a4f852e9592d99f7bbe4cf896dc" MIMETYPE="image/jpeg" SIZE="3462" ID="file_eef4f6e3-1280-4d17-bdfb-6576b19181dc" CHECKSUMTYPE="MD5">
+<mets:FLocat LOCTYPE="URL" xlink:label="Generated Thumbnail" xlink:href="/bitstream/handle/1721.1/36924/27142234-MIT.pdf.jpg?sequence=4&amp;isAllowed=y" xlink:type="locator" xlink:title="27142234-MIT.pdf.jpg"/>
+</mets:file>
+</mets:fileGrp>
+<mets:fileGrp USE="COVERPAGE"/>
+<mets:fileGrp USE="CONTENT">
+<mets:file GROUPID="group_file_da777a06-729c-4604-bd73-27e1e56ac385" CHECKSUM="9d390e4044ffba81ca3bbf16b6d72010" MIMETYPE="application/pdf" SIZE="1038134" ID="file_da777a06-729c-4604-bd73-27e1e56ac385" CHECKSUMTYPE="MD5">
+<mets:FLocat LOCTYPE="URL" xlink:label="Full printable version" xlink:href="/bitstream/handle/1721.1/36924/27142234-MIT.pdf?sequence=2&amp;isAllowed=y" xlink:type="locator" xlink:title="27142234-MIT.pdf"/>
+</mets:file>
+</mets:fileGrp>
+<mets:fileGrp USE="TEXT">
+<mets:file GROUPID="group_file_da777a06-729c-4604-bd73-27e1e56ac385" CHECKSUM="aae406565c025aee682fbb7dee1388e0" MIMETYPE="text/plain" SIZE="13842" ID="file_26951367-c788-48b2-8dd9-e2dd3f2c90d6" CHECKSUMTYPE="MD5">
+<mets:FLocat LOCTYPE="URL" xlink:label="Extracted text" xlink:href="/bitstream/handle/1721.1/36924/27142234-MIT.pdf.txt?sequence=3&amp;isAllowed=y" xlink:type="locator" xlink:title="27142234-MIT.pdf.txt"/>
+</mets:file>
+</mets:fileGrp>
+</mets:fileSec>
+<mets:structMap LABEL="DSpace" TYPE="LOGICAL">
+<mets:div DMDID="dmd_1" TYPE="DSpace Item">
+<mets:div ID="div_2" TYPE="DSpace Content Bitstream">
+<mets:fptr FILEID="file_da777a06-729c-4604-bd73-27e1e56ac385"/>
+</mets:div>
+</mets:div>
+</mets:structMap>
+</mets:METS>

@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:METS xmlns:mets="http://www.loc.gov/METS/" xmlns:xlink="http://www.w3.org/TR/xlink/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dim="http://www.dspace.org/xmlns/dspace/dim" PROFILE="DSPACE METS SIP Profile 1.0" LABEL="DSpace Item" OBJID="/handle/1721.1/71084" ID="hdl:1721.1/71084" OBJEDIT="/admin/item?itemID=96ec5e0a-4d2b-4f0f-a140-8f57de511695">
+<mets:dmdSec GROUPID="group_dmd_0" ID="dmd_1">
+<mets:mdWrap OTHERMDTYPE="DIM" MDTYPE="OTHER">
+<mets:xmlData>
+<dim:dim dspaceType="ITEM">
+<dim:field qualifier="advisor" mdschema="dc" language="en_US" element="contributor">Eduardo F. Catalano.</dim:field>
+<dim:field qualifier="author" authority="9e563f4ef8ee70c26a005d64b50b793d" confidence="UNSET" mdschema="dc" language="en_US" element="contributor">Pedju, Ary Mochtar</dim:field>
+<dim:field qualifier="accessioned" mdschema="dc" element="date">2012-06-05T13:53:31Z</dim:field>
+<dim:field qualifier="available" mdschema="dc" element="date">2012-06-05T13:53:31Z</dim:field>
+<dim:field qualifier="issued" mdschema="dc" language="en_US" element="date">1965</dim:field>
+<dim:field qualifier="uri" mdschema="dc" element="identifier">http://hdl.handle.net/1721.1/71084</dim:field>
+<dim:field mdschema="dc" language="en_US" element="description">Massachusetts Institute of Technology. Dept. of Architecture. Thesis. 1965. M.Arch.</dim:field>
+<dim:field mdschema="dc" language="en_US" element="description">Accompanying drawings held by MIT Museum.</dim:field>
+<dim:field mdschema="dc" language="en_US" element="description">Bibliography: leaf 27.</dim:field>
+<dim:field qualifier="extent" mdschema="dc" language="en_US" element="format">[4], 27 leaves</dim:field>
+<dim:field qualifier="iso" mdschema="dc" language="en_US" element="language">eng</dim:field>
+<dim:field mdschema="dc" language="en_US" element="publisher">Massachusetts Institute of Technology</dim:field>
+<dim:field mdschema="dc" language="en_US" element="rights">M.I.T. theses are protected by 
+copyright. They may be viewed from this source for any purpose, but 
+reproduction or distribution in any format is prohibited without written 
+permission. See provided URL for inquiries about permission.</dim:field>
+<dim:field qualifier="uri" mdschema="dc" language="en_US" element="rights">http://dspace.mit.edu/handle/1721.1/7582</dim:field>
+<dim:field mdschema="dc" language="en_US" element="subject">Architecture</dim:field>
+<dim:field mdschema="dc" language="en_US" element="title">Buildings as systems.</dim:field>
+<dim:field mdschema="dc" language="en_US" element="type">Thesis</dim:field>
+<dim:field qualifier="degree" mdschema="dc" language="en_US" element="description">M.Arch.</dim:field>
+<dim:field qualifier="department" mdschema="dc" language="en_US" element="contributor">Massachusetts Institute of Technology. Dept. of Architecture</dim:field>
+<dim:field qualifier="oclc" mdschema="dc" language="en_US" element="identifier">24918565</dim:field>
+</dim:dim>
+</mets:xmlData>
+</mets:mdWrap>
+</mets:dmdSec>
+<mets:fileSec>
+<mets:fileGrp USE="THUMBNAIL">
+<mets:file GROUPID="group_file_b705b5fe-8802-4662-97b4-afdfc40545aa" CHECKSUM="2a54bc3d189fe988648b707f9076f2b4" MIMETYPE="image/jpeg" SIZE="3122" ID="file_2c248b2c-bbde-40d5-a3ef-fb17a5087fa1" CHECKSUMTYPE="MD5">
+<mets:FLocat LOCTYPE="URL" xlink:label="Generated Thumbnail" xlink:href="/bitstream/handle/1721.1/71084/24918565-MIT.pdf.jpg?sequence=5&amp;isAllowed=y" xlink:type="locator" xlink:title="24918565-MIT.pdf.jpg"/>
+</mets:file>
+</mets:fileGrp>
+<mets:fileGrp USE="COVERPAGE"/>
+<mets:fileGrp USE="CONTENT">
+<mets:file GROUPID="group_file_b705b5fe-8802-4662-97b4-afdfc40545aa" CHECKSUM="69cc8e77df46d4eca513e941b6e839db" MIMETYPE="application/pdf" SIZE="2891035" ID="file_b705b5fe-8802-4662-97b4-afdfc40545aa" CHECKSUMTYPE="MD5">
+<mets:FLocat LOCTYPE="URL" xlink:label="Full printable version" xlink:href="/bitstream/handle/1721.1/71084/24918565-MIT.pdf?sequence=2&amp;isAllowed=y" xlink:type="locator" xlink:title="24918565-MIT.pdf"/>
+</mets:file>
+</mets:fileGrp>
+<mets:fileGrp USE="TEXT">
+<mets:file GROUPID="group_file_b705b5fe-8802-4662-97b4-afdfc40545aa" CHECKSUM="32e08666a21cecdef39dca43a44f60b2" MIMETYPE="text/plain" SIZE="17588" ID="file_e5229366-4284-42c3-82ac-6ed789d7c23d" CHECKSUMTYPE="MD5">
+<mets:FLocat LOCTYPE="URL" xlink:label="Extracted text" xlink:href="/bitstream/handle/1721.1/71084/24918565-MIT.pdf.txt?sequence=4&amp;isAllowed=n" xlink:type="locator" xlink:title="24918565-MIT.pdf.txt"/>
+</mets:file>
+</mets:fileGrp>
+</mets:fileSec>
+<mets:structMap LABEL="DSpace" TYPE="LOGICAL">
+<mets:div DMDID="dmd_1" TYPE="DSpace Item">
+<mets:div ID="div_2" TYPE="DSpace Content Bitstream">
+<mets:fptr FILEID="file_b705b5fe-8802-4662-97b4-afdfc40545aa"/>
+</mets:div>
+</mets:div>
+</mets:structMap>
+</mets:METS>

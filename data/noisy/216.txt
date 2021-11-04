@@ -1,0 +1,37 @@
+if o
+4
+
++H
+
+ 
+
+é
+
+MAXIMUM LIKELIHOOD IDENTIFICATION OF LINEAR DISCRETE-TIME SYSTEMS
+
+by
+Michel De Glas | | a
+Ingénieur, Ecole Supérieure a" Informatique
+
+- Electronique et Automatique y France 1973,
+a 2° ‘ ”
+
+- THE REQUIREMENT FOR THE DEGREE OF » ~ oo, . oy
+MASTER OF APPLIED SCIENCE
+
+{
+Ve - A THESIS SUBMITTED IN PARTIAL FULYTLARENT OF .
+| in the Department .
+ee Electrical Engineering .
+
+- ‘We accept this ead as conforming to
+‘the required standara
+
+SY Bok
+
+ 
+
+' ‘THE UNIVERSITY OF BRITISH COLUMBIA
+of. ae - July, 1976
+
+TS ©. Wiohel De Glas, 1976

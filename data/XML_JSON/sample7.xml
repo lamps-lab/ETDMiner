@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:METS xmlns:mets="http://www.loc.gov/METS/" xmlns:xlink="http://www.w3.org/TR/xlink/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dim="http://www.dspace.org/xmlns/dspace/dim" PROFILE="DSPACE METS SIP Profile 1.0" LABEL="DSpace Item" OBJID="/handle/1721.1/33260" ID="hdl:1721.1/33260" OBJEDIT="/admin/item?itemID=d6ee4c0d-864c-48c0-b411-fc5136353718">
+<mets:dmdSec GROUPID="group_dmd_0" ID="dmd_1">
+<mets:mdWrap OTHERMDTYPE="DIM" MDTYPE="OTHER">
+<mets:xmlData>
+<dim:dim dspaceType="ITEM">
+<dim:field qualifier="advisor" mdschema="dc" language="en_US" element="contributor">James A. Fay.</dim:field>
+<dim:field qualifier="author" authority="0cb25c0a74fe1b76a6870aa942e04106" confidence="UNSET" mdschema="dc" language="en_US" element="contributor">Basu, Satyaki</dim:field>
+<dim:field qualifier="accessioned" mdschema="dc" element="date">2006-07-13T15:10:13Z</dim:field>
+<dim:field qualifier="available" mdschema="dc" element="date">2006-07-13T15:10:13Z</dim:field>
+<dim:field qualifier="issued" mdschema="dc" language="en_US" element="date">1960</dim:field>
+<dim:field qualifier="uri" mdschema="dc" element="identifier">http://hdl.handle.net/1721.1/33260</dim:field>
+<dim:field mdschema="dc" language="en_US" element="description">Thesis (Sc. D.)--Massachusetts Institute of Technology, Dept. of Mechanical Engineering, 1960.</dim:field>
+<dim:field mdschema="dc" language="en_US" element="description">Vita.</dim:field>
+<dim:field mdschema="dc" language="en_US" element="description">Includes bibliographical references (leaves 50-51).</dim:field>
+<dim:field qualifier="statementofresponsibility" mdschema="dc" language="en_US" element="description">by Satyaki Basu.</dim:field>
+<dim:field qualifier="extent" mdschema="dc" language="en_US" element="format">65 leaves</dim:field>
+<dim:field qualifier="extent" mdschema="dc" element="format">2901234 bytes</dim:field>
+<dim:field qualifier="extent" mdschema="dc" element="format">3019703 bytes</dim:field>
+<dim:field qualifier="mimetype" mdschema="dc" element="format">application/pdf</dim:field>
+<dim:field qualifier="mimetype" mdschema="dc" element="format">application/pdf</dim:field>
+<dim:field qualifier="iso" mdschema="dc" language="en_US" element="language">eng</dim:field>
+<dim:field mdschema="dc" language="en_US" element="publisher">Massachusetts Institute of Technology</dim:field>
+<dim:field mdschema="dc" language="en_US" element="rights">M.I.T. theses are protected by copyright. They may be viewed from this source for any purpose, but reproduction or distribution in any format is prohibited without written permission. See provided URL for inquiries about permission.</dim:field>
+<dim:field qualifier="uri" mdschema="dc" element="rights">http://dspace.mit.edu/handle/1721.1/7582</dim:field>
+<dim:field mdschema="dc" language="en_US" element="subject">Mechanical Engineering</dim:field>
+<dim:field mdschema="dc" language="en_US" element="title">Ionization in seeded detonation waves</dim:field>
+<dim:field mdschema="dc" language="en_US" element="type">Thesis</dim:field>
+<dim:field qualifier="degree" mdschema="dc" language="en_US" element="description">Sc.D.</dim:field>
+<dim:field qualifier="department" mdschema="dc" language="en_US" element="contributor">Massachusetts Institute of Technology. Dept. of Mechanical Engineering</dim:field>
+<dim:field qualifier="oclc" mdschema="dc" language="en_US" element="identifier">32709566</dim:field>
+</dim:dim>
+</mets:xmlData>
+</mets:mdWrap>
+</mets:dmdSec>
+<mets:fileSec>
+<mets:fileGrp USE="THUMBNAIL">
+<mets:file GROUPID="group_file_897f665b-b4ba-4521-9d0a-b618ca0b3cf0" CHECKSUM="a5351caf424c7863e4301bfe7fa6181b" MIMETYPE="image/jpeg" SIZE="3733" ID="file_640371f9-349c-4273-a3f1-d1b89ca907e2" CHECKSUMTYPE="MD5">
+<mets:FLocat LOCTYPE="URL" xlink:label="Generated Thumbnail" xlink:href="/bitstream/handle/1721.1/33260/32709566-MIT.pdf.jpg?sequence=5&amp;isAllowed=y" xlink:type="locator" xlink:title="32709566-MIT.pdf.jpg"/>
+</mets:file>
+</mets:fileGrp>
+<mets:fileGrp USE="COVERPAGE"/>
+<mets:fileGrp USE="CONTENT">
+<mets:file GROUPID="group_file_897f665b-b4ba-4521-9d0a-b618ca0b3cf0" CHECKSUM="9fb5c363f2e76e48fa6439346eb5ba9d" MIMETYPE="application/pdf" SIZE="3019703" ID="file_897f665b-b4ba-4521-9d0a-b618ca0b3cf0" CHECKSUMTYPE="MD5">
+<mets:FLocat LOCTYPE="URL" xlink:label="Full printable version" xlink:href="/bitstream/handle/1721.1/33260/32709566-MIT.pdf?sequence=2&amp;isAllowed=y" xlink:type="locator" xlink:title="32709566-MIT.pdf"/>
+</mets:file>
+</mets:fileGrp>
+<mets:fileGrp USE="TEXT">
+<mets:file GROUPID="group_file_897f665b-b4ba-4521-9d0a-b618ca0b3cf0" CHECKSUM="4b3681a1ccad46a7deaed9c353b1bb07" MIMETYPE="text/plain" SIZE="61920" ID="file_949594ff-09b9-4f97-ae14-57574e306e38" CHECKSUMTYPE="MD5">
+<mets:FLocat LOCTYPE="URL" xlink:label="Extracted text" xlink:href="/bitstream/handle/1721.1/33260/32709566-MIT.pdf.txt?sequence=4&amp;isAllowed=y" xlink:type="locator" xlink:title="32709566-MIT.pdf.txt"/>
+</mets:file>
+</mets:fileGrp>
+</mets:fileSec>
+<mets:structMap LABEL="DSpace" TYPE="LOGICAL">
+<mets:div DMDID="dmd_1" TYPE="DSpace Item">
+<mets:div ID="div_2" TYPE="DSpace Content Bitstream">
+<mets:fptr FILEID="file_897f665b-b4ba-4521-9d0a-b618ca0b3cf0"/>
+</mets:div>
+</mets:div>
+</mets:structMap>
+</mets:METS>

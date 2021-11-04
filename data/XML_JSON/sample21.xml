@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:METS xmlns:mets="http://www.loc.gov/METS/" xmlns:xlink="http://www.w3.org/TR/xlink/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dim="http://www.dspace.org/xmlns/dspace/dim" PROFILE="DSPACE METS SIP Profile 1.0" LABEL="DSpace Item" OBJID="/handle/1721.1/76079" ID="hdl:1721.1/76079" OBJEDIT="/admin/item?itemID=f89d2136-8938-4490-aa49-f7fdcea990b7">
+<mets:dmdSec GROUPID="group_dmd_0" ID="dmd_1">
+<mets:mdWrap OTHERMDTYPE="DIM" MDTYPE="OTHER">
+<mets:xmlData>
+<dim:dim dspaceType="ITEM">
+<dim:field qualifier="advisor" mdschema="dc" language="en_US" element="contributor">Frederick J. Adams.</dim:field>
+<dim:field qualifier="author" authority="aa9fde362bac38c9ed73fa94e36a1fd2" confidence="UNSET" mdschema="dc" language="en_US" element="contributor">Washburn, Charles Winfred</dim:field>
+<dim:field qualifier="accessioned" mdschema="dc" element="date">2013-01-07T21:18:42Z</dim:field>
+<dim:field qualifier="available" mdschema="dc" element="date">2013-01-07T21:18:42Z</dim:field>
+<dim:field qualifier="issued" mdschema="dc" language="en_US" element="date">1950</dim:field>
+<dim:field qualifier="uri" mdschema="dc" element="identifier">http://hdl.handle.net/1721.1/76079</dim:field>
+<dim:field mdschema="dc" language="en_US" element="description">Thesis (M.C.P.) Massachusetts Institute of Technology. Dept. of Architecture, 1950.</dim:field>
+<dim:field mdschema="dc" language="en_US" element="description">Bibliography: leaves 197-201.</dim:field>
+<dim:field qualifier="statementofresponsibility" mdschema="dc" language="en_US" element="description">by Charles Winfred Washburn.</dim:field>
+<dim:field qualifier="extent" mdschema="dc" language="en_US" element="format">xii, 201, [2] leaves</dim:field>
+<dim:field qualifier="iso" mdschema="dc" language="en_US" element="language">eng</dim:field>
+<dim:field mdschema="dc" language="en_US" element="publisher">Massachusetts Institute of Technology</dim:field>
+<dim:field mdschema="dc" language="en_US" element="rights">M.I.T. theses are protected by 
+copyright. They may be viewed from this source for any purpose, but 
+reproduction or distribution in any format is prohibited without written 
+permission. See provided URL for inquiries about permission.</dim:field>
+<dim:field qualifier="uri" mdschema="dc" language="en_US" element="rights">http://dspace.mit.edu/handle/1721.1/7582</dim:field>
+<dim:field mdschema="dc" language="en_US" element="subject">Architecture</dim:field>
+<dim:field mdschema="dc" language="en_US" element="title">An economic background study of New Bedford, Massachusetts</dim:field>
+<dim:field mdschema="dc" language="en_US" element="type">Thesis</dim:field>
+<dim:field qualifier="degree" mdschema="dc" language="en_US" element="description">M.C.P.</dim:field>
+<dim:field qualifier="department" mdschema="dc" language="en_US" element="contributor">Massachusetts Institute of Technology. Dept. of Architecture</dim:field>
+<dim:field qualifier="oclc" mdschema="dc" language="en_US" element="identifier">30053651</dim:field>
+</dim:dim>
+</mets:xmlData>
+</mets:mdWrap>
+</mets:dmdSec>
+<mets:fileSec>
+<mets:fileGrp USE="THUMBNAIL">
+<mets:file GROUPID="group_file_9c08d51d-aeab-41c8-b303-303e2914be0e" CHECKSUM="6de701e587de61e56d8d2ebaf8ab1eb7" MIMETYPE="image/jpeg" SIZE="2659" ID="file_ae61740e-0a6d-4dc7-b141-6fa0c66f42aa" CHECKSUMTYPE="MD5">
+<mets:FLocat LOCTYPE="URL" xlink:label="Generated Thumbnail" xlink:href="/bitstream/handle/1721.1/76079/30053651-MIT.pdf.jpg?sequence=5&amp;isAllowed=y" xlink:type="locator" xlink:title="30053651-MIT.pdf.jpg"/>
+</mets:file>
+</mets:fileGrp>
+<mets:fileGrp USE="COVERPAGE"/>
+<mets:fileGrp USE="CONTENT">
+<mets:file GROUPID="group_file_9c08d51d-aeab-41c8-b303-303e2914be0e" CHECKSUM="1a05a3794fdcb31c14dc7aa865971e92" MIMETYPE="application/pdf" SIZE="16931188" ID="file_9c08d51d-aeab-41c8-b303-303e2914be0e" CHECKSUMTYPE="MD5">
+<mets:FLocat LOCTYPE="URL" xlink:label="Full printable version" xlink:href="/bitstream/handle/1721.1/76079/30053651-MIT.pdf?sequence=2&amp;isAllowed=y" xlink:type="locator" xlink:title="30053651-MIT.pdf"/>
+</mets:file>
+</mets:fileGrp>
+<mets:fileGrp USE="TEXT">
+<mets:file GROUPID="group_file_9c08d51d-aeab-41c8-b303-303e2914be0e" CHECKSUM="e0ce3d708dcd172eca1d079368990f59" MIMETYPE="text/plain" SIZE="325060" ID="file_4d4d47ec-1e1a-4ce7-9ba1-a8345f046cb8" CHECKSUMTYPE="MD5">
+<mets:FLocat LOCTYPE="URL" xlink:label="Extracted text" xlink:href="/bitstream/handle/1721.1/76079/30053651-MIT.pdf.txt?sequence=4&amp;isAllowed=n" xlink:type="locator" xlink:title="30053651-MIT.pdf.txt"/>
+</mets:file>
+</mets:fileGrp>
+</mets:fileSec>
+<mets:structMap LABEL="DSpace" TYPE="LOGICAL">
+<mets:div DMDID="dmd_1" TYPE="DSpace Item">
+<mets:div ID="div_2" TYPE="DSpace Content Bitstream">
+<mets:fptr FILEID="file_9c08d51d-aeab-41c8-b303-303e2914be0e"/>
+</mets:div>
+</mets:div>
+</mets:structMap>
+</mets:METS>

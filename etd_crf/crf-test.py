@@ -125,7 +125,8 @@ for d in soup.find_all("document"):
                     prev_tag = tag
                          
         sents = sents + tags
-        docs.append(sents)  
+
+docs.append(sents)  
       
 data = []
 

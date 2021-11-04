@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:METS xmlns:mets="http://www.loc.gov/METS/" xmlns:xlink="http://www.w3.org/TR/xlink/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dim="http://www.dspace.org/xmlns/dspace/dim" PROFILE="DSPACE METS SIP Profile 1.0" LABEL="DSpace Item" OBJID="/handle/1721.1/34287" ID="hdl:1721.1/34287" OBJEDIT="/admin/item?itemID=33ed693d-db94-43d2-ba71-0348be24f1b9">
+<mets:dmdSec GROUPID="group_dmd_0" ID="dmd_1">
+<mets:mdWrap OTHERMDTYPE="DIM" MDTYPE="OTHER">
+<mets:xmlData>
+<dim:dim dspaceType="ITEM">
+<dim:field qualifier="advisor" mdschema="dc" language="en_US" element="contributor">D.N. Wormley.</dim:field>
+<dim:field qualifier="author" authority="0916727014a394de49a458db03656af5" confidence="UNSET" mdschema="dc" language="en_US" element="contributor">Jeffcoat, Robert Lee</dim:field>
+<dim:field qualifier="accessioned" mdschema="dc" element="date">2006-11-06T15:57:33Z</dim:field>
+<dim:field qualifier="available" mdschema="dc" element="date">2006-11-06T15:57:33Z</dim:field>
+<dim:field qualifier="issued" mdschema="dc" language="en_US" element="date">1975</dim:field>
+<dim:field qualifier="uri" mdschema="dc" element="identifier">http://hdl.handle.net/1721.1/34287</dim:field>
+<dim:field mdschema="dc" language="en_US" element="description">Thesis. 1975. Ph.D.--Massachusetts Institute of Technology. Dept. of Mechanical Engineering.</dim:field>
+<dim:field mdschema="dc" language="en_US" element="description">Vita.</dim:field>
+<dim:field mdschema="dc" language="en_US" element="description">Bibliography: leaves 244-249.</dim:field>
+<dim:field qualifier="extent" mdschema="dc" language="en_US" element="format">264 leaves</dim:field>
+<dim:field qualifier="extent" mdschema="dc" element="format">10677028 bytes</dim:field>
+<dim:field qualifier="extent" mdschema="dc" element="format">10689506 bytes</dim:field>
+<dim:field qualifier="mimetype" mdschema="dc" element="format">application/pdf</dim:field>
+<dim:field qualifier="mimetype" mdschema="dc" element="format">application/pdf</dim:field>
+<dim:field qualifier="iso" mdschema="dc" language="en_US" element="language">eng</dim:field>
+<dim:field mdschema="dc" language="en_US" element="publisher">Massachusetts Institute of Technology</dim:field>
+<dim:field mdschema="dc" language="en_US" element="rights">M.I.T. theses are protected by copyright. They may be viewed from this source for any purpose, but reproduction or distribution in any format is prohibited without written permission. See provided URL for inquiries about permission.</dim:field>
+<dim:field qualifier="uri" mdschema="dc" element="rights">http://dspace.mit.edu/handle/1721.1/7582</dim:field>
+<dim:field mdschema="dc" language="en_US" element="subject">Mechanical Engineering</dim:field>
+<dim:field qualifier="lcsh" mdschema="dc" language="en_US" element="subject">Railroads Trains Dynamics</dim:field>
+<dim:field mdschema="dc" language="en_US" element="title">Lateral dynamics and control of rail vehicles.</dim:field>
+<dim:field mdschema="dc" language="en_US" element="type">Thesis</dim:field>
+<dim:field qualifier="degree" mdschema="dc" language="en_US" element="description">Ph.D.</dim:field>
+<dim:field qualifier="department" mdschema="dc" language="en_US" element="contributor">Massachusetts Institute of Technology. Dept. of Mechanical Engineering</dim:field>
+<dim:field qualifier="oclc" mdschema="dc" language="en_US" element="identifier">01384349</dim:field>
+</dim:dim>
+</mets:xmlData>
+</mets:mdWrap>
+</mets:dmdSec>
+<mets:fileSec>
+<mets:fileGrp USE="THUMBNAIL">
+<mets:file GROUPID="group_file_dac4a48a-42d5-44de-bcaa-8937638e7658" CHECKSUM="b07b6df8791007b65cf5748520a64ee0" MIMETYPE="image/jpeg" SIZE="3444" ID="file_0f514461-1ba7-4c06-ac74-c09025b32ae9" CHECKSUMTYPE="MD5">
+<mets:FLocat LOCTYPE="URL" xlink:label="Generated Thumbnail" xlink:href="/bitstream/handle/1721.1/34287/01384349-MIT.pdf.jpg?sequence=3&amp;isAllowed=y" xlink:type="locator" xlink:title="01384349-MIT.pdf.jpg"/>
+</mets:file>
+</mets:fileGrp>
+<mets:fileGrp USE="COVERPAGE"/>
+<mets:fileGrp USE="CONTENT">
+<mets:file GROUPID="group_file_dac4a48a-42d5-44de-bcaa-8937638e7658" CHECKSUM="2adf7e32707f0b3d76a8fd80428c148d" MIMETYPE="application/pdf" SIZE="8455494" ID="file_dac4a48a-42d5-44de-bcaa-8937638e7658" CHECKSUMTYPE="MD5">
+<mets:FLocat LOCTYPE="URL" xlink:label="Full printable version" xlink:href="/bitstream/handle/1721.1/34287/01384349-MIT.pdf?sequence=1&amp;isAllowed=y" xlink:type="locator" xlink:title="01384349-MIT.pdf"/>
+</mets:file>
+</mets:fileGrp>
+<mets:fileGrp USE="TEXT">
+<mets:file GROUPID="group_file_dac4a48a-42d5-44de-bcaa-8937638e7658" CHECKSUM="e80440499390e677502ad5e02a8c429d" MIMETYPE="text/plain" SIZE="242269" ID="file_1cd621ca-21f8-45d1-917e-b54825229fe1" CHECKSUMTYPE="MD5">
+<mets:FLocat LOCTYPE="URL" xlink:label="Extracted text" xlink:href="/bitstream/handle/1721.1/34287/01384349-MIT.pdf.txt?sequence=2&amp;isAllowed=y" xlink:type="locator" xlink:title="01384349-MIT.pdf.txt"/>
+</mets:file>
+</mets:fileGrp>
+</mets:fileSec>
+<mets:structMap LABEL="DSpace" TYPE="LOGICAL">
+<mets:div DMDID="dmd_1" TYPE="DSpace Item">
+<mets:div ID="div_2" TYPE="DSpace Content Bitstream">
+<mets:fptr FILEID="file_dac4a48a-42d5-44de-bcaa-8937638e7658"/>
+</mets:div>
+</mets:div>
+</mets:structMap>
+</mets:METS>

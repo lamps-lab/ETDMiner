@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mets:METS xmlns:mets="http://www.loc.gov/METS/" xmlns:xlink="http://www.w3.org/TR/xlink/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dim="http://www.dspace.org/xmlns/dspace/dim" PROFILE="DSPACE METS SIP Profile 1.0" LABEL="DSpace Item" OBJID="/handle/1721.1/88304" ID="hdl:1721.1/88304" OBJEDIT="/admin/item?itemID=2dc4e443-ac52-43a2-9bc0-e46d3a4fcb52">
+<mets:dmdSec GROUPID="group_dmd_0" ID="dmd_1">
+<mets:mdWrap OTHERMDTYPE="DIM" MDTYPE="OTHER">
+<mets:xmlData>
+<dim:dim dspaceType="ITEM">
+<dim:field qualifier="author" authority="45bb951c141d9bf8501447105e857355" confidence="UNSET" mdschema="dc" language="en_US" element="contributor">Coughlin, Robert Edward</dim:field>
+<dim:field qualifier="accessioned" mdschema="dc" element="date">2014-07-11T21:02:03Z</dim:field>
+<dim:field qualifier="available" mdschema="dc" element="date">2014-07-11T21:02:03Z</dim:field>
+<dim:field qualifier="issued" mdschema="dc" language="en_US" element="date">1955</dim:field>
+<dim:field qualifier="uri" mdschema="dc" element="identifier">http://hdl.handle.net/1721.1/88304</dim:field>
+<dim:field mdschema="dc" language="en_US" element="description">Thesis (M.C.P.)--Massachusetts Institute of Technology, Dept. of City and Regional Planning, 1955.</dim:field>
+<dim:field mdschema="dc" language="en_US" element="description">Includes bibliographical references (leaves 167-172).</dim:field>
+<dim:field qualifier="statementofresponsibility" mdschema="dc" language="en_US" element="description">Robert Edward Coughlin.</dim:field>
+<dim:field qualifier="extent" mdschema="dc" language="en_US" element="format">172 leaves</dim:field>
+<dim:field qualifier="iso" mdschema="dc" language="en_US" element="language">eng</dim:field>
+<dim:field mdschema="dc" language="en_US" element="publisher">Massachusetts Institute of Technology</dim:field>
+<dim:field mdschema="dc" language="en_US" element="rights">M.I.T. theses are protected by copyright. They may be viewed from this source for any purpose, but reproduction or distribution in any format is prohibited without written permission. See provided URL for inquiries about permission.</dim:field>
+<dim:field qualifier="uri" mdschema="dc" language="en_US" element="rights">http://dspace.mit.edu/handle/1721.1/7582</dim:field>
+<dim:field mdschema="dc" language="en_US" element="subject">City and Regional Planning</dim:field>
+<dim:field mdschema="dc" language="en_US" element="title">The community costs resulting from growth</dim:field>
+<dim:field mdschema="dc" language="en_US" element="type">Thesis</dim:field>
+<dim:field qualifier="degree" mdschema="dc" language="en_US" element="description">M.C.P.</dim:field>
+<dim:field qualifier="department" mdschema="dc" language="en_US" element="contributor">Massachusetts Institute of Technology. Department of City and Regional Planning</dim:field>
+<dim:field qualifier="oclc" mdschema="dc" language="en_US" element="identifier">31393014</dim:field>
+</dim:dim>
+</mets:xmlData>
+</mets:mdWrap>
+</mets:dmdSec>
+<mets:fileSec>
+<mets:fileGrp USE="THUMBNAIL">
+<mets:file GROUPID="group_file_45aa2245-1629-4f34-ac8e-e6b193b463c8" CHECKSUM="8f36b3c21814d4644f822bcc3946a849" MIMETYPE="image/jpeg" SIZE="2932" ID="file_801e29e9-96e2-44e8-95de-c062a636f800" CHECKSUMTYPE="MD5">
+<mets:FLocat LOCTYPE="URL" xlink:label="Generated Thumbnail" xlink:href="/bitstream/handle/1721.1/88304/31393014-MIT.pdf.jpg?sequence=5&amp;isAllowed=y" xlink:type="locator" xlink:title="31393014-MIT.pdf.jpg"/>
+</mets:file>
+</mets:fileGrp>
+<mets:fileGrp USE="COVERPAGE"/>
+<mets:fileGrp USE="CONTENT">
+<mets:file GROUPID="group_file_45aa2245-1629-4f34-ac8e-e6b193b463c8" CHECKSUM="07df2fc43b419db5365df1bcf9abb32e" MIMETYPE="application/pdf" SIZE="21406112" ID="file_45aa2245-1629-4f34-ac8e-e6b193b463c8" CHECKSUMTYPE="MD5">
+<mets:FLocat LOCTYPE="URL" xlink:label="Full printable version" xlink:href="/bitstream/handle/1721.1/88304/31393014-MIT.pdf?sequence=2&amp;isAllowed=y" xlink:type="locator" xlink:title="31393014-MIT.pdf"/>
+</mets:file>
+</mets:fileGrp>
+<mets:fileGrp USE="TEXT">
+<mets:file GROUPID="group_file_45aa2245-1629-4f34-ac8e-e6b193b463c8" CHECKSUM="9f3ba93b2f706aa9eb11f4e059f7d6f0" MIMETYPE="text/plain" SIZE="239465" ID="file_6be7fcc6-7ac6-4cf9-8937-911c1262a5da" CHECKSUMTYPE="MD5">
+<mets:FLocat LOCTYPE="URL" xlink:label="Extracted text" xlink:href="/bitstream/handle/1721.1/88304/31393014-MIT.pdf.txt?sequence=4&amp;isAllowed=n" xlink:type="locator" xlink:title="31393014-MIT.pdf.txt"/>
+</mets:file>
+</mets:fileGrp>
+</mets:fileSec>
+<mets:structMap LABEL="DSpace" TYPE="LOGICAL">
+<mets:div DMDID="dmd_1" TYPE="DSpace Item">
+<mets:div ID="div_2" TYPE="DSpace Content Bitstream">
+<mets:fptr FILEID="file_45aa2245-1629-4f34-ac8e-e6b193b463c8"/>
+</mets:div>
+</mets:div>
+</mets:structMap>
+</mets:METS>
