@@ -1,0 +1,66 @@
+<dim:dim xmlns:dim="http://www.dspace.org/xmlns/dspace/dim" xmlns:doc="http://www.lyncode.com/xoai" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.openarchives.org/OAI/2.0/" xsi:schemaLocation="http://www.dspace.org/xmlns/dspace/dim http://www.dspace.org/schema/dim.xsd">
+  <dim:field mdschema="dc" element="creator">Kaza, Nikhil</dim:field>
+  <dim:field mdschema="dc" element="date" qualifier="accessioned">2008-04-14T19:23:11Z</dim:field>
+  <dim:field mdschema="dc" element="date" qualifier="available">2008-04-14T19:23:11Z</dim:field>
+  <dim:field mdschema="dc" element="date" qualifier="issued">2008</dim:field>
+  <dim:field mdschema="dc" element="identifier" qualifier="uri">http://hdl.handle.net/2142/5129</dim:field>
+  <dim:field mdschema="dc" element="identifier" qualifier="bibliographicCitation" lang="en">Dissertation Submitted in partial fulfillment of the requirements for the degree of Doctor of Philosophy in Regional Planning in the Graduate College of the University of Illinois at Urbana-Champaign, 2008</dim:field>
+  <dim:field mdschema="dc" element="description" qualifier="abstract" lang="en">Plans have been considered the end products of planning activity, and research&#13;
+has focused on how plans are made. Careful thought has not been accorded to&#13;
+how plans are used, after they are made, in reasoning about and choosing how&#13;
+to act. In any given situation, various organisations make plans, some of which&#13;
+have overlapping scopes and intersecting intentions. As a result, the actions considered&#13;
+in these plans have semantic relationships such as substitutability, interdependence,&#13;
+and contingency with one another. The purpose of this dissertation&#13;
+is to identify and explain the semantic relationships between actions within and&#13;
+among plans to better understand how to reason with plans and about actions.&#13;
+The thesis defended is that it is useful and possible to reason from multiple plans&#13;
+when deciding what to do. A plan contains information about interdependencies&#13;
+and uncertainties of multiple decisions and actions considered by an actor.&#13;
+These relationships are not limited to actions within one&#8217;s own purview. One has&#13;
+to consider also the effects of others&#8217; actions and intentions on one&#8217;s own. Since&#13;
+a single plan cannot account for all these interdependencies even for one actor,&#13;
+every actor should consider multiple plans&#8211;both plans of her own and those of&#13;
+others&#8211;in making decisions.&#13;
+This dissertation examines the various plans made over time by various organisations&#13;
+in McHenry and Champaign counties in Illinois. Relationships between&#13;
+ii&#13;
+actions within and among multiple plans can be discovered using attributes of&#13;
+actions and the configurations of actions within a single plan so that they can&#13;
+be considered in future planning and decision making. It builds upon multiple&#13;
+disciplines and methodologies to represent actions, situations, intentions, and&#13;
+relationships among them.&#13;
+Simple databases based on real situations were used to demonstrate that these&#13;
+relationships can be encoded and queried in reasoning with plans. The results&#13;
+demonstrated that previously discovered semantic relationships can be used to&#13;
+discover additional relationships across plans thereby enriching the decision making.&#13;
+The approach provides a systematic way of structuring the information in&#13;
+plans so that reasoning about relationships among actions across multiple plans&#13;
+is possible.</dim:field>
+  <dim:field mdschema="dc" element="description" qualifier="provenance" lang="en">Submitted by Sarah Shreeves (sshreeve@uiuc.edu) on behalf of Nikhil Kaza. UIN 650408930 on 2008-04-14T19:23:11Z&#13;
+No. of bitstreams: 1&#13;
+Kaza_Dissertation.pdf: 9680774 bytes, checksum: 02a974c36e4c622e85dbbe156f69a3e7 (MD5)</dim:field>
+  <dim:field mdschema="dc" element="description" qualifier="provenance" lang="en">Made available in DSpace on 2008-04-14T19:23:11Z (GMT). No. of bitstreams: 1&#13;
+Kaza_Dissertation.pdf: 9680774 bytes, checksum: 02a974c36e4c622e85dbbe156f69a3e7 (MD5)&#13;
+  Previous issue date: 2008</dim:field>
+  <dim:field mdschema="dc" element="language" lang="en">en</dim:field>
+  <dim:field mdschema="dc" element="rights" lang="en">Copyright 2008 by Nikhil Kaza. Some Rights Reserved. This work is licensed under the Creative Commons Attribution-Noncommercial-Share Alike 3.0 United States License. To view a copy of this license, visit http://creativecommons.org/licenses/by-nc-sa/3.0/us/.</dim:field>
+  <dim:field mdschema="dc" element="subject" lang="en">Plans</dim:field>
+  <dim:field mdschema="dc" element="subject" lang="en">Interdependence</dim:field>
+  <dim:field mdschema="dc" element="subject" lang="en">Organizations</dim:field>
+  <dim:field mdschema="dc" element="subject" lang="en">Intentions</dim:field>
+  <dim:field mdschema="dc" element="subject" lang="en">Substitutability</dim:field>
+  <dim:field mdschema="dc" element="title" lang="en">Reasoning with Plans: Inference of Semantic Relationships Among Plans About Urban Development</dim:field>
+  <dim:field mdschema="dc" element="type" lang="en">still image</dim:field>
+  <dim:field mdschema="dc" element="type" lang="en">text</dim:field>
+  <dim:field mdschema="dc" element="type" qualifier="genre" lang="en">dissertation/thesis</dim:field>
+  <dim:field mdschema="dc" element="contributor" qualifier="committeeChair">Hopkins, Lewis D.</dim:field>
+  <dim:field mdschema="dc" element="contributor" qualifier="committeeMember">Pallathucheril, Varkki G.</dim:field>
+  <dim:field mdschema="dc" element="contributor" qualifier="committeeMember">Donaghy, Kieran P.</dim:field>
+  <dim:field mdschema="dc" element="contributor" qualifier="committeeMember">Worboys, Michael F.</dim:field>
+  <dim:field mdschema="thesis" element="degree" qualifier="name">Ph.D.</dim:field>
+  <dim:field mdschema="thesis" element="degree" qualifier="level">Dissertation</dim:field>
+  <dim:field mdschema="thesis" element="degree" qualifier="grantor">University of Illinois at Urbana-Champaign</dim:field>
+  <dim:field mdschema="thesis" element="degree" qualifier="department">Regional Planning</dim:field>
+  <dim:field mdschema="thesis" element="degree" qualifier="department">Regional Planning</dim:field>
+</dim:dim>
