@@ -7,9 +7,9 @@ to store as JSON objects and then insert them into SQL database
 """
 
 # Imports
+import os, argparse, glob, json
 from bs4 import BeautifulSoup
-import glob
-import json
+
 
 # Functions to get metadata:
 #	title, author, year, university, subject, advisor, team members, proq id, degree,
@@ -19,14 +19,12 @@ import json
 
 def getSubject(dataToParse, i):
 	subject = str(dataToParse[i].text)
-	subject = subject[8:len(subject):1]
-	subject = subject.split(';')
+	subject = subject[8:len(subject):1].split(';')
 	return subject
 
 def getKeyWords(dataToParse, i):
 	keywords = str(dataToParse[i].text)
-	keywords = keywords[21:len(keywords):1]
-	keywords = keywords.split(';')
+	keywords = keywords[21:len(keywords):1].split(';')
 	return keywords
 
 def getTitle(dataToParse, i):
@@ -34,12 +32,11 @@ def getTitle(dataToParse, i):
 	title = title[6:len(title):1]
 	return title
 
-def getPDFName(dataToParse, i):
-	pdfName = str(dataToParse[i].text)
-	pdfName = pdfName[6:len(pdfName):1]
-	pdfName = pdfName.split()
-	pdfName = "_".join(pdfName)
-	return pdfName
+def getKey(dataToParse, i):
+	key = str(dataToParse[i].text)
+	key = key[6:len(key):1].split()
+	key = key[0:4]
+	return key
 
 def getAuthor(dataToParse, i):
 	author = str(dataToParse[i].text)
@@ -65,8 +62,7 @@ def getAdvisor(dataToParse, i):
 
 def getCommitteeMembers(dataToParse, i):
 	committeeMembers = str(dataToParse[i].text)
-	committeeMembers = committeeMembers[17:len(committeeMembers):1]
-	committeeMembers = committeeMembers.split(';')
+	committeeMembers = committeeMembers[17:len(committeeMembers):1].split(';')
 	return committeeMembers
 
 def getUniversity(dataToParse, i):
@@ -106,14 +102,44 @@ def getCopyRight(dataToParse, i):
 	return copyRight
 	
 
+def matching():
+	x = 0;
+	return x
+
 # Main Driver
 def main():
-	# get all the files from folder
-	files = glob.glob('books/*.html')
+	print()
+	parser = argparse.ArgumentParser(description='A foo that bars.', epilog='Please try again.')
+	parser.add_argument('--path', type=str, help='Type path to folder')
+	parser.add_argument('-p', type=str, help='Type path to folder')
+	#parser.add_argument('-o', help='Output the JSON object')
+	
+	
+	
+	parser.parse_args()
+	args = parser.parse_args()
+	#print(args)
+	path = args.path
 
+	print(path)
+
+	# get all the files from folder
+	files = glob.glob(path + '*.html')
+
+	pdfDictionary = {}
+	htmlDictionary = {}
+	
 	# loop through each file in the folder
 	for file in files:
 		with open(file) as f:
+			print("FileName: " + file) # filename - path
+			f_name, f_ext = os.path.splitext(file)
+
+			if(f_ext == '.html'):
+				htmlFileName = os.path.basename(f_name) + f_ext
+				print("HTML name: " + htmlFileName)
+
+
 			content = f.read()
 			soup = BeautifulSoup(content, 'html.parser')
 			
@@ -123,18 +149,17 @@ def main():
 			f.close() # close the file
 
 			#initialize each variable before inserting data in case the next university does not have certain dataFields
-			pdfName = subject = keywords = title = degree = university = language = department = advisor = committeeMembers = documentURL = copyRight = ""
+			pdfFileName = pdfName = subject = keywords = title = degree = university = language = department = advisor = committeeMembers = documentURL = copyRight = f_name = f_ext = ""
 			numberOfPages = publicationYear = proQuestID = 0
 
 			for i in range(len(dataField)):
-
 				if dataField[i].text == "Subject ":
 					subject = getSubject(dataToParse, i)
 				elif dataField[i].text == "Identifier / keyword ":
 					keywords = getKeyWords(dataToParse, i)
 				elif dataField[i].text == "Title ":
 					title = getTitle(dataToParse, i)
-					pdfName = getPDFName(dataToParse, i)
+					key = getKey(dataToParse, i)
 				elif dataField[i].text == "Author ":
 					author = getAuthor(dataToParse, i)
 				elif dataField[i].text == "Number of pages ":
@@ -159,9 +184,39 @@ def main():
 					documentURL = getDocumentURL(dataToParse, i)
 				elif dataField[i].text == "Copyright ":
 					copyRight = getCopyRight(dataToParse, i)
+			#end for
+
+			# Bipartite matching the HTML filename with the PDF filename
+			pdfFiles = glob.glob(path + '*.pdf')
+
+
+			for f in pdfFiles:
+				f_name, f_ext = os.path.splitext(f) # split filename into name and extension
+				if(f_ext == '.pdf'):
+					pdfName = os.path.basename(f_name).split(".")[0]
+					print("FileExtension PDF")
+					pdfFileName = pdfName + f_ext # save the actual filename with extension
+					print(pdfFileName)
+
+
+					pdfName = pdfName.split("_") # split pdfName into array for comparison with key
+					if(key[:3] == pdfName[:3]): # found a match if first 4 words equal
+						print()
+						key = "_".join(key)
+						pdfDictionary.update({key:pdfFileName})
+						htmlDictionary.update({key:htmlFileName})
+
+						print("HTML Dictionary: ")
+						print(htmlDictionary)
+						print()
+						print("PDF Dictionary: ")
+						print(pdfDictionary)
+					#end if match
+				#end if pdf
+			#end for
 
 			# Since not each university have every dataField, some entries will be null
-			x = {
+			jsonObject = {
 				"title": title,
 				"author": author,
 				"subject": subject,
@@ -174,15 +229,21 @@ def main():
 				"advisor": advisor,
 				"committeeMembers": committeeMembers,
 				"degree": degree,
-				"PDFName": pdfName,
 				"ProQuestID": proQuestID,
 				"DocumentURL": documentURL,
 				"CopyRight": copyRight
 			}
-			jsonObject = json.dumps(x)
+			jsonObject = json.dumps(jsonObject)
 			print(jsonObject)
 
 
+
+			for i in range(4):
+				print()
+
+			#end for
+		#end with
+	#end for
 #end main
 
 
