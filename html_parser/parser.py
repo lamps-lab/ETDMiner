@@ -100,11 +100,8 @@ def getCopyRight(dataToParse, i):
 	copyRight = str(dataToParse[i].text)
 	copyRight = copyRight[10:len(copyRight):1]
 	return copyRight
-	
 
-def matching():
-	x = 0;
-	return x
+
 
 # Main Driver
 def main():
@@ -121,7 +118,7 @@ def main():
 	#print(args)
 	path = args.path
 
-	print(path)
+	#print(path)
 
 	# get all the files from folder
 	files = glob.glob(path + '*.html')
@@ -132,25 +129,32 @@ def main():
 	# loop through each file in the folder
 	for file in files:
 		with open(file) as f:
-			print("FileName: " + file) # filename - path
+			#print("FileName: " + file) # filename - path
 			f_name, f_ext = os.path.splitext(file)
 
 			if(f_ext == '.html'):
 				htmlFileName = os.path.basename(f_name) + f_ext
-				print("HTML name: " + htmlFileName)
+				#print("HTML name: " + htmlFileName)
 
+			#initialize each variable before inserting data in case the next university does not have certain dataFields
+			pdfFileName = pdfName = subject = abstract = keywords = title = degree = university = language = department = advisor = committeeMembers = documentURL = copyRight = f_name = f_ext = ""
+			numberOfPages = publicationYear = proQuestID = 0
 
 			content = f.read()
 			soup = BeautifulSoup(content, 'html.parser')
 			
 			dataField = soup.find_all('div',{"class":"display_record_indexing_fieldname"}) # get all the dataFields
 			dataToParse = soup.find_all('div',{"class":"display_record_indexing_row"}) # get all the data associated with the dataFields
+			abstract = soup.find('div',{"class": "abstract truncatedAbstract"})
+			#print(type(abstract))
+			abstract = str(abstract.text)
+			print(abstract)
+
 
 			f.close() # close the file
 
-			#initialize each variable before inserting data in case the next university does not have certain dataFields
-			pdfFileName = pdfName = subject = keywords = title = degree = university = language = department = advisor = committeeMembers = documentURL = copyRight = f_name = f_ext = ""
-			numberOfPages = publicationYear = proQuestID = 0
+			for i in range(4):
+				print()
 
 			for i in range(len(dataField)):
 				if dataField[i].text == "Subject ":
@@ -186,9 +190,9 @@ def main():
 					copyRight = getCopyRight(dataToParse, i)
 			#end for
 
+
 			# Bipartite matching the HTML filename with the PDF filename
 			pdfFiles = glob.glob(path + '*.pdf')
-
 
 			for f in pdfFiles:
 				f_name, f_ext = os.path.splitext(f) # split filename into name and extension
@@ -215,28 +219,34 @@ def main():
 				#end if pdf
 			#end for
 
+
 			# Since not each university have every dataField, some entries will be null
 			jsonObject = {
-				"title": title,
-				"author": author,
-				"subject": subject,
-				"keywords": keywords,
-				"numberOfPages": numberOfPages,
-				"publicationYear": publicationYear,
-				"university": university,
-				"department": department,
-				"language": language,
-				"advisor": advisor,
-				"committeeMembers": committeeMembers,
-				"degree": degree,
+				"Title": title,
+				"Author": author,
+				"Subject": subject,
+				"Keywords": keywords,
+				"Abstract": abstract,
+				"HTMLDictionary": htmlDictionary,
+				"PDFDictionary": pdfDictionary,
+				"NumberOfPages": numberOfPages,
+				"PublicationYear": publicationYear,
+				"University": university,
+				"Department": department,
+				"Language": language,
+				"Advisor": advisor,
+				"CommitteeMembers": committeeMembers,
+				"Degree": degree,
 				"ProQuestID": proQuestID,
 				"DocumentURL": documentURL,
 				"CopyRight": copyRight
 			}
-			jsonObject = json.dumps(jsonObject)
+			for i in range(4):
+				print()
 			print(jsonObject)
 
-
+			with open ("data.json", "w") as outfile:
+				json.dump(jsonObject, outfile)
 
 			for i in range(4):
 				print()
