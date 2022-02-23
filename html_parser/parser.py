@@ -111,6 +111,7 @@ def main():
 	parser.add_argument('-p', type=str, help='Type path to folder')
 	#parser.add_argument('-o', help='Output the JSON object')
 	
+	# still need to figure out how to check for -uni
 	
 	
 	parser.parse_args()
@@ -122,6 +123,8 @@ def main():
 
 	# get all the files from folder
 	files = glob.glob(path + '*.html')
+
+	all_data = {} # store all the data in a dictionary
 
 	pdfDictionary = {}
 	htmlDictionary = {}
@@ -224,36 +227,41 @@ def main():
 			jsonObject = {
 				"Title": title,
 				"Author": author,
+				"Advisor": advisor,
+				"Year": publicationYear,
+				"Abstract": abstract,
+				"University": university,
+				"Degree": degree,
 				"Subject": subject,
 				"Keywords": keywords,
-				"Abstract": abstract,
 				"HTMLDictionary": htmlDictionary,
 				"PDFDictionary": pdfDictionary,
 				"NumberOfPages": numberOfPages,
-				"PublicationYear": publicationYear,
-				"University": university,
 				"Department": department,
 				"Language": language,
-				"Advisor": advisor,
 				"CommitteeMembers": committeeMembers,
-				"Degree": degree,
 				"ProQuestID": proQuestID,
 				"DocumentURL": documentURL,
 				"CopyRight": copyRight
 			}
+			all_data.update(jsonObject) # add the JSON object into all data dictionary
+			print(all_data)
 			for i in range(4):
 				print()
-			print(jsonObject)
-
-			with open ("data.json", "w") as outfile:
-				json.dump(jsonObject, outfile)
+			#print(all_data)
 
 			for i in range(4):
 				print()
+
+			#print(jsonObject)
 
 			#end for
 		#end with
 	#end for
+	print(all_data)
+	with open ("data.json", "w") as outfile:
+				json.dump(all_data, outfile)
+				outfile.write("\n")
 #end main
 
 

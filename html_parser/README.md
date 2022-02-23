@@ -19,8 +19,10 @@ Users can also specify the University they would like to retreive data from with
 
 # Expected output
 parser.py will then store the JSON objects in a file called data.json
+
+After each university, there is an enter to show it is the end of that university.  
   
-Then, the next Python file will read the data and insert into SQL database
+Then, insert.py will read the JSON data and insert into SQL database.  
 
 # Details
 
