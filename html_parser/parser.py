@@ -112,7 +112,7 @@ def main():
 	#parser.add_argument('-o', help='Output the JSON object')
 	
 	# still need to figure out how to check for -uni
-	
+
 	
 	parser.parse_args()
 	args = parser.parse_args()
@@ -124,6 +124,7 @@ def main():
 	# get all the files from folder
 	files = glob.glob(path + '*.html')
 
+	result = "[\n"
 	all_data = {} # store all the data in a dictionary
 
 	pdfDictionary = {}
@@ -151,7 +152,7 @@ def main():
 			abstract = soup.find('div',{"class": "abstract truncatedAbstract"})
 			#print(type(abstract))
 			abstract = str(abstract.text)
-			print(abstract)
+			#print(abstract)
 
 
 			f.close() # close the file
@@ -244,24 +245,18 @@ def main():
 				"DocumentURL": documentURL,
 				"CopyRight": copyRight
 			}
-			all_data.update(jsonObject) # add the JSON object into all data dictionary
-			print(all_data)
-			for i in range(4):
-				print()
-			#print(all_data)
+			result = result + str(json.dumps(jsonObject)) + ",\n" # add the JSON object into the result followed by a new line
 
 			for i in range(4):
 				print()
-
-			#print(jsonObject)
 
 			#end for
 		#end with
 	#end for
-	print(all_data)
+	result = result[:-2] + "\n]" # remove last two chars and add ] at the end to match json syntax
+	print(result)
 	with open ("data.json", "w") as outfile:
-				json.dump(all_data, outfile)
-				outfile.write("\n")
+		outfile.write(result)
 #end main
 
 
