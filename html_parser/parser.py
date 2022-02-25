@@ -102,10 +102,33 @@ def getCopyRight(dataToParse, i):
 	return copyRight
 
 
+# Bipartite matching the HTML filename with the PDF filename
+def bipartiteMatching(path, key, htmlFileName):
+	pdfDictionary = {}
+	htmlDictionary = {}
+	pdfFiles = glob.glob(path + '*.pdf')
+
+	for f in pdfFiles:
+		f_name, f_ext = os.path.splitext(f) # split filename into name and extension
+		if(f_ext == '.pdf'):
+			pdfName = os.path.basename(f_name).split(".")[0]
+			pdfFileName = pdfName + f_ext # save the actual filename with extension
+
+
+			pdfName = pdfName.split("_") # split pdfName into array for comparison with key
+			if(key[:3] == pdfName[:3]): # found a match if first 4 words equal
+				key = "_".join(key)
+				pdfDictionary.update({key:pdfFileName})
+				htmlDictionary.update({key:htmlFileName})
+			#end if match
+		#end if pdf
+	#end for
+	return pdfDictionary, htmlDictionary
+#end bipartiteMatching
+
 
 # Main Driver
 def main():
-	print()
 	parser = argparse.ArgumentParser(description='A foo that bars.', epilog='Please try again.')
 	parser.add_argument('--path', type=str, help='Type path to folder')
 	parser.add_argument('-p', type=str, help='Type path to folder')
@@ -119,12 +142,11 @@ def main():
 	#print(args)
 	path = args.path
 
-	#print(path)
 
 	# get all the files from folder
 	files = glob.glob(path + '*.html')
 
-	result = "[\n"
+	result = "{\n\"universities\": [\n"
 	all_data = {} # store all the data in a dictionary
 
 	pdfDictionary = {}
@@ -133,12 +155,10 @@ def main():
 	# loop through each file in the folder
 	for file in files:
 		with open(file) as f:
-			#print("FileName: " + file) # filename - path
 			f_name, f_ext = os.path.splitext(file)
 
 			if(f_ext == '.html'):
 				htmlFileName = os.path.basename(f_name) + f_ext
-				#print("HTML name: " + htmlFileName)
 
 			#initialize each variable before inserting data in case the next university does not have certain dataFields
 			pdfFileName = pdfName = subject = abstract = keywords = title = degree = university = language = department = advisor = committeeMembers = documentURL = copyRight = f_name = f_ext = ""
@@ -150,15 +170,9 @@ def main():
 			dataField = soup.find_all('div',{"class":"display_record_indexing_fieldname"}) # get all the dataFields
 			dataToParse = soup.find_all('div',{"class":"display_record_indexing_row"}) # get all the data associated with the dataFields
 			abstract = soup.find('div',{"class": "abstract truncatedAbstract"})
-			#print(type(abstract))
 			abstract = str(abstract.text)
-			#print(abstract)
-
 
 			f.close() # close the file
-
-			for i in range(4):
-				print()
 
 			for i in range(len(dataField)):
 				if dataField[i].text == "Subject ":
@@ -195,34 +209,10 @@ def main():
 			#end for
 
 
-			# Bipartite matching the HTML filename with the PDF filename
-			pdfFiles = glob.glob(path + '*.pdf')
-
-			for f in pdfFiles:
-				f_name, f_ext = os.path.splitext(f) # split filename into name and extension
-				if(f_ext == '.pdf'):
-					pdfName = os.path.basename(f_name).split(".")[0]
-					print("FileExtension PDF")
-					pdfFileName = pdfName + f_ext # save the actual filename with extension
-					print(pdfFileName)
-
-
-					pdfName = pdfName.split("_") # split pdfName into array for comparison with key
-					if(key[:3] == pdfName[:3]): # found a match if first 4 words equal
-						print()
-						key = "_".join(key)
-						pdfDictionary.update({key:pdfFileName})
-						htmlDictionary.update({key:htmlFileName})
-
-						print("HTML Dictionary: ")
-						print(htmlDictionary)
-						print()
-						print("PDF Dictionary: ")
-						print(pdfDictionary)
-					#end if match
-				#end if pdf
-			#end for
-
+			pdfDictionary, htmlDictionary = bipartiteMatching(path, key, htmlFileName)
+			print(pdfDictionary)
+			print(htmlDictionary)
+			print()
 
 			# Since not each university have every dataField, some entries will be null
 			jsonObject = {
@@ -247,14 +237,10 @@ def main():
 			}
 			result = result + str(json.dumps(jsonObject)) + ",\n" # add the JSON object into the result followed by a new line
 
-			for i in range(4):
-				print()
-
 			#end for
 		#end with
 	#end for
-	result = result[:-2] + "\n]" # remove last two chars and add ] at the end to match json syntax
-	print(result)
+	result = result[:-2] + "\n]\n}" # remove last two chars and add ] at the end to match json syntax
 	with open ("data.json", "w") as outfile:
 		outfile.write(result)
 #end main
