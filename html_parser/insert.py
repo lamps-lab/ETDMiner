@@ -19,6 +19,8 @@ def main():
 	f.close()
 
 	print("print data:\n")
+	print(json.dumps(data,indent=4))
+
 	for row in data['universities']:
 		print()
 		title = row['Title']
@@ -34,9 +36,11 @@ def main():
 		
 		keywords = row['Keywords']
 		subjects = row['Subject']
+
 		print(title + '\n' + author + '\n' + advisor + '\n' + str(year) + '\n' + abstract + '\n' + university 
 			+ '\n' + degree + '\n' + uri + '\n' + department + '\n')
 		
+		# ID's are auto-generated, etdid is FK in keywords and subjects
 
 		#conn.execute("INSERT INTO etds VALUES(?, ?, ?, ?, ?, ?, ?, ?, ?, ?)", (title, author, advisor, year, abstract, university, degree, uri, department, language))
 		print("Keywords: ")
@@ -49,6 +53,7 @@ def main():
 			print(i)
 			#conn.execute("INSERT INTO keywords VALUES(?, ?)", (etdid, i)
 
+	#end for
 #end main
 
 if __name__ == '__main__':

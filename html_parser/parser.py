@@ -102,7 +102,7 @@ def getCopyRight(dataToParse, i):
 	return copyRight
 
 
-# Bipartite matching the HTML filename with the PDF filename
+# Bipartite matching the HTML filename with the PDF filename using a common key
 def bipartiteMatching(path, key, htmlFileName):
 	pdfDictionary = {}
 	htmlDictionary = {}
@@ -235,9 +235,9 @@ def main():
 				"DocumentURL": documentURL,
 				"CopyRight": copyRight
 			}
-			result = result + str(json.dumps(jsonObject)) + ",\n" # add the JSON object into the result followed by a new line
+			result = result + str(json.dumps(jsonObject)) + ",\n" # add the JSON object into the result followed by a new line and a comma
 
-			#end for
+			
 		#end with
 	#end for
 	result = result[:-2] + "\n]\n}" # remove last two chars and add ] at the end to match json syntax
