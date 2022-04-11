@@ -144,7 +144,7 @@ def metadataExtraction(path, f, dictionary):
 
 	# create JSON object based on metadata including the path
 	jsonObject = {
-		"path": path + '/',
+		"path": path,
 		"dictionary": dictionary,
 		"Title": title,
 		"Author": author,
@@ -219,7 +219,7 @@ def main():
 						fail += 1
 						notfound = notfound + originalHTML + "\n\n"
 					else:
-						# get some real time stats
+						# get some real time stats every 100 times
 						if numberOfDocuments % 100 == 0:
 							percent = round((1 - fail/numberOfDocuments) * 100, 2)
 							print(percent,"%\n",jsonObject['University'])
