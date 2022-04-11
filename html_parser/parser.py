@@ -1,7 +1,7 @@
 """
-The following Python program was written to receive dissertation as an html file, 
-then parse the html dissertations using BeautifulSoup to extract metadata from articles
-to store as JSON objects and then insert them into SQL database
+The following Python program was written to receive a path to the dissertations, 
+parse the html dissertations using BeautifulSoup to extract metadata
+store data in .json as output
 
 @author: Dominik Soos
 """
@@ -10,239 +10,242 @@ to store as JSON objects and then insert them into SQL database
 import os, argparse, glob, json
 from bs4 import BeautifulSoup
 
+# Longest Common Subsequence Function
+def lcs(X , Y):
+    # find the length of the strings
+	m = len(X)
+	n = len(Y)
 
-# Functions to get metadata:
-#	title, author, year, university, subject, advisor, team members, proq id, degree,
-#	num pages, keywords, Committee member (list), Degree, Document URL, Copyright
-
-# 	Each attribute is sliced off to get the actual information about the dataField
-
-def getSubject(dataToParse, i):
-	subject = str(dataToParse[i].text)
-	subject = subject[8:len(subject):1].split(';')
-	return subject
-
-def getKeyWords(dataToParse, i):
-	keywords = str(dataToParse[i].text)
-	keywords = keywords[21:len(keywords):1].split(';')
-	return keywords
-
-def getTitle(dataToParse, i):
-	title = str(dataToParse[i].text)
-	title = title[6:len(title):1]
-	return title
-
-def getKey(dataToParse, i):
-	key = str(dataToParse[i].text)
-	key = key[6:len(key):1].split()
-	key = key[0:4]
-	return key
-
-def getAuthor(dataToParse, i):
-	author = str(dataToParse[i].text)
-	author = author[7:len(author):1]
-	return author
-
-def getNumberOfPages(dataToParse, i):
-	numberOfPages = str(dataToParse[i].text)
-	numberOfPages = numberOfPages[16:len(numberOfPages):1]
-	numberOfPages = int(numberOfPages)
-	return numberOfPages
-
-def getPublicationYear(dataToParse, i):
-	publicationYear = str(dataToParse[i].text)
-	publicationYear = publicationYear[17:len(publicationYear):1]
-	publicationYear = int(publicationYear)
-	return publicationYear
-
-def getAdvisor(dataToParse, i):
-	advisor = str(dataToParse[i].text)
-	advisor = advisor[8:len(advisor):1]
-	return advisor
-
-def getCommitteeMembers(dataToParse, i):
-	committeeMembers = str(dataToParse[i].text)
-	committeeMembers = committeeMembers[17:len(committeeMembers):1].split(';')
-	return committeeMembers
-
-def getUniversity(dataToParse, i):
-	university = str(dataToParse[i].text)
-	university = university[23:len(university):1]
-	return university
-
-def getDepartment(dataToParse, i):
-	department = str(dataToParse[i].text)
-	department = department[11:len(department):1]
-	return department
-
-def getLanguage(dataToParse, i):
-	language = str(dataToParse[i].text)
-	language = language[9:len(language):1]
-	return language
-
-def getDegree(dataToParse, i):
-	degree = str(dataToParse[i].text)
-	degree = degree[7:len(degree):1]
-	return degree
-
-def getProQuestID(dataToParse, i):
-	proQuestID = str(dataToParse[i].text)
-	proQuestID = proQuestID[22:len(proQuestID):1]
-	proQuestID = int(proQuestID)
-	return proQuestID
-
-def getDocumentURL(dataToParse, i):
-	documentURL = str(dataToParse[i].text)
-	documentURL = documentURL[13:len(documentURL):1]
-	return documentURL
-
-def getCopyRight(dataToParse, i):
-	copyRight = str(dataToParse[i].text)
-	copyRight = copyRight[10:len(copyRight):1]
-	return copyRight
+    # declaring the array for storing the dp values
+	L = [[None]*(n+1) for i in range(m+1)]
+	"""Following steps build L[m+1][n+1] in bottom up fashion
+    Note: L[i][j] contains length of LCS of X[0..i-1]
+    and Y[0..j-1]"""
+	for i in range(m+1):
+		for j in range(n+1):
+			if i == 0 or j == 0 :
+				L[i][j] = 0
+			elif X[i-1] == Y[j-1]:
+				L[i][j] = L[i-1][j-1]+1
+			else:
+				L[i][j] = max(L[i-1][j] , L[i][j-1])
+    # L[m][n] contains the length of LCS of X[0..n-1] & Y[0..m-1]
+	return L[m][n]
+#end of function lcs
 
 
-# Bipartite matching the HTML filename with the PDF filename using a common key
-def bipartiteMatching(path, key, htmlFileName):
-	pdfDictionary = {}
-	htmlDictionary = {}
-	pdfFiles = glob.glob(path + '*.pdf')
+def bipartiteMatching(path, originalHTML, og):
+	dictionary = {}
+	pdfFiles = glob.glob(path + '/*.pdf')
+	for pdf in pdfFiles:
+		# init
+		pdfFileName = ""
 
-	for f in pdfFiles:
-		f_name, f_ext = os.path.splitext(f) # split filename into name and extension
-		if(f_ext == '.pdf'):
-			pdfName = os.path.basename(f_name).split(".")[0]
-			pdfFileName = pdfName + f_ext # save the actual filename with extension
+		# clean up htmlfilename
+		htmlFileName = os.path.basename(og)
+		htmlFileName = htmlFileName.replace(".", "")
+		htmlFileName = htmlFileName.replace("_", "")
+		htmlFileName = htmlFileName.split()
+		#print("html: ", htmlFileName)
+		f_name, f_ext = os.path.splitext(pdf) # split filename into name and extension
 
 
-			pdfName = pdfName.split("_") # split pdfName into array for comparison with key
-			if(key[:3] == pdfName[:3]): # found a match if first 4 words equal
-				key = "_".join(key)
-				pdfDictionary.update({key:pdfFileName})
-				htmlDictionary.update({key:htmlFileName})
-			#end if match
-		#end if pdf
-	#end for
-	return pdfDictionary, htmlDictionary
-#end bipartiteMatching
+		# This is where thre problem could be
+		pdfName = os.path.basename(f_name).split(".")[0]
 
+		# save the actual filename with extension
+		pdfFileName = pdfName + f_ext
+
+		# clean up any extra dots
+		pdfName = pdfName.replace(".", "")
+		pdfName = pdfName.split("_") # split pdfName into array for comparison with key
+		pdfName = list(filter(None, pdfName)) # remove empty spaces from array
+
+		# HTML and PDF has the same length array
+		htmlFileName = htmlFileName[:len(pdfName)]
+
+		# join the string array for comparison
+		htmlFileName = ''.join(htmlFileName)
+		pdfName = ''.join(pdfName)
+		pdfName = pdfName.replace("_", "")
+		
+		# get the longest common subsequence 
+		longest = lcs(pdfName, htmlFileName)
+		# threshold of 90%
+		percent = len(pdfName) * 0.9
+
+		# if its a 90%+ similarity then its a match
+		# update dictionary
+		if longest > percent:
+			dictionary.update({pdfFileName:originalHTML})
+			percentMatch = round((1 - longest/len(pdfName)) * 100, 2)
+			return dictionary
+	#end for pdfFiles
+
+def metadataExtraction(path, f, dictionary):
+	originalHTML = pdfFileName = pdfName = subject = abstract = keywords = title = degree = university = language = department = advisor = committeeMembers = documentURL = copyRight = f_name = f_ext = ""
+	numberOfPages = publicationYear = proQuestID = 0
+	content = f.read()
+	f.close()
+	soup = BeautifulSoup(content, 'html.parser')
+
+	# get all the data associated with the dataFields
+	# based on ProQuest HTML files.
+	dataField = soup.find_all('div',{"class":"display_record_indexing_row"})
+	dataToParse = soup.find_all('div',{"class":"display_record_indexing_data"})
+
+	# some ETD's might not have an abstract
+	abstract = soup.find('div',{"class": "abstract truncatedAbstract"})
+	try:
+		abstract = str(abstract.text)
+	except:
+		abstract = ""
+
+	# each dataField have the same name in each ETD
+	for i in range(len(dataField)):
+		if dataField[i].text == "Subject" or dataToParse[i].text == "Subject":
+			subject = str(dataToParse[i].text).split(';')
+		elif "Classification" in dataField[i].text:
+			discipline = str(dataToParse[i].text).split(':')
+			for i in range(len(discipline)-1):
+				d = discipline[i]
+				discipline[i] = d[:-4]
+			discipline.pop(0)
+			discipline = ', '.join(discipline)
+		elif "Identifier / keyword " in dataField[i].text:
+			keywords = str(dataToParse[i].text).split(';')
+		elif "Title" in dataField[i].text:
+			title = str(dataToParse[i].text)
+		elif "Author" in dataField[i].text:
+			author = str(dataToParse[i].text)
+		elif "Number of pages " in dataField[i].text:
+			numberOfPages = str(dataToParse[i].text)
+		elif "Publication year " in dataField[i].text:
+			publicationYear = str(dataToParse[i].text)
+		elif "Degree " in dataField[i].text:
+			degree = str(dataToParse[i].text)
+		elif "University/institution " in dataField[i].text:
+			university = str(dataToParse[i].text)
+		elif "Department " in dataField[i].text:
+			department = str(dataToParse[i].text)
+		elif "Advisor " in dataField[i].text:
+			advisor = str(dataToParse[i].text)
+		elif "Committee member " in dataField[i].text:
+			committeeMembers = str(dataToParse[i].text).split(';')
+		elif "Language " in dataField[i].text:
+			language = str(dataToParse[i].text)
+		elif "ProQuest document ID " in dataField[i].text:
+			proQuestID = str(dataToParse[i].text)
+		elif "Document URL " in dataField[i].text:
+			documentURL = str(dataToParse[i].text)
+		elif "Copyright " in dataField[i].text:
+			copyRight = str(dataToParse[i].text)
+	# end for
+
+	# create JSON object based on metadata including the path
+	jsonObject = {
+		"path": path + '/',
+		"dictionary": dictionary,
+		"Title": title,
+		"Author": author,
+		"Advisor": advisor,
+		"Year": publicationYear,
+		"Discipline": discipline,
+		"Abstract": abstract,
+		"University": university,
+		"Degree": degree,
+		"Subject": subject,
+		"Keywords": keywords,
+		"NumberOfPages": numberOfPages,
+		"Department": department,
+		"Language": language,
+		"CommitteeMembers": committeeMembers,
+		"ProQuestID": proQuestID,
+		"DocumentURL": documentURL,
+		"CopyRight": copyRight
+	}
+	return jsonObject
 
 # Main Driver
 def main():
-	parser = argparse.ArgumentParser(description='A foo that bars.', epilog='Please try again.')
-	parser.add_argument('--path', type=str, help='Type path to folder')
-	parser.add_argument('-p', type=str, help='Type path to folder')
-	#parser.add_argument('-o', help='Output the JSON object')
-	
-	# still need to figure out how to check for -uni
-
+	parser = argparse.ArgumentParser(description='This program is to extract metadata from html files', epilog='Please try again.')
+	parser.add_argument('--path', type=str, help='Type path to source directory')
 	
 	parser.parse_args()
 	args = parser.parse_args()
-	#print(args)
 	path = args.path
 
+	# for stats
+	numberOfDocuments = 0
+	fail = 0
+	success = 0
+	notfound = ""
 
-	# get all the files from folder
-	files = glob.glob(path + '*.html')
-
-	result = "{\n\"universities\": [\n"
-	all_data = {} # store all the data in a dictionary
+	result = "{\n\"ETDs\": [\n"
 
 	pdfDictionary = {}
 	htmlDictionary = {}
-	
-	# loop through each file in the folder
-	for file in files:
-		with open(file) as f:
-			f_name, f_ext = os.path.splitext(file)
 
-			if(f_ext == '.html'):
-				htmlFileName = os.path.basename(f_name) + f_ext
+	rootdir = path
 
-			#initialize each variable before inserting data in case the next university does not have certain dataFields
-			pdfFileName = pdfName = subject = abstract = keywords = title = degree = university = language = department = advisor = committeeMembers = documentURL = copyRight = f_name = f_ext = ""
-			numberOfPages = publicationYear = proQuestID = 0
+	# walk through each directory in folder structure to check for html files
+	for subdir, dirs, files in os.walk(rootdir):
+		for file in files:
+			if file.endswith('.html'):
+				file = os.path.join(rootdir,subdir,file)
+				path = os.path.join(rootdir, subdir)
+				dictionary = {}
+				with open (file) as f:
+					#initialize each variable before inserting data in case the next university does not have certain dataFields
+					
+					numberOfDocuments += 1
 
-			content = f.read()
-			soup = BeautifulSoup(content, 'html.parser')
-			
-			dataField = soup.find_all('div',{"class":"display_record_indexing_fieldname"}) # get all the dataFields
-			dataToParse = soup.find_all('div',{"class":"display_record_indexing_row"}) # get all the data associated with the dataFields
-			abstract = soup.find('div',{"class": "abstract truncatedAbstract"})
-			abstract = str(abstract.text)
+					# get base and extension name of each file
+					f_name, f_ext = os.path.splitext(file)
+					og = os.path.basename(f_name)
+					f_name = os.path.basename(f_name.replace("_", "")) # clean up underscores
+				
+					# save original html filename
+					originalHTML = og + f_ext
 
-			f.close() # close the file
+					### Matching HTML files with PDF files ###
+					dictionary = bipartiteMatching(path, originalHTML, og)
 
-			for i in range(len(dataField)):
-				if dataField[i].text == "Subject ":
-					subject = getSubject(dataToParse, i)
-				elif dataField[i].text == "Identifier / keyword ":
-					keywords = getKeyWords(dataToParse, i)
-				elif dataField[i].text == "Title ":
-					title = getTitle(dataToParse, i)
-					key = getKey(dataToParse, i)
-				elif dataField[i].text == "Author ":
-					author = getAuthor(dataToParse, i)
-				elif dataField[i].text == "Number of pages ":
-					numberOfPages = getNumberOfPages(dataToParse, i)
-				elif dataField[i].text == "Publication year ":
-					publicationYear = getPublicationYear(dataToParse, i)
-				elif dataField[i].text == "Degree ":
-					degree = getDegree(dataToParse, i)
-				elif dataField[i].text == "University/institution ":
-					university = getUniversity(dataToParse, i)
-				elif dataField[i].text == "Department ":
-					department = getDepartment(dataToParse, i)
-				elif dataField[i].text == "Advisor ":
-					advisor = getAdvisor(dataToParse, i)
-				elif dataField[i].text == "Committee member ":
-					committeeMembers = getCommitteeMembers(dataToParse, i)
-				elif dataField[i].text == "Language ":
-					language = getLanguage(dataToParse, i)
-				elif dataField[i].text == "ProQuest document ID ":
-					proQuestID = getProQuestID(dataToParse, i)
-				elif dataField[i].text == "Document URL ":
-					documentURL = getDocumentURL(dataToParse, i)
-				elif dataField[i].text == "Copyright ":
-					copyRight = getCopyRight(dataToParse, i)
-			#end for
+					### Metadata Extraction ###
+					jsonObject = metadataExtraction(path, f, dictionary)
 
+					# check for matching failures
+					if not dictionary:
+						fail += 1
+						notfound = notfound + originalHTML + "\n\n"
+					else:
+						# get some real time stats
+						if numberOfDocuments % 100 == 0:
+							percent = round((1 - fail/numberOfDocuments) * 100, 2)
+							print(percent,"%\n",jsonObject['University'])
 
-			pdfDictionary, htmlDictionary = bipartiteMatching(path, key, htmlFileName)
-			print(pdfDictionary)
-			print(htmlDictionary)
-			print()
+					result = result + str(json.dumps(jsonObject)) + ",\n" # add the JSON object into the result followed by a new line and a comma
+				continue
+			#end if html
+		#end for files in dir
+	#end for directories
 
-			# Since not each university have every dataField, some entries will be null
-			jsonObject = {
-				"Title": title,
-				"Author": author,
-				"Advisor": advisor,
-				"Year": publicationYear,
-				"Abstract": abstract,
-				"University": university,
-				"Degree": degree,
-				"Subject": subject,
-				"Keywords": keywords,
-				"HTMLDictionary": htmlDictionary,
-				"PDFDictionary": pdfDictionary,
-				"NumberOfPages": numberOfPages,
-				"Department": department,
-				"Language": language,
-				"CommitteeMembers": committeeMembers,
-				"ProQuestID": proQuestID,
-				"DocumentURL": documentURL,
-				"CopyRight": copyRight
-			}
-			result = result + str(json.dumps(jsonObject)) + ",\n" # add the JSON object into the result followed by a new line and a comma
+	# write notfound filename into txt file
+	notfoundFiles = open("notfound.txt", "w")
+	notfoundFiles.write(notfound)
+	notfoundFiles.close()
 
-			
-		#end with
-	#end for
-	result = result[:-2] + "\n]\n}" # remove last two chars and add ] at the end to match json syntax
+	# remove last two chars and add ] at the end to match json syntax
+	result = result[:-2] + "\n]\n}" 
 	with open ("data.json", "w") as outfile:
 		outfile.write(result)
+
+
+	print("     ------- STATS -------")
+	print("Total number of documents: ", numberOfDocuments)
+	print("Total dictionary failures: ", fail)
+	percent = round((1 - fail / numberOfDocuments) * 100, 2)
+	print("bipartiteMatching is", percent,"% efficient")
 #end main
 
 
