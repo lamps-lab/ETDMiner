@@ -1,28 +1,26 @@
-# HTML Parser for ProQuest webpages
+# HTML Parser for Electronic Dissertations
 
 The following Python program was written to receive dissertation as an html file. 
 
 Parse the HTML dissertations using BeautifulSoup to extract metadata from articles to store as JSON objects and then insert them into SQL database.
 
-# How to run the program
-In the command line to specify arguments,
-$ python parser.py --help or -h will show all the options
-  
-The arguments to choose from are the following:  
+# How to run the program  
+
+To show all arguments
+```
+python parser.py --help
+```
 
 The path to the directory is required to run the program
---path or -p to input the path for the HTML files ending with /  
-
-OR  
-
-Users can also specify the University they would like to retreive data from with the argument --uni  
+--path to input the path for the HTML files ending with /  
+```
+python parser.py --path /User/path/to/the/ETDs/
+```
 
 # Expected output
 parser.py will then store the JSON objects in a file called data.json
-
-After each university, there is an enter to show it is the end of that university.  
   
-Then, insert.py will read the JSON data and insert into SQL database.  
+Then, insert.py will read the JSON data and insert into SQL database as well as .  
 
 # Details
 
