@@ -132,7 +132,7 @@ for d in soup.find_all("document"):
 docs.append(sents) 
         
 data = []
-df = pd.read_csv("visual_features_train.csv", encoding='utf-8')
+df = pd.read_csv("visual_features_train-test.csv", encoding='utf-8')
 df.dropna(subset = ["tokens"], inplace=True)
 df.drop(df.loc[df['tokens']=='<'].index, inplace=True)
 df.drop(df.loc[df['tokens']=='document'].index, inplace=True)
@@ -149,6 +149,7 @@ for i, doc in enumerate(docs):
     for pos_ in tagged:
         list_.append(pos_[1])
     pos_tagged = list_
+    print(pos_tagged)
     left_margin = df['left_margin']
     upper_left = df['upper_left']
     bottom_right = df['bottom_right']
@@ -268,7 +269,7 @@ crf.fit(X_train, y_train)
 print("\n===================================\nModel Saved\n===================================\n")
 
 #dump the model
-filename = 'crf_model_visual.sav'
+filename = 'crf_model_visual-test.sav'
 pickle.dump(crf, open(filename, 'wb'))
 
 ################################################################################################################################################
