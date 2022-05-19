@@ -23,7 +23,7 @@ def read_csv():
         word_bio = f.readlines()
         word_bio = word_bio
     for each in word_bio:
-        each = each.strip("\n").strip(',')
+        each = each.strip("\n").strip(',').strip()
         word, bio = each.split(",")
         #print(word,bio)
         word_bio_tuple = (word,bio)
@@ -67,77 +67,82 @@ def collapse(ner_result):
             (" ".join(current_entity_tokens), current_entity))
         #print(collapsed_result)
     return collapsed_result
-#
-## def remove_tuples(tuples):
-##     tuples = [t for t in tuples if t == None]
-##     return tuples
-#
-#
+
+# def remove_tuples(tuples):
+#     tuples = [t for t in tuples if t == None]
+#     return tuples
+
+
 def combine(field_list):
+    # for row in field_list:
+    #     csv_writer.writerow(row)
         size = len(field_list)
-        idx_list = [idx  for idx, val in enumerate(field_list) if val[1] == 'title']
+        idx_list = [idx  for idx, val in enumerate(field_list) if val[1] == None]
         #print(idx_list)
         res = [field_list[i: j] for i, j in zip([0] + idx_list, idx_list + ([size] if idx_list[-1] != size else []))]
-        res = res[2:]
+        #print(res.pop(0))
         fields = {}
         for doc in res:
             for field in doc:
                 fields[field[1]] = field[0]
-       
-            dF = pd.DataFrame(fields.items())
-            dF2 = dF.T
-            dF2.to_csv("metadata.csv", header = None)
-                
-#                
-
-            
-            
-#            key_list = list(fields.keys())
-#            value_list = list(fields.values())
-#            
-#            mapped = list(zip(key_list, value_list))
-
+            print(fields)
         
-#            dict_1 = dict(mapped)
-#
-#            dF = pd.DataFrame(dict_1.items())
-#            dF2 = dF.T
-#            #print(dF2)
-#            dF2.to_csv("metadata.csv", header = None)
+#        key_list = list(fields.keys())
+#        value_list = list(fields.values())
+###        
+#        mapped = list(zip(key_list, value_list))
+#        
+#        dict_1 = dict(map(mapped))
+#        print(dict_1)
+#        
+#        dF = pd.DataFrame(dict_1.items())
+##        print(dF)
+#        dF2 = dF.T
+#        dF2.to_csv("metadata.csv", header = None)
         
+        
+        
+        
+#        dF = pd.DataFrame(mapped, columns = ['title', 'author', 'university', 'degree', 'program'])
+#        print(dF)
+        
+#        with open('Names.csv', 'w') as csvfile:
+#            writer = csv.DictWriter(csvfile, fieldnames = key_list)
+#            writer.writeheader()
+#            writer.writerows(fields)
             
 #            title = fields["title"]
-#            print(title)
-##            university = fields["university"]
-##            print(university)
-#            author = fields["author"]
-#            print(author)
-#            year = fields["year"]
-#            print(year)
-#            program = fields["program"]
-#            print(program)
-#            degree = fields["degree"]
-#            print(degree)
-#            advisor = fields["advisor"]
-#            print(advisor)
+##            print(title)
+#            university = fields["university"]
+#            print(university)
+##            author = fields["author"]
+##            #print(author)
+##            year = fields["year"]
+##            #print(year)
+##            program = fields["program"]
+##
+##            degree = fields["degree"]
+#            #print(degree)
+##            advisor = fields["advisor"]
+###            print(advisor)
 ##            with open ("1-prtitle_visual.csv", "a") as g1:
 ##                g1.write("%s\n" % title)
 ##            with open ("2-prauthor.csv", "a") as g2:
 ##                 g2.write("%s\n" % author)
-#            with open ("3-prprogram_visual.csv", "a") as g3:
-#                g3.write("%s\n" % program)
-#            with open ("4-pryear_visual.csv", "a") as g4:
-#                g4.write("%s\n" % year)
-#            with open ("5-pruniv.csv", "a") as g5:
-#                g5.write("%s\n" % university)
-#            with open ("6-prdegree_visual.csv", "a") as g6:
-#                g6.write("%s\n" % degree)
-            # with open("7-pradvisor.csv", "a") as g7:
-            #     g7.write("%s\n" % advisor)
-
+##            with open ("3-prprogram_visual.csv", "a") as g3:
+##                g3.write("%s\n" % program)
+##            with open ("4-pryear_visual.csv", "a") as g4:
+##                g4.write("%s\n" % year)
+##            with open ("5-pruniv.csv", "a") as g5:
+##                g5.write("%s\n" % university)
+##            with open ("6-prdegree_visual.csv", "a") as g6:
+##                g6.write("%s\n" % degree)
+#            # with open("7-pradvisor.csv", "a") as g7:
+#            #     g7.write("%s\n" % advisor)
+#
 if __name__ == "__main__":
     word_bio_list = read_csv()
     #print(word_bio_list)
     result = collapse(word_bio_list)
-    #print(result)
-    combine = combine(result)    
+    print(result)
+    #combine = combine(result)

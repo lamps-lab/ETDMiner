@@ -18,8 +18,8 @@ from nltk import word_tokenize
 import pandas as pd
 
 
-clean = '/Users/muntabir/Documents/etdExtraction/etd_crf_result/text-align/annotated-test/*.xml'
-noisy_hocr = '/Users/muntabir/Documents/etdExtraction/etd_crf_result/text-align/hocr/hocr-test/*.html'
+clean = '/Users/muntabir/Documents/ETDmetadata/*xml'
+noisy_hocr = '/Users/muntabir/Documents/ETDmetadata/*.html'
 
 
 numbers = re.compile(r'(\d+)')
@@ -195,6 +195,7 @@ if __name__ == "__main__":
 
     ## mapping all the position information keys and aligned-token into a one single dictionary by calling the merge function 
     merged = merge(tokens, pos)
+    print(merged)
 
     feature = Features(merged)
     left_margin = feature.x1_feature()

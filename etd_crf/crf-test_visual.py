@@ -65,13 +65,13 @@ def extract_features(doc):
 def get_labels(doc):
     return [label for (token, postag, left_margin, upper_left, bottom_right, label) in doc]
     
-def nlp_stanza_tokenize(document):
-     tokenize_nlp = stanza.Pipeline('en', processors='tokenize')
-     text_document = tokenize_nlp(document)
-     sent_tokens = ""
-     for i, sentence in enumerate(text_document.sentences):
-         sent_tokens = [token.text for token in sentence.tokens]
-     return (sent_tokens)
+#def nlp_stanza_tokenize(document):
+#     tokenize_nlp = stanza.Pipeline('en', processors='tokenize')
+#     text_document = tokenize_nlp(document)
+#     sent_tokens = ""
+#     for i, sentence in enumerate(text_document.sentences):
+#         sent_tokens = [token.text for token in sentence.tokens]
+#     return (sent_tokens)
 #
 #def nlp_stanza_pos(tokens):
 #     print("In stanza")
@@ -84,7 +84,7 @@ def nlp_stanza_tokenize(document):
     
     
 #file_path = '/home/hjayanet/Documents/Himarsha/LAMP-SYS/Annotated_Samples'
-file_path = '/Users/muntabir/Documents/Annotated/test/*.xml'
+file_path = '/Users/muntabir/Documents/ETDmetadata/*.xml'
 allxmlfiles = append_ann(file_path)
 soup = bs(allxmlfiles, "html.parser")
 
@@ -100,13 +100,13 @@ for d in soup.find_all("document"):
         other_tag = 'O'
         if isinstance(word.name, NoneType) == True:
             withoutpunct = remove_punct(word)
-            temp = nlp_stanza_tokenize(withoutpunct)
+            temp = word_tokenize(withoutpunct)
             for token in temp:
                 tags.append((token, other_tag))
         else:
             prev_tag = other_tag
             withoutpunct = remove_punct(word)
-            temp = nlp_stanza_tokenize(withoutpunct)
+            temp = word_tokenize(withoutpunct)
             for token in temp:
                 #beginning of the token
                 if tags != 'O' and prev_tag == 'O' :
@@ -244,7 +244,6 @@ X_test = [extract_features(doc) for doc in data]
 y_test = [get_labels(doc) for doc in data]
 print("\n===================================\nExtracting Features - Completed\n===================================\n")
 
-
 #train a CRF model
 print("\n===================================\nLoading CRF Model\n===================================\n")
 filename = 'crf_model_visual.sav'
@@ -252,16 +251,23 @@ filename = 'crf_model_visual.sav'
 # load the model from disk
 crf = pickle.load(open(filename, 'rb'))
 labels = list(crf.classes_)
-labels.remove('O')
+labels = labels.remove('O')
 y_pred = crf.predict(X_test)
 
 print(metrics.flat_f1_score(y_test, y_pred, average='weighted', labels=labels))
 sorted_labels = sorted(labels, key=lambda name:(name[1:],name[0]))
 print(metrics.flat_classification_report(y_test, y_pred, labels=sorted_labels, digits=3))
 
-f = open("test-out.csv", "w")
+pred_list = []
+#f = open("test-out.csv", "w")
 for a, b in zip([p[1].split("=")[1] for p in X_test[len(X_test)-1]], y_pred[len(y_pred)-1]):
-    f.write("%s,%s\n" % (a, b))
+    pred_list.append((a, b))
+
+dF = pd.DataFrame(pred_list)
+dF.to_csv("test-out.csv", header = None, index=False)
+
+#print(pred_list)
+#    f.write("%s,%s\n" % (a, b))
 print("\n===================================\nSaved Evaluation Result\n===================================\n")
 
 ################################################################################################################
