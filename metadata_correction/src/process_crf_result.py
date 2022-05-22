@@ -1,26 +1,37 @@
 #!/usr/bin/env python3.7
 # -*- coding: utf-8 -*-
 """
-Created on Sun 28th Jun
+Created on Sun 28th Jun 2021
 @author: Himarsha Jayanetti
+
+Modified on: 
+By:  Himarsha Jayanetti
 """
+
+from collections import defaultdict
+
 
 #This code is used to process the y_pred values to obtain each field value by merging tokens.
 #Input to the code is the crf model output and the output of this code is fed into the compare_pr_mg.py
 
 def read_csv():
+	with open("CRF_output/intermediate.csv", "r") as f:
+		main_list = f.readlines()
+	#print(main_list)
+	#main_dic = {}
+	main_dic = defaultdict(list)
 	word_bio_list = []
-	with open("test-out.csv", "r") as f:
-		word_bio = f.readlines()
-	for each in word_bio:
+	for each in main_list:
 		each = each.strip("\n")
-		word, bio = each.split(",")
+		etdid, word, bio = each.split(",")
 		word = word.strip("\"")
 		bio = bio.strip("\"")
-		word_bio_tuple = (word,bio)
+		word_bio_tuple = (etdid,word,bio)
 		word_bio_list.append(word_bio_tuple)
-	#print(word_bio_list)
-	return word_bio_list
+	for k, *v in word_bio_list:
+		main_dic[k].append(v)
+	#print(main_dic["2000"])
+	return main_dic
 
 
 def collapse(ner_result):
@@ -32,12 +43,16 @@ def collapse(ner_result):
 	# Iterate over the tagged tokens
 	for token, tag in ner_result:
 		#print(current_entity)
-		#tag 
+		#print(token,tag) 
+		# if newID:
+		# 	current_entity = "title"
+		# 	newID = False
 		if tag == "O":
 			continue
 		# If an enitity span starts ...
 		#print(token)
 		if tag.startswith("B-"):
+			#print("HERE - B")
 			# ... if we have a previous entity in the buffer, store it in the result list
 			#print("A")
 			if current_entity is not None:
@@ -50,11 +65,18 @@ def collapse(ner_result):
 			current_entity_tokens = [token]
 		# If the entity continues ..
 		elif tag == "I-" + current_entity:
+			#print(tag)
+			#print("HERE - I")
 			# Just add the token buffer
 			current_entity_tokens.append(token)
 			#print(current_entity_tokens)
 		else:
+			#print(token,tag)
 			raise ValueError("Invalid tag order.")
+		# prev_etdid = etdid
+		#print("END")
+		#break
+		#print(collapsed_result)
 	
 	# The last entity is still in the buffer, so add it to the result
 	# ... but only if there were some entity at all
@@ -70,50 +92,58 @@ def combine(field_list):
 	res = [field_list[i: j] for i, j in zip([0] + idx_list, idx_list + ([size] if idx_list[-1] != size else []))]
 	#print(res)
 	res.pop(0)
-	res.pop(0) #CHECK WITH ALL CASES IF THIS IS NEEDED
-	print(res)
+	#res.pop(0) #USE IF NEEDED
+	#print(res)
 	fields = {} 
-	with open ("predicted_results.csv", "w") as g:
-		#etdid	title	author	advisor	year	university	degree	program
+	#etdid	title	author	advisor	year	university	degree	program
+	for doc in res:
+		for field in doc:
+			fields[field[1]] = field[0]
+		#print(fields)
+		try:
+			title = fields["title"]
+		except Exception as e:
+			title = ""
+		try:
+			author = fields["author"]
+		except Exception as e:
+			author = ""
+		try:
+			university = fields["university"]
+		except Exception as e:
+			university =  ""
+		try:
+			year = fields["year"]
+		except Exception as e:
+			year =  ""
+		try:
+			program = fields["program"]
+		except Exception as e:
+			program =  ""
+		try:
+			degree = fields["degree"]
+		except Exception as e:
+			degree =  ""
+		try:
+			advisor = fields["advisor"]
+		except Exception as e:
+			advisor =  ""
+		#print(title,author,advisor,university,degree,program,year)
+		out_line = "%s,%s,%s,%s,%s,%s,%s\n" % (title.strip("\n"),author.strip("\n"),advisor.strip("\n"),university.strip("\n"),degree.strip("\n"),program.strip("\n"),year.strip("\n"))
+		#break
+		#print(out_line)
+	return out_line
+
+if __name__ == "__main__":	
+	main_dic = read_csv()
+
+	with open ("CRF_output/metadata.csv", "w") as g:		
 		g.write("etdid,title,author,advisor,university,degree,program,year\n")
-		for doc in res:
-			for field in doc:
-				fields[field[1]] = field[0]
-			#print(fields)
-			try:
-				title = fields["title"]
-			except Exception as e:
-				title = ""
-			try:
-				author = fields["author"]
-			except Exception as e:
-				author = ""
-			try:
-				university = fields["university"]
-			except Exception as e:
-				university =  ""
-			try:
-				year = fields["year"]
-			except Exception as e:
-				year =  ""
-			try:
-				program = fields["program"]
-			except Exception as e:
-				program =  ""
-			try:
-				degree = fields["degree"]
-			except Exception as e:
-				degree =  ""
-			try:
-				advisor = fields["advisor"]
-			except Exception as e:
-				advisor =  ""
-			#print(title,author,advisor,university,degree,program,year)
-			g.write("etdid,%s,%s,%s,%s,%s,%s,%s\n" % (title,author,advisor,university,degree,program,year))
-
-
-if __name__ == "__main__":
-	word_bio_list = read_csv()
-	result = collapse(word_bio_list)
-	#print(result)
-	combine(result)
+		for key in main_dic.keys():
+			#print(key)
+			#print(main_dic[key])
+			word_bio =main_dic[key]
+			result = collapse(word_bio)
+			out_line = combine(result)
+			g.write(key + "," + out_line)
+			#break
