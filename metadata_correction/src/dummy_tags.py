@@ -19,7 +19,7 @@ def get_items(file):
 	lines = [x.replace('\n', '') for x in lines]
 	#Remove invalid characters
 	for line in lines:
-		line = re.sub(r'\W+', '', line)
+		line = re.sub(r'[^\w.,;!? \n]+', '', line)
 		new_list.append(line)
 	return new_list
 
@@ -27,11 +27,7 @@ def add_doctagONLY(item_list):
 	new_list = []
 	try:
 		for line in item_list:
-			if line == "" or line == " ":
-					pass
-			else:
-				new_list.append(line)
-
+			new_list.append(line)
 		first_item = new_list[0]
 		new_list[0] = "<document>" + first_item
 		last_item = new_list[-1]
@@ -52,7 +48,7 @@ def add_tags(item_list):
 			else:
 				#Add dummy tag - <dt> and </dt>
 				line = "<dt>" + line + "</dt>"
-				new_list.append(line)
+			new_list.append(line)
 		#Add document root tag - <document> and </document>
 		first_item = new_list[0]
 		new_list[0] = "<document>" + first_item
