@@ -54,12 +54,32 @@ File Location: CRF_output/metadata.csv
 
 * ```autometa.config``` is the configutation file. This is where you enter your database login information and set database settings.
 
-* The ```autometa.py``` code will conduct the following operations.
+```autometa.config```
+```
+[SERVER_CONFIG]
+
+HOST = hawking.cs.odu.edu
+USER = username_for_hawking
+PASSWORD = password_for_hawking
+
+[DATABASE_CONFIG]
+DATABASE = pates_etds (Database name)
+ETD_TABLE = orig_etd_tablename
+ETD_TABLE_LIMIT = all (OR set this to any numerical value (< total no. of rows in orig etd table) which will decide how many rows in the database to be considered as input)
+SHADOW_TABLE = shadow_tablename
+
+[METADATA_UPDATE_CONFIG]
+	
+ORIG_METHOD = library
+UPDATE_METHOD = autometa
+```
+
+* The ```updateDB.py``` code will conduct the following operations.
 
 1. This code iterates through each row in the original ETD table to look for missing values.
 2. If a missing value(s) is found, it would check the metadata miner autoMeta to obtain the missing values. 
 3. If missing values are available in the CSV file obtained as output from autoMeta, the original ETD table will be updated with these data while the original row is backed up in the new shadow table. 
 4. The orig ETD table will have a new version number incremented by 1.
 
- ```$ python3 autometa.py ```
+ ```$ python3 updateDB.py ```
  
