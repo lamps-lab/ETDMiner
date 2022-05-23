@@ -32,7 +32,7 @@ cd ETDMiner/metadata_correction/src/
 
 * As of now, the ETDs are expected to be at ```ETDMiner/metadata_correction/src/etdrepo/``` 
 
-##### 3. Get metadata extracted using AutoMeta
+##### 2. Get metadata extracted using AutoMeta
  
 ```
 $./extract_metadata.sh 
@@ -50,4 +50,16 @@ $./extract_metadata.sh
 
 File Location: CRF_output/metadata.csv
 
+##### 3. Use the extracted metadata to update the missing values in the original ETD database.
 
+* ```autometa.config``` is the configutation file. This is where you enter your database login information and set database settings.
+
+* The ```autometa.py``` code will conduct the following operations.
+
+1. This code iterates through each row in the original ETD table to look for missing values.
+2. If a missing value(s) is found, it would check the metadata miner autoMeta to obtain the missing values. 
+3. If missing values are available in the CSV file obtained as output from autoMeta, the original ETD table will be updated with these data while the original row is backed up in the new shadow table. 
+4. The orig ETD table will have a new version number incremented by 1.
+
+ ``` python3 autometa.py ```
+ 
