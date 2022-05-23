@@ -61,5 +61,5 @@ File Location: CRF_output/metadata.csv
 3. If missing values are available in the CSV file obtained as output from autoMeta, the original ETD table will be updated with these data while the original row is backed up in the new shadow table. 
 4. The orig ETD table will have a new version number incremented by 1.
 
- ``` python3 autometa.py ```
+ ```$ python3 autometa.py ```
  
