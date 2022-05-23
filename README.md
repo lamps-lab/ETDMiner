@@ -14,15 +14,15 @@
 <small><i><a href='http://ecotrust-canada.github.io/markdown-toc/'>Table of contents generated with markdown-toc</a></i></small>
 
 
-# ETDMiner
+## ETDMiner
 Programs and tools collected and developed to mine electronic theses and dissetations.
 
-# Description
+## Description
 
-# ocrpipe
+## ocrpipe
 It contains two files - a.) Dockerfile b.)runner.sh
 
-# Dockerfile
+## Dockerfile
  
 - The Dockerfile is automating the process of converting the ETD samples/datasets (pdf format) to .tif format.
 	
@@ -38,7 +38,7 @@ It contains two files - a.) Dockerfile b.)runner.sh
 	
 - Note, for testing purpose /tmp/tifytest has been created and this directory has been mounted with /tmp/pdfs (it contains the sample dataset in pdf) and the directory /tmp/tifout has been mounted with /tmp/tifs (it contains the output in .tif format)
 
-# runner.sh
+## runner.sh
 	
 - It is a simple bashscript in order to iterate through pages from a pdf and convert it into .tif format.
 	
@@ -49,19 +49,19 @@ It contains two files - a.) Dockerfile b.)runner.sh
 - Note, everytime this runner.sh will be executed during the process of rebuilding the image and run the docker container on new pdf,
 the /tmp/tifout directory will be removing the previous .tif images and will have the new images for new sample.
 
-# samples
+## samples
 It contains the sample dataset which has been tested out in the above process
 
-# src
+## src
 It contains the "tesseract.py" script. After executing the Dockerfile, run this script on the sample output (.tif format)
 
-# ocr_experimented_images
+## ocr_experimented_images
 It contains the sample output images in .tif format (paper-1 to paper-7) along with the output of the tesseract result (HOCR_result and paper-1_result)   
 
-# webcrawler
+## webcrawler
 Contains the crawlers & parsers for different universities developed to collect ETDs and extract metadata from the webpages.
 	
-# Metadata Correction
+## Metadata Correction
 
 [Go to the sub-folder](metadata_correction/src/)
 
