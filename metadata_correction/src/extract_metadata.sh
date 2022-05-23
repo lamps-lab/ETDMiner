@@ -13,7 +13,7 @@
 
 #Loop through all files ending in ".pdf"
 echo "Looping through all ETD PDFs to obtain the cover page ..."
-for f in etdrepo_test/**/**/*.pdf ;
+for f in etdrepo/**/**/*.pdf ;
 
 do
 
