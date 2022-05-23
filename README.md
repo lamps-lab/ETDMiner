@@ -78,7 +78,8 @@ AutoMeta
  — code
   — extract_metadata.sh
   — anomaly_detect.py
-  — autometa.py
+  — updateDB.py
+  — updateDB.config
   — crf-test.py
   — dummy_tags.py
   — process_crf_result.py
@@ -121,7 +122,7 @@ File Location: CRF_output/metadata.csv
 
 ##### 3. Use the extracted metadata to update the missing values in the original ETD database.
 
-* ```autometa.config``` is the configutation file. This is where you enter your database login information and set database settings.
+* ```updateDB.config``` is the configutation file. This is where you enter your database login information and set database settings.
 
 ```
 [SERVER_CONFIG]
@@ -157,7 +158,3 @@ UPDATE_METHOD = autometa
 * Incorporate visual features for predictions using CRF model.
 * Allow a user to provide a list of ETDs (path to ETDs) on which to run the entire process.
 * Determine which page of an ETD is the cover page intelligently.
-
-
-	
-		
