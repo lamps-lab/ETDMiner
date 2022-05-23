@@ -21,7 +21,18 @@ AutoMeta
 
 #### Steps
 
-##### 1. Get metadata extracted using AutoMeta
+
+##### 1. Clone this repository and run file_structure.sh
+
+```
+git clone git@github.com:lamps-lab/ETDMiner.git
+cd ETDMiner/metadata_correction/src/ 
+./file_structure.sh
+```
+
+* As of now, the ETDs are expected to be at ```ETDMiner/metadata_correction/src/etdrepo/``` 
+
+##### 3. Get metadata extracted using AutoMeta
  
 ```
 $./extract_metadata.sh 
