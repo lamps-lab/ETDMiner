@@ -24,7 +24,7 @@ out="tif/${out2}tif" #output directory and filename
 
 # Ghostscript command to extract coverpage from PDF into TIF format image
 # Note: The coverpage is assumed to be the first page. If necessary, modify the page number.
-gs -q -sDEVICE=tiffg4 -r300 -dBATCH -dPDFFitPage -dNOPAUSE -dFirstPage=2 -dLastPage=2 -sOutputFile="$out" "$f"
+gs -q -sDEVICE=tiffg4 -r300 -dBATCH -dPDFFitPage -dNOPAUSE -dFirstPage=1 -dLastPage=1 -sOutputFile="$out" "$f"
 
 done
 echo "Done."
