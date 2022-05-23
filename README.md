@@ -1,3 +1,5 @@
+#### Table of Contents
+
 - [ETDMiner](#etdminer)
 - [Description:](#description)
 - [ocrpipe:](#ocrpipe)
