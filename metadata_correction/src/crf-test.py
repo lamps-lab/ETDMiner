@@ -33,23 +33,14 @@ import sys
 #csvfile = open('etd_to_bio.csv', 'w')
 #csv_writer = csv.writer(csvfile)
 
+CRFmodel_filename = sys.argv[1]
+
 numbers = re.compile(r'(\d+)')
+
 def numericalSort(value):
     parts = numbers.split(value)
     parts[1::2] = map(int, parts[1::2])
     return parts
-
-
-def append_ann(files):
-    xml_files = sorted(glob.glob(files), key=numericalSort)
-    new_data = b""
-    for xml_file in xml_files:
-        data = ET.parse(xml_file).getroot()
-        temp = ET.tostring(data)
-        new_data = new_data+temp
-    return new_data
-
-
 
 #this function removes special characters and punctuations
 def remove_punct(withpunct):
@@ -61,91 +52,13 @@ def remove_punct(withpunct):
             without_punct = without_punct + char
     return(without_punct)
 
-
 def extract_features(doc):
     #print(doc[0],i)
     return [word2features(doc, i) for i in range(len(doc))]
 
 def get_labels(doc):
     return [label for (token, postag, label) in doc]
-    
-# def nlp_stanza_tokenize(document):
-#     tokenize_nlp = stanza.Pipeline('en', processors='tokenize')
-#     text_document = tokenize_nlp(document)
-#     sent_tokens = ""
-#     for i, sentence in enumerate(text_document.sentences):
-#         sent_tokens = [token.text for token in sentence.tokens]
-#     return (sent_tokens)
 
-# def nlp_stanza_pos(tokens):
-#     print("In stanza")
-#     pos_nlp = stanza.Pipeline('en', processors='tokenize,pos', use_gpu=True, pos_batch_size=5000, tokenize_pretokenized=True)
-#     pos_document = pos_nlp((" ").join(tokens))
-#     sent_pos = [(word.xpos) for sent in pos_document.sentences for word in sent.words]
-#     print("Out stanza")
-#     return sent_pos
-
-    
-    
-#file_path = '/home/hjayanet/Documents/Himarsha/LAMP-SYS/Annotated_Samples'
-#file_path = '/home/marsh/Documents/Research/ETD/ETDMiner/testETDs/xml/*.xml'
-file_path = f"{sys.argv[1]}/*.xml"
-allxmlfiles = append_ann(file_path)
-soup = bs(allxmlfiles, "html.parser")
-
-
-#identify the tagged element
-docs = []
-sents = []
-
-for d in soup.find_all("document"):
-    for word in d:
-        tags = []
-        NoneType = type(None)
-        other_tag = 'O'
-        if isinstance(word.name, NoneType) == True:
-            withoutpunct = remove_punct(word)
-            temp = withoutpunct.split()
-            for token in temp:
-                tags.append((token, other_tag))
-        else:
-            prev_tag = other_tag
-            withoutpunct = remove_punct(word)
-            temp = withoutpunct.split()
-            for token in temp:
-                #beginning of the token
-                if tags != 'O' and prev_tag == 'O' :
-                    tags.append((token, "B-"+word.name)) 
-                    tag = "B-"+word.name
-                    prev_tag = tag
-                #inside of the token
-                elif prev_tag != 'O' and prev_tag == tag:
-                    tags.append((token, "I-"+word.name))
-                    tag = "I-"+word.name
-                    prev_tag = tag
-                #adjacent of the token
-                elif prev_tag != 'O' and prev_tag != tag:
-                    tags.append((token, "B-"+word.name))
-                    tag = "B-"+word.name
-                    prev_tag = tag
-                         
-        sents = sents + tags
-
-docs.append(sents)  
-      
-data = []
-
-print("\n===================================\nBIO Tag Completed\n===================================\n") 
-
-for i, doc in enumerate(docs):
-    tokens = [t for t, label in doc]
-    tagged = pos_tag(tokens)
-
-    data.append([(w, pos, label) for (w, label), (word, pos) in zip(doc, tagged)])
-    #print(data)
-
-print("\n===================================\nPOS Tag Completed\n===================================\n")
-print("\n===================================\nExtracting Features....\n===================================\n") 
 
 def word2features(doc, i):
     word = doc[i][0]
@@ -208,67 +121,117 @@ def word2features(doc, i):
         features.append('EOS')     
     return features
 
-#Split to train and test sets
+def predict_metadata(xml_file):
+    soup = bs(xml_file, "html.parser")
 
-X_test = [extract_features(doc) for doc in data]
-y_test = [get_labels(doc) for doc in data]
-print("\n===================================\nExtracting Features - Completed\n===================================\n")
+    #identify the tagged element
+    docs = []
+    sents = []
+
+    for d in soup.find_all("document"):
+        for word in d:
+            tags = []
+            NoneType = type(None)
+            other_tag = 'O'
+            if isinstance(word.name, NoneType) == True:
+                withoutpunct = remove_punct(word)
+                temp = withoutpunct.split()
+                for token in temp:
+                    tags.append((token, other_tag))
+            else:
+                prev_tag = other_tag
+                withoutpunct = remove_punct(word)
+                temp = withoutpunct.split()
+                for token in temp:
+                    #beginning of the token
+                    if tags != 'O' and prev_tag == 'O' :
+                        tags.append((token, "B-"+word.name)) 
+                        tag = "B-"+word.name
+                        prev_tag = tag
+                    #inside of the token
+                    elif prev_tag != 'O' and prev_tag == tag:
+                        tags.append((token, "I-"+word.name))
+                        tag = "I-"+word.name
+                        prev_tag = tag
+                    #adjacent of the token
+                    elif prev_tag != 'O' and prev_tag != tag:
+                        tags.append((token, "B-"+word.name))
+                        tag = "B-"+word.name
+                        prev_tag = tag
+                             
+            sents = sents + tags
+
+    docs.append(sents)  
+    #print(docs)  
+    data = []
+
+    #print("\n===================================\nBIO Tag Completed\n===================================\n") 
+
+    for i, doc in enumerate(docs):
+        tokens = [t for t, label in doc]
+        tagged = pos_tag(tokens)
+
+        data.append([(w, pos, label) for (w, label), (word, pos) in zip(doc, tagged)])
+        #print(data)
+
+    #print("\n===================================\nPOS Tag Completed\n===================================\n")
+    #print("\n===================================\nExtracting Features....\n===================================\n") 
 
 
-#train a CRF model
-print("\n===================================\nLoading CRF Model\n===================================\n")
+    #Split to train and test sets
 
-filename = sys.argv[2]
-
-# load the model from disk
-crf = pickle.load(open(filename, 'rb'))
-labels = list(crf.classes_)
-labels.remove('O')
-y_pred = crf.predict(X_test)
-
-#print(metrics.flat_f1_score(y_test, y_pred, average='weighted', labels=labels))
-#sorted_labels = sorted(labels, key=lambda name:(name[1:],name[0]))
-#print(metrics.flat_classification_report(y_test, y_pred, labels=sorted_labels, digits=3))
-#print(metrics.flat_classification_report(y_test, y_pred, labels=sorted_labels, digits=3))
-
-f = open(sys.argv[3], "w")
-for a, b in zip([p[1].split("=")[1] for p in X_test[len(X_test)-1]], y_pred[len(y_pred)-1]):
-    f.write("%s,%s\n" % (a, b))
-#print("\n===================================\nSaved Evaluation Result\n===================================\n")
-
-####################################################################################################
-# print(metrics.flat_f1_score(y_test, y_pred, average='weighted', labels=labels))
-
-# #inspect per-class results in more details: full classification result 
-# sorted_labels = sorted(labels, key=lambda name:(name[1:],name[0]))
-# print(metrics.flat_classification_report(y_test, y_pred, labels=sorted_labels, digits=3))
+    X_test = [extract_features(doc) for doc in data]
+    y_test = [get_labels(doc) for doc in data]
+    #print("\n===================================\nExtracting Features - Completed\n===================================\n")
 
 
-# f = open("out_test.csv", "w")
-# for a, b in zip([p[1].split("=")[1] for p in X_test[len(X_test)-1]], y_pred[len(y_pred)-1]):
-#  	f.write("%s\t%s\n" % (a, b))
-# f.close()
-# print("\n===================================\nSaved Result on Test Samples with BIO Tags\n===================================\n")
+    #train a CRF model
+    #print("\n===================================\nLoading CRF Model\n===================================\n")
+
+    # load the model from disk
+    crf = pickle.load(open(CRFmodel_filename, 'rb'))
+    labels = list(crf.classes_)
+    labels.remove('O')
+    y_pred = crf.predict(X_test)
+    return X_test, y_pred
 
 
-# labels = list(crf.classes_)
-# labels.remove('O')
-# sorted_labels = sorted(labels, key=lambda name:(name[1:],name[0]))
-# y_pred = crf.predict(X_test)
-# result = metrics.flat_classification_report(y_test, y_pred,labels=sorted_labels, digits=3)
-# print(result)
-#mlb = MultiLabelBinarizer(sparse_output=True)
-#mlb.fit_transform(X_test)
-#mlb.fit_transform(y_test)
-#print(metrics.flat_classification_report(X_test, y_test, labels=sorted_labels, digits=3))
 
-# def print_state_features(state_features):
-#     for (attr, label), weight in state_features:
-#         print("%0.6f %-8s %s" % (weight, label, attr))
 
-# print("Top positive:")
-# print(print_state_features(Counter(crf.state_features_).most_common(30)))
+# file_path = f"xml/*.xml"
+# allxmlfiles = append_ann(file_path)
+# soup = bs(allxmlfiles, "html.parser")
 
-# print("\nTop negative:")
-# print(print_state_features(Counter(crf.state_features_).most_common()[-30:]))
-################################################################################################
+
+# def append_ann(files):
+#     xml_files = sorted(glob.glob(files), key=numericalSort)
+#     new_data = b""
+#     for xml_file in xml_files:
+#         print(xml_file)
+#         data = ET.parse(xml_file).getroot()
+#         temp = ET.tostring(data)
+#         new_data = new_data+temp
+#     print(new_data)
+#     return new_data
+
+
+if __name__ == "__main__":
+    # with open("CRF_output/intermediate.csv","w") as g:
+    #     pass
+    with open("CRF_output/intermediate.csv","w") as f:
+        file_path = f"xml/*.xml"
+        xml_files = sorted(glob.glob(file_path), key=numericalSort)
+        for xml_file in xml_files:
+            #print(xml_file)
+            #xml/10001.xml
+            new_data = b""
+            etdid = xml_file.split("/")[1].strip(".xml")
+            data = ET.parse(xml_file).getroot()
+            temp = ET.tostring(data)
+            new_data = new_data+temp
+            #print(new_data)
+            X_test1, y_pred1 = predict_metadata(new_data)
+            #print("\n===================================\nGenerating output\n===================================\n")
+            for a, b in zip([p[1].split("=")[1] for p in X_test1[len(X_test1)-1]], y_pred1[len(y_pred1)-1]):
+                #print(a,b)
+                f.write("%s,%s,%s\n" % (etdid,a, b))
