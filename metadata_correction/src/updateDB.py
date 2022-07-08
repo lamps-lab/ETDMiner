@@ -13,6 +13,10 @@
 
 import mysql.connector as mysql
 import configparser
+from datetime import date
+from nameparser import HumanName
+import universities
+
 
 config = configparser.ConfigParser()
 config.read('updateDB.config')
@@ -110,6 +114,28 @@ def update_shadowTable(id,current_row):
 	mycursor.execute(sql_cmd2) 
 	db_connection.commit()
 
+def correct_metadata(autoMeta_values_dic):
+	#print(autoMeta_values_dic)
+	new_autoMeta_values_dic = {}
+	for key in autoMeta_values_dic:
+		value = autoMeta_values_dic[key]
+		#print(key,value)
+		if key == "title":
+			autoMeta_values_dic[key] = value.title()
+			#continue
+		elif key == "author":
+			name = HumanName(value)	
+			name.capitalize()
+			autoMeta_values_dic[key] = str(name)
+		elif key == "advisor":
+			name = HumanName(value)	
+			name.capitalize()
+			autoMeta_values_dic[key] = str(name)
+	return autoMeta_values_dic
+
+
+
+
 
 if __name__ == "__main__":
 	limit = config['DATABASE_CONFIG']['ETD_TABLE_LIMIT']
@@ -152,6 +178,8 @@ if __name__ == "__main__":
 					field_list.append(field)
 				ETD_found, autoMeta_values_dic = check_autometa(id,field_list)
 				#print(ETD_found,autoMeta_values_dic)
+				#Minor corrections in metadata
+				correct_metadata(autoMeta_values_dic)
 				#Updating the ETD table
 				if ETD_found:
 					update_etdTable(id,autoMeta_values_dic,current_version)
