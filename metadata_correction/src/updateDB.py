@@ -15,7 +15,7 @@ import mysql.connector as mysql
 import configparser
 
 config = configparser.ConfigParser()
-config.read('autometa.config')
+config.read('updateDB.config')
 
 
 #enter your server IP address/domain name
@@ -46,7 +46,7 @@ def get_etd_path(id):
 
 def check_autometa(id,field_list):
 	#autometa
-	index_map = ["id","title","author","advisor","year","university","degree","program"]
+	index_map = ["id","title","author","advisor","university","degree","program","year"]
 	missing_val = {}
 	with open("CRF_output/metadata.csv","r") as f:
 		autoMeta_rows = f.readlines()
@@ -60,7 +60,9 @@ def check_autometa(id,field_list):
 			#print("FOUND")
 			ETD_found = True
 			for field in field_list:
+				#print(field)
 				idx =  [i for i,x in enumerate(index_map) if x == field]
+				#print(idx)
 				missing_val[field] = row[idx[0]].strip("\n")
 			break
 		else:
@@ -69,10 +71,11 @@ def check_autometa(id,field_list):
 			ETD_found = False
 			#pass
 
-	#print(ETD_found)
+	#print(ETD_found,missing_val)
 	return ETD_found, missing_val
 
 def update_etdTable(id,autoMeta_values_dic,current_version):
+	#print(autoMeta_values_dic)
 	new_version = current_version + 1
 	index_map = ["id","title","author","advisor","year","","university","degree","","program"]
 	for key in autoMeta_values_dic:
@@ -114,10 +117,13 @@ if __name__ == "__main__":
 	if limit == "all":
 		sql_cmd1 = f"SELECT * FROM {etd_tablename};" 
 	else:
+		#sql_cmd1 = f"SELECT * FROM {etd_tablename} ORDER BY id desc limit {limit};"
+		#Top few for testing
 		sql_cmd1 = f"SELECT * FROM {etd_tablename} limit {limit};"
+
 	mycursor.execute(sql_cmd1) 
 	rows = mycursor.fetchall() 
-	#print("\nUpdates info\n\nid,fields,values")
+	# print("\nUpdates info\n\nid,fields,values")
 	print("Iterating through the database rows looking for missing values ...")
 	for row in rows:
 		index_map = ["id","title","author","advisor","year","","university","degree","","program"]
@@ -142,6 +148,7 @@ if __name__ == "__main__":
 				field_list = []
 				for i in common:
 					field = index_map[i]
+					# print(i,field)
 					field_list.append(field)
 				ETD_found, autoMeta_values_dic = check_autometa(id,field_list)
 				#print(ETD_found,autoMeta_values_dic)
@@ -157,4 +164,5 @@ if __name__ == "__main__":
 				pass
 		fields = f"{list(autoMeta_values_dic.keys())}"
 		values = f"{list(autoMeta_values_dic.values())}"
+		# print(id,fields,values)
 	print("Done.")
