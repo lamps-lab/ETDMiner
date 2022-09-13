@@ -6,6 +6,7 @@
 - [src](#src)
 - [html_parser](#parser)
 - [webcrawler](#webcrawler)
+- [AutoMeta](#metadata-extractor)
 - [Metadata Correction](#metadata-correction)  
 
 <small><i><a href='http://ecotrust-canada.github.io/markdown-toc/'>Table of contents generated with markdown-toc</a></i></small>
