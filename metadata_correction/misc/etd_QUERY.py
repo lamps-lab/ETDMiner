@@ -6,7 +6,6 @@ Created on Wed Sep 21 16:33:41 2022
 @author: muntabir
 """
 
-
 import mysql.connector as mysql
 import configparser
 import csv
@@ -24,7 +23,7 @@ PASSWORD = config['SERVER_CONFIG']['PASSWORD']
 # database name, if you want just to connect to MySQL server, leave it empty
 DATABASE = config['DATABASE_CONFIG']['DATABASE']
 
-#Update the original ETD tabel name and the Shadow table name here
+#ETD tabele (e.g., etds)
 etd_tablename = config['DATABASE_CONFIG']['ETD_TABLE']
 
 db_connection = mysql.connect(host=HOST, database=DATABASE, user=USER, password=PASSWORD)
@@ -54,4 +53,3 @@ for data in etd_record:
     writer.writerow(data)
 
 csvfile.close()
-    
