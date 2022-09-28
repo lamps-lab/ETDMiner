@@ -1,6 +1,6 @@
 # ETDMiner
 
-ETDMiner consists of multiple AI based tools and datasets which helps to parse, extract, classify, and mine Electronic Theses and Dissertations (ETDs).
+ETDMiner consists of multiple AI based applications and datasets which helps to parse, extract, classify, and mine Electronic Theses and Dissertations (ETDs).
 
 ## Table of Contents
 
@@ -29,7 +29,7 @@ This is ETD segmentation tool to classify ETD pages.
 
 ### metadata_correction
 
-This is a tool to fill out the missing metadata in the database (i.e., pates_etds).
+This is an application to fill out the missing metadata in the database (i.e., pates_etds).
 
 [Go to the sub-folder](metadata_correction/src/)
 
