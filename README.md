@@ -8,7 +8,7 @@ ETDMiner consists of multiple AI based tools and datasets which helps to parse, 
 - [data](#dataset)
 - [etd_crf](#etd_crf)
 - [etd_segmentation](#etd_segmentation)
-- [Metadata Correction](#metadata-correction)
+- [metadata_correction](#metadata-correction)
 - [html_parser](#parser)
 - [samples](#samples)
 - [src](#src)
@@ -27,7 +27,7 @@ It is the AutoMeta tool version 1.0.
 ### etd_segmentation
 This is ETD segmentation tool to classify ETD pages.
 
-### Metadata Correction
+### metadata_correction
 
 This is a tool to fill out the missing metadata in the database (i.e., pates_etds).
 
