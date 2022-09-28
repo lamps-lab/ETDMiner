@@ -1,11 +1,12 @@
 #### Table of Contents
 
 - [ETDMiner](#etdminer)
-- [data](#dataset)
-- [samples](#samples)
-- [src](#src)
-- [html_parser](#parser)
-- [webcrawler](#webcrawler)
+	- [data](#dataset)
+	- [etd_crf](#etd_crf)
+	- [samples](#samples)
+	- [src](#src)
+	- [html_parser](#parser)
+	- [webcrawler](#webcrawler)
 - [AutoMeta](#metadata-extractor)
 - [Metadata Correction](#metadata-correction)  
 
@@ -15,10 +16,11 @@
 ## ETDMiner
 Programs and tools collected and developed to mine electronic theses and dissetations.
 
-### Description
-
 ### data
 It contains the dataset which is used to extract metadata from scanned ETD.
+
+### etd_crf
+It is the AutoMeta tool version 1.0.
 
 ### samples
 It contains the sample dataset which has been tested out in the above process.
@@ -40,4 +42,5 @@ ETDMiner/etd_crf contains version 1.0 to extract metadata automatically from sca
 
 ## Metadata Correction
 
+This is a tool to fill out missing metadata in the database (i.e., pates_etds). 
 [Go to the sub-folder](metadata_correction/src/)

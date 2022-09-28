@@ -1,5 +1,5 @@
 ## ETD_CRF:
-This is AutoMeta v1.0 and it includes the training files to train on scanned ETD dataset. To train on Born-digital ETD dataset, we can convert the ETD as an image. Then take it as an input to this tool for training.
+This is AutoMeta v1.0 and it includes the training files to train on scanned ETD dataset. The dataset can be found in [data](ETDMiner/etd_crf) directory. Please note that to train on Born-digital ETD dataset, we can convert the ETD as an image. Then take it as an input to this tool for training.
 
 * You can train on your own ETD dataset:
   * To train your own ETD dataset, please follow the instructions below. 
