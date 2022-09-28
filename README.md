@@ -18,11 +18,20 @@ ETDMiner consists of multiple AI based tools and datasets which helps to parse, 
 
 This application is [version 1.1](https://github.com/lamps-lab/AutoMeta) of [etd_crf](etd_crf/) to extract metadata automatically from scanned ETDs.
 
+### data
+It contains the dataset which is used to extract metadata from scanned ETD.
+
 ### etd_crf
 It is the AutoMeta tool version 1.0.
 
-### data
-It contains the dataset which is used to extract metadata from scanned ETD.
+### etd_segmentation
+This is ETD segmentation tool to classify ETD pages.
+
+### Metadata Correction
+
+This is a tool to fill out the missing metadata in the database (i.e., pates_etds).
+
+[Go to the sub-folder](metadata_correction/src/)
 
 ### samples
 It contains the sample dataset which has been tested out in the above process.
@@ -35,9 +44,3 @@ It contains the code and instruction to get ETDs in html file.
 
 ### webcrawler
 Contains the crawlers & parsers for different universities developed to collect ETDs and extract metadata from the webpages.
-
-### Metadata Correction
-
-This is a tool to fill out the missing metadata in the database (i.e., pates_etds).
-
-[Go to the sub-folder](metadata_correction/src/)
