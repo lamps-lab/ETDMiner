@@ -8,7 +8,7 @@ ETDMiner consists of multiple AI based tools and datasets which helps to parse, 
 - [data](#dataset)
 - [etd_crf](#etd_crf)
 - [etd_segmentation](#etd_segmentation)
-- [metadata_correction](#metadata-correction)
+- [metadata_correction](#metadata_correction)
 - [html_parser](#parser)
 - [samples](#samples)
 - [src](#src)
