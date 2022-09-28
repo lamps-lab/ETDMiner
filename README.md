@@ -36,7 +36,7 @@ It contains the code and instruction to get ETDs in html file.
 ### webcrawler
 Contains the crawlers & parsers for different universities developed to collect ETDs and extract metadata from the webpages.
 
-## Metadata Correction
+### Metadata Correction
 
 This is a tool to fill out the missing metadata in the database (i.e., pates_etds).
 
