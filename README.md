@@ -31,7 +31,7 @@ This is ETD segmentation tool to classify ETD pages.
 
 This is an application to fill out the missing metadata in the database (i.e., pates_etds).
 
-[Go to the sub-folder](metadata_correction/src/)
+[Go to the sub-folder](metadata_correction/)
 
 ### samples
 It contains the sample dataset which has been tested out in the above process.
