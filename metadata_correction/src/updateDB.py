@@ -52,7 +52,7 @@ def check_autometa(id,field_list):
 	#autometa
 	index_map = ["id","title","author","advisor","university","degree","program","year"]
 	missing_val = {}
-	with open("CRF_output/metadata.csv","r") as f:
+	with open("CRF_output/metadata_visual.csv","r") as f:
 		autoMeta_rows = f.readlines()
 		#print(autoMeta_rows)
 	autoMeta_rows.pop(0)

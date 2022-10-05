@@ -1,0 +1,1676 @@
+UC Berkeley
+UC Berkeley Electronic Theses and Dissertations
+Title
+Portrait of the Rugged Individualist: The Nonverbal Pride Display Communicates Support for 
+Meritocracy
+Permalink
+https://escholarship.org/uc/item/0v37d9g2
+Author
+Horberg, Elizabeth Jane
+Publication Date
+2010
+ 
+Peer reviewed|Thesis/dissertation
+eScholarship.org Powered by the California Digital Library
+University of California
+----------------Portrait of the Rugged Individualist: The Nonverbal Pride Display Communicates 
+Support for Meritocracy 
+ 
+By 
+ 
+Elizabeth Jane Horberg 
+ 
+ 
+A dissertation submitted in partial satisfaction of the  
+requirements for the degree of  
+Doctor of Philosophy  
+in 
+Psychology 
+in the  
+Graduate Division 
+of the 
+University of California, Berkeley  
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Committee in Charge:  
+ 
+Professor Dacher Keltner, Chair 
+Professor Serena Chen 
+Professor Cameron Anderson 
+ 
+Fall 2010 
+----------------Portrait of the Rugged Individualist: The Nonverbal Pride Display Communicates 
+Support for Meritocracy 
+© 2010 
+By Elizabeth Jane Horberg 
+----------------Abstract 
+Portrait of the Rugged Individualist: The Nonverbal Pride Display Communicates 
+Support for Meritocracy 
+ 
+Elizabeth Jane Horberg 
+Doctor of Philosophy in Psychology 
+University of California, Berkeley 
+Professor Dacher Keltner, Chair 
+ 
+Emotions profoundly influence beliefs about morality and justice (Haidt, 2001) 
+and emerging research suggests that expressions of emotion communicate an individual’s 
+moral attributes to others (e.g., Brown, Palameta, & Moore, 2002). The present research 
+examines the moral beliefs signaled by the nonverbal pride display. Pride is triggered by 
+appraisals that the self merits high status and greater access to resources (Tracy & Robins, 
+2004) and pride’s nonverbal expression has been shown to convey these appraisals to 
+observers (Shariff & Tracy, 2009). Guided by appraisal-tendency frameworks of the 
+association between distinct emotions and moral beliefs (Horberg, Oveis, & Keltner, 
+2010), I predicted that the nonverbal expression of pride would communicate greater 
+support for meritocracy—the belief that social and material resources ought to be 
+distributed according to merit—relative to egalitarianism, or beliefs that resources ought 
+to be distributed in ways that promote equality of outcomes. Study 1 demonstrated these 
+effects using unfamiliar male and female targets posing pride or joy in photographs. 
+Study 2 found that individuals previously shown a photo of Barack Obama expressing 
+pride, relative to a neutral expression, subsequently rated Obama as more likely to 
+endorse meritocracy. Finally, Study 3 tests the validity of pride-based inferences of 
+support for meritocracy. This study demonstrated that individuals who spontaneously 
+expressed pride to a greater degree were more likely to advocate dividing a resource 
+between the self and another on the basis of merit rather than equally. Moreover, 
+consistent with Studies 1 and 2, observers rated the high-pride expressers as more likely 
+to support meritocracy and less likely to support egalitarianism. 
+ 
+ 
+ 
+1 
+----------------Dedication 
+ 
+This dissertation is dedicated to my graduate advisors, Dacher 
+Keltner and Serena Chen, and to my undergraduate advisor, 
+Richard Koestner. I will always be grateful for your mentorship.  
+i 
+----------------Table of Contents 
+ 
+I. Introduction ...................................................................................................................... 1 
+II. Nonverbal Emotional Displays Signal Social Attributes Associated with the Emotion 2 
+III. An Appraisal-Tendency Approach to the Influence of Distinct Emotions on Moral 
+Beliefs.................................................................................................................................. 4 
+IV. Past Research on the Nonverbal Pride Display ............................................................. 7 
+V. The Present Research ..................................................................................................... 9 
+VI. General Discussion ..................................................................................................... 21 
+VII. References ................................................................................................................. 23 
+VIII. Footnotes ................................................................................................................ 239 
+IX. Appendix  .................................................................................................................... 30 
+X. Tables and Figures ....................................................................................................... 34 
+ 
+ 
+ 
+ 
+ii 
+----------------I. Introduction 
+   
+Emotions are the heart of social living. They imbue relationships with meaning, 
+shape interpersonal behavior and give rise to our core social and moral values (Darwin, 
+1874/1952; DeSteno, Petty, Rucker, Wegener, & Braverman, 2004; Frank, 1988; Horberg, 
+Oveis, Keltner, & Cohen, 2009; Keltner & Haidt, 1999; Lazarus, 1991; Tiedens & Linton, 
+2001). The nonverbal displays that accompany specific emotions facilitate these 
+functions by communicating social information to others. People rely on nonverbal 
+emotion cues in the face, voice, and body to infer not only a sender’s present emotional 
+state, but also her current appraisals (Hareli & Hess, 2010), social roles and status (Tracy, 
+2010; Tracy & Robins, 2007) intentions to cooperate or compete (Brown, Palameta, & 
+Moore, 2002) as well as her moral values and beliefs (Frijda & Mesquita, 1994; Haidt, 
+2001; Zebrowitz & Montpare, 2008a). 
+The present research investigates the moral beliefs communicated by the emotion 
+of pride. Over the past two decades, moral psychology has witnessed a pronounced shift 
+toward the study of the emotional roots of human morality (Greene & Haidt, 2002; Haidt, 
+2001). Within this broad development, scholarship has begun to investigate how distinct 
+emotions like pride, compassion, disgust or anger, uniquely amplify the perceived value 
+of specific moral domains, such as justice, purity or hierarchy. In particular, emotions 
+amplify moral domains that are semantically related to the appraisals that elicit and 
+persist throughout an emotional state (Horberg et al., 2010; see also Lerner & Keltner; 
+Rozin, Lowery, Imada, & Haidt, 1999). For example, disgust, an emotion characterized 
+by appraisals of impurity and contamination, has been shown to heighten the perceived 
+moral significance of protecting one’s physical and mental purity (Horberg et al., 2009).  
+Guided by these recent findings, the present research examines the moral beliefs 
+communicated by nonverbal displays of pride. Pride is triggered by appraisals of the 
+self’s elevated social worth, strength or status (Tracy & Robins, 2004) and the experience 
+of pride leads individuals to perceive the social world in a fashion that enhance hierarchy. 
+For instance, pride leads individuals to identify with strong individuals and distance the 
+self from weak individuals (Oveis, Horberg, & Keltner, 2010). Extending this work to the 
+realm of social inference, I propose that the nonverbal pride display communicates 
+support for meritocracy, a hierarchy-enhancing form of distributive justice (Davey, 
+Bobocel, Son Hing, & Zanna, 1999; Deutsch, 1975; Raskinski, 1987; Wagstaff, 1994). 
+Three studies test this hypothesis by documenting that 1) people infer that others’ 
+nonverbal displays of pride signal their commitment to meritocratic beliefs and 2) there is 
+validity to this inference. Individuals who display greater nonverbal pride in relevant 
+social contexts do in fact ascribe to more meritocratic beliefs.  
+1 
+----------------II. Nonverbal Emotional Displays Signal Social Attributes Associated with the Emotion 
+ 
+Distinct emotion experiences are accompanied by unique nonverbal displays as 
+well as shifts in social perception, belief and intention. By implication, an emotion’s 
+nonverbal display serves as a reliable signal of those social perceptions linked to the 
+emotion (Hareli & Hess, 2010; Keltner & Kring, 1998; Keltner & Lerner, 2010). This is 
+evident in embodiment research showing that people with stronger emotion expressions 
+in the face or body, such as of happiness or anger, are more likely to show emotion-
+congruent shifts in perception, attitude and judgment (Niedenthal, 2007). For example, 
+participants found cartoons more amusing if they had been led to smile rather than 
+inhibited from smiling (Strack, Martin, & Stepper, 1988). In related work, people were 
+prouder of personal success feedback if they had been manipulated to sit upright, a 
+posture indicative of pride, compared to other participants led to slump over (Stepper & 
+Strack, 1993).  
+The robust association between emotion expression and emotion-specific social-
+cognitive changes hints at the motivating idea underlying the present investigation: that 
+nonverbal emotion displays may be a useful heuristic to inferring others’ actual values 
+and beliefs. Within work on nonverbal emotional behavior, an emergent literature 
+documents that observers treat facial expressions of emotion as signs of enduring traits, 
+beliefs, behavioral inclinations, and other stable attributes (Frijda & Mesquita, 1994; cf. 
+Hess, Blairy & Kleck, 2000). Critical to the present work, observers’ inferences are 
+largely consistent in content with the appraisals of the observed emotion (Harseli & Hess, 
+2010; Secord, 1958; Zebrowitz & Montpare, 2008a, 2008b). For instance, anger involves 
+appraisals that the self has been unjustly harmed and is capable of retaliation (Lazarus, 
+1991; Rozin et al., 1999). In line with these appraisals, facial expressions of anger are 
+perceived to communicate low affiliation and high dominance (Hess et al., 2008; Marsh, 
+Ambady & Kleck, 2005; Zebrowitz & Montpare, 2003). In contrast, fear involves 
+appraisals of low certainty, low control, and threat to one’s well-being. Consistent with 
+these appraisals, observers view fear-expressing individuals as more submissive (Hess et 
+al., 2000; Marsh, Ambady, & Kleck, 2005). With respect to inferences about moral 
+beliefs, embarrassment is triggered by appraisals that one has (unintentionally) violated 
+group norms or conventions, pointing to the sender’s inherent loyalty to the group and 
+desire to restore relations. Given these appraisals, displays of embarrassment act as a 
+nonverbal apology (Keltner & Buswell, 1997), and observers infer that individuals who 
+display embarrassment, as opposed to other emotions, are highly prosocial and 
+committed to cooperating with other group members (Feinberg, Willer, & Keltner, 2010). 
+An important question I pursue in the present investigation concerns the validity 
+of pride’s proposed moral signal. Evolutionary perspectives hold that emotion 
+expressions are valid sources of social information because they are unbidden, 
+involuntary and difficult to falsify (Brown & Moore, 2002; Vehrencamp, 2000). These 
+features inhibit the evolution of con artists who fake emotions in order to mislead and 
+exploit others. Moreover, the capacity to accurately detect the emotional, social and 
+moral attributes of others confers evolutionarily significant social benefits. By accurately 
+detecting one another’s social intentions, in part by reading emotions, people are able to 
+tailor their behavior to satisfy personal and mutual interests (Frank, 1988). For these 
+reasons, I propose that the meritocracy beliefs communicated by nonverbal pride displays 
+2 
+----------------will prove to be accurate. Indeed, observers often demonstrate impressive accuracy in 
+inferring social attributes (beyond specific emotional states) from nonverbal behavior. 
+Evidence from the thin-slicing and zero-acquaintance literatures illustrate that exposure 
+to a minute of a stranger’s nonverbal behavior, or even just to a static image, leads 
+observers to reliable and accurate judgements of various personality features, including 
+traits, prosociality, socioeconomic status, and trustworthiness (Ambady & Rosenthal, 
+1992; Kaul & Schmidt, 1971; Kraus & Keltner, 2009; Verplaetse, Vanneste, & 
+Braeckman, 2007).  
+Expressions of distinct emotions, these different literatures suggest, signal social 
+attributes related to the emotion’s core appraisals. There are few direct investigations of 
+this claim. However, such investigations are essential to basic scientific understanding of 
+the social function of different expressions, and more specifically, how distinct 
+expressions enhance fitness by conveying meaningful information about others. Research 
+of this kind also sheds light on the everyday process by which people construct 
+impressions of others and quickly transmit information about the self to others. As well, 
+exploring these questions vis-à-vis pride, as I do in this research, is particularly important 
+given the paucity of work on pride. My studies test the claim that the nonverbal behavior 
+associated with feelings of pride leads to accurate inferences about others’ beliefs about 
+morality and justice. To guide my hypotheses, I use the appraisal-tendency framework, 
+which explains how distinct emotions influence moral beliefs based on the content of the 
+emotion’s appraisals (DeSteno et al., 2004; Horberg et al., 2010; Keltner, Horberg, & 
+Oveis, 2006; Lerner & Keltner, 2001; Lerner & Tiedens, 2006).  
+3 
+----------------III. An Appraisal-Tendency Framework of the Influence of Distinct Emotions on Moral 
+Beliefs 
+ 
+The appraisal-tendency framework offers specific predictions about how different 
+positive and negative emotions amplify beliefs associated with the emotion’s appraisals 
+and has linked pride to amplified beliefs in the value of social hierarchy (Han, Lerner & 
+Keltner, 2007; Horberg et al., 2010; Lerner & Keltner, 2001). A chief assumption of this 
+framework is that unique patterns of cognitive appraisals, which are the meanings and 
+interpretations that individuals ascribe to their environments (e.g., Ellsworth & Scherer, 
+2003; Lazarus, 1991), trigger emotion and persist throughout the emotion experience. 
+These appraisals reflect specific concerns that are relevant to social judgment, such as 
+concerns about control, certainty or fairness. During an emotion experience, the 
+associated concern is salient and becomes a more prominent guide of subsequent relevant 
+judgments (Horberg et al., 2010; Keltner et al., 2006; Lerner & Keltner, 2001). For 
+example, the emotion of fear involves appraisals of low control and low certainty. During 
+a state of fear, people’s judgments and values reflect increased concerns about 
+uncertainty and lack of control. For instance, fearful individuals show an elevated 
+preference for risk-averse decisions. In contrast, during a state of anger, people prefer 
+risk-seeking decisions, consistent with the appraisals of high control and high certainty 
+that define anger (Lerner & Keltner, 2001). 
+  Recently, studies have applied the appraisal-tendency framework to understand 
+how distinct emotions change social and moral values (Horberg et al., 2010). Here, the 
+assumption is that the appraisal patterns of certain emotions are semantically connected 
+to specific sociomoral concerns. Sociomoral concerns refer to the several domains of 
+morality found across cultures, such as justice, harm/care, purity and hierarchy (Haidt & 
+Graham, 2007; Shweder, Much, Mahapatra, & Park, 1997). As a result, when an 
+individual experiences one of these emotions, his or her moral beliefs come to 
+increasingly reflect the associated sociomoral concern. Empirical work on appraisal-
+tendency effects within the moral sphere has focused on four emotion-morality pairings: 
+the effects of disgust upon purity, anger upon justice, compassion upon harm-reduction 
+and care-taking, and pride upon beliefs about social hierarchy.  
+Several investigations illustrate that disgust and anger diverge in their influence 
+upon moral values. Disgust, with its attendant appraisals of contamination and impurity, 
+has been tied to increased concerns about protecting the purity of the body, mind and soul 
+(Haidt & Graham, 2007; Rozin et al., 1999). The experience of anger, by contrast, 
+involves appraisals of others’ unjust acts and increases concerns with restoring justice, 
+autonomy and individual rights (Berkowitz, 1999; Ortony, Clore, & Collins, 1998). In 
+research inspired by this perspective, feeling disgusted by descriptions of impure but 
+harmless sexual behavior, such as having sex with a chicken carcass, predicted harsher 
+condemnation of the behavior, whereas feeling angry did not. By contrast, feeling angry 
+in response to descriptions of unjust behaviors, such as failing to return an overdue book 
+needed by another student, predicted harsher condemnation of the unjust behaviors, 
+whereas feelings of disgust did not. In keeping with these patterns, temporarily induced 
+disgust increased criticism of behaviors perceived to violate purity as well as moral praise 
+of behaviors perceived to uphold purity, such as meditation (Horberg et al., 2009). 
+Temporarily induced anger has been found to increase support for policies when the 
+4 
+----------------policies were framed in terms of restoring justice rather than in terms of loss (DeSteno et 
+al., 2004).   
+The positive emotions of compassion and pride likewise amplify moral beliefs 
+associated with their appraisals. Compassion is induced by appraisals of others’ need, and 
+heightens concerns about reducing harm and caring for others, particularly weak and 
+vulnerable others. Judgments made during a state of compassion reflect these harm/care 
+concerns. For instance, participants who have been induced to feel compassion and 
+sympathy toward a needy target are more likely to help the target, even at a cost to the 
+self (Batson & Shaw, 1991; Eisenberg & Miller, 1987) and even when doing so is unfair 
+to a third party (Batson, Klein, Highberger & Shaw, 1995).  
+Pride, the emotion I focus upon in this research, amplifies moral beliefs relevant 
+to social hierarchy (Horberg et al., 2010; Tracy, Shariff, & Cheng, 2010). Hierarchies 
+pervade relationships and are critical to effective group functioning, even in relatively 
+egalitarian cultures (Fiske, 1992). They stabilize and organize group life and yield quick 
+solutions to evolutionary challenges concerning conflict resolution, protection, division 
+of labor, control over resources, and access to mates (de Waal, 1988, 1996; Shiota, 
+Keltner, & John, 2006). Given hierarchies’ deep involvement in decisions about 
+resources, social influence, control, and protection, it is not surprising that many of our 
+beliefs about ethical conduct enhance or preserve hierarchies (Haidt & Graham, 2007; 
+Haidt & Joseph, 2008; Shweder et al., 1997). The hierarchy domain unifies a variety of 
+moral rules found across cultures. For example, one study showed that respecting 
+community leaders, fulfilling one’s role-prescribed duties, and striving for achievement 
+through hard work emerged as examples of hierarchy-related moral obligations in the U.S. 
+and the Philippines (Vasquez, Keltner, Ebenbach, & Banaszynski, 2001).  
+Pride’s major social function is to create, regulate, and reinforce status hierarchies 
+(Clark, 1990; Tracy & Robins, 2007). Pride motivates actions and goals that sustain 
+hierarchies by increasing one’s relative rank or reinforcing a currently high rank (Cheng, 
+Tracy & Henrich, 2010). The appraisals of pride reflect this function: pride arises out of 
+appraisals that the self is strong, capable and worthy of high social status. Based on the 
+appraisal-tendency framework, I would expect pride to amplify the perceived value of 
+hierarchy in contrast to egalitarian social structure. Research partly motivated by this 
+assertion has documented the opposing effects of pride and compassion on perceptions of 
+psychological distance between the self and other individuals who varied in degree of 
+strength and status (Oveis et al., 2010). In one study, participants were manipulated to 
+experience either pride or compassion by watching evocative picture slides. Then, 
+ostensibly as part of separate research, participants reported how similar they felt to a 
+series of target groups, including relatively weak, low-status groups (e.g., homeless 
+people) and relatively strong, high-status groups (e.g., corporate lawyers). Participants 
+earlier induced to experience pride rated themselves as less similar to groups on average 
+than the compassion-induced participants. Moreover, pride-induced participants felt 
+particularly different from the weak, low-status groups, but more similar to the strong, 
+high-status groups, relative to compassion-induced participants. Pride’s differentiation 
+between the weak and the strong, and psychological closeness to strong others, aligns 
+with claims that pride activates the concept and importance of social rank, and ultimately 
+colors moral beliefs s accordingly. 
+5 
+----------------In the present research, I examine whether individuals who express pride through 
+nonverbal channels are perceived as more likely to support a hierarchy-enhancing form of 
+distributive justice: meritocracy. Distributive justice pertains to beliefs about whether a 
+division of goods and resources is ethical or unethical. Resource allocation strategies can 
+be parsed into the two classes of meritocracy and egalitarianism (Deutsch, 1975, 1985; 
+Rasinski, 1987). With meritocracy, individuals are allocated resources (e.g., money, 
+positions of power) according to a criterion of merit, such as performance, contribution or 
+ability. This approach organizes group members hierarchically, and reflects an underlying 
+belief that fairness is rooted in equity (Walster, Berscheid, & Walster, 1971), and that 
+groups prosper when high-achieving members are rewarded (Wagstaff, 1994). By 
+contrast, an egalitarian resource allocation strategy places less emphasis on achievement, 
+aims to create equality of outcomes among group members and to eliminate hierarchy. 
+Depending on group conditions, equality of outcomes is achieved through two kinds of 
+allocation methods: distributing resources evenly across group members (i.e., equality) or 
+preferentially to those in need (Rasinski, 1987; Wagstaff, 1994). 
+Research directly related to my hypotheses relating pride displays to support for 
+meritocracy is scarce. However, some evidence implies that the experience of pride 
+increases devotion to tasks when social outcomes are based on merit. Across several 
+studies, individuals manipulated to experience pride, compared to other positive emotions, 
+were subsequently more likely to persevere and succeed at difficult tasks in paradigms 
+when outcomes (social approval) were based on task performance (Verbeke, Belschak, & 
+Bagozzi, 2004; Williams & DeSteno, 2008, 2009). With these preliminary data 
+suggesting that pride may enhance the perceived value of meritocracy, I propose that the 
+nonverbal expression of pride signals these beliefs to social observers. 
+6 
+----------------IV. Past Research on the Nonverbal Pride Display 
+ 
+Pride has only recently come into focus in the literature on emotional expression. 
+Researchers are beginning to detail the expressive components of pride, and to explore 
+the character attributes signaled by pride (Shariff & Tracy, 2009; Tiedens, Ellsworth, & 
+Mesquita, 2000; Tracy & Matsumoto, 2007;). The prototypical pride display involves an 
+expanded posture, slight backward head tilt, small smile, with fists planted on the hips or 
+raised over the head in a “V” (Tracy & Robins 2004b; Tracy, Robins, & Lagattuta, 2006). 
+Pride displays are highly recognizable and potentially universal. Even individuals from 
+pre-linguistic cultures who maintain virtually no contact with Western society label 
+images of Westerners expressing pride with a degree of accuracy comparable to that of 
+“basic” emotions like disgust and anger (Tracy & Robins, 2008). Moreover, congenitally 
+blind individuals were found to spontaneously display pride after prevailing in 
+competitions in a manner similar to sighted individuals. Finally, both American and 
+Japanese Olympic wrestlers produced similar expressions of pride (e.g., tilted the head 
+back and raised their arms in a “V”) after a victory at the Olympic Games (Tracy & 
+Matsumoto, 2008).  
+Building upon these findings, scholars have theorized that the pride display 
+evolved from the dominance displays prevalent in primate societies. Evolutionary 
+accounts hold that pride has an adaptive role in group governance by drawing attention to 
+socially valuable individuals, and alerting both the self and others that one deserves 
+increased status and acceptance. Doing so helps group members to select appropriate 
+responses in interactions with high- or low-status individuals, to forge constructive 
+alliances and to positively influence their own rank (Shariff & Tracy, 2009). In this way, 
+the pride display enables the quick negotiation of hierarchies, and consequently, conflict-
+free resolution of social issues including how to allocate resources (Tracy et al., in press; 
+Tracy & Robins, 2004a, 2004b).  
+A growing body of work illustrates that observers automatically infer status 
+information even from nonverbal displays of pride, even displays that are static and 
+context-free. Across several studies, Shariff and Tracy (2009) found that participants 
+were quicker to pair high status words with a target individual when the target posed 
+pride, compared to shame, embarrassment, happiness, disgust or anger. Similarly, 
+participants were more likely to describe a novel piece of artwork as “high-status” if the 
+artwork had been preceded with a subliminal image of an individual posing pride, rather 
+than a non-emotional stimulus. In other relevant work, participants were more likely to 
+believe that an individual occupied a higher-status position—company boss rather than 
+employee—when the individual was described as reacting to a positive event with pride 
+rather than gratitude (Tiedens et al., 2000).  
+Taken together, these findings suggest that observers use the pride expression to 
+arrive at fairly accurate judgments of a sender’s status appraisals. What is not known, 
+however, is whether the nonverbal expression of pride reliably and validly signals the 
+amplified moral significance of hierarchy, and more specifically, increased support for 
+meritocracy, as the appraisal tendency framework would anticipate. I thus examine 
+whether a stronger nonverbal pride display leads observers to infer greater support for 
+meritocracy.  
+7 
+----------------I also examine whether the pride display is a valid signal of support for 
+meritocracy by testing whether it predicts actual support for meritocracy. The validity 
+question is critical, in part because of its important implications for interpersonal 
+behavior. As noted earlier, the detection of others’ traits can improve interactions and 
+individual fitness. Accurate inferences of others’ moral beliefs and distributive justice 
+orientations—predominantly meritocratic versus predominantly egalitarian—help 
+observers adjust their expectations and behavior in a number of useful ways. For 
+instance, the ability to distinguish between meritocratic and egalitarian individuals may 
+help people anticipate whether another person will work hard to earn rewards versus 
+expect to be taken care of by others or to receive equal shares regardless of input. It may 
+also help people identify others who would be willing to share their hard-earned rewards. 
+These expectations, in turn, can shape decisions about whether or with whom to initiate 
+close relationships. For reasons such as these, the ability to reliably distinguish “rugged 
+individualists” on the basis of nonverbal cues may be very valuable.  
+8 
+----------------V. The Present Research 
+ 
+Three studies test two overarching claims. First, I investigate the moral inferences 
+associated with the nonverbal pride display. I test the claim that expressing pride, relative 
+to other emotions, leads observers to perceive senders as more likely to value meritocracy 
+and less likely to value egalitarianism. Second, I examine whether the inferred meaning 
+of the pride display predicts the real behavior of social actors, which would reveal the 
+validity of the signal. Here, I analyze whether individuals prone to expressing pride do, in 
+fact, advocate rewarding merit over establishing equality of outcomes. 
+I test these predictions across a variety of targets, including unfamiliar male and 
+female individuals (Study 1 & 3), and perceptions of a well-known political figure (Study 
+2). Across studies, I contrast the nonverbal pride expression to either the nonverbal 
+expression of joy, which features a large, Duchenne (genuine) smile, or to a neutral 
+expression. The comparison to joy is crucial because, as with pride, joy signals positive 
+feelings. However, it does not communicate appraisals of heightened status (Shariff & 
+Tracy, 2009). As a result, any differences in the effects of the pride and joy expression on 
+value inferences cannot be attributed to differences in the valence of an expressed 
+emotion. Equally important, contrasting the pride expression against a neutral expression 
+allows me to examine whether perceptions of pride influence observer inferences of 
+support for meritocracy relative to the perceived absence of emotion. This comparison 
+helps determine if shifts in perceived support for meritocracy are driven by perceptions of 
+a target’s pride, as predicted, rather than a comparison emotion. 
+As in past work on the relations between emotions and moral judgments, I 
+primarily examine perceptions of support for meritocracy and egalitarianism in terms of 
+general beliefs about how society “ought” to operate. Assessing general beliefs that have 
+no direct implications for the target helps determine if, as I expect, pride conveys a 
+message of increased moral support of meritocracy and not (solely) a selfish message of 
+support for policies that benefit the self.  
+ 
+Study 1: Effects of the Pride Expression on Inferences of Support for Meritocracy in 
+Unfamiliar Individuals 
+ 
+With as little as a single photograph, people quickly and easily decode the 
+emotions of strangers, and use this information to make snap judgments about traits such 
+as warmth, competence, dominance, submissiveness, and cooperative intent (Knutson, 
+1996; Reis et al., 1990; Verplaetse et al., 2007). Study 1 examined first impressions of 
+support for meritocracy and egalitarianism with respect to unfamiliar individuals in 
+photographs who displayed either the prototypical pride or prototypical joy expression.  
+I expected participants to perceive a target individual as more likely to endorse 
+meritocracy and less likely to endorse egalitarianism when the target expressed pride 
+compared to joy. Moreover, I examined two alternative hypotheses: 1) that these effects 
+would differ by target gender, and 2) that these effects would be accounted for by how 
+much participants liked the target. Regarding target gender, people stereotype men as 
+more likely to experience and express pride (Plant, Hyde, Keltner, & Devine, 2000), 
+which suggests the possibility that only men’s expressions will be treated as a legitimate 
+source of personality information. However, recent research shows that pride and joy 
+9 
+----------------expressions are readily detected and used to interpret status in both male and female 
+strangers (Tracy, Shariff & Cheng, 2010). Therefore, I expected that the hypothesized 
+effects of pride displays on inferences of support for meritocracy would not vary 
+depending on target gender.  
+Regarding target liking, I reasoned that participants may prefer targets when they 
+express joy than pride, given that people form particularly positive impressions of 
+individuals with large, sincere smiles—the hallmark of the joy expression (e.g., Reis et 
+al., 1990). Given the positivity also attributed to characteristics of egalitarianism, such as 
+cooperativeness (Anderson, 1968), it is possible that the proposed effects could be due to 
+differences in positive views of the target, rather than to the role of emotion expressions 
+in communicating moral beliefs. I therefore examine whether the hypothesized effects 
+can be accounted for by target liking. 
+ 
+Method 
+ 
+Participants 
+Two hundred and forty undergraduate students (62% female, 5% unreported) 
+participated in exchange for Psychology course credit. The mean age was 21 years old 
+and the most common ethnicities were East or South Asian (53%) and Caucasian (30%).   
+ 
+Procedure 
+Participants completed a web-based survey (www.qualtrics.com) during mass 
+testing sessions held at the start of the academic semester. First they provided 
+demographic information. Next, following a number of filler tasks unrelated to this 
+research, participants viewed and made ratings about one unfamiliar individual presented 
+in a photograph. As a cover story, participants were told that the study investigated the 
+accuracy of first impressions of the values and emotions of strangers. Participants were 
+presented with one of eight images. The image depicted a Caucasian woman or man 
+expressing either pride or joy. Participants estimated the target’s level of support for 
+meritocracy and egalitarianism, as well as the target’s emotions. Finally, participants 
+rated their level of liking of the target.  
+ 
+Materials 
+Target images. Static images of four unfamiliar target individuals (2 women, 2 
+men) were used in this research. 1 Each target was photographed posing the pride and joy 
+expression, for a total of eight target images (see Appendix A for samples). Targets wore 
+plain clothing and images showed their faces and torsos. Pride targets posed with their 
+hands on their hips, heads tilted back slightly and a low intensity smile (Tracy & Robins, 
+2004). Joy targets posed with their arms at their sides and showed intense Duchenne 
+smiles, which are smiles that involve the activation of muscles that lift the lip corners up 
+and contract muscles surrounding the eyes.  
+Perceived support for meritocracy and egalitarianism. Drawing upon previous 
+research (Rubinski, 1987), I created four meritocracy and four egalitarianism items (see 
+Appendix B). Data from an independent sample of participants (N = 26) confirmed that 
+meritocracy statements were viewed as representing an ideology of meritocracy whereas 
+egalitarian statements represented an ideology of egalitarianism. These participants were 
+10 
+----------------asked to rate the extent to which each statement reflected the view “that society should 
+distribute resources and power according to merit, so people’s outcomes are determined 
+by what they have earned” (meritocracy score) and the view “that society should 
+distribute resources and power to create equality, so all people have equal outcomes” 
+(egalitarianism score) on scales ranging from 1 (Not at all) to 7 (Extremely). All four 
+meritocracy items received significantly higher meritocracy scores (M = 5.87) than 
+egalitarianism scores (M = 2.57). All four egalitarian values statements received higher 
+egalitarianism scores (M = 5.45) than meritocracy scores (M = 3.22), and the differences 
+of three out of four items reached statistical significance.  
+In the main study, participants rated the extent to which the target would agree 
+with each statement (1 = Strongly disagree, 5 = Strongly Agree). Ratings of the 
+meritocracy items were averaged to create a meritocracy score (alpha = .70). Egalitarian 
+items were averaged to form an egalitarianism score (alpha = .70). The two scores were 
+negatively correlated (r = -.53, p < .001). 
+Target emotions. Participants estimated the extent to which the target tends to 
+experience “pride” and “joy” (1 = Not at all, 7 = Extremely). These two items were 
+embedded among filler emotions to conceal the purpose of the study. 
+Target liking. Participants reported how much they thought they would like the 
+target (1 = Not at all, 7 = A whole lot). 
+ 
+Results 
+ 
+Preliminary Statistics 
+  Confirming the effectiveness of the expression manipulation, participants rated 
+the targets as significantly more likely to experience pride if exposed to the pride version 
+of the target (M = 4.44) relative to the joy version (M = 3.47), F(1, 232) = 80.93, p < 
+.001. They rated targets as significantly more likely to experience joy when exposed to 
+the joy version (M = 4.26) relative to the pride version (M = 3.77), F(1, 233) = 25.69, p < 
+.001.  
+Participants liked the targets significantly more when they expressed joy (M = 
+4.73) compared to pride (M = 3.47), F(235) = 54.12, p < .001, consistent with research 
+demonstrating that joyful individuals are perceived as highly affiliative, social, and 
+positive in general (Knutson, 1996; Reis et al., 1990). I therefore controlled for target 
+liking in analyses reported below.  
+ 
+Central Analyses 
+  To test the central hypothesis that participants would perceive proud targets as 
+more likely to endorse meritocracy and less likely to endorse egalitarianism than joy 
+targets, I conducted a 2 (Target expression) x 2 (Target values) mixed ANCOVA, 
+controlling for target liking. There was no main effect of target expression (F < 1). A 
+main effect of values emerged, wherein all targets were attributed stronger support for 
+meritocracy (M = 3.50) than egalitarianism (M = 3.32), F(1, 233) = 24.09, p < .001. Most 
+importantly, this was qualified by the predicted Expression x Values interaction, F(1, 
+233) = 7.24, p < .01. 
+To interpret the interaction, I separately examined the effects of target expression 
+on meritocracy and egalitarianism scores, while controlling for target liking. As 
+11 
+----------------predicted, targets were attributed stronger meritocracy scores when they expressed pride 
+(M = 3.69) than when they expressed joy (M = 3.31), F(1, 233) = 7.31, p < .01. 
+Conversely, targets were attributed stronger egalitarianism scores when they expressed 
+joy (M = 3.53) than when they expressed pride (M = 3.11), F(1, 235) = 3.85, p = .05. 
+Furthermore, within the pride expression condition, I found that support for meritocracy 
+was significantly higher than support for egalitarianism, F(1, 114) = 27.22, p < .001. 
+Within the joy condition, perceived support for egalitarianism was nonsignificantly 
+higher than perceived support for meritocracy, F(1, 118) = 1.85, p = .18. Figure 1 depicts 
+these patterns. Follow-up tests showed that target gender did not moderate the effect of 
+the Expression x Values interaction on perceived support for meritocracy or perceived 
+support for egalitarianism (p > .15). 
+ 
+Discussion 
+ 
+Study 1 provided the first evidence that, relative to nonverbal displays of joy, 
+nonverbal displays of pride communicate greater support for meritocracy and reduced 
+support for egalitarianism. Importantly, these effects emerged regardless of how well 
+targets were liked and did not differ depending on targets’ gender.  
+This initial study focused on first impressions of unfamiliar targets. It is feasible, 
+however, that static emotion expressions only lead to perceptions of support for 
+meritocracy and egalitarianism in strangers because little other relevant information is 
+available. Study 2 therefore examined whether pride displays would evoke different 
+inferences for a well-known figure, President Barack Obama.  
+ 
+Study 2: Effects of Barack Obama Nonverbal Pride Expression on Perceptions of His 
+Meritocracy and Egalitarian Values 
+ 
+Study 2 builds on Study 1 in several respects. First, instead of snap judgments of 
+strangers, I investigate the role of the pride display in guiding inferences about Barack 
+Obama, a familiar individual who, in the eyes of the perceiver, may already be linked to a 
+specific ideology. Given that people may have robust preconceived notions about 
+Obama’s values, Study 2 represents a more conservative test of my hypotheses.  
+Second, I compare the pride display to a neutral expression. This decision was 
+partly motivated by pilot testing showing that images in which Obama wore a pure, 
+prototypical expression of joy by scientific criteria (large Duchenne smile and no 
+presence of pride cues), were perceived as equally high in pride and joy. This is perhaps 
+not surprising; studies show that the positive emotional reactions of high-status 
+individuals are often interpreted as high in pride, relative to lower-status individuals 
+(Tiedens et al., 2000, Study 1b). Given these constraints, I was unable to compare the 
+pride expression to an expression of joy. Additionally, an important advantage of using a 
+neutral comparison is that, in conjunction with the results of Study 1, the anticipated 
+results of this study would imply that any differences in perceived support for 
+meritocracy are driven by the pride display, rather than a comparison expression.  As a 
+final extension, I tested my hypotheses in a community sample. 
+ 
+Method 
+12 
+---------------- Participants  
+One hundred and twenty-two participants (61% female, 2% unreported) were 
+recruited online using Amazon Mechanical Turk (www.mturk.com). Participants were 
+paid fifty cents in exchange for completing a web-based survey hosted on an external 
+website (www.qualtrics.com). Participants’ mean age was 34 years old and the most 
+common ethnicities were Caucasian (69%), East or South Asian (22%) and African-
+American (6%).  
+ 
+Procedure 
+As a cover story, participants were told that the study investigated personality 
+perceptions of various celebrities. They were then presented with one of two images of 
+Barack Obama and informed that they would rate the celebrity in the photograph. The 
+image either portrayed Obama expressing pride or no emotion. First, participants 
+completed a task assessing perceptions of Obama’s support for meritocracy and 
+egalitarianism. Afterward, they rated their level of liking for Obama and perceptions of 
+the emotions that Obama expressed in the image. Demographic data were gathered at the 
+end of the survey.  
+ 
+Materials 
+Obama images. The pride and neutral images of Obama were publicly available, 
+digital photographs posted on political and media websites. An initial pool of potential 
+images was gathered by a team of individuals trained in the identification of emotion 
+through nonverbal display. In the candidate pride images, Obama displayed one or more 
+features of the prototypical pride display. Neutral images were selected by identifying 
+images in which Obama gazed straight ahead and showed no discernible facial muscle 
+movements, no discernible hand gestures and no meaningful postural movements. The 
+two final images were selected on the basis of pilot data from an independent sample of 
+participants (n = 20) who rated the extent to which Obama expressed feeling proud and 
+neutral (1 = Not at all, 7 = Extremely) in each image. Pairwise comparisons of the images 
+ultimately selected for use in the main study confirmed that Obama was rated as feeling 
+prouder in the pride image (M = 6.45) than in the neutral image (M = 2.50), p < .001. He 
+was rated as feeling more neutral in the neutral image (M = 3.45) than in the pride image 
+(M = 1.25), p < .001. For the main study, both target images were set against a solid gray 
+background (see Appendix A). 
+Perceptions of Obama’s support for meritocracy and egalitarianism. Participants 
+were presented with a series of quotes and instructed to estimate the likelihood that 
+Obama had actually uttered each statement (1= Very unlikely, 7 = Very likely). I created 
+three categories of quotes: meritocratic, egalitarian and real (see Appendix B). 
+Meritocracy and egalitarian quotes were created from the meritocracy and egalitarianism 
+items used in Study 1. Additionally, I included six real quotes spoken by Obama during 
+media appearances. This comparison would reveal whether there were baseline condition 
+differences in participants’ ability to recognize false quotes, which could confound results 
+of the hypothesis tests. Ratings of meritocracy quotes were averaged (alpha = .76), as 
+were ratings of egalitarianism quotes (alpha = .57) and real quotes (alpha = .60). The 
+meritocracy and egalitarianism scales were uncorrelated (r = -.03, ns). 
+13 
+----------------Obama liking. Participants responded to the item: “Overall, how positive or 
+negative is your opinion of this person” (1 = Very negative, 7 = Very positive). 
+Perceptions of Obama’s expressed emotions. Participants were presented with 
+their randomly assigned image of Obama and asked to rate extent to which Obama 
+expressed feeling “proud” and “neutral” (1 = Not at all, 7 = Extremely).  
+ 
+Results 
+ 
+Three IP addresses appeared twice in the data set, suggesting that three 
+participants may have repeated the survey. In those three cases, I excluded data from the 
+second time the survey was taken from that IP address.  
+ 
+Preliminary Statistics 
+  Consistent with pilot tests, Obama was perceived as feeling significantly prouder 
+in the pride expression condition (M = 5.47) than in the neutral expression condition (M = 
+4.75), F(1, 116) = 6.58, p < .05. He was perceived as feeling significantly more neutral in 
+the neutral expression condition (M = 4.09) than in the pride expression condition (M = 
+3.19), F(1, 118) = 8.86, p < .01.  
+The degree to which participant’s liked Obama did not differ across the 
+expression conditions, F(1, 116) = .01, ns. I therefore do not control for liking during 
+central analyses. 
+ 
+Central Analyses 
+My central hypothesis is that participants exposed to images of Obama expressing 
+pride would estimate that he was more likely to have spoken the meritocracy quotes, but 
+not egalitarianism or real quotes, relative to participants exposed to images of Obama 
+conveying a neutral expression. A 2 (Expression: Pride or Neutral) x 3 (Quotes: 
+Meritocracy, Egalitarianism, Real) mixed ANOVA was conducted to test these 
+predictions.  A significant main effect of quotes emerged, wherein Obama was estimated 
+as more likely to have spoken the egalitarianism quotes (M = 5.15) than the meritocracy 
+quotes (M = 3.42) or real quotes (M = 4.22), F(2, 232) = 85.49, p < .05. More 
+importantly, however, these main effects were qualified by the predicted Expression x 
+Quotes interaction, F(2, 232) = 3.68, p < .05. To decompose the interaction, I examine 
+the effects of expression condition separately for each category of quote. As predicted, 
+participants were marginally more likely to attribute meritocracy quotes to Obama when 
+exposed to the pride image (M = 3.64) than when exposed to the neutral image (M = 
+3.17), F(1, 116) = 3.68, p = .058. Attribution of the egalitarianism quotes and real quotes 
+did not vary by expression condition (ps > .20). Figure 2 graphs these patterns.   
+ 
+Discussion 
+ 
+Study 2 found that recent exposure to an image of Barack Obama expressing 
+pride led participants to infer that Obama was more likely to have made statements 
+endorsing meritocracy than recent exposure to an image of Obama wearing a neutral 
+expression. However, emotion expression did not affect perceptions of the likelihood that 
+Obama had made statements reflecting egalitarianism, or statements that he actually had 
+14 
+----------------spoken in the past. These results conceptually replicate the meritocracy findings from 
+Study 1, but extend them to perceptions of a familiar political figure. I would argue that 
+this extension is noteworthy due to the conservative nature of the test. The emotion 
+expression prime was relatively subtle and participants almost certainly held pre-existing 
+beliefs about Obama’s character. I nevertheless detected an effect of the nonverbal pride 
+expression on participants of Obama’s support for meritocracy. 
+Unlike Study 1, Obama’s expression of pride did not decrease inferences 
+concerning his support for egalitarianism, relative to a control expression. There are 
+several plausible reasons for these null findings. First, participants appeared to firmly 
+believe in Obama’s high egalitarianism (see Figure 2). These beliefs, quite likely pre-
+existing, may have been too fixed to be influenced by the expression primes. A second 
+explanation concerns the expression stimuli. The images in this study were candid rather 
+than posed, making it possible that Obama’s expressions were more emotionally 
+ambiguous than those of Study 1. This potential ambiguity could have weakened the 
+influence of the pride expression on perceptions of Obama’s support for egalitarianism.   
+Studies 1 and 2 yielded strong evidence of the role of the nonverbal pride display 
+in communicating support for meritocracy. These findings beg an important question: 
+Are observers’ inferences veridical? This analysis will point to whether the pride display 
+is a valid signal of support for meritocracy and enhances the accuracy of moral 
+impressions.  
+In Study 3, I examine whether, during a real social interaction, the nonverbal 
+pride display would predict actual behavior indicative of support for meritocracy. 
+Additionally, I test whether these same nonverbal pride displays predict naïve observers’ 
+inferences of support for meritocracy, consistent with the first two studies. 
+ 
+Study 3: The Role of the Nonverbal Pride Display in Actual and Inferred Support for 
+Meritocracy during Dyadic Interactions 
+ 
+Study 3 is a multi-method investigation of the claim that nonverbal pride displays 
+reliably and accurately communicate level of support for meritocracy to social observers. 
+To test this claim, I examine the two fundamental components of person perception: cue 
+validity and cue usage (Ambady & Rosenthal, 1991; Borkenau & Liebler, 1992; 
+Brunswick, 1956; Funder & Sneed, 1993).  
+First, I consider cue validity, which pertains to the type of behavioral cues that 
+actually correlate with certain social attributes. Past work has shown that nonverbal 
+displays of a distinct emotion correlate with social attributes related to the emotion’s core 
+appraisals, providing evidence that the display is a valid indicator of those attributes. As 
+examples, facial expressions of anger are associated with attributing events to human 
+rather than situational factors (Keltner, Ellsworth, & Edwards, 1993), and people with 
+joyful, authentic smiles are higher in agreeableness, affiliation and extraversion (Harker 
+& Keltner, 2001; Naumann, Vazire, Rentfrow, & Gosling, 2009). In the present study, I 
+hypothesize that stronger nonverbal pride (but not joy) displays will predict participants’ 
+actual level of support for meritocracy and egalitarianism. 
+Second, I examine cue usage, or the nonverbal cues that observers use to infer 
+which individuals possess an attribute of interest (regardless of whether or not those cues 
+are valid). In past research, observers have been found to rely on nonverbal emotion 
+15 
+----------------displays to infer an array of different attributes, including dominance, affiliation, 
+competence and sociability (Harseli & Hess, 2010; Knutson, 1996; Zebrowitz & 
+Montpare, 2008a, 2008b). Moreover, Studies 1 and 2 of the present research showed that 
+observers tend to attribute stronger support for meritocracy and reduced support for 
+egalitarianism to individuals with stronger nonverbal displays of pride. I test the same cue 
+usage hypothesis in Study 3. 
+Study 3 also makes several important methodological advances. I test my cue 
+usage and cue validity hypotheses using a thin-slicing paradigm (Ambady & Rosenthal, 
+1991), in which nonverbal displays emitted during a brief, potentially pride-eliciting 
+event (discussing one’s greatest strengths) are used to predict participants’ actual 
+meritocracy and egalitarianism beliefs as well as observer estimates of those beliefs. A 
+major advantage of the thin-slicing approach is that it uses a more ecologically valid 
+setting. Emotion expressions are real rather than posed, dynamic rather than static, and 
+contextualized rather than independent of the social situation. Within this paradigm, I 
+employ multiple methods to examine the proposed effects, including nonverbal coding of 
+emotion expressions, narrative coding of participants’ responses in an allocation task, and 
+naïve observer ratings on several different scales assessing estimates of participants’ 
+support for meritocracy and egalitarianism.  
+ 
+Method 
+ 
+Participants 
+One hundred and six (55% female) undergraduates participated in exchange for 
+Psychology course credit. Participants completed the study in pairs. Pairs were created 
+through random assignment with the condition that partners not know one another. The 
+most common ethnicities were East or South Asian (45%) and Caucasian (43%).  
+ 
+Procedure and Materials 
+This videotaped social interaction study was conducted in a 10- X 14-ft. 
+laboratory room outfitted with partially concealed video cameras. Participants were 
+aware of the cameras and gave consent both before and after the study session. Partners 
+sat about three feet apart and cameras were positioned to film the full length of both 
+participants. The experimenter explained that they would complete a mock job interview 
+for a lab manager position. As part of this interview, participants took turns describing 
+their greatest strengths. After completing other tasks, participants were seated at separate 
+tables and privately reported how they would fairly divide a $5,000 signing bonus 
+between the self and partner based on the interview. Participants then wrote a paragraph 
+to explain why they chose to divide the money as they did (i.e., their allocation strategy). 
+To boost the validity of the money allocation task, participants learned that a panel of 
+researchers would later read their responses. Those with the best responses would receive 
+a free iPod. Demographic data were collected at the end of the study.3 
+  Coding Pride and Joy Nonverbal Displays. For each participant, a team of three 
+coders watched the video clip from the moment the participant began describing his or 
+her greatest strengths until the moment he or she finished (average length: 26 seconds). 
+The sound was muted and the participant’s partner was concealed to prevent partner 
+nonverbal behavior from influencing codes.  Coders were informed of the anatomical 
+16 
+----------------movements associated with pride displays, such as the backward head tilt, low intensity 
+smile, and erect posture. They were also informed of movements that denote joy, namely 
+the presence of a Duchenne smile. 
+After watching the clip, coders rated the overall intensity with which each 
+participant expressed feeling “confident” and “joy” (0 = Not at all, 3 = A whole lot) while 
+describing his or her strengths. In this study, I coded pride with the label “confident”—a 
+term used to assess authentic pride in past research (Tracy & Robins, 2007)—because 
+pre-tests revealed floor effects in ratings of “proud” (M = .26; SD = .30), but not ratings 
+of “confident”. (M = 1.67; SD = .59). Supporting this operationalization, ratings of 
+“confident” correlated substantially with ratings of “proud” (r = .46*, pr = .45* 
+controlling for “joy”) but not ratings of “joy” (r = .14, ns, pr = .06, controlling for 
+“confident”).  
+Coders rated every videotape. Inter-rater reliabilities for “confident” (Cronbach’s 
+alpha = .72) and for “joy” (alpha = .75) were satisfactory. I averaged across codes to 
+create a nonverbal pride code and a nonverbal joy code for each participant.  
+Coding Participants’ Allocation Strategies. Four coders (three of whom had also 
+coded the nonverbal expressions) read transcriptions of the participants’ allocation 
+strategies, and coded the degree to which each strategy focused on merit and focused on 
+equality. Specifically, they rated: “To what extent does the participant focus on splitting 
+the money according to MERIT (i.e., performance in the interview task)?” and “To what 
+extent does the participant advocate splitting the money EQUALLY, regardless of 
+performance or any other factor?” (0 = Not at all, 3 = A whole lot). All coders rated every 
+transcript. Cronbach’s alphas were .77 and .88 for the merit-focused and equality-focused 
+allocation strategy codes, respectively. I averaged across coder ratings to arrive at final 
+allocation strategy codes for each participant. The codes for meritocratic and egalitarian 
+justifications were negatively correlated (r = -.63, p < .001). 
+Observer Inferences of Support for Meritocracy and Egalitarianism. An 
+independent sample of 4 undergraduate naïve observers (3 male, 1 female) watched the 
+clips of participants describing their greatest strengths. After each clip, they estimated the 
+target participant’s support for meritocracy and egalitarianism on two types of measures. 
+On the first measure, observers read the following description:  Suppose that later in the 
+study, this person is asked to divide a pool of $5000 between himself/herself and the 
+partner in the mock interview. S/he must choose the fairest division and justify this 
+division. Observers then rated the likelihood with which the participant would (1) 
+advocate dividing the money according to merit (performance in the interview), and (2) 
+the likelihood that the participant would advocate dividing the money equally, regardless 
+of performance or any other factor (1 = Highly Unlikely, 7 = Highly Likely). Cronbach’s 
+alphas were .60 for estimates of merit-focus in the money allocation task and .52 for 
+perceptions of equality-focus. For the second measure, the four observers rated each of 
+the participants on the 4-item meritocracy and egalitarianism scales used in Studies 1 and 
+2. On this measure, Cronbach’s alpha was .82 for perceptions of support for meritocracy 
+and .70 for perceptions of support for egalitarianism.  
+After finishing all ratings, observers underwent a funneled debriefing procedure 
+that allowed me to check for conscious awareness of the role of nonverbal expressions in 
+shaping impressions of target participants. Observers were asked to speculate on the 
+research hypotheses, as well as to report any specific cues or information they used to 
+17 
+----------------guide their ratings. None of the observers had deciphered the study hypotheses, nor did 
+any report relying on emotion expressions to guide their ratings. 
+ 
+Results 
+ 
+One participant did not describe his greatest strengths. His data and his partner’s 
+data were removed from analyses. 
+ 
+Preliminary Analyses 
+First I tested for gender differences on all predictor and outcome variables. There 
+were no actor gender differences in the amount of signing bonus money allocated to the 
+self (vs. partner), or on the merit-focused and equality-focused codes. Consistent with 
+past research on gender differences in emotion expression (Kring & Gordon, 1998), men 
+expressed marginally more pride than women, whereas women expressed significantly 
+more joy than men (ps < .07). With regard to thin slicing, women were viewed as more 
+egalitarian and less meritocratic on both the money allocation strategy and scale measures 
+(ps < .05). I control for actor gender in central analyses. Partner gender and the actor x 
+partner gender interaction were unrelated to all predictors and outcomes with the 
+exception that people allocated more money to male partners ($2,537) than to female 
+partners ($2,268), F(1, 98) = 7.32, p < .05. 
+As in the previous studies, I sought to rule out the possibility that the predicted 
+association between pride and perceived support for meritocracy, relative to joy and 
+perceived egalitarianism, is due to observers’ highly positive views of joyful individuals 
+(Harker & Keltner, 2001; Reis et al., 1990). First, I tested the relationship of target liking 
+to the other study variables. Naïve observers’ ratings of the likeability of each target 
+generally reached consensus (alpha = .67), so I created an average liking score for each 
+target. Target liking did not predict nonverbal pride or estimates of merit-focus on the 
+money allocation task. However, liking was associated with greater nonverbal joy, higher 
+estimates of equality-focus on the allocation task, and higher estimates of targets’ scores 
+on the meritocracy and egalitarianism values scales. I control for target liking in the thin-
+slice analyses. 
+Intraclass correlations examining the relationship between actor and partner 
+expressions of emotion revealed a marginal positive relationship between actor and 
+partner expressions of pride (ICC r = .13, p = .088), and a significant relationship for 
+actor and partner expressions of joy (ICC r = .24, p < .01).  
+ 
+Cue validity: Do nonverbal pride displays predict actual support for meritocracy and 
+egalitarianism?  
+My cue validity hypothesis was that participants who nonverbally express greater 
+pride would be more likely to report allocating the $5,000 between the self and partner on 
+the basis of merit rather than equality. In contrast, I expected no relationship between 
+nonverbal expressions joy and advocating merit versus equality. Since assumptions of 
+independence of observations are violated in this study, data were analyzed using the 
+actor-partner interdependence model (Kenny, Kashy & Cook, 2006).  
+The first model estimated the effects of nonverbal expressions of pride and joy on 
+participants’ actual level of merit focus in the money allocation task. The merit-focus 
+18 
+----------------code was entered as the outcome variable. Codes of actor pride, actor joy, partner pride, 
+and partner joy were entered as predictors. The actor pride x actor joy interaction was 
+entered to examine the role expressions of pride at different levels of joy. Actor gender 
+was included as a control variable. Results are depicted in Table 1. As expected, actor 
+expressions of pride predicted a greater focus on merit on the part of the actor, whereas 
+all other predictors were unrelated.  
+A similar second model examined the relationship of nonverbal expressions to the 
+level of equality focus. There was a trend for actor pride to predict a reduced focus on 
+equality, as I would anticipate, although this association was not statistically significant 
+(p = .11). Interestingly, participants focused more on equality if their partner expressed 
+greater pride. I speculate on this finding in the study discussion. 
+Altogether, the data support my hypothesis that expressions of pride are a valid 
+indicator of an individual’s belief in the value of meritocracy. However, an alternative 
+interpretation of these results is that pride, being a self-conscious emotion, signals 
+increased selfishness. Perhaps the prouder participants apportioned a greater share of the 
+money to the self, and then endorsed a meritocratic allocation strategy merely to justify 
+their selfish decision. To test this explanation, I examined the number of dollars allocated 
+to the self versus partner using the same predictors as above. Contrary to the alternative 
+hypothesis, there was no relationship between expressing pride and allocating money to 
+the self versus partner (ps > .40).  
+ 
+Cue usage: Do nonverbal pride displays predict observer estimates of participant 
+support for meritocracy and egalitarianism? 
+The next set of analyses tested the hypothesis participants with stronger nonverbal 
+pride (but not joy) displays in the video clips would be rated by observers as more 
+meritocratic rather than egalitarian. I analyzed two different measures: estimates of 
+support for meritocracy and egalitarianism in participants’ justifications for their 
+monetary allocations and in estimates of their broader moral beliefs, relative to 
+participants with weaker nonverbal pride displays.  Four separate analyses were 
+conducted to examine observer estimates of the two allocation strategies and observer 
+estimates on the meritocracy and egalitarianism scales used in Studies 1 and 2. Predictors 
+in each model were actor and partner joy and pride, the actor pride x actor joy interaction, 
+as well as the control variables of target gender and target liking. 
+Table 2 presents the results. As expected, observers attributed a stronger merit-
+focused allocation strategy and a weaker equality-focused allocation strategy to 
+participants who had been coded as having stronger nonverbal pride displays. Nonverbal 
+joy was unrelated to estimates of allocation strategies. Observers also attributed higher 
+scores on the meritocracy items from Studies 1 and 2. With respect to egalitarianism 
+items, a significant Actor confidence x Actor joy interaction emerged. A pattern generally 
+consistent with our conceptual model emerged: individuals with weaker pride expressions 
+were especially likely to be perceived as higher in egalitarianism if they strongly 
+expressed joy. Finally, similar to the unanticipated cue validity findings reported above, I 
+found that participants were viewed as less likely to engage in a merit-focused allocation 
+strategy and more likely to engage in an equality-focused strategy if they had a partner 
+who strongly expressed pride.  
+ 
+19 
+----------------Discussion 
+ 
+Study 3 revealed a “kernel of truth” in people’s assumptions of the beliefs 
+communicated by the nonverbal pride display. Pride provided an accurate signal, at least 
+in part, of support for meritocracy to social observers. Individuals who displayed more 
+pride while discussing their most positive characteristics were more likely to advocate 
+dividing a (fictitious) sum of money between the self and partner on the basis of merit 
+instead of equality. Importantly, they did not allocate a greater share of the money to 
+themselves than to their partners, suggesting that their support for meritocracy in this 
+study was not merely an attempt to justify selfish decisions.  
+Furthermore, and consistent with the first two studies, observers who viewed the 
+thin slices of emotional behavior estimated that the high-pride expressers would advocate 
+meritocracy, rather than egalitarianism, both in the context of the money division task, 
+and with respect to general beliefs about how society ought to function. As in Study 1, I 
+conclude that these results were not due to the positive valence of the pride expression 
+because perceived support for meritocracy was unrelated to level of expressed joy.  
+I submit that the social inferences in this study occurred automatically. Using a 
+funneled debriefing, I found no evidence that observers were aware of their tendency to 
+associate nonverbal pride displays with greater support for meritocracy. None of the thin-
+slice observers had noticed a link between nonverbal expressions and their impressions of 
+the participants, nor did they detect my interest in investigating the role of emotion 
+expression in impression formation. The notion that pride may automatically or 
+unconsciously communicate support for meritocracy fits within evolutionary perspectives 
+of emotion. These perspectives hold that emotion expressions serve to communicate 
+social information in a highly swift, efficient manner. Relevant empirical work shows 
+that conscious awareness of an expression is not required to influence a perceiver’s 
+interpretation of events, actions or people (Willis & Todorov, 2006; Winkielman, 
+Berridge, & Wilbarger, 2005). Moreover, other thin-slicing effects have been found to 
+emerge without awareness on the part of the participant (Chaikin, Sigler, & Derlega, 
+1974). As well, the nonverbal pride expression is known to automatically activate 
+assumptions about the sender’s high status (Shariff & Tracy, 2009). Overall, it seems that 
+the pride-based moral inferences of this study occurred automatically. 
+Unexpectedly, while holding constant actor nonverbal pride and joy displays, I 
+found that participants paired with a high pride-expressing partner were more likely to 
+emphasize equality when justifying their monetary allocations. Moreover, observers—
+despite having no knowledge of the partner’s expressions—estimated that participants 
+would emphasize equality and de-emphasize merit in their justifications if their partner 
+had a strong pride expression. In other words, partner expressions independently 
+influenced participants’ decisions about how to divide the money. Even more 
+interestingly, observers picked up on this information just by watching the actor. It is not 
+clear why these patterns emerged, but it is possible that participants’ egalitarian reactions 
+to pride-expressing partners may have been leaked to observers through nonverbal cues 
+not explored in this study, such as other facial expressions, gaze, posture, or hand 
+gestures. These inquiries are worthy of further investigation. 
+It is worth seeking to replicate and understand these effects in future 
+investigations. 
+20 
+----------------In sum, Study 3 once again illustrated that social observers are more likely to 
+attribute meritocracy beliefs to individuals who express greater pride—but this time these 
+patterns were revealed using genuine, dynamic emotion displays that unfolded 
+spontaneously during a relevant social interaction. Importantly, Study 3 depicted the 
+validity of the pride signal. Participants who expressed greater pride were more likely to 
+focus on merit and performance when selecting a fair division of a resource between the 
+self and a partner. These results illustrate that people who expressed pride are not only 
+perceived as more likely to value meritocracy, they actually are more likely to value 
+meritocracy.  
+ 
+VI. General Discussion 
+ 
+Expressions of emotion shape the course of human interactions. They alert current 
+and potential relationship partners to feeling states, personality traits and, I suggest, 
+beliefs about morality and distributive justice. In particular, the nonverbal pride display is 
+theorized to help groups establish social hierarchies, which are necessary for group 
+stability and coordination, by clearly signaling individuals who deserve high status.  
+Consistent with this function and with appraisal-tendency frameworks, the present 
+research demonstrated that nonverbal displays of pride communicate enhanced support 
+for meritocracy, which is a hierarchy-enhancing form of resource distribution that 
+selectively endows successful, high-achieving individuals with greater access to material 
+and social goods. Social observers inferred that a target would be more likely to endorse 
+meritocracy if the target appeared proud, rather than joyful or neutral. I found this pattern 
+using targets diverse in gender, ethnicity, occupation and familiarity. Furthermore these 
+patterns held across different perceptual modalities (static images, thin slices) and 
+assessment methods (general beliefs about society, specific allocations between the self 
+and partner).  
+In Study 1, participants estimated that an unfamiliar target presented in a 
+photograph would endorse meritocracy to a greater extent, and egalitarianism to a lesser 
+extent, if the target appeared proud. The opposite pattern emerged when targets appeared 
+joyful. Study 2 extended these effects to perceptions of President Barack Obama. 
+Participants primed with an image of Obama expressing pride were more likely to believe 
+that Obama had uttered meritocracy-related statements than participants primed with an 
+expressionless image of Obama. Finally, in Study 3, targets who expressed greater pride 
+in the context of a mock interview were more likely to exhibit support for meritocracy on 
+a money allocation task. They were also viewed by observers as more likely to support 
+meritocracy during the money allocation task, and in terms of broader social values that 
+would not bear directly on the target. These results portray that observers correctly base 
+their assumptions of others’ support for meritocracy on expressions of pride.  
+This research presents the first evidence that observers rely on expressions of 
+pride to construct their moral impressions of others. However, it cannot speak directly to 
+the psychological mechanisms that underlie the phenomenon. I speculate that the 
+experience of pride involves both the initiation of a recognizable nonverbal display and 
+an increase in social perceptions that promote hierarchy, such as support for meritocracy. 
+Observers, perhaps automatically, correctly use the nonverbal display to infer the social 
+perceptions. Why would observers implicitly or explicitly know to associate nonverbal 
+21 
+----------------pride with hierarchy-enhancing beliefs? It may be through personal experience of pride-
+based shifts in moral beliefs or through repeated exposure to proud individuals who made 
+their hierarchy-enhancing beliefs clearly known (see Tiedens et al., 2001 for similar 
+arguments). The present data can neither confirm nor disconfirm this speculation, 
+however, and it remains an important task for future research.  
+ 
+Contributions to the Embodiment and Person Perception Literatures 
+Findings of the present studies make important contributions to the flourishing 
+literatures on embodiment and thin slicing. First, these studies are among the few to 
+document emotion specificity in embodiment effects. Past embodiment research has 
+predominantly examined the link between expressions of positive versus negative affect 
+to different social perceptions (but see Schnall, Benton, & Harvey, 2008 for relevant 
+work on embodied disgust and moral judgment). Few studies have explored differences 
+between like-valenced emotions, such as pride versus joy. Yet emotions evolved to help 
+humans confront the myriad challenges and opportunities afforded by social living. An 
+emotion’s unique cognitive elements (appraisals, shifts in judgment) and unique 
+embodied elements (nonverbal displays, physiological reactions, neuroendocrine 
+responses) enable adaptive behavior given current circumstances (Frijda & Mesquita, 
+1994; Keltner & Haidt, 1999). Consequently, we should find positive associations 
+between emotion-specific changes in the body and emotion-specific changes in cognition. 
+Study 3 found precisely this relationship with respect to pride: stronger displays of pride 
+in the body predicted stronger support for meritocracy in a subsequent task.  
+In turn, the perception of emotion-specific embodiments, like nonverbal 
+expressions, helps interaction partners rapidly interpret traits critical to the negotiation of 
+group relations, such as beliefs about resource distribution. Beyond illustrating the values 
+associated with the pride expression, I introduce an appraisal-tendency approach to 
+understanding thin-slicing and zero-acquaintance effects in impression formation. Just as 
+emotion experiences amplify specific moral beliefs (Horberg, Oveis, & Keltner, 2010), so 
+too do emotions’ nonverbal cues signal these beliefs to others. This theoretical 
+contribution is notable given that previous research on emotion and morality has 
+concentrated on the role of emotions in shaping an individual’s own moral judgments. 
+Fewer studies have linked the intrapersonal effects of discrete emotions (shifting moral 
+beliefs in specific, functional ways) to the interpersonal effects of the emotion (conveying 
+those beliefs to others), as these studies have attempted to do.  
+Ultimately, this kind of research is poised to reveal the far-reaching moral 
+implications of emotion, from understanding how we interpret the actions of others to the 
+way we unconsciously shift one another’s moral intuitions—areas of inquiry that have 
+been highlighted in theory (e.g., Haidt & Bjorklund, 2008; Haidt & Kesebir, in press) but 
+rarely before touched in research.  
+ 
+ 
+22 
+----------------VII. References 
+ 
+Ambady, N., & Rosenthal, R. (1992) Thin slices of expressive behavior as predictors of  
+interpersonal consequences: A meta-analysis. Psychological Bulletin, 111, 256-
+274. 
+Anderson, N. H. (1968). Likableness ratings of 555 personality-trait words. Journal of \ 
+Personality and Social Psychology, 9, 272-279 
+Batson, C. D. Klein, T. R., Highberger, L., & Shaw, L. L. (1995) Immorality from 
+empathy-induced altruism: When compassion and justice conflict. Journal of 
+Personality and Social Psychology, 68, 1042-1054. 
+Batson, C. D., & Shaw, L. L. (1991). Evidence for altruism: Toward a pluralism of 
+prosocial motives. Psychological Inquiry, 2, 107-122. 
+Berkowitz, L. (1999). Anger. In T. Dalgleish & M. Power (Eds.), Handbook of cognition  
+and emotion (pp. 411–428). Chichester, England and New York: Wiley. 
+Borkenau, P. & Liebler, A. (1992). Trait inferences: Sources of validity at zero  
+acquaintance. Journal of Personality and Social Psychology, 62, 645-657. 
+Brown, W. M., and Moore, C. (2002). Smile asymmetries and reputation as reliable  
+indicators of likelihood to cooperate: An evolutionary analysis. Advances in 
+Psychology Research, 11, 59-78.  
+Brown, Palameta, & Moore, 2002). Are there nonverbal cues to commitment? An  
+exploratory study using the zero-acquaintance video presentation paradigm. 
+Evolutionary Psychology, 1, 42-69. 
+Brunswick, E. (1956). Perception and the Representative Design of Psychological  
+Experiments. Berkeley, CA: University of California Press. 
+Chaikin, A. L. Sigler, E., & Derlega, V. J. (1974). Nonverbal mediators of teacher  
+expectancy effects Source:Journal of personality and social psychology. Journal 
+of Personality and Social Psychology, 30, 144-149. 
+Cheng, J. T., Tracy, J. L., & Henrich, J. (2010). Pride, Personality, and the Evolutionary  
+Foundations of Human Social Status. Evolution and Human Behavior, 31, 334-
+347. 
+Clark, C. (1990). Emotions and the micropolitics in everyday life: Some patterns and  
+paradoxes of "place." In T. D. Kemper (Ed.), Research agendas in the sociology 
+of emotions (pp. 305-334). Albany: State University of New "fork Press. 
+Darwin, C. (1952). The descent of man. Chicago: Encyclopedia Britannica. (Original  
+work published 1871). 
+Davey, L. M., Bobocel, R., Son Hing, L. S, .& Zanna, M. P. (1999). Preference for the  
+merit principle: An individual difference measure of distributive justice. Social 
+Justice Research, 12, 223-240. 
+de Waal, F. B. M. (1988). The integration of dominance and social bonding in primates.  
+The Quarterly Review of Biology, 61, 459-479. 
+de Waal, F.B.M. (1996).  Conflict as negotiation.  In W.C. McGrew, L.F. Marchant, &  
+T. Nishida (Eds.), Great ape societies (pp. 159-172).  New York: Cambridge 
+University Press. 
+DeSteno, D., Petty, R. E., Rucker, D. D., Wegener, D. T., & Braverman, J. (2004).  
+Discrete emotions and persuasion: The role of emotion-induced expectancies. 
+Journal of Personality and Social Psychology, 86, 43-56. 
+23 
+----------------Deutsch, M. (1975). Equity, equality, and need: What determines which value will be  
+used as the basis of distributive justice? Journal of Social Issues, 31, 137-149. 
+Deutsch, M. (1985). Distributive Justice:A Social Psychological Perspective. New  
+Haven : Yale University Press. 
+Eisenberg, N., & Miller, P.A. (1987).  The relation of empathy to prosocial and related  
+behaviors.  Psychological Bulletin, 101, 91-119. 
+Ellsworth, P. C., & Scherer, K. R. (2003). Appraisal processes in emotion. In R. J.  
+Davidson,H.Goldsmith, K. R. Scherer (Eds.), Handbook of the affective sciences 
+(pp. 572-595). New York and Oxford, UK: Oxford University Press. 
+Feinberg, M. R., Willer, R., & Keltner, D. (2010). Flustered and faithful: Embarrassment  
+as a signal of prosociality. Manuscript under review. 
+Fiske, A. P. (1992). The four elementary forms of sociality: Framework for a unified  
+theory of social relations. Psychological Review, 99, 698-723. 
+Frank, R. (1988). Passions within reason: The strategic role of the emotions. New York:  
+Norton. 
+Frijda, N. H., & Mesquita, B. (1994). The social roles and functions of emotions. In S.  
+Kitayama and H. R. Markus (Eds.), Emotion and culture: Empirical studies of 
+mutual influence (pp. 51-87). Washington, D.C.: American Psychological 
+Association.   
+Funder, D. C., & Sneed, C. D. (1993). Behavioral manifestation of personality: An  
+ecological approach to judgmental accuracy. 
+Greene, J. & Haidt, J. (2002). How (and where) does moral judgment work? Trends in  
+cognitive science, 6, 517-523. 
+Haidt, J. (2001). The emotional dog and its rational tail: A social intuitionist approach to  
+moral judgment. Psychological Review, 108, 814-834. 
+Haidt, J., & Bjorklund, F. (2008). Social intuitionists answer six questions about moral  
+psychology. In W. Sinnott-Armstrong (Ed.), Moral Psychology, Volume 2: The 
+Cognitive Science of Morality: Intuition and Diversity. Cambridge, MA: MIT 
+Press. (pp. 181-217). 
+Haidt, J., & Graham, J. (2007). When morality opposes justice: Conservatives have moral  
+intuitions that liberals may not recognize. Social Justice Research, 20, 98-116. 
+Haidt, J., & Joseph, C. (2004). Intuitive ethics. Dædalus, 133, 55-66.  
+Haidt, J., & Kesebir, S. (2010). Morality. In S. Fiske, & D. Gilbert (Eds.) Handbook of  
+Social Psychology, 5th Edition. 
+Han, S., Lerner, J. S., & Keltner, D. (2007). Feelings and consumer decision making: The  
+appraisal-tendency framework. Journal of Consumer Psychology, 17, 158-168. 
+Hareli, S. & Hess, U. (2010).What emotional reactions can tell us about the nature of  
+others: An appraisal perspective on person perception. Cognition and emotion, 24, 
+128-140. 
+Harker, L. & Keltner, D. (2001). Expressions of positive emotion in women’s college  
+yearbook pictures and their relation to personality and life outcomes across 
+adulthood. Journal of Personality and Social Psychology, 80, 112-124.    
+Hess, U., Adams, R. B. Jr., & Kleck, R. E. (2008). The role of facial expression in person  
+perception. In: N. Ambady & J. J. Skowronski (Eds.) First impressions, pp. 234-
+254. Guilford Press. 
+Hess, U. Blairy, S., & Kleck, R. E. (2000). The influence of facial emotion displays,  
+24 
+----------------gender, and ethnicity on judgments of dominance and affiliation. Journal of 
+Nonverbal Behavior, 24, 265-283. 
+Horberg, Oveis, & Keltner. (in press). Emotions as moral amplifiers: An appraisal- 
+tendency approach to the influences of distinct emotions upon moral judgment. 
+Emotion Review. 
+Horberg, E. J., Oveis, C., Keltner, D., & Cohen, A. B. (2009). Disgust and the   
+moralization of purity. Journal of Personality and Social Psychology, 97, 963-976. 
+Kaul, T. J. & Schmidt, L. D. (1971). Dimensions of interviewer trustworthiness. Journal  
+of Counseling Psychology, 18, 542-548. 
+Keltner, D. & Buswell, B. N. (1997). Embarrassment: Its distinct form and appeasement  
+functions. Psychological Bulletin, 3, 250-270. 
+Keltner, D., Ellsworth, P. C., & Edwards, K. (1993). Beyond simple pessimism: Effects 
+of sadness and anger on social perception. Journal of Personality and Social 
+Psychology, 64, 740-752. 
+Keltner, D., & Haidt, J. (1999). Social functions of emotions at four levels of analysis. 
+Cognition & Emotion, 13, 505-521. 
+Keltner, D. Horberg E. J., & Oveis, C. (2006). Emotions as moral intuitions. In J. P.  
+Forgas (Ed.), Affect in social thinking and behavior (pp. 161-175). New York: 
+Psychology Press. 
+Keltner, D., & Kring, A. M. (1998). Emotion, social function, and psychopathology. 
+Review of General Psychology, 2, 320-342.  
+Keltner, D., & Lerner, J. S. (2010). Emotion. In D. T. Gilbert, S. T. Fiske, & G. Lindsay  
+  (Eds.), The handbook of social psychology (5th ed.; pp. 312-347). New York: 
+  McGraw Hill. 
+Kenny, D. A., Kashy, D. A., & Cook, W. L. (2006). Dyadic data analysis. New York:  
+Guilford Press. 
+Knutson, B. (1996). Facial expressions of emotion influence interpersonal trait  
+inferences. Journal of Nonverbal Behavior, 20, 165-182. 
+Kraus, M. W., & Keltner, D. (2009). Signs of socioeconomic status: A thin-slicing  
+approach. Psychological Science, 20, 99-106. 
+Lazarus, R. (1991). Emotion and adaptation. New York: Oxford University Press. 
+Lerner, J. S., & Keltner, D. (2001). Fear, anger and risk. Journal of Personality and  
+Social  Psychology, 81, 146-159. 
+Lerner, J. S., & Tiedens, L. Z. (2006). Portrait of the angry decision maker: How  
+appraisal tendencies shape anger’s influence on cognition. Journal of Behavioral 
+Decision Making, 119, 115-137. 
+Marsh, A. A., Ambady, N. & Kleck, R. W. (2005). The effects of fear and anger  
+expressions on approach- and avoidance-related behaviors. Emotion, 5, 119-124. 
+Naumann, L. P., Vazire, S., Rentfrow, P. J., & Gosling, S. D. (2009). Personality  
+judgments based on physical appearance. Personality and Social Psychology  
+Bulletin, 35, 1661-1671. 
+Niedenthal, P. M. (2007). Embodying emotion. Science, 316, 1002-1005. 
+Ortony, A., Clore, G. L., & Collins, A. (1988). The cognitive structure of 
+emotions. New York: Cambridge University Press. 
+Oveis, C., Horberg, E. J., & Keltner, D. (2010). Compassion, pride, and social intuitions  
+25 
+----------------of self-other similarity. Journal of Personality and Social Psychology, 98, 618-
+630.  
+Plant, E. A., Hyde, J. S., Keltner, D., & Devine P. G. (2000). The gender stereotyping of  
+emotions. Psychology of Women Quarterly, 24, 81-92. 
+Rasinski, K. A. (1987). What’s fair is fair—or is it? Values differences underlying  
+public views about social justice. Journal of Personality and Social Psychology, 53, 
+201-211. 
+Reis, H. T., Wilson, I. M., and 8 others. (1990). What is smiling is beautiful and good. 
+European Journal of Social Psychology, 20, 259-267. 
+Rozin, P., Lowery, L., Imada, S., & Haidt, J. (1999). The CAD triad hypothesis: A  
+mapping between three moral emotions (contempt, anger, disgust) and three 
+moral codes (community, autonomy, divinity).  Journal of Personality and Social 
+Psychology, 76, 578-586. 
+Schnall, S., Benton, J., & Harvey, S. (2008). With a clean conscience: Cleanliness  
+reduces the severity of moral judgments. Psychological Science, 19, 1219-1222. 
+Secord, P. F. (1958). Facial features and inference processes in interpersonal perception.  
+In R. Taguiri & L. Petrullo (Eds.), Person perception and interpersonal behavior 
+(pp. 300-315). Stanford, CA: Stanford University Press. 
+Shiota, M. N., Keltner, D., & John, O. P. (2006). Positive emotion dispositions  
+differentially associated with Big Five personality and attachment style. Journal 
+of Positive Psychology, 1, 61-71. 
+Shariff, A. F., & Tracy, J. L. (2009). Knowing who’s boss: Implicit perceptions of status  
+from the nonverbal expression of pride. Emotion, 9, 631-639 
+Shweder, R. A., Much, N. C., Mahapatra, M., & Park, L. (1997). The “big three” of  
+morality (autonomy, community, and divinity), and the “big three” explanations 
+of suffering. In A. Brandt & P. Rozin (Eds.), Morality and Health (pp. 119-169). 
+New York: Routledge. 
+Stepper, S. & Strack, F. (1993). Proprioceptive determinants of emotional and  
+  nonemotional feelings. Journal of Personality and Social Psychology, 64, 211-   
+  220. 
+Strack, F., Martin, L. L., & Stepper, S. (1988). Inhibiting and facilitating conditions of  
+the human smile: A nonobtrusive test of the facial feedback hypothesis. Journal 
+of Personality and Social Psychology, 54, 768-777. 
+Tiedens, L. Z., & Linton, S. (2001). Judgment under emotional certainty and uncertainty: 
+The effects of specific emotions on information processing. Journal of 
+Personality and Social Psychology, 81, 973-988. 
+Tiedens, L. Z., Ellsworth, P. C., Mesquita, B. (2000). Sentimental stereotypes: Emotional  
+expectations for high- and low-status group members. Personality and Social 
+Psychology Bulletin, 26, 560-575.   
+Tracy, J. L. (2010). Pride. In I. Weiner & W. E. Craighead (Eds.), Encyclopedia of  
+Psychology (Fourth Edition, pp.1284-1286). New York: John Wiley 
+Tracy, J. L., & Matsumoto, D. (2008). The spontaneous expression of pride and shame:  
+Evidence for biologically innate nonverbal displays. Proceedings of the National 
+Academy of Sciences, 105, 11655-11660. 
+Tracy, J. L., & Robins, R. W. (2004). Putting the self into self-conscious emotions: A  
+theoretical model. Psychological Inquiry, 15, 103-125. 
+26 
+----------------Tracy, J. L., & Robins, R. W. (2004). Show your pride: Evidence for a discrete emotion  
+expression. Psychological Science, 15, 194-197. 
+Tracy, J. L., & Robins, R. W. (2007). The nature of pride. In J. L. Tracy, R. W. Robins,  
+& J. P. Tangney (Eds), The self-conscious emotions: Theory and research. New 
+York: Guilford. 
+Tracy, J. L., & Robins, R. W. (2008). The nonverbal expression of pride: Evidence for  
+cross-cultural recognition. Journal of Personality and Social Psychology, 94, 516-
+530.  
+Tracy, J. L., Robins, R. W., & Lagattuta, K. H. (2005). Can children recognize the pride  
+expression? Emotion, 5, 251-257 
+Tracy, J. L., Shariff, A. F., & Cheng, J. T. (2010). A naturalist’s view of pride. Emotion  
+Review, 2, 163-177 
+Vasquez, K., Keltner, D., Ebenbach, D.H., & Banaszynski, T.L. (2001).  Cultural  
+variation and similarity in moral rhetorics: Voices from the Philippines and the 
+United States.  Journal of Cross-Cultural Psychology, 32, 93-120. 
+Vehrencamp, S.L. (2000). Handicap, index, and conventional signal elements of bird 
+song. In Y. Edpmark, T. Amundsen, & G. Rosenquist (Eds.) Animal signals: 
+Signaling and signal design in animal communication (pp. 277-300). Trondheim, 
+Norway: Tapir Academic Press.  
+Verbeke, W., Belschak, F., & Bagozzi, R. P. (2004). The adaptive consequences of pride  
+in personal selling. Academic of Marketing Science Journal. 32, 386-402. 
+Verplaetse, J., Vanneste, S., & Braeckman, J. (2007). You can judge a book by its cover:  
+the sequel.: A kernal of truth in predictice cheating detection. Evolution and 
+Human Behavior, 28, 260-271. 
+Wagstaff, G. F. (1994). Equity, equality, and need: Three principles of justice or one? An  
+analysis of “equity as desert.” Current Psychology, 13, 138-152. 
+Walster, E., Berscheid, E, & Walster, G. W. (1971). New directions in equity research.  
+Journal of Personality and Social Psychology, 25, 2, 151-176. 
+Weiner, B. (2006). Social motivation, justice, and the moral emotions: An attributional  
+approach. Mahwah, N.J: Erlbaum. 
+Williams, L. A., & DeSteno, D. (2008). Pride and perseverance: The motivational role of  
+pride. Journal of Personality and Social Psychology, 94, 1007-1017. 
+Williams, L. A., & DeSteno, D. (2009). Pride: Adaptive emotion or seventh sin?  
+Psychological Science, 20, 284-288. 
+Willis, J., & Todorov, A. (2006). First impressions: Making up your mind after 100-ms  
+exposure to a face. Psychological Science, 17, 7, 592-598. 
+Winkielman, P. & Berridge, K. C. (2004). Unconscious emotion. Current Directions in  
+Psychological Science, 13, 120-123.  
+Winkielman, P., Berridge, K. C., & Wilbarger, J. L. (2005). Unconscious affective  
+reactions to masked happy versus angry faces influence consumption behavior 
+and judgments of value. 
+Zebrowitz, L. & Montpare, J. M. (2008). Social psychological face perceptions: Why  
+appearance matters. Social Personality and Social Psychology Compass, 2, 1497-
+1517. 
+ Zebrowitz, Leslie A., & Montepare, J.M. (2008). First Impressions from Facial  
+27 
+----------------Appearance Cues.  In  N. Ambady & J. Skowronski (Eds.). First Impressions (pp. 
+171-204). New York: Guilford Publications, Inc. 
+ 
+28 
+----------------VIII. Footnotes 
+ 
+1 Images of one of the male targets came from the UC Davis Set of Emotion 
+Expressions (http://ubc-emotionlab.ca/research/#Ucdavis).  
+ 
+2 For all studies, no results changed when controlling for participant gender or 
+ethnicity. 
+ 
+3 Aspects of the experimental procedure are described in Kraus and Keltner 
+(2009). Some demographic data reported here are published in the same article. No other 
+data or analyses from this study are published. 
+29 
+----------------IX. Appendix 
+ 
+Sample Images of Nonverbal Displays of Joy and Pride used in Study 1 
+ 
+        
+         
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+30 
+----------------Target Images of Neutrality and Pride used in Study 2 
+ 
+           
+ 
+31 
+----------------Meritocracy and Egalitarian Items used in Study 1 
+ 
+Meritocracy items 
+ 
+1. Scholarships should be based more on merit than on need. 
+2. It is okay for some people to have better lives if they earned it. 
+3. Society should be structured so that people who are successful, competent or 
+accomplished gain social status and power. 
+4. It is to everyone's benefit--not just some people's benefit--that highly capable people 
+have more power and influence  than less capable people. 
+ 
+ 
+Egalitarian items 
+ 
+1. Society should provide resources and services free-of-charge to people who cannot 
+afford them. 
+2. People who earn larger incomes should pay higher taxes than people with smaller 
+incomes. 
+3. There is never a time when it’s okay for some people to get more than others, no 
+matter what they have accomplished. 
+4. It is important to treat all individuals as equals, no matter who they are. 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+32 
+----------------Meritocracy, Egalitarian and Real Quotes used in Study 2 
+ 
+Meritocracy Quotes 
+ 
+1. “I stand by what I said. It is absolutely the ethical course of action…that [college] 
+scholarships should be based more on merit than on need.”  
+2. “I believe I’ve been very clear [about my position]. Society should be structured so 
+that people who are successful, competent or accomplished gain social status and 
+power.”  
+3. “It is to everyone's benefit---not just some people's benefit---that the highly capable 
+person has more power and influence  than the less capable person.”  
+ 
+Egalitarian Quotes 
+ 
+1. “This country should provide resources and services free-of-charge to people who 
+cannot afford them. Period.”  
+2. “It’s a simple matter of right and wrong. People who earn larger incomes should pay 
+higher taxes than people with smaller incomes.”  
+3. “There is never a time when it’s okay for some people to get more than others…no 
+matter what they have accomplished.” 
+4. “Senator, what you’re saying is that it’s okay for some people to have better lives if 
+they earned it. What I’m saying is that this is wrong, and it has to stop.”  
+5. “We must treat all individuals equally, no matter who they are.” 
+ 
+Real Quotes 
+ 
+1. "Americans... still believe in an America where anything's possible - they just don't 
+think their leaders do." 
+2. "The thing about hip-hop today is it's smart, it's insightful. The way they can 
+communicate a complex message in a very short space is remarkable." 
+3. "Contrary to the rumors you have heard, I was not born in a manger. I was actually 
+born on Krypton and sent here by my father Jor-El to save the Planet Earth."  
+4. "We can't drive our SUVs and eat as much as we want and keep our homes on 72 
+degrees at all times... and then just expect that other countries are going to say OK. That's 
+not leadership. That's not going to happen." 
+5. "I know my country has not perfected itself. At times, we've struggled to keep the 
+promise of liberty and equality for all of our people. We've made our share of mistakes, 
+and there are times when our actions around the world have not lived up to our best 
+intentions." 
+6. "If I had to name my greatest strength, I guess it would be my humility. Greatest 
+weakness, it's possible that I'm a little too awesome."  
+ 
+ 
+ 
+33 
+----------------X. Tables and Figures 
+ 
+Table 1. Relationship of Nonverbal Expressions to Allocation Strategies (Study 3) 
+ 
+  Allocation Strategy 
+     
+Merit-focused  Equality-focused 
+Actor Pride     
+β  .16*  -.13 
+SE β  .07  .08 
+t  2.13  1.60 
+Actor Joy     
+β  -.11  .02 
+SE β  .08  .10 
+t  1.30  .23 
+Partner Pride     
+β  -.04  .19* 
+SE β  .07  .08 
+t  .50  2.92 
+Partner Joy     
+β  -.07  .15 
+SE β  .08  .09 
+t  .96  1.71 
+Actor Pride x Actor Joy     
+β  .10  -.07 
+SE β  .07  .08 
+t  1.41  .97 
+Gender     
+β  -.07  -.01 
+SE β  .07  .08 
+t  .94  .11 
+Note: Gender is coded -1 (Women) and 1 (Men); *p < .05 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+34 
+----------------Table 2. Relationship of Nonverbal Expressions to Observer Estimates of Allocation 
+Strategies, Meritocracy and Egalitarian Values (Study 3) 
+ 
+     
+Observer estimates  Observer estimates on 
+of Allocation Strategies  Meritocracy and Egalitarianism 
+scales 
+  Merit- Equality- Meritocracy  Egalitarian 
+focused  focused  scale  scale 
+Actor Pride         
+β  .34*  -.14*  .11*  -.05 
+SE β  .08  .06  .05  .04 
+t  4.15  2.15  2.34  -1.50 
+Actor Joy         
+β  -.03  -.05  -.07  .03 
+SE β  .10  .08  .06  .04 
+t  .34  .68  1.23  .50 
+Partner Pride         
+β  -.17*  .13*  .02  .07 
+SE β  .08  .06  .04  .04 
+t  2.22  2.20  .50  1.96 
+Partner Joy         
+β  -.05  -.08  -.05  -.01 
+SE β  .08  .06  .05  .04 
+t  .56  1.17  -1.01  .21 
+Actor Pride x Actor         
+Joy         
+β  -.01  .08  .04  -.09* 
+SE β  .09  .07  .05  .04 
+t  .13  1.26  .82  2.42 
+Gender         
+β  .18*  -.07  .10  -.16* 
+SE β  .08  .06  .05  .08 
+t  2.19  1.15  2.08  2.37 
+Target Liking         
+β  -.06  .14*  -.06  .08* 
+SE β  .08  .06  .04  .04 
+t  .80  2.33  1.50  2.37 
+Note: Gender is coded -1 (Women) and 1 (Men); *p < .05 
+ 
+ 
+ 
+ 
+ 
+ 
+35 
+----------------Figure 1. Effects of Pride and Joy Displays on Targets’ Values (Study 1) 
+ 
+s 3.9
+e
+u
+l
+a 3.7
+v
+ 
+'
+s
+t
+e 3.5
+g
+r
+a
+t
+f  3.3 Pride expression
+o
+ 
+n Joy expression
+o
+i 3.1
+t
+p
+e
+c
+r 2.9
+e
+p
+ 
+n
+a 2.7
+e
+M
+2.5
+Meritocracy  Egalitarian
+Target Values
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+36 
+----------------Figure 2. Effects of Obama Expression on Perceptions of Obama’s values (Study 2) 
+ 
+6
+s
+e
+u
+al 5.5
+v
+ 
+s
+'
+a
+m 5
+a
+b
+O
+Pride
+ 
+of 4.5
+  Neutral
+n
+o
+i
+t
+p 4
+e
+c
+r
+e
+p
+  3.5
+n
+a
+e
+M
+3
+Meritocracy  Egalitarian
+Obama values
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+37 
+----------------Figure 3. Observer Estimates of Target Participants' Egalitarianism as a Function of the 
+Strength of Nonverbal Pride and Joy Expressions (Study 3) 
+ 
+4.9
+s 4.8
+e
+u
+l
+a
+v
+n  4.7
+a
+i
+r
+a
+t Low pride
+li 4.6
+a
+g High pride
+E
+ 
+d
+e 4.5
+t
+a
+m
+i
+t
+s 4.4
+E
+4.3
+Low  High
+Joy
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+38 
+----------------

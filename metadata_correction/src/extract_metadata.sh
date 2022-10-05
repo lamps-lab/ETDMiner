@@ -2,10 +2,20 @@
 
 #title         	:extract_metadata.sh
 #description  	:This script takes PDFs ETD as input and output a CSV file containing their Metadata
-#author			:Himarsha R. Jayanetti 
-#date         	:Saturday, May 21, 2022
+#author			:Muntabir Choudhury 
+#date         	:Friday, September 09, 2022
 #===================================================================================================
 
+##==============
+# File Structure
+##==============
+echo "Creating output directories"
+mkdir {CRF_output,hocr,visual_features,tif,txt,xml}
+cd ..
+cd model/
+cp crf_model_visual-v2.sav ../src/
+cd ..
+cd src/
 
 #==========
 #PDF to TIF
@@ -24,7 +34,7 @@ out="tif/${out2}tif" #output directory and filename
 
 # Ghostscript command to extract coverpage from PDF into TIF format image
 # Note: The coverpage is assumed to be the first page. If necessary, modify the page number.
-gs -q -sDEVICE=tiffg4 -r300 -dBATCH -dPDFFitPage -dNOPAUSE -dFirstPage=1 -dLastPage=1 -sOutputFile="$out" "$f"
+gs -q -sDEVICE=tiffg4 -r300 -dBATCH -dPDFFitPage -dNOPAUSE -dFirstPage=2 -dLastPage=2 -sOutputFile="$out" "$f"
 
 done
 echo "Done."
@@ -58,7 +68,6 @@ echo " "
 #TXT to XML
 #==========
 
-
 #python code to add dummy tags into the extracted text
 #this will create the XML files for each text file in the xml folder
 echo "Generating the XML files ..."
@@ -67,16 +76,36 @@ python3 dummy_tags.py
 echo "Done."
 echo " "
 
+#==============
+#Text Alignment
+#==============
+#python code to add dummy tags into the extracted text
+#this will create the XML files for each text file in the xml folder
+echo "Processing Visual Features .."
+python3 visual_features.py
+
+echo "Done."
+echo " "
+
+
 #=========
 #CRF Model 
 #=========
 
 #Using the saved CRF model to predict the metadata fields
-#Provide the path to the saved CRF model pickle file as the first argument
-echo "Predicting metadata using the CRF model ..."
-python3 crf-test.py crf_model.sav 
-#This will output an intermediate file at CRF_output/intermediate.csv
+#Provide the path to the saved CRF text-based model pickle file as the first argument
+# echo "Predicting metadata using the CRF text-based model ..."
+# python3 crf-test.py crf_model.sav
 
+# #This will output an intermediate file at CRF_output/intermediate.csv
+# echo "Done."
+# echo " "
+
+#Provide the path to the saved CRF model pickle file as the first argument
+echo "Predicting metadata using the CRF visual-based model ..."
+python3 crf-test_visual.py crf_model_visual-v2.sav 
+
+#This will output an intermediate file at CRF_output/intermediate_visual.csv
 echo "Done."
 echo " "
 
@@ -84,8 +113,8 @@ echo " "
 #Combine Output & Generate CSV 
 #=============================
 
-python3 process_crf_result.py
-
-#This will output the final CSV output file at CRF_output/metadata.csv containing the extracted metadata 
-
+echo "Processing the CRF output"
+#python3 process_crf.py
+python3 process_crf_visual.py
+echo "Done"
 
