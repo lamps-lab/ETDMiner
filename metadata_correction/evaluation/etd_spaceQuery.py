@@ -54,8 +54,8 @@ def flatten(etd_record_list):
     return [item for sublist in etd_record_list for item in sublist]
 
 db_record_list = []
-for ids in etd_space['etd_id']:
-    query = 'SELECT id, title, author, year, university, degree, advisor, department FROM etds where id IN (%d)' % (ids)
+for etd_idx in etd_space['etd_id']:
+    query = 'SELECT id, title, author, year, university, degree, advisor, department FROM etds where id IN (%d)' % (etd_idx)
     mycursor.execute(query)
     rows = mycursor.fetchall()
     db_record = tuplesTolist(rows)
@@ -78,8 +78,8 @@ csvfile.close()
 ###################################################
     
 year_record_list = []
-for idx in year_space['etd_id']:
-    query = 'SELECT id, title, author, year, university, degree, advisor, department FROM etds where id IN (%d)' % (idx)
+for year_idx in year_space['etd_id']:
+    query = 'SELECT id, title, author, year, university, degree, advisor, department FROM etds where id IN (%d)' % (year_idx)
     mycursor.execute(query)
     rows = mycursor.fetchall()
     year_record = tuplesTolist(rows)
