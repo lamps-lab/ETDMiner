@@ -1,6 +1,11 @@
 This application is to imporve the quality of the metadata fields of Electronic Theses and Dissertations by filling out the missing metadata in the database. We have collected a total of 500K ETDs from different universites and harvested those ETDs in the database. We are using 
 [Autometa](https://github.com/lamps-lab/AutoMeta) with visual features to imporve the quality of the metadata.
 
+#### Repository contains:
+* evaluation/ -- contains the evaluation code.
+* model/ -- contains the model that AutoMeta utilizes.
+* src/ -- contains metadata imporvement code using AutoMeta.
+
 #### Steps
 
 
