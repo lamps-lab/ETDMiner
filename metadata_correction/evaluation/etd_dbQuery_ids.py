@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 """
-Created on Wed Sep 21 16:33:41 2022
+Created on Wed Nov 2 14:05:43 2022
 
 @author: muntabir
 """
@@ -34,9 +34,7 @@ print("Connected to:", db_connection.get_server_info())
 mycursor = db_connection.cursor()
 
 
-etd_space = pd.read_csv("etd_space100.csv")
-year_space = pd.read_csv("year_space100.csv")
-uni_space = pd.read_csv("university_space100.csv")
+etd_space = pd.read_csv("etdSpaceIDs.csv")
 
 ####################################################
 '''The below block of code is for 100 etd_space'''
@@ -54,7 +52,7 @@ def flatten(etd_record_list):
     return [item for sublist in etd_record_list for item in sublist]
 
 db_record_list = []
-for etd_idx in etd_space['etd_id']:
+for etd_idx in etd_space['etd_space_id']:
     query = 'SELECT id, title, author, year, university, degree, advisor, department FROM etds where id IN (%d)' % (etd_idx)
     mycursor.execute(query)
     rows = mycursor.fetchall()
@@ -78,7 +76,7 @@ csvfile.close()
 ###################################################
     
 year_record_list = []
-for year_idx in year_space['etd_id']:
+for year_idx in etd_space['year_space_id']:
     query = 'SELECT id, title, author, year, university, degree, advisor, department FROM etds where id IN (%d)' % (year_idx)
     mycursor.execute(query)
     rows = mycursor.fetchall()
@@ -102,7 +100,7 @@ csvfile.close()
 ###################################################
     
 uni_record_list = []
-for uni_idx in uni_space['etd_id']:
+for uni_idx in etd_space['uni_space_id']:
     query = 'SELECT id, title, author, year, university, degree, advisor, department FROM etds where id IN (%d)' % (uni_idx)
     mycursor.execute(query)
     rows = mycursor.fetchall()
