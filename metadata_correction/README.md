@@ -2,9 +2,9 @@ This application is to imporve the quality of the metadata fields of Electronic 
 [Autometa](https://github.com/lamps-lab/AutoMeta) with visual features to imporve the quality of the metadata.
 
 #### Repository contains:
-* evaluation/ -- contains the evaluation code.
+* evaluation/ -- contains the evaluation scripts.
 * model/ -- contains the model that AutoMeta utilizes.
-* src/ -- contains metadata imporvement code using AutoMeta.
+* src/ -- contains metadata imporvement scripts using AutoMeta.
 
 #### Steps
 
