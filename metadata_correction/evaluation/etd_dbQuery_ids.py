@@ -1,4 +1,4 @@
-#!/usr/bin/env python3
+#!/usr/bin/env pyth
 # -*- coding: utf-8 -*-
 """
 Created on Wed Nov 2 14:05:43 2022
@@ -34,10 +34,18 @@ print("Connected to:", db_connection.get_server_info())
 mycursor = db_connection.cursor()
 
 
+## Performing numerical sort
+#etd_space = pd.read_csv("ETD300.csv")
+#etd_space.columns = ['etd_space_id']
+#etd_space.sort_values('etd_space_id', ascending=True, inplace=True, ignore_index=True)
+#etd_space.to_csv("etdSpaceIDs.csv", index = None)
+
+
 etd_space = pd.read_csv("etdSpaceIDs.csv")
 
 ####################################################
-'''The below block of code is for 100 etd_space'''
+'''The below block of code is fetching etd records 
+from ETDSpace, YearSpace, and UniSpace'''
 ###################################################
 
 def tuplesTolist(tuple_text):
@@ -61,7 +69,7 @@ for etd_idx in etd_space['etd_space_id']:
     
 etd_record = flatten(db_record_list)
 
-csvfile = open('etdspace_record.csv', 'w')
+csvfile = open('etd_records.csv', 'w')
 writer = csv.writer(csvfile)
 writer.writerow(['id', 'title', 'author', 'year', 'university', 'degree', 'advisor', 'department'])
 
@@ -71,49 +79,3 @@ for data in etd_record:
 csvfile.close()
 
 
-####################################################
-'''The below block of code is for 100 year_space'''
-###################################################
-    
-year_record_list = []
-for year_idx in etd_space['year_space_id']:
-    query = 'SELECT id, title, author, year, university, degree, advisor, department FROM etds where id IN (%d)' % (year_idx)
-    mycursor.execute(query)
-    rows = mycursor.fetchall()
-    year_record = tuplesTolist(rows)
-    year_record_list.append(year_record)
-    
-etd_year_record = flatten(year_record_list)
-
-csvfile = open('yearspace_record.csv', 'w')
-writer = csv.writer(csvfile)
-writer.writerow(['id', 'title', 'author', 'year', 'university', 'degree', 'advisor', 'department'])
-
-for year in etd_year_record:
-    writer.writerow(year)
-
-csvfile.close()
-
-
-####################################################
-'''The below block of code is for 100 uni_space'''
-###################################################
-    
-uni_record_list = []
-for uni_idx in etd_space['uni_space_id']:
-    query = 'SELECT id, title, author, year, university, degree, advisor, department FROM etds where id IN (%d)' % (uni_idx)
-    mycursor.execute(query)
-    rows = mycursor.fetchall()
-    uni_record = tuplesTolist(rows)
-    uni_record_list.append(uni_record)
-    
-etd_uni_record = flatten(uni_record_list)
-
-csvfile = open('unispace_record.csv', 'w')
-writer = csv.writer(csvfile)
-writer.writerow(['id', 'title', 'author', 'year', 'university', 'degree', 'advisor', 'department'])
-
-for uni in etd_uni_record:
-    writer.writerow(uni)
-
-csvfile.close()
