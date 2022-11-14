@@ -44,8 +44,7 @@ mycursor = db_connection.cursor()
 etd_space = pd.read_csv("etdSpaceIDs.csv")
 
 ####################################################
-'''The below block of code is fetching etd records 
-from ETDSpace, YearSpace, and UniSpace'''
+'''The below block of code is for 100 etd_space'''
 ###################################################
 
 def tuplesTolist(tuple_text):
@@ -61,7 +60,7 @@ def flatten(etd_record_list):
 
 db_record_list = []
 for etd_idx in etd_space['etd_space_id']:
-    query = 'SELECT id, title, author, year, university, degree, advisor, department FROM etds where id IN (%d)' % (etd_idx)
+    query = f'SELECT id, title, author, year, university, degree, advisor, department FROM {etd_tablename} where id IN (%d)' % (etd_idx)
     mycursor.execute(query)
     rows = mycursor.fetchall()
     db_record = tuplesTolist(rows)
@@ -69,7 +68,7 @@ for etd_idx in etd_space['etd_space_id']:
     
 etd_record = flatten(db_record_list)
 
-csvfile = open('etd_records.csv', 'w')
+csvfile = open('etd_records_v4.csv', 'w')
 writer = csv.writer(csvfile)
 writer.writerow(['id', 'title', 'author', 'year', 'university', 'degree', 'advisor', 'department'])
 
