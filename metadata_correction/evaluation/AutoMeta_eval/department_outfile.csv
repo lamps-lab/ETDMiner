@@ -1,0 +1,501 @@
+,GT_department,pred_department,match
+0,city and regional planning,city and regional planning,1
+1,,,0
+2,Computational and Genomic Biology,computational and genomic biology,0
+3,Computer Science,computer science,0
+4,Chemistry,chemistry,0
+5,Education,education,0
+6,,bioengineering,0
+7,,chemical engineering,0
+8,,civil engineering,0
+9,,software engineering,0
+10,,chemistry,0
+11,,education,0
+12,,earth system science,0
+13,,computer science,0
+14,,molecular,0
+15,,computer science,0
+16,,biomedical engineering,0
+17,,statistics,0
+18,,musicology,0
+19,,anthropology,0
+20,,,0
+21,,,0
+22,,environmental science,0
+23,,chemical and environmental engineering,0
+24,,psychology,0
+25,,communication,0
+26,,ecology evolution and marine biology,0
+27,,economics,0
+28,,,0
+29,,education teaching and learning,0
+30,,arts latin american studies,0
+31,,,0
+32,,,0
+33,,,0
+34,,,0
+35,,clinical psychology,0
+36,,,0
+37,,,0
+38,,psychology,0
+39,,,0
+40,,,0
+41,,chemistry,0
+42,,electrical engineering,0
+43,,chemistry,0
+44,,computer science computer engineering,0
+45,,,0
+46,,,0
+47,,,0
+48,,oral and craniofacial sciences,0
+49,,,0
+50,,biomedical engineering,0
+51,,music,0
+52,,,0
+53,,biomedical engineering,0
+54,,history,0
+55,,social work,0
+56,,materials science and engineering,0
+57,,pharmaceutical sciences,0
+58,,comparative studies,0
+59,,psychology,0
+60,,,0
+61,,,0
+62,,food science and nutrition,0
+63,,,0
+64,,environment and natural resources,0
+65,,education physical activity and educational services,0
+66,,environment and natural resources,0
+67,,,0
+68,,,0
+69,,,0
+70,,,0
+71,,,0
+72,,,0
+73,,adviser,0
+74,,,0
+75,,mechanical engineering,0
+76,,physics,0
+77,,,0
+78,,,0
+79,,,0
+80,,,0
+81,,aerospace engineering,0
+82,,,0
+83,,english,0
+84,,anthropology,0
+85,,architecture,0
+86,,,0
+87,,epidemiology,0
+88,,,0
+89,,,0
+90,,information extraction and sentiment,0
+91,,anthropology,0
+92,,,0
+93,,architecture,0
+94,,,0
+95,,,0
+96,,geology,0
+97,,electrical engineering,0
+98,,information,0
+99,,,0
+100,,,0
+101,,arts and sciences,0
+102,,neuroscience and biological sciences,0
+103,,,0
+104,,chemistry,0
+105,,biology case western,0
+106,,mathematics apphed mathematics and statistics case western,0
+107,,physics case western,0
+108,,physiology and biophysics medical,0
+109,,city planning seoul,0
+110,,psychology,0
+111,,,0
+112,,history,0
+113,,civil engineering,0
+114,,,0
+115,,,0
+116,,management and information systems,0
+117,,,0
+118,,engineering,0
+119,,electrical engineering,0
+120,,anthropology,0
+121,,religion,0
+122,,biochemistry,0
+123,,,0
+124,,psychology,0
+125,,history,0
+126,Psychology,,0
+127,Mechanical Engineering,mechanical engineering,0
+128,Civil Engineering,civil engineering,0
+129,Industrial Engineering,industrial engineering,0
+130,Agronomy,,0
+131,Crop Science,,0
+132,Electrical Engineering,electrical engineering,0
+133,Natural Resources Management,wildlife aquatic and wildlands science,0
+134,Petroleum Engineering,petroleum engineering,0
+135,Agricultural Applied Economics,,0
+136,Animal and Food Science,food science,0
+137,Mathematics and Statistics,mathematics and statistics,0
+138,Agronomy,,0
+139,School of Civil & Environmental Engineering,,0
+140,Plant & Soil Science,resource and environmental science,0
+141,Psychology,psychology california,0
+142,Education,leisure studies,0
+143,,,0
+144,,,0
+145,Forest Resources,,0
+146,,education,0
+147,Physics,,0
+148,Agronomy,,0
+149,Chemical Engineering,nuclear engineering michigan technological university,0
+150,Business Administration,,0
+151,Department of Chemistry,,0
+152,Civil Engineering,,0
+153,Human Environmental Sciences,library science,0
+154,Public Health (MPH),,0
+155,,mechanical engineering huazhong,0
+156,"Department of Agricultural Education, Communications, and Leadership",,0
+157,Department of Psychology,psychology,0
+158,Physics,physics and astronomy,0
+159,Chemical Engineering,,0
+160,Civil and Environmental Engineering,,0
+161,Chemical and Biomolecular Engineering,materials science and nano engineering chemical and biomolecular engineering,0
+162,Chemical and Biomolecular Engineering,chemical engineering,0
+163,"Agricultural Leadership, Education, and Communications",,0
+164,Civil Engineering,,0
+165,Philosophy and Humanities,,0
+166,Biomedical Engineering,biomedical engineering,0
+167,Nicholas School of the Environment and Earth Sciences,,0
+168,Asian and Middle Eastern Studies,asian and middle,0
+169,Global Health,,0
+170,Nicholas School of the Environment and Earth Sciences,,0
+171,Mechanical Engineering and Materials Science,mechanical engineering and materials science,0
+172,English,english,0
+173,Nicholas School of the Environment and Earth Sciences,,0
+174,Nicholas School of the Environment and Earth Sciences,environment and earth sciences of duke,0
+175,Nicholas School of the Environment and Earth Sciences,,0
+176,Chemistry,chemistry,0
+177,Public Policy Studies,,0
+178,Earth and Ocean Sciences,earth and ocean sciences,0
+179,Nicholas School of the Environment and Earth Sciences,environment and earth sciences of duke,0
+180,Chemistry,chemistry,0
+181,Physics,physics,0
+182,,educational foundations leadership and technology,0
+183,,,0
+184,,geology and geography,0
+185,,physics,0
+186,,mathematics and statistics,0
+187,,mathematics and statistics,0
+188,,chemical engineering john surola sandia national laboratory,0
+189,,aerospace engineering,0
+190,,mathematics and statistics,0
+191,,animal sciences,0
+192,,horticulture,0
+193,,,0
+194,,,0
+195,,,0
+196,,,0
+197,,,0
+198,,mechanical and aerospace engineering,0
+199,,,0
+200,,,0
+201,,,0
+202,,,0
+203,,education,0
+204,,civil and environmental engineering,0
+205,,education,0
+206,,computer science,0
+207,,forest and rangeland stewardship,0
+208,,clinical sciences,0
+209,,special education and clinical sciences,0
+210,,,0
+211,,,0
+212,,civil engineering,0
+213,,,0
+214,,agriculture,0
+215,,,0
+216,,mathematics kansas,0
+217,,physics,0
+218,,family and child development,0
+219,,,0
+220,,,0
+221,,,0
+222,,family economics,0
+223,,physlotvoey,0
+224,,sociology,0
+225,,dietetics and nutrition,0
+226,,curriculum and teaching,0
+227,,rehabilitation science,0
+228,,spanish and portuguese,0
+229,,poetics,0
+230,,economics,0
+231,,political science,0
+232,,,0
+233,,linguistics,0
+234,,anthropology,0
+235,,,0
+236,,chemistry,0
+237,,,0
+238,,,0
+239,,engineering computer engineering,0
+240,,epidemiological science,0
+241,,,0
+242,Plant Physiology and Weed Science,plant physiologyweed science,0
+243,Geology,geology,0
+244,Architecture,,0
+245,,mathematics,0
+246,Architecture,architecture,0
+247,Biology,,0
+248,Chemical Engineering,,0
+249,Architecture,architecture,0
+250,Government and Politics,political,0
+251,,,0
+252,,,0
+253,,zoology north carolina cooperative fish and wildlife research unit north,0
+254,,,0
+255,,nuclear engineering,0
+256,,english education,0
+257,,physics,0
+258,,,0
+259,,,0
+260,Architecture,architecture,0
+261,Hispanic and Classical Studies,hispanic and classical,0
+262,Architecture,,0
+263,Psychology,houston optometry,0
+264,Biochemistry,,0
+265,Material Science and Engineering,,0
+266,Civil Engineering,,0
+267,,,0
+268,,,0
+269,,computer engineering,0
+270,,,0
+271,,,0
+272,,mechanical and aerospace engineering,0
+273,,,0
+274,,,0
+275,,,0
+276,,,0
+277,,,0
+278,,,0
+279,,,0
+280,Earth Science,chemistry and biology,0
+281,,agricultural engineering,0
+282,,,0
+283,,,0
+284,,electrical engineering,0
+285,,,0
+286,,,0
+287,,macromolecular science,0
+288,Psychology,psychology,0
+289,Physics,chemistry,0
+290,,,0
+291,,,0
+292,,,0
+293,,educational,0
+294,,psychology,0
+295,Psychology,psycho,0
+296,Computer Science,computer science,0
+297,,integrative biology,0
+298,,educational leadership,0
+299,,,0
+300,,,0
+301,,,0
+302,,mechanical engineering,0
+303,,music,0
+304,,chemistry,0
+305,,agrieuiteral mnginceriag,0
+306,,business administration,0
+307,,economics,0
+308,,east asian languages and literatures,0
+309,,,0
+310,,biomedical sciences,0
+311,,,0
+312,,,0
+313,,vision science,0
+314,,linguistics,0
+315,,computer science and engineering,0
+316,,educational leadership,0
+317,,,0
+318,,medicinal chemistry,0
+319,Architecture,,0
+320,Architecture,,0
+321,History,history,0
+322,Mathematics,mathematics,0
+323,Architecture,architecture,0
+324,Architecture,,0
+325,Educational Psychology and Leadership,,0
+326,Economics,economics,0
+327,Music,music vocal performance,0
+328,Music,music composition,0
+329,Education,,0
+330,Mass Communications/Electronic Media,,0
+331,Geosciences,,0
+332,Educational Psychology and Leadership,educational,0
+333,Educational Leadership,,0
+334,Music,,0
+335,Music,,0
+336,Music,,0
+337,College of Education,,0
+338,Computer Science,,0
+339,History,history,0
+340,English,,0
+341,English,,0
+342,Mechanical Engineering,engineering,0
+343,Computer Science,,0
+344,Computer Science,engineering,0
+345,Mechanical Engineering,engineering,0
+346,Mechanical Engineering,,0
+347,Chemistry,,0
+348,Mechanical Engineering,,0
+349,Psychology,,0
+350,Economics,,0
+351,Chemistry,,0
+352,History,,0
+353,English,,0
+354,Psychology,,0
+355,Chemistry,,0
+356,Computer Science,information,0
+357,Psychology,,0
+358,Mechanical Engineering,mechanical engineering hangchow university,0
+359,Computer Science,computer science and engineering,0
+360,Chemistry,electrical and computer engineering houston,0
+361,French,,0
+362,English,,0
+363,Architecture,,0
+364,Architecture,architecture,0
+365,Mechanical Engineering,mechanical engineering,0
+366,Psychology,social sciences professor psychological sciences,0
+367,Computer Science,electrical and computer engineering,0
+368,Computer Science,computer science,0
+369,Hispanic and Classical Studies,arts,0
+370,Bioengineering,,0
+371,Psychology,psychology computer science,0
+372,Architecture,architecture,0
+373,Architecture,architecture,0
+374,Economics,,0
+375,Architecture,architecture,0
+376,Chemistry,,0
+377,Electrical and Computer Engineering,computer science,0
+378,Psychology,computer science and electrical computer engineering,0
+379,Sociology,,0
+380,Psychology,psychology houston,0
+381,Chemistry,,0
+382,Mechanical Engineering and Materials Science,,0
+383,Architecture,,0
+384,Electrical and Computer Engineering,,0
+385,English,,0
+386,Chemistry,,0
+387,Electrical and Computer Engineering,computer science,0
+388,Psychology,psychology,0
+389,English,,0
+390,Psychology,,0
+391,Petroleum Engineering,,0
+392,English,,0
+393,Physics and Astronomy,,0
+394,Electrical and Computer Engineering,electrical engineering,0
+395,Chemistry,,0
+396,Economics,,0
+397,Mechanical Engineering,,0
+398,Electrical and Computer Engineering,electrical engineering,0
+399,Industrial and Systems Engineering,,0
+400,"Teaching, Learning, and Culture",,0
+401,Mechanical Engineering,mechanical engineering,0
+402,Educational Administration and Human Resource Development,educational administration,0
+403,Educational Administration and Human Resource Development,educational administration,0
+404,Electrical and Computer Engineering,electrical engineering,0
+405,Electrical and Computer Engineering,computer engineering,0
+406,Mechanical Engineering,mechanical engineering,0
+407,Geography,hydrological science,0
+408,English,,0
+409,English,,0
+410,Mechanical Engineering,mechanical engineering,0
+411,Economics,economics,0
+412,History,history duke,0
+413,English,english,0
+414,History,history duke,0
+415,Electrical and Computer Engineering,electrical and computer engineering,0
+416,History,history,0
+417,Electrical and Computer Engineering,electrical and computer engineering,0
+418,Music,music,0
+419,Economics,economics,0
+420,History,,0
+421,Music,music,0
+422,,,0
+423,Computing and Information Sciences,computing and information,0
+424,Educational Administration,educational administration,0
+425,Environmental Engineering,environmental engineering,0
+426,Industrial and Systems Engineering,industrial and systems engineering,0
+427,Electrical Engineering,electrical engineering,0
+428,Electrical Engineering,electrical engineering,0
+429,Architecture,,0
+430,Architecture,,0
+431,Architecture,architecture,0
+432,Environmental Systems Studies,environmental systems studies,0
+433,,,0
+434,,,0
+435,,,0
+436,,business organization,0
+437,,civil engineering,0
+438,,home economics,0
+439,,psychology,0
+440,,psychology,0
+441,Architecture,architecture,0
+442,Architecture,architecture,0
+443,Architecture,architecture,0
+444,Architecture,architecture,0
+445,Architecture,architecture,0
+446,Economics,political science houston,0
+447,"Educational Leadership and Policy Studies, Department of",professional,0
+448,Electrical and Computer Engineering,electrical engineering,0
+449,Economics,economics,0
+450,Music,,0
+451,,human sciences mississippi state mississippi,0
+452,,,0
+453,,educational leadership,0
+454,,,0
+455,Chemistry,,0
+456,History,,0
+457,Electrical and Computer Engineering,,0
+458,Architecture,architecture,0
+459,Economics,,0
+460,Music,,0
+461,Architecture,architecture,0
+462,Computer Science,computational and applied mathematics houston,0
+463,Chemistry,physics and astronomy,0
+464,Chemistry,biochemistry and cell biology,0
+465,History,,0
+466,Economics,,0
+467,English,english,0
+468,Computer Science,,0
+469,Psychology,,0
+470,Music,,0
+471,Computer Science,,0
+472,,education educational administration and supervision,0
+473,,,0
+474,Department of English,,0
+475,,history,0
+476,Electrical and Computer Engineering,engineering,0
+477,Physics,,0
+478,Economics,math sciences houston,0
+479,,frameworks and assumptions,0
+480,,,0
+481,,,0
+482,,,0
+483,,,0
+484,,history of art,0
+485,Psychology,psychology,0
+486,Architecture,architecture,0
+487,Psychology,psychology,0
+488,Architecture,architecture,0
+489,History,history,0
+490,Architecture,,0
+491,Architecture,,0
+492,Earth Science,geology,0
+493,Economics,psychology,0
+494,,,0
+495,Wildlife and Fisheries Ecology,,0
+496,Architecture,,0
+497,Architecture,,0
+498,,,0
+499,Architecture,architecture,0

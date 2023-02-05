@@ -1,0 +1,501 @@
+,GT_degree,pred_degree,match
+0,doctor of philosophy,doctor of philosophy,1
+1,,doctor of philosophy,0
+2,,doctor of philosophy,0
+3,,doctor of philosophy,0
+4,,doctor of philosophy,0
+5,,doctor of philosophy,0
+6,,doctor of philosophy,0
+7,,doctor of philosophy,0
+8,,doctor of philosophy,0
+9,,doctor of philosophy,0
+10,,doctor of philosophy,0
+11,,doctor of philosophy,0
+12,,doctor of philosophy,0
+13,,master of science,0
+14,,doctor of philosophy,0
+15,,doctor of philosophy,0
+16,,doctor of philosophy,0
+17,,doctor of philosophy,0
+18,,doctor of philosophy,0
+19,,master of arts,0
+20,,doctor of philosophy,0
+21,,doctor of philosophy,0
+22,,doctor of philosophy,0
+23,,doctor of philosophy,0
+24,,doctor of philosophy,0
+25,,doctor of philosophy,0
+26,,doctor of philosophy,0
+27,,doctor of philosophy,0
+28,,doctor of philosophy,0
+29,,doctor of,0
+30,,,0
+31,,master of science computer science,0
+32,,doctor of philosophy,0
+33,,doctor of philosophy,0
+34,,doctor of philosophy,0
+35,,doctor of philosophy,0
+36,,doctor of philosophy,0
+37,,doctor of philosophy,0
+38,,doctor of philosophy,0
+39,,master of science biology,0
+40,,doctor of philosophy,0
+41,,master of science,0
+42,,doctor of philosophy,0
+43,,master of science,0
+44,,doctor of philosophy,0
+45,,master of science biology,0
+46,,doctor of philosophy,0
+47,,doctor of philosophy,0
+48,,master of science,0
+49,Master of Science,master of science,0
+50,Doctor of Philosophy,doctor of philosophy,0
+51,Master of Arts,master of arts,0
+52,Doctor of Philosophy,doctor of philosophy,0
+53,Master of Science,master of science,0
+54,Doctor of Philosophy,doctor of philosophy,0
+55,Master of Social Work,,0
+56,Doctor of Philosophy,doctor of philosophy,0
+57,Doctor of Philosophy,doctor of philosophy,0
+58,Doctor of Philosophy,doctor of philosophy,0
+59,Master of Arts,master of arts,0
+60,Doctor of Philosophy,doctor of philosophy,0
+61,Doctor of Philosophy,doctor of philosophy,0
+62,Doctor of Philosophy,doctor of philosophy,0
+63,Master of Arts,master of arts,0
+64,Master of Science,master of science,0
+65,Doctor of Philosophy,doctor of philosophy,0
+66,Master of Science,master of science,0
+67,Doctor of Philosophy,doctor of philosophy,0
+68,Master of Arts,master of arts,0
+69,Doctor of Philosophy,doctor of philosophy,0
+70,Doctor of Philosophy,doctor of philosphy,0
+71,Doctor of Philosophy,,0
+72,Doctor of Philosophy,,0
+73,Doctor of Philosophy,doctor of philosophy,0
+74,Doctor of Philosophy,doctor of philosophy,0
+75,Master of Science,master of science,0
+76,Doctor of Philosophy,doctor of philosophy,0
+77,Doctor of Philosophy (Ph.D.),doctor of philosophy,0
+78,Master of Arts (MA),master of arts,0
+79,Master of Arts (MA),master of arts,0
+80,MS,master of science,0
+81,MS,master of science,0
+82,M.M.,master,0
+83,PhD,doctor of philosophy,0
+84,MA,master of arts,0
+85,MS ARCH,master of science architecture,0
+86,MA,master of,0
+87,MS,master of science,0
+88,MA,master of,0
+89,MA,master of arts,0
+90,MS,master of science,0
+91,MA,master of arts,0
+92,PhD,doctor of philosophy,0
+93,MARCH,master of architecture,0
+94,MDES,master of design,0
+95,MS,master of science,0
+96,PhD,doctor of philosophy,0
+97,MS,master of science,0
+98,MS,master of science,0
+99,Doctor of Philosophy,doctor of philosophy,0
+100,Doctor of Philosophy (PhD),doctor of philosophy,0
+101,Master of Science (MS),master of science,0
+102,Bachelor of Science (BS),bachelor of science,0
+103,Psy. D.,doctor of psychology,0
+104,Doctor of Philosophy,doctor of philosophy,0
+105,Master of Sciences,master of science,0
+106,Master of Sciences,master of science,0
+107,Doctor of Philosophy,doctor of philosophy,0
+108,Master of Sciences,master of science,0
+109,Doctor of Philosophy in Urban Studies and Public Affairs,doctor of philosophy,0
+110,Master of Arts in Psychology,master of arts in psychology,0
+111,Doctor of Philosophy in Urban Studies and Public Affairs,doctor of philosophy,0
+112,Master of Arts,,0
+113,Master of Science,master of science,0
+114,PHD,doctor of philosophy,0
+115,PHD,doctor of philosophy,0
+116,PHD,doctor of philosophy,0
+117,PHD,doctor of philosophy,0
+118,Master of Science in Engineering (MSEgr),master of science,0
+119,Master of Science in Electrical Engineering  (MSEE),master of science,0
+120,PHD,doctor of philosophy,0
+121,PHD,doctor of philosophy,0
+122,PHD,doctor of philosophy,0
+123,PHD,doctor of philosophy,0
+124,PHD,doctor of philosophy,0
+125,PhD,doctor of philosophy,0
+126,Ph.D.,doctor of philosophy,0
+127,M.S.,master of science,0
+128,M.S.C.E.,saster of science,0
+129,Doctor of Philosophy,doctor of philosophy,0
+130,Master of Science,,0
+131,Master of Science,master of science,0
+132,Master of Science,master of science,0
+133,Master of Science,master of sciences,0
+134,Doctor of Philosophy,doctor of philosophy,0
+135,Doctor of Philosophy,doctor in philosophy,0
+136,Master of Science,master of sciences,0
+137,Master of Science,master of science,0
+138,M.S.,master of science,0
+139,,master of science,0
+140,,master of science,0
+141,,master of science,0
+142,,master of science,0
+143,,master of science,0
+144,,master of science,0
+145,,master of science,0
+146,,doctor of education,0
+147,,doctor of philosophy,0
+148,,master of science,0
+149,,doctor of philosophy,0
+150,,doctor of philosophy,0
+151,,doctor of philosophy,0
+152,,master of science,0
+153,,doctor of philosophy,0
+154,,master of public health,0
+155,,doctor of philosophy,0
+156,,master of science,0
+157,,master of science,0
+158,Master of Science,master of science,0
+159,Master of Science,master of science,0
+160,Master of Science,master of science,0
+161,Master of Science,,0
+162,Master of Science,master of science,0
+163,Master of Science,master of science,0
+164,Doctor of Philosophy,doctor of philosophy,0
+165,Doctor of Philosophy,doctor of philosophy,0
+166,Master of Science,master of science,0
+167,,,0
+168,,,0
+169,,master of science,0
+170,,,0
+171,,master of science,0
+172,,doctor of philosophy,0
+173,,,0
+174,,,0
+175,,,0
+176,,master of science,0
+177,,,0
+178,,doctor of philosophy,0
+179,,,0
+180,,master of science,0
+181,,doctor of philosophy,0
+182,,doctor of philosophy,0
+183,,master of science,0
+184,,master of science,0
+185,,doctor of philosophy,0
+186,,doctor of philosophy,0
+187,,doctor of philosophy,0
+188,,doctor of philosophy,0
+189,,master of science,0
+190,,master of science,0
+191,,doctor of philosophy,0
+192,,master of science,0
+193,,doctor of philosophy,0
+194,,doctor of philosophy,0
+195,,,0
+196,,doctor of philosophy,0
+197,,master of science,0
+198,,master of science,0
+199,,doctor of philosophy,0
+200,,doctor of philosophy,0
+201,,doctor of education,0
+202,,doctor of philosophy,0
+203,Doctor of Philosophy (Ph.D.),doctor of philosophy,0
+204,Master of Science (M.S.),master of science,0
+205,Doctor of Philosophy (Ph.D.),doctor of philosophy,0
+206,Master of Science (M.S.),master of science,0
+207,Master of Science (M.S.),master of science,0
+208,Doctor of Philosophy (Ph.D.),doctor of philosophy,0
+209,,doctor of philosophy,0
+210,,master of science,0
+211,Ph.D.,doctor of philosophy,0
+212,,master of science,0
+213,,master of music,0
+214,Master of Science,master of science,0
+215,,master of science,0
+216,,master of arts,0
+217,Master of Science,master of science,0
+218,,master of science,0
+219,,master of science,0
+220,,master of science,0
+221,,master of science,0
+222,,master of science,0
+223,M.A.,master of arts,0
+224,Ph.D.,doctor of philosophy,0
+225,M.S.,master of science,0
+226,Ph.D.,doctor of philosophy,0
+227,Ph.D.,doctor of philosophy,0
+228,M.A.,master of arts,0
+229,M.A.,,0
+230,Ph.D.,doctor of philosophy,0
+231,M.A.,master of arts chairperson,0
+232,M.A.,master of arts,0
+233,M.A.,master of arts,0
+234,Ph.D.,doctor of philosophy,0
+235,M.A.,master of arts chairperson,0
+236,Ph.D.,doctor of philosophy,0
+237,M.S.,master of science,0
+238,,doctor of philosophy bioinformatics,0
+239,,master of science,0
+240,,doctor of philosophy,0
+241,,doctor of philosophy,0
+242,Ph. D.,doctor of philosophy,0
+243,Master of Science,master of science,0
+244,Master of Architecture,master of architecture,0
+245,Doctor of Philosophy,doctor of philosophy,0
+246,Master of Architecture,,0
+247,Doctor of Philosophy,doctor of philosophy,0
+248,,master of science,0
+249,,master of architecture,0
+250,,doctor of philosophy,0
+251,Master of Science,master of science,0
+252,Doctor of Philosophy,doctor of philosophy,0
+253,MS,master of science,0
+254,Doctor of Philosophy,doctor of philosophy,0
+255,Doctor of Philosophy,doctor of philosophy,0
+256,Doctor of Philosophy,doctor of philosophy,0
+257,Doctor of Philosophy,doctor of philosophy,0
+258,Doctor of Philosophy,doctor of philosophy,0
+259,Doctor of Philosophy,doctor of philosophy,0
+260,Bachelor of Architecture,bachelor of architecture,0
+261,Master of Arts,master of arts,0
+262,Master of Architecture,master of architecture,0
+263,Doctor of Philosophy,doctor of philosophy,0
+264,,doctor of philosophy,0
+265,,doctor of philosophy,0
+266,,doctor of philosophy,0
+267,Doctor of Philosophy,doctor of philosophy,0
+268,Doctor of Education,doctor of education,0
+269,Master of Science,master of science,0
+270,Doctor of Philosophy,doctor of philosophy,0
+271,MA,master of arts english,0
+272,MS,master of science,0
+273,Doctor of Philosophy,doctor of philosophy,0
+274,Master of Science,master of science,0
+275,Master of Science,master of science,0
+276,MS,master of science,0
+277,Master of Science,master of science,0
+278,Master of Science,master of science,0
+279,Doctor of Philosophy,doctor of philosophy,0
+280,Doctor of Philosophy,doctor of philosophy,0
+281,Master of Science,master of science,0
+282,Master of Science,master of science,0
+283,Master of Science,master of science,0
+284,Doctor of Philosophy,doctor of philosophy,0
+285,Doctor of Philosophy,doctor of philosophy,0
+286,Doctor of Philosophy,doctor of philosophy,0
+287,Doctor of Philosophy,doctor of philosophy,0
+288,Master of Arts,master of arts,0
+289,Doctor of Philosophy,doctor of philosophy,0
+290,Doctor of Philosophy,doctor of philosophy,0
+291,Doctor of Philosophy,doctor of philosophy,0
+292,Doctor of Philosophy,doctor of philosophy,0
+293,Doctor of Philosophy,,0
+294,Doctor of Philosophy,doctor of philosophy,0
+295,Master of Arts,master of arts,0
+296,Doctor of Philosophy,doctor of philosophy,0
+297,,doctor of philosophy,0
+298,,doctor of education,0
+299,Master of Arts,,0
+300,Master of Science,master of science,0
+301,Master of Science,master of science,0
+302,Doctor of Philosophy,doctor of philosophy,0
+303,Master of Arts,master of arts,0
+304,Doctor of Philosophy,doctor of philosophy,0
+305,Master of Science,,0
+306,Doctor of Philosophy,doctor of philosophy,0
+307,Doctor of Philosophy,doctor of philosophy,0
+308,Master of Arts,master of arts,0
+309,Master of Arts,master of arts,0
+310,Doctor of Philosophy,doctor of philosophy,0
+311,Master of Arts,master of fine arts,0
+312,Master of Arts,master of arts,0
+313,Master of Science,master of science,0
+314,Doctor of Philosophy,doctor of philosophy,0
+315,Master of Science,master of science,0
+316,Doctor of Education,doctor of education,0
+317,Master of Arts,master of arts,0
+318,Doctor of Philosophy,doctor of philosophy,0
+319,Master of Architecture,master of architecture,0
+320,Bachelor of Architecture,,0
+321,Master of Arts,master of arts,0
+322,Master of Science,master of science,0
+323,Bachelor of Architecture,,0
+324,Bachelor of Architecture,,0
+325,Doctor of Education,doctor of education,0
+326,Master of Arts,master of arts,0
+327,Doctor of Musical Arts,doctor of musical,0
+328,Doctor of Musical Arts,doctor of musical,0
+329,Doctor of Education,doctor of education,0
+330,Master of Arts,master of arts,0
+331,Master of Science,master of science,0
+332,Doctor of Education,doctor of education,0
+333,Doctor of Education,doctor of education,0
+334,Doctor of Musical Arts,doctor of musical arts,0
+335,Doctor of Musical Arts,doctor of musical arts,0
+336,Master of Music Education,master of music education,0
+337,Doctor of Education,doctor of education,0
+338,M.S.,master of science,0
+339,M.A.,master of arts,0
+340,M.A.,master of arts,0
+341,Ph.D.,doctor of philosophy,0
+342,,master of science,0
+343,,master of science,0
+344,,master of science,0
+345,,master of science,0
+346,,master of science,0
+347,,master of science,0
+348,,doctor of philosophy,0
+349,,master of science,0
+350,,doctor of philosophy,0
+351,,master of science,0
+352,,master of arts,0
+353,,doctor of philosophy,0
+354,,master of science,0
+355,,doctor of philosophy,0
+356,,master of science,0
+357,,doctor of philosophy,0
+358,,master of science,0
+359,,master of science,0
+360,Doctor of Philosophy,doctor of philosophy,0
+361,Master of Arts,,0
+362,Master of Arts,master of arts,0
+363,Master of Architecture,master of architecture,0
+364,Master of Architecture,,0
+365,Doctor of Philosophy,doctor of philosophy,0
+366,Doctor of Philosophy,doctor of philosophy,0
+367,Master of Science,master of science,0
+368,Master of Science,master of science,0
+369,Master of Arts,,0
+370,Doctor of Philosophy,doctor of philosophy,0
+371,Master of Arts,,0
+372,Master of Architecture,,0
+373,Master of Architecture,,0
+374,Doctor of Philosophy,doctor of philosophy,0
+375,Master of Architecture,,0
+376,Doctor of Philosophy,doctor of philosophy,0
+377,Doctor of Philosophy,doctor of philosophy,0
+378,Doctor of Philosophy,doctor of philosophy,0
+379,Master of Arts,,0
+380,Master of Arts,,0
+381,Master of Arts,raster of arts,0
+382,Master of Science,master of science,0
+383,Master of Architecture,master in architecture,0
+384,Master of Science,master of science,0
+385,Master of Arts,master of arts,0
+386,Master of Arts,,0
+387,Doctor of Philosophy,doctor of philosophy,0
+388,Doctor of Philosophy,doctor of philosophy,0
+389,Doctor of Philosophy,doctor of philosophy,0
+390,Master of Science,master of science,0
+391,Master of Science,master of science,0
+392,Master of Arts,master of arts,0
+393,Doctor of Philosophy,doctor of philosophy,0
+394,Master of Science,master of science,0
+395,Doctor of Philosophy,doctor of philosophy,0
+396,Doctor of Philosophy,doctor of philosophy,0
+397,Doctor of Philosophy,doctor of philosophy,0
+398,Master of Science,master of science,0
+399,Doctor of Philosophy,doctor of philosophy,0
+400,Doctor of Education,doctor of education,0
+401,Doctor of Philosophy,doctor of philosophy,0
+402,Doctor of Education,doctor of education,0
+403,Doctor of Education,doctor of education,0
+404,Master of Science,master of science,0
+405,Master of Science,master of science,0
+406,Master of Science,master of science,0
+407,Master of Science,master of science,0
+408,Master of Arts,master of arts,0
+409,Doctor of Philosophy,doctor of philosophy,0
+410,Doctor of Philosophy,doctor of philosophy,0
+411,,,0
+412,,,0
+413,,doctor of philosophy,0
+414,,,0
+415,,doctor of philosophy,0
+416,,doctor of philosophy,0
+417,,doctor of philosophy,0
+418,,doctor of philosophy,0
+419,,doctor of philosophy,0
+420,,master of arts,0
+421,Master of Music,master of music,0
+422,Master of Science,master of science,0
+423,Master of Science,master of science,0
+424,Doctor of Education,doctor of education,0
+425,Master of Science,master of science,0
+426,Master of Science,master of science,0
+427,Master of Science,master of science,0
+428,Master of Science,master of science,0
+429,Master of Architecture,master of architecture,0
+430,Master of Architecture,master of architectur,0
+431,Master of Architecture,master of architecture,0
+432,Master of Architecture,master of architecture,0
+433,Doctor of Education,doctor of philosophy,0
+434,Doctor of Philosophy,doctor of philosophy,0
+435,Master of Science,master of science,0
+436,Doctor of Philosophy,doctor of philosophy,0
+437,Doctor of Philosophy,doctor of philosophy,0
+438,Doctor of Philosophy,doctor of philosophy,0
+439,Doctor of Philosophy,doctor of philosophy,0
+440,Master of Arts,master of arts,0
+441,Bachelor of Architecture,,0
+442,Master of Architecture,master of architecture,0
+443,Master of Architecture,,0
+444,Bachelor of Architecture,bachelor of architecture,0
+445,Bachelor of Architecture,,0
+446,Doctor of Philosophy,doctor of philosophy,0
+447,Doctor of Education,doctor of education,0
+448,Master of Science,master of science,0
+449,,doctor of philosophy,0
+450,Master of Music,master of music,0
+451,Doctor of Education,doctor of education,0
+452,Doctor of Philosophy,doctor of philosophy,0
+453,Doctor of Education,doctor of education,0
+454,Doctor of Philosophy,doctor of philosophy,0
+455,Chemistry,master of arts,0
+456,History,master of arts,0
+457,Electrical and Computer Engineering,master of science,0
+458,Master of Architecture,,0
+459,Doctor of Philosophy,doctor of philosophy,0
+460,Doctor of Musical Arts,,0
+461,Master of Architecture,,0
+462,Doctor of Philosophy,doctor of philosophy,0
+463,Doctor of Philosophy,doctor of philosophy,0
+464,Doctor of Philosophy,doctor of philosophy,0
+465,Doctor of Philosophy,doctor of philosophy,0
+466,Doctor of Philosophy,doctor of philosophy,0
+467,,masters of art,0
+468,,doctor of philosophy,0
+469,,doctor of philosophy,0
+470,,doctor of musical,0
+471,,doctor of philosophy,0
+472,Doctor of Education,doctor of,0
+473,Doctor of Education,doctor of education,0
+474,Master of Arts,master of arts,0
+475,Doctor of Philosophy,doctor of philosophy,0
+476,Electrical and Computer Engineering,master of science,0
+477,Master of Science,master of science,0
+478,Doctor of Philosophy,doctor of philosophy,0
+479,Doctor of Education,doctor of education,0
+480,Doctor of Education,doctor of education,0
+481,Master of Arts,master of arts,0
+482,Doctor of Education,doctor of education,0
+483,Doctor of Education,doctor of education,0
+484,Doctor of Philosophy,doctor of philosophy,0
+485,Master of Arts,master of arts,0
+486,Master of Architecture,master of architecture,0
+487,Doctor of Philosophy,doctor of philosophy,0
+488,Master of Architecture,master of architecture,0
+489,Doctor of Philosophy,doctor of philosophy,0
+490,Master of Architecture,master of architecture,0
+491,Master of Architecture,master of architecture,0
+492,Master of Arts,,0
+493,Doctor of Philosophy,doctor of philosophy,0
+494,Master of Architecture,master of architectural studies,0
+495,,master of science,0
+496,Master of Architecture,master of architecture,0
+497,Master of Architecture,master of architecture,0
+498,Master of Architecture,master of architecture,0
+499,Master of Architecture,master of architecture,0

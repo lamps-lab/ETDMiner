@@ -1,0 +1,501 @@
+,GT_university,pred_university,match
+0,ucb,university of california,0
+1,ucb,university of california,0
+2,ucb,university of california,0
+3,ucb,university of california,0
+4,ucb,university of california,0
+5,ucb,university of california,0
+6,ucb,university of california,0
+7,uci,university of california,0
+8,uci,university of california,0
+9,uci,university of california,0
+10,uci,university of california,0
+11,uci,university of california,0
+12,uci,university of california,0
+13,ucla,university of california,0
+14,ucla,university of california,0
+15,ucla,university of california,0
+16,ucla,university of california,0
+17,ucla,university of california,0
+18,ucla,university of california,0
+19,ucla,university of california,0
+20,ucla,university of california,0
+21,ucr,university of california,0
+22,ucr,university of california,0
+23,ucr,university of california,0
+24,ucr,university of california,0
+25,ucsb,university of california,0
+26,ucsb,university of california,0
+27,ucsc,university of california,0
+28,ucsc,university of california,0
+29,ucsd,university of california,0
+30,ucsd,university of california,0
+31,ucsd,university of california,0
+32,ucsd,university of california,0
+33,ucsd,university of california,0
+34,ucsd,university of california,0
+35,ucsd,university of california,0
+36,ucsd,university of california,0
+37,ucsd,university of california,0
+38,ucsd,university of california,0
+39,ucsd,university of california,0
+40,ucsd,university of california,0
+41,ucsd,university of california,0
+42,ucsd,university of california,0
+43,ucsd,university of california,0
+44,ucsd,university of california,0
+45,ucsd,university of california,0
+46,ucsd,university of california,0
+47,ucsf,university of calirornesr,0
+48,ucsf,university of california,0
+49,University of Akron,university of akron,0
+50,The Ohio State University,ohio state university,0
+51,The Ohio State University,,0
+52,The Ohio State University,ohio state university,0
+53,The Ohio State University,ohio state university,0
+54,The Ohio State University,ohio state university,0
+55,The Ohio State University,,0
+56,The Ohio State University,ohio state university,0
+57,The Ohio State University,ohio state university,0
+58,The Ohio State University,ohio state university,0
+59,The Ohio State University,ohio state university,0
+60,The Ohio State University,ohio state university,0
+61,The Ohio State University,ohio state university,0
+62,The Ohio State University,ohio state university,0
+63,The Ohio State University,ohio state university,0
+64,The Ohio State University,ohio state university,0
+65,The Ohio State University,ohio state university,0
+66,The Ohio State University,ohio state university,0
+67,The Ohio State University,ohio state university,0
+68,The Ohio State University,ohio state university,0
+69,The Ohio State University,ohio state university,0
+70,The Ohio State University,ohio state university,0
+71,The Ohio State University,ohio state university,0
+72,The Ohio State University,ohio state university,0
+73,The Ohio State University,ohio state university,0
+74,The Ohio State University,ohio state university,0
+75,The Ohio State University,ohio state university,0
+76,The Ohio State University,ohio state university,0
+77,Bowling Green State University,bowling green state university,0
+78,Bowling Green State University,,0
+79,Bowling Green State University,bowling green state university,0
+80,University of Cincinnati,university of cincinnati,0
+81,University of Cincinnati,university of cincinnati,0
+82,University of Cincinnati,university of cincinnati,0
+83,University of Cincinnati,university of cincinnati,0
+84,University of Cincinnati,university of cincinnati,0
+85,University of Cincinnati,university of cincinnati,0
+86,University of Cincinnati,university of cincinnati,0
+87,University of Cincinnati,university of cincinnati,0
+88,University of Cincinnati,university of cincinnati,0
+89,University of Cincinnati,university of cincinnati,0
+90,University of Cincinnati,university of cincinnati,0
+91,University of Cincinnati,university of cincinnati,0
+92,University of Cincinnati,university of cincinnati,0
+93,University of Cincinnati,university of cincinnati,0
+94,University of Cincinnati,university of cincinnati,0
+95,University of Cincinnati,university of cincinnati,0
+96,University of Cincinnati,university of cincinnati,0
+97,University of Cincinnati,university of cincinnati,0
+98,University of Cincinnati,networks of technology,0
+99,Miami University,miami university,0
+100,Ohio University,communication of ohio university,0
+101,Ohio University,,0
+102,Ohio University Honors Tutorial College,ohio university,0
+103,Antioch University,clinical psychology of antioch university,0
+104,Case Western Reserve University School of Graduate Studies,case western reserve university,0
+105,Case Western Reserve University School of Graduate Studies,reserve university,0
+106,Case Western Reserve University School of Graduate Studies,reserve university,0
+107,Case Western Reserve University School of Graduate Studies,reserve university,0
+108,Case Western Reserve University School of Graduate Studies,physiology case western reserve university,0
+109,Cleveland State University,national university,0
+110,Cleveland State University,cleveland state university,0
+111,Cleveland State University,the state university,0
+112,University of Toledo,university of toledo,0
+113,University of Toledo,university of toledo,0
+114,Kent State University,,0
+115,Kent State University,,0
+116,Kent State University,,0
+117,Kent State University,,0
+118,Wright State University,,0
+119,Wright State University,,0
+120,Vanderbilt University,vanderbilt university,0
+121,Vanderbilt University,vanderbilt university,0
+122,Vanderbilt University,vanderbilt university,0
+123,Vanderbilt University,vanderbilt university,0
+124,Vanderbilt University,vanderbilt university,0
+125,Vanderbilt University Graduate School,vanderbilt university,0
+126,Texas Tech University,,0
+127,Texas Tech University,,0
+128,Texas Tech University,,0
+129,Texas Tech University,,0
+130,Texas Tech University,,0
+131,Texas Tech University,,0
+132,Texas Tech University,,0
+133,Texas Tech University,,0
+134,Texas Tech University,,0
+135,Texas Tech University,,0
+136,Texas Tech University,,0
+137,Texas Tech University,,0
+138,Texas Tech University,,0
+139,Oklahoma State University,oklahoma state university,0
+140,Oklahoma State University,oklahoma state university,0
+141,Oklahoma State University,oklahoma state university,0
+142,Oklahoma State University,oklahoma state university,0
+143,Oklahoma State University,oklahoma state university,0
+144,Oklahoma State University,oklahoma state university,0
+145,Oklahoma State University,oklahoma state university,0
+146,,oklahoma state university,0
+147,Oklahoma State University,oklahoma state university,0
+148,Oklahoma State University,oklahoma state university,0
+149,Oklahoma State University,oklahoma state university,0
+150,,oklahoma state university,0
+151,Oklahoma State University,,0
+152,Oklahoma State University,oklahoma state university,0
+153,Oklahoma State University,oklahoma state university,0
+154,,oklahoma state university,0
+155,,oklahoma state university,0
+156,Oklahoma State University,oklahoma state university,0
+157,Oklahoma State University,oklahoma state university,0
+158,Rice University,,0
+159,Rice University,,0
+160,Rice University,,0
+161,Rice University,,0
+162,Rice University,,0
+163,Texas A&M University,texas am university,0
+164,Texas A & M University,texas am university,0
+165,Texas A & M University,texas am university,0
+166,Texas A&M University,texas am university,0
+167,Duke University,duke university,0
+168,Duke University,,0
+169,Duke University,,0
+170,Duke University,duke university,0
+171,Duke University,duke university,0
+172,Duke University,,0
+173,Duke University,,0
+174,Duke University,,0
+175,Duke University,,0
+176,Duke University,duke university,0
+177,Duke University,,0
+178,Duke University,,0
+179,Duke University,,0
+180,Duke University,duke university,0
+181,Duke University,,0
+182,Auburn University,auburn university,0
+183,Auburn University,auburn university,0
+184,Auburn University,auburn university,0
+185,Auburn University,university of alabama in huntsville,0
+186,Auburn University,auburn university,0
+187,Auburn University,auburn university,0
+188,Auburn University,auburn university,0
+189,Auburn University,auburn university,0
+190,Auburn University,auburn university,0
+191,Auburn University,auburn university,0
+192,Auburn University,auburn university,0
+193,University of Hawaii at Manoa,,0
+194,University of Hawaii at Manoa,,0
+195,University of Hawaii at Manoa,,0
+196,University of Missouri--Columbia,university of missouri,0
+197,University of Missouri--Columbia,university of missour,0
+198,University of Missouri--Columbia,university of missouri,0
+199,University of Missouri--Columbia,university of missouricolumbia,0
+200,University of Missouri--Columbia,university of missour1,0
+201,University of Missouri--Columbia,,0
+202,University of Missouri--Columbia,university of missour1,0
+203,Colorado State University,colorado state university,0
+204,Colorado State University,colorado state university,0
+205,Colorado State University,colorado state university,0
+206,Colorado State University,colorado state university,0
+207,Colorado State University,colorado state university,0
+208,Colorado State University,colorado state university,0
+209,University of Oregon,university of oregon,0
+210,University of Oregon,university of oregon,0
+211,George Mason University,,0
+212,Kansas State University,kansas state university,0
+213,Kansas State University,music kansas state university,0
+214,Kansas State University,,0
+215,Kansas State University,geology kansas state university,0
+216,Kansas State University,state university,0
+217,Kansas State University,,0
+218,Kansas State University,kansas state university,0
+219,Kansas State University,zoology kansas state university,0
+220,Kansas State University,,0
+221,Kansas State University,commerce kansas state university,0
+222,Kansas State University,kansas state university,0
+223,University of Kansas,university of kansas,0
+224,University of Kansas,university of kansas,0
+225,University of Kansas,university of kansas,0
+226,University of Kansas,university of kansas,0
+227,University of Kansas,university of kansas,0
+228,University of Kansas,university of kansas,0
+229,University of Kansas,university of kansas staff,0
+230,University of Kansas,university of kansas,0
+231,University of Kansas,university of kansas,0
+232,University of Kansas,university of kansas,0
+233,University of Kansas,university of kansas,0
+234,University of Kansas,university of kansas,0
+235,University of Kansas,university of kansas,0
+236,University of Kansas,university of kansas,0
+237,University of Kansas,university of kansas,0
+238,University of Michigan,university of michigan,0
+239,University of Michigan,,0
+240,University of Michigan,university of michigan,0
+241,University of Michigan,washington university,0
+242,Virginia Polytechnic Institute and State University,virginia polytechnic institute and state university,0
+243,Virginia Polytechnic Institute and State University,virginia polytechnic institute and state university,0
+244,Virginia Polytechnic Institute and State University,virginia polytechnic institute and state university,0
+245,The Ohio State University,ohio state university,0
+246,Texas Tech University,,0
+247,Rice University,,0
+248,University of Maryland,university of maryland,0
+249,University of Maryland,university of maryland,0
+250,University of Maryland,university of maryland,0
+251,North Carolina State University,north carolina state university,0
+252,North Carolina State University,north carolina state university,0
+253,North Carolina State University,carolina state university,0
+254,North Carolina State University,north carolina state university,0
+255,The Ohio State University,ohio state university,0
+256,The Ohio State University,ohio state university,0
+257,The Ohio State University,ohio state university,0
+258,The Ohio State University,ohio state university,0
+259,The Ohio State University,ohio state university,0
+260,Texas Tech University,,0
+261,Rice University,,0
+262,Rice University,rice university,0
+263,Rice University,,0
+264,University of Maryland,university of maryland,0
+265,University of Maryland,university of maryland,0
+266,University of Maryland,university of maryland,0
+267,North Carolina State University,north carolina state university,0
+268,North Carolina State University,north carolina state university,0
+269,North Carolina State University,north carolina state university,0
+270,North Carolina State University,north carolina state university,0
+271,North Carolina State University,north carolina state university,0
+272,North Carolina State University,north carolina state university,0
+273,North Carolina State University,north carolina state university,0
+274,North Carolina State University,north carolina state university,0
+275,North Carolina State University,north carolina state university,0
+276,North Carolina State University,north carolina state university,0
+277,North Carolina State University,north carolina state university,0
+278,North Carolina State University,north carolina state university,0
+279,The Ohio State University,ohio state university,0
+280,Rice University,,0
+281,North Carolina State University,north carolina state university,0
+282,North Carolina State University,north carolina state university,0
+283,North Carolina State University,north carolina state university,0
+284,North Carolina State University,north carolina state university,0
+285,North Carolina State University,north carolina state university,0
+286,North Carolina State University,north carolina state university,0
+287,Case Western Reserve University School of Graduate Studies,case western reserve university,0
+288,Rice University,,0
+289,Rice University,,0
+290,North Carolina State University,north carolina state university,0
+291,North Carolina State University,north carolina state university,0
+292,The Ohio State University,ohio state university,0
+293,The Ohio State University,ohio state university,0
+294,The Ohio State University,ohio state university,0
+295,Rice University,,0
+296,Rice University,,0
+297,ucb,university of california,0
+298,ucsd,california state university,0
+299,University of Akron,university of akron,0
+300,University of Akron,university of akron,0
+301,University of Akron,university of akron,0
+302,The Ohio State University,ohio state university,0
+303,The Ohio State University,ohio state university,0
+304,The Ohio State University,ohio state university,0
+305,The Ohio State University,,0
+306,The Ohio State University,ohio state university,0
+307,The Ohio State University,ohio state university,0
+308,The Ohio State University,ohio state university,0
+309,The Ohio State University,ohio state university,0
+310,The Ohio State University,ohio state university,0
+311,The Ohio State University,ohio state university,0
+312,The Ohio State University,ohio state university,0
+313,The Ohio State University,ohio state university,0
+314,The Ohio State University,ohio state university,0
+315,The Ohio State University,ohio state university,0
+316,Ashland University,ashland university,0
+317,University of Toledo,university of toledo,0
+318,University of Toledo,university of toledo,0
+319,Texas Tech University,,0
+320,Texas Tech University,,0
+321,Texas Tech University,,0
+322,Texas Tech University,,0
+323,Texas Tech University,,0
+324,Texas Tech University,,0
+325,Texas Tech University,,0
+326,Texas Tech University,,0
+327,Texas Tech University,,0
+328,Texas Tech University,,0
+329,Texas Tech University,,0
+330,Texas Tech University,,0
+331,Texas Tech University,,0
+332,Texas Tech University,,0
+333,Texas Tech University,,0
+334,Texas Tech University,,0
+335,Texas Tech University,,0
+336,Texas Tech University,,0
+337,Texas Tech University,,0
+338,Texas Tech University,,0
+339,Texas Tech University,,0
+340,Texas Tech University,,0
+341,Texas Tech University,,0
+342,Oklahoma State University,oklahoma state university,0
+343,Oklahoma State University,oklahoma state university,0
+344,Oklahoma State University,oklahoma state university,0
+345,Oklahoma State University,oklahoma state university,0
+346,Oklahoma State University,oklahoma state university,0
+347,Oklahoma State University,oklahoma state university,0
+348,Oklahoma State University,oklahoma state university,0
+349,Oklahoma State University,oklahoma state university,0
+350,Oklahoma State University,oklahoma state university,0
+351,Oklahoma State University,oklahoma state university,0
+352,Oklahoma State University,oklahoma state thiversity,0
+353,Oklahoma State University,oklahoma state university,0
+354,Oklahoma State University,oklahoma state university,0
+355,Oklahoma State University,oklahoma state university,0
+356,Oklahoma State University,oklahoma state university,0
+357,Oklahoma State University,oklahoma state university,0
+358,,,0
+359,,oklahoma state university,0
+360,Rice University,,0
+361,Rice University,,0
+362,Rice University,,0
+363,Rice University,,0
+364,Rice University,,0
+365,Rice University,,0
+366,Rice University,,0
+367,Rice University,,0
+368,Rice University,rice university,0
+369,Rice University,,0
+370,Rice University,,0
+371,Rice University,,0
+372,Rice University,,0
+373,Rice University,rice university,0
+374,Rice University,,0
+375,Rice University,rice university,0
+376,Rice University,,0
+377,Rice University,rice university,0
+378,Rice University,rice university,0
+379,Rice University,,0
+380,Rice University,,0
+381,Rice University,,0
+382,Rice University,,0
+383,Rice University,,0
+384,Rice University,,0
+385,Rice University,,0
+386,Rice University,,0
+387,Rice University,,0
+388,Texas A&M University,texas am university,0
+389,Texas A & M University,texas am university,0
+390,Texas A & M University,texas am university,0
+391,Texas A & M University,texas am university,0
+392,Texas A & M University,texas am university,0
+393,Texas A & M University,texas am university,0
+394,Texas A & M University,texas am university,0
+395,Texas A & M University,texas am university,0
+396,Texas A & M University,texas am university,0
+397,Texas A & M University,texas am university,0
+398,Texas A&M University,texas am university,0
+399,Texas A&M University,texas am university,0
+400,Texas A&M University,texas am university,0
+401,Texas A&M University,texas am university,0
+402,Texas A&M University,texas am university,0
+403,Texas A&M University,texas am university,0
+404,Texas A&M University,texas am university,0
+405,Texas A&M University,texas am university,0
+406,Texas A&M University,texas am university,0
+407,Texas A&M University,texas am university,0
+408,Texas A&M University,texas am university,0
+409,Texas A&M University,texas am university,0
+410,Texas A&M University,texas am university,0
+411,Duke University,duke university,0
+412,Duke University,,0
+413,Duke University,,0
+414,Duke University,,0
+415,Duke University,,0
+416,Duke University,,0
+417,Duke University,,0
+418,Duke University,,0
+419,Duke University,,0
+420,University of Maryland,university of maryland,0
+421,Texas State University,texas state university,0
+422,Kansas State University,entomology kansas state university,0
+423,Kansas State University,sciences kansas state university,0
+424,Virginia Polytechnic Institute and State University,virginia polytechnic institute and state university,0
+425,Virginia Tech,virginia polytechnic institute and state university,0
+426,Virginia Tech,virginia polytechnic institute and state university,0
+427,Virginia Tech,virginia polytechnic institute and state university,0
+428,Virginia Tech,virginia polytechnic institute and state university,0
+429,Virginia Polytechnic Institute and State University,virginia polytechnic institute and state,0
+430,Virginia Polytechnic Institute and State University,virginia polytechnic institute and state universit,0
+431,Virginia Polytechnic Institute and State University,virginia polytechnic institute and state university,0
+432,Virginia Polytechnic Institute and State University,virginia polytechnic institute and state university,0
+433,University of Akron,university of akron,0
+434,University of Akron,university of akron,0
+435,University of Akron,university of akron,0
+436,The Ohio State University,ohio state university,0
+437,The Ohio State University,ohio state university,0
+438,The Ohio State University,ohio state university,0
+439,The Ohio State University,ohio state university,0
+440,Miami University,miami university,0
+441,Texas Tech University,,0
+442,Texas Tech University,,0
+443,Texas Tech University,,0
+444,Texas Tech University,texas tech university,0
+445,Texas Tech University,texas tech university,0
+446,Rice University,,0
+447,University of Houston,university of houston,0
+448,Kansas State University,kansas state university,0
+449,Florida International University,,0
+450,University of Wisconsin-Milwaukee,,0
+451,Mississippi State University,mississippi state university,0
+452,The Ohio State University,ohio state university,0
+453,Miami University,miami university,0
+454,Case Western Reserve University School of Graduate Studies,nursing case western reserve university,0
+455,The University of Texas at Austin,university of texas at austin,0
+456,The University of Texas at Austin,university of texas at austin,0
+457,The University of Texas at Austin,university of texas at austin,0
+458,Rice University,,0
+459,Rice University,rice university,0
+460,Rice University,,0
+461,Rice University,,0
+462,Rice University,rice university,0
+463,Rice University,,0
+464,Rice University,,0
+465,Rice University,,0
+466,Rice University,,0
+467,East Carolina University,east carolina university,0
+468,University of Maryland,university of maryland,0
+469,University of Maryland,university of maryland,0
+470,University of Maryland,university of maryland,0
+471,University of Maryland,university of maryland,0
+472,North Carolina State University,north carolina state university,0
+473,North Carolina State University,north carolina state university,0
+474,North Texas State University,north texas state university,0
+475,Miami University,miami university,0
+476,The University of Texas at Austin,university of texas at austin,0
+477,Rice University,,0
+478,Rice University,,0
+479,North Carolina State University,north carolina state university,0
+480,North Carolina State University,north carolina state university,0
+481,North Carolina State University,north carolina state university,0
+482,North Carolina State University,north carolina state university,0
+483,North Carolina State University,north carolina state university,0
+484,The Ohio State University,ohio state university,0
+485,Rice University,,0
+486,Rice University,,0
+487,Rice University,,0
+488,Rice University,,0
+489,Rice University,,0
+490,Virginia Tech,virginia polytechnic institute and state university,0
+491,Virginia Tech,virginia polytechnic institute and state university,0
+492,Rice University,rice university,0
+493,Rice University,rice university,0
+494,The Ohio State University,ohio state university,0
+495,Oklahoma State University,oklahoma state university,0
+496,Rice University,,0
+497,Rice University,rice university,0
+498,Kansas State University,architecture kansas state university,0
+499,Pennsylvania State University,pennsylvania state university,0
