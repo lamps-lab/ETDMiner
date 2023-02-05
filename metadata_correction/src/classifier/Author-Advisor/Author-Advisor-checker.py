@@ -73,8 +73,8 @@ for index, row in etds.iterrows():
 
 etd_dataframe = pd.DataFrame (etdid, columns = ['etd_id'])
 author_dataframe = pd.DataFrame (author, columns = ['author'])
-adviso = pd.DataFrame (advisor, columns = ['advisor'])
-dataframe = pd.concat([df, df2, df3],axis=1)
+advisor_dataframe = pd.DataFrame (advisor, columns = ['advisor'])
+dataframe = pd.concat([etd_dataframe, author_dataframe, advisor_dataframe],axis=1)
 
 # Generates a CSV file with 3 coulmns (etd_id, author, advisor). The author and advisor column has two types of values: 0 or 1. 1 = correct and 0 = incorrect
 dataframe.to_csv('Anomaly_detected.csv', header=['etd_id','author','advisor'], index=False)
