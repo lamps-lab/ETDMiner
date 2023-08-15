@@ -1,5 +1,8 @@
-### ETD Segmentation -- Page Classification
+### ETDPC -- A Multimodality Framework to Classify ETD Pages.
 
-The aim of this project is to classify born-digital and scanned ETD pages. ETD contains Title-page, Dedication, Acknowledgement, Chapters, Abstracts, References, and so on. We have a total of 14 classes.
+# The misc/ contains the metadata in .csv 
+# The src/ contains two subdirectories:
+	a) augmentation -- contains the scripts to generate augmented pages
+	b) models -- contains the Python scripts for multimodal (ours), baseline models, and individual models (i.e., ablation study)
 
-# The project is on progress
+# The dataset can be found in [Harvard Dataverse](https://dataverse.harvard.edu/dataset.xhtml?persistentId=doi:10.7910/DVN/MSFVLQ)
