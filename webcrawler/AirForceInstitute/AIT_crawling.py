@@ -91,7 +91,7 @@ def getPDFdownloadUrl(soup):
             pass
         else:
             hrefValue = anchortag.find('a')['href']
-    downloadableUrl = urllib.parse.urljoin(base, hrefValue)
+    #@Dennis downloadableUrl = urllib.parse.urljoin(base, hrefValue)  
     return hrefValue
 
 # Check if it is a thesis [from breadcrumb]
@@ -101,9 +101,9 @@ def isItemThesis(soup):
     contentTypes = soup.find("div",class_="crumbs").find_all("a",class_="ignore").text()
     
     length = len(contentTypes)
-    print(contentTypes[0])
+    print("contentTypes[0].text",contentTypes[0].text)
     
-    if ("ETD" in contentTypes[2].text and length is 4):
+    if ("ETD" in contentTypes[2].text and length == 4):
         isThesis = True
         
 
@@ -120,7 +120,8 @@ def extractPDF(url,soup, j):
     downloadableUrl = getPDFdownloadUrl(soup)
     # print("downloadable=========", downloadableUrl)
     # Extract item id    
-    itemId = url.split("/")[-1]
+    #@Dennis itemId = url.split("/")[-1]
+    itemId = url.rstrip('/').split('/')[-1]
     
     print("I am item",itemId)
 
@@ -141,14 +142,35 @@ def extractPDF(url,soup, j):
     if(downloadableUrl == None):
         pass
     else:
-        response = urllib.request.urlopen(downloadableUrl,context=ctx)
- 
-
-        with open(filepath, 'wb') as f:
         
-            f.write(response.read())
-    # wget.download(downloadableUrl,"Users/lamiasalsabil/Downloads/1234.pdf")
-        print("Successful pdf parsing for:"+itemId)
+        try:
+            response = urllib.request.urlopen(downloadableUrl, context=ctx)
+
+            # If the URL was successfully opened, proceed with writing the file and other processing steps
+            with open(filepath, 'wb') as f:
+                f.write(response.read())
+
+            print("Successful pdf parsing for:", itemId)
+
+        except urllib.error.HTTPError as e:
+            print("HTTP Error:", e)
+        except urllib.error.URLError as e:
+            print("URL Error:", e)
+        except urllib.error.ContentTooShortError as e:
+            print("Content Too Short Error:", e)
+        except ConnectionResetError as e:
+            print("Connection Reset Error:", e)
+        except timeout:
+            print("Timeout Error")
+        except Exception as e:
+            print("An unexpected error occurred:", e)     
+        
+    #@Dennis adding errors handling for urlopen 
+    #     response = urllib.request.urlopen(downloadableUrl,context=ctx)
+    #     with open(filepath, 'wb') as f:        
+    #         f.write(response.read())
+    # # wget.download(downloadableUrl,"Users/lamiasalsabil/Downloads/1234.pdf")
+    #     print("Successful pdf parsing for:"+itemId)
 
 def saveHTML(url,response,soup, j):
     # Extract item id
@@ -215,7 +237,8 @@ def extractContents(url, j):
 if __name__ == '__main__':
     #TODO: get url.txt lines and make handle url 
     #for urlfile in os.listdir(url_directory):
-    for j in range(3416,5431):
+    #@Dennis for j in range(3416,5431):
+    for j in range(1,6298):
         url = base+str(j)+'/'
         
         extractContents(url, str(j))

@@ -13,12 +13,21 @@ import urllib.response
 import urllib.parse
 import re
 
+#@Dennis
+# config = {
+#     'user': 'uddin',
+#     'password': 'TueJul271:56:04PM',
+#     'host': 'hawking.cs.odu.edu',
+#     'database': 'pates_etds'
+# }
+
 config = {
-    'user': 'uddin',
-    'password': 'TueJul271:56:04PM',
-    'host': 'hawking.cs.odu.edu',
-    'database': 'pates_etds'
+    'user': 'root',
+    'password': '1234',
+    'host': 'localhost',  # or '127.0.0.1'
+    'database': 'testdb' 
 }
+
 
 import time
 import ssl
@@ -100,14 +109,17 @@ def insertETDs(soup):
     """
     # Title
     title = soup.find('div',{'id':'title'})
-    
+    # print("title: ",title)
     if title is not None:
-        title = title.find('p').get_text()
+        #@Dennis title = title.find('p').get_text()
+        title = title.find('a').get_text()
+        print("title: ",title)
 
     # Author
     author = soup.find('div',{'id':'authors'})
     if author is not None:
         author = author.find('p',{'class':'author'}).find('a').find('strong').get_text()
+        print("author: ",author)
         # if author.find(',') != 1:
         #     author = author.split(',')[:2]
         #     author = ",".join(author)
@@ -116,18 +128,27 @@ def insertETDs(soup):
     advisor = soup.find('div',{'id':'advisor1'})
     if advisor is not None:
         advisor = advisor.find('p').get_text()
+        print("advisor: ",advisor)
    
     # print(advisor)
     # Abstract
     abstract = soup.find('div',{'id':'abstract'})
     if abstract is not None:
         abstract = abstract.find('p').get_text()
+        print("abstract: ", abstract)
     
     # Landing Page URL
     url = soup.find('div',{'id':'recommended_citation'})
     if url is not None:
         # url = ''.join(url.find('p').find('br').next_siblings)
-        url = url.find('p').find('br').find_next_sibling().get_text()
+        #Dennis url = url.find('p').find('br').find_next_sibling().get_text()
+        url_p = url.find('p')
+        url_br = url_p.find('br')
+        # print("url_br: ",url_br)
+        url_final = url_br.find_next_sibling(text = True)
+        # print("url_final: ",url_final)
+        url = url_final.strip()
+        print("url: ",url)
    
     # Year
     date = soup.find('div',{'id':'publication_date'})
@@ -301,7 +322,8 @@ def main():
     Step 3: Populate 3 tables
     Step 4: Shift files to production repo 
     """
-    harvestDirectory = 'UNLV_ETDs'
+    # harvestDirectory = 'UNLV_ETDs'
+    harvestDirectory = 'AIT_ETDs'
     print(harvestDirectory)
     etddirs = os.listdir(harvestDirectory)
     print(etddirs)
@@ -318,19 +340,21 @@ def main():
         """
 
         xmlFilePath = os.path.join(harvestDirectory+'/'+str(i),str(i)+'.html')
+        print("xmlFilePath: ",xmlFilePath)
 
         # Get the pdf. Can be with any name
         # etdPath = None
         _etdPath = Path(harvestDirectory+'/'+str(i))
         for item in _etdPath.glob('*.pdf'): # Return a list
             etdPath = item
+            print("etdPath:" ,etdPath)
 
         # Extract and insert table
             if os.path.exists(xmlFilePath):
 
                 xmlfile = open(xmlFilePath, "r")
                 soup = BeautifulSoup(xmlfile, 'lxml')
-                # print(soup)
+                # print("soup:",soup)
                 etdid = insertETDs(soup) # DONE
                 # insertSubjects(soup, etdid) # DONE
                 insertPDFs(soup, etdid, etdPath, str(1001+i-1)) # Done
