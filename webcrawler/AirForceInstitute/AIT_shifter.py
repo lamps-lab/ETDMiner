@@ -578,7 +578,7 @@ def main():
 
     print("#ETDs:", len(etddirs))
     # for i in range(1201,1211):
-    for i in range(712,len(etddirs)):
+    for i in range(1,len(etddirs)):
         print('')
         print("Current ETD:", i)
         
