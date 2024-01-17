@@ -206,10 +206,17 @@ def update_empty_field(soup,empty_list,etdid) :
 def extract_all_field(soup):
      # Title
     title = soup.find('div',{'id':'title'})
-    # print("title: ",title)
-    if title is not None:
+    print("title: ",title)
+    if title:
         #@Dennis title = title.find('p').get_text()
-        title = title.find('a').get_text()
+        if title.find('a'):        
+            title = title.find('a').get_text()
+        elif title.find('p'):
+            title = title.find('p').get_text()
+        elif title.find('h1'):
+            title = title.find('h1').get_text()
+        else:
+            title = 0
         print("title: ",title)
 
     # Author
@@ -578,7 +585,7 @@ def main():
 
     print("#ETDs:", len(etddirs))
     # for i in range(1201,1211):
-    for i in range(1,len(etddirs)):
+    for i in range(1357,len(etddirs)):
         print('')
         print("Current ETD:", i)
         
