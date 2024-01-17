@@ -577,8 +577,8 @@ def main():
     #etddirs = handleSuddenStop(etddirs,'metadc278485') #TODO: Change here to handle sudden production stop   #metadc53494
 
     print("#ETDs:", len(etddirs))
-    #@Dennis for i in range(1,5431):
-    for i in range(1,len(etddirs)):
+    # for i in range(1201,1211):
+    for i in range(712,len(etddirs)):
         print('')
         print("Current ETD:", i)
         
@@ -629,19 +629,22 @@ def main():
                     
                     print("etdpath",etdPath)                
                     moveFileToProductionRepo(etdPath, etdid) #Works
+                    final_pdf_path = final_pdf_dir(etdid)
+                    insert_haspdf_timestamp(final_pdf_path,etdid)
             
         for item in _etdPath.glob('*.html'): # Return a list
             htmlPath = item
 
         # Extract and insert table
             if os.path.exists(xmlFilePath):                
-                is_exist = exists_in_etds(soup)
+                
                 final_html_path = final_html_dir(etdid)
-                insert_metadata_timestamp(final_html_path,etdid)
+                
                 #    Step 3: Shift the ETD to the production repo, rename & place file/folders based on ID
                 
                 print("path: ",htmlPath)
                 movehtml(htmlPath, etdid) #Works
+                insert_metadata_timestamp(final_html_path,etdid)
                 #break # Loop breaks after a run for now
             else:
                 pass
