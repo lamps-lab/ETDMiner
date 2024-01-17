@@ -332,9 +332,6 @@ def extract_all_field(soup):
     DTIC = soup.find('div',{'id':'dtic_accession_number'})
     if DTIC is not None:
         DTIC = DTIC.find('p').get_text()
-        
-   
-    
     data = {
         'title': title,
         'author': author,
