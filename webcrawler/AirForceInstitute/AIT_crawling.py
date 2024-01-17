@@ -290,7 +290,7 @@ if __name__ == '__main__':
     #TODO: get url.txt lines and make handle url 
     #for urlfile in os.listdir(url_directory):
     #@Dennis for j in range(3416,5431):
-    for j in range(1088,6298):
+    for j in range(1,6298):
         url = base+str(j)+'/'
         
         extractContents(url, str(j))

@@ -445,80 +445,83 @@ def insertPDFs(soup, etdid, etdPath, etd_number):
     mycursor.close()
     db_connection.close()
     
-# # @Dennis create a final_pdf_dir function, used to return a  final directory
-# def final_pdf_dir(etdid):
-#     prodDir = os.path.join('../', 'etdrepo')
-#     firstLevelDir = firstLevelDirCalculation(etdid)
-#     secondLevelDir = secondLevelDirCalculation(etdid)
+# @Dennis create a final_pdf_dir function, used to return a  final directory
+def final_pdf_dir(etdid):
+    prodDir = os.path.join('../', 'etdrepo')
+    firstLevelDir = firstLevelDirCalculation(etdid)
+    secondLevelDir = secondLevelDirCalculation(etdid)
 
-#     pdf_FinalProdDir = prodDir+'/'+firstLevelDir+'/'+secondLevelDir    
-#     pdf_path = pdf_FinalProdDir + '/' + str(etdid) + '.pdf'
-#     return pdf_path
+    pdf_FinalProdDir = prodDir+'/'+firstLevelDir+'/'+secondLevelDir    
+    pdf_path = pdf_FinalProdDir + '/' + str(etdid) + '.pdf'
+    return pdf_path
 
-# # @Dennis create a final_html_dir(etdid) function, used to return a  final directory
-# def final_html_dir(etdid):
-#     prodDir = os.path.join('../', 'etdrepo')
-#     firstLevelDir = firstLevelDirCalculation(etdid)
-#     secondLevelDir = secondLevelDirCalculation(etdid)
+# @Dennis create a final_html_dir(etdid) function, used to return a  final directory
+def final_html_dir(etdid):
+    prodDir = os.path.join('../', 'etdrepo')
+    firstLevelDir = firstLevelDirCalculation(etdid)
+    secondLevelDir = secondLevelDirCalculation(etdid)
 
-#     html_FinalProdDir = prodDir+'/'+firstLevelDir+'/'+secondLevelDir    
-#     html_path = html_FinalProdDir + '/' + str(etdid) + '.html'
-#     return html_path
+    html_FinalProdDir = prodDir+'/'+firstLevelDir+'/'+secondLevelDir    
+    html_path = html_FinalProdDir + '/' + str(etdid) + '.html'
+    return html_path
 
-
-# # @Dennis create a function: update_all_empty_field(), When I run it, it will  find the directory: etdrepo -> school folder(name is a int), and  iterate the school folder,  update all the empty fields of the table etds (include haspdf, timestamp);
-# from datetime import datetime  
-# def update_all_empty_field():
-#     final_directory = os.path.join("..", "etdrepo", "058")
-#     # print(final_directory)
-    
-#     final_etds = os.listdir(final_directory)
-#     # print(final_etds)
-    
-#     for item in final_etds:
-#         cur_path = os.path.join(final_directory, item)
-#         cur_files = os.listdir(cur_path)
-#         print(cur_files) 
-        
-#         haspdf = None
-#         pdf_timestamp = None
-#         meta_timestamp = None
-        
-#         for file_name in cur_files:
-#             file_path = os.path.join(cur_path,file_name)
-            
-#             if file_name.lower().endswith('.pdf'):
-#                 print(f"Found PDF in {item}: {file_name}")
-#                 haspdf = 1
-#                 pdf_timestamp = datetime.fromtimestamp(os.path.getmtime(file_path))
-#             elif file_name.lower().endswith('.html'):
-#                 print(f"Found HTML in {item}: {file_name}")
-#                 meta_timestamp = datetime.fromtimestamp(os.path.getmtime(file_path))
-        
-   
 
 
 # @Dennis create a insert_haspdf_timestamp function
 from datetime import datetime    
 def insert_haspdf_timestamp(final_dir,etdid):
     haspdf = 0
-    pdf_path = final_dir + '/' + str(etdid) + '.pdf'
-    meta_path = final_dir + '/' + str(etdid) + '.html'
-    if os.path.exists(pdf_path):
-        haspdf = 1
-    pdf_timestamp = datetime.fromtimestamp(os.path.getmtime(pdf_path))
-    meta_timestamp = datetime.fromtimestamp(os.path.getmtime(meta_path))
     
-    db_connection = mysql.connector.connect(**config)
-    mycursor = db_connection.cursor()
+    if os.path.exists(final_dir):
+        haspdf = 1
+        pdf_timestamp = datetime.fromtimestamp(os.path.getmtime(final_dir))    
+    
+        db_connection = mysql.connector.connect(**config)
+        mycursor = db_connection.cursor()
 
-    sql = "update etds set haspdf = %s, timestamp_pdf = %s timestamp_meatdata = %s where id = %s"
-    val = (haspdf, pdf_timestamp, meta_timestamp, etdid)
-    mycursor.execute(sql, val)
-    db_connection.commit()
+        sql = "update etds set haspdf = %s, timestamp_pdf = %s  where id = %s"
+        val = (haspdf, pdf_timestamp, etdid)
+        mycursor.execute(sql, val)
+        db_connection.commit()
 
-    mycursor.close()
-    db_connection.close()
+        mycursor.close()
+        db_connection.close()
+        
+    else:
+        db_connection = mysql.connector.connect(**config)
+        mycursor = db_connection.cursor()
+
+        sql = "update etds set haspdf = %s  where id = %s"
+        val = (haspdf, etdid)
+        mycursor.execute(sql, val)
+        db_connection.commit()
+
+        mycursor.close()
+        db_connection.close()
+# @Dennis create a insert_metadata_timestamp function    
+from datetime import datetime    
+def insert_metadata_timestamp(final_dir,etdid):
+    if os.path.exists(final_dir):    
+        meta_path = final_dir   
+        meta_timestamp = datetime.fromtimestamp(os.path.getmtime(meta_path))
+        
+        db_connection = mysql.connector.connect(**config)
+        mycursor = db_connection.cursor()
+
+        sql = "update etds set  timestamp_metadata = %s where id = %s"
+        val = ( meta_timestamp, etdid)
+        mycursor.execute(sql, val)
+        db_connection.commit()
+
+        mycursor.close()
+        db_connection.close()
+        
+# @Dennis create a etdrepo_pdf_check function, used to check if the pdf/html exist in the etdrepo     
+def etdrepo_check(final_dir,etdid):
+    if os.path.exists(final_dir):
+        return 1
+    else:
+        return None
 
 def moveFileToProductionRepo(etdPath, dbETDId):      
     prodDir = os.path.join('../', 'etdrepo')     
@@ -578,15 +581,10 @@ def main():
 
     print("#ETDs:", len(etddirs))
     #@Dennis for i in range(1,5431):
-    for i in range(1,6298):
+    for i in range(1,len(etddirs)):
         print('')
         print("Current ETD:", i)
-        # if etddir == '1911':
-        #     continue
         
-        #    Step 1: Read the files [Directory path may vary based on arrangement]
-       
-
         xmlFilePath = os.path.join(harvestDirectory+'/'+str(i),str(i)+'.html')
         print("xmlFilePath: ",xmlFilePath)
 
@@ -599,7 +597,6 @@ def main():
 
         # Extract and insert table
             if os.path.exists(xmlFilePath):
-
                 xmlfile = open(xmlFilePath, "r")
                 soup = BeautifulSoup(xmlfile, 'lxml')
                 
@@ -615,6 +612,16 @@ def main():
                     # update the empty field
                     if not empty_fields_list:
                         update_empty_field(soup,empty_fields_list,etdid)
+                        
+                    final_pdf_path = final_pdf_dir(etdid)
+                    print(final_pdf_path)  
+                      
+                    exist_pdf_etdrepo = etdrepo_check(final_pdf_path,etdid)
+                    if not exist_pdf_etdrepo:
+                        moveFileToProductionRepo(etdPath,etdid)                        
+                    
+                    insert_haspdf_timestamp(final_pdf_path,etdid)
+                    
                     
                 else:   
                     etdid = insertETDs(soup) # DONE
@@ -631,8 +638,9 @@ def main():
 
         # Extract and insert table
             if os.path.exists(xmlFilePath):                
-
-                
+                is_exist = exists_in_etds(soup)
+                final_html_path = final_html_dir(etdid)
+                insert_metadata_timestamp(final_html_path,etdid)
                 #    Step 3: Shift the ETD to the production repo, rename & place file/folders based on ID
                 
                 print("path: ",htmlPath)
@@ -641,9 +649,7 @@ def main():
             else:
                 pass
             
-        # @Dennis insert haspdf and timestamp
-                # final_path = final_dir(etdid)
-                # insert_haspdf_timestamp(final_path, etdid)
+
                 
 
 
