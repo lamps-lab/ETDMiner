@@ -32,18 +32,6 @@ def print_logs(text):
     print(text)
     with open("log.txt",'a',encoding = 'utf-8') as f:
         f.write(text+"\n")
-        
-# @Dennis add print_download_PDF_error_logs       
-def print_download_PDF_error_logs(text):
-    print(text)
-    with open("download_PDF_error_log.txt",'a',encoding = 'utf-8') as f:
-        f.write(text+"\n")
-        
-# @Dennis add print_download_Matadata_error_logs        
-def print_download_Matadata_error_logs(text):
-    print(text)
-    with open("download_Matadata_error_log.txt",'a',encoding = 'utf-8') as f:
-        f.write(text+"\n")
 
 """
     This module will help keep the op running just incase any URL error occurs
@@ -103,7 +91,7 @@ def getPDFdownloadUrl(soup):
             pass
         else:
             hrefValue = anchortag.find('a')['href']
-    #@Dennis downloadableUrl = urllib.parse.urljoin(base, hrefValue)  
+    downloadableUrl = urllib.parse.urljoin(base, hrefValue)
     return hrefValue
 
 # Check if it is a thesis [from breadcrumb]
@@ -113,9 +101,9 @@ def isItemThesis(soup):
     contentTypes = soup.find("div",class_="crumbs").find_all("a",class_="ignore").text()
     
     length = len(contentTypes)
-    print("contentTypes[0].text",contentTypes[0].text)
+    print(contentTypes[0])
     
-    if ("ETD" in contentTypes[2].text and length == 4):
+    if ("ETD" in contentTypes[2].text and length is 4):
         isThesis = True
         
 
@@ -132,9 +120,9 @@ def extractPDF(url,soup, j):
     downloadableUrl = getPDFdownloadUrl(soup)
     # print("downloadable=========", downloadableUrl)
     # Extract item id    
+    
     #@Dennis itemId = url.split("/")[-1]
     itemId = url.rstrip('/').split('/')[-1]
-    
     print("I am item",itemId)
 
     """
@@ -148,61 +136,26 @@ def extractPDF(url,soup, j):
 
     # Download and store pdf to that directory
     fileName = j + '.pdf'
-    filepath = os.path.join(directory, fileName)     
-    
-    # print("filepath",filepath)   
-    # print("os.getcwd(): ", os.getcwd())
+    filepath = os.path.join(directory, fileName) 
+    print("filepath",filepath)   
     #urllib.request.urlretrieve(downloadableUrl,filepath) # urllib.request.urlretrieve(source,dest)
-    
-    # @Dennis add: or  os.path.exists(fileName), if the pdf already exist, do not re-download again
-    print("os.path.exists(filepath): ",os.path.exists(filepath))
-    # @Dennis add print_download_PDF_error_logs
-    # downloadableUrl = None   //used for test when downloadableUrl is None, the print log is correct
-    if downloadableUrl == None or os.path.exists(filepath):
-        if downloadableUrl == None:
-            print("downloadableUrl is None")
-            print_download_PDF_error_logs(""+j+".pdf is not downloadable, because the downloadableUrl is None")
-        else:
-            print(filepath," aleady exist, pass")
-    else:        
-        try:
-            response = urllib.request.urlopen(downloadableUrl, context=ctx)
+    if(downloadableUrl == None):
+        pass
+    else:
+        response = urllib.request.urlopen(downloadableUrl,context=ctx)
+ 
 
-            # If the URL was successfully opened, proceed with writing the file and other processing steps
-            with open(filepath, 'wb') as f:
-                f.write(response.read())
-
-            print("Successful pdf parsing for:", itemId)
-
-        except urllib.error.HTTPError as e:
-            print("HTTP Error:", e)
-            print_download_PDF_error_logs(""+j+".pdf is not downloadable, because HTTP Error:"+ e )
-        except urllib.error.URLError as e:
-            print("URL Error:", e)
-            print_download_PDF_error_logs(""+j+".pdf is not downloadable, because URL Error:"+ e )
-        except urllib.error.ContentTooShortError as e:
-            print("Content Too Short Error:", e)
-            print_download_PDF_error_logs(""+j+".pdf is not downloadable, because Content Too Short Error:"+ e )
-        except ConnectionResetError as e:
-            print("Connection Reset Error:", e)
-            print_download_PDF_error_logs(""+j+".pdf is not downloadable, because Connection Reset Error:"+ e )
-        except timeout:
-            print("Timeout Error")
-            print_download_PDF_error_logs(""+j+".pdf is not downloadable, because Timeout Error" )
-        except Exception as e:
-            print("An unexpected error occurred:", e)   
-            print_download_PDF_error_logs(""+j+".pdf is not downloadable, because An unexpected error occurred:" +e)  
+        with open(filepath, 'wb') as f:
         
-    #@Dennis adding errors handling for urlopen 
-    #     response = urllib.request.urlopen(downloadableUrl,context=ctx)
-    #     with open(filepath, 'wb') as f:        
-    #         f.write(response.read())
-    # # wget.download(downloadableUrl,"Users/lamiasalsabil/Downloads/1234.pdf")
-    #     print("Successful pdf parsing for:"+itemId)
+            f.write(response.read())
+    # wget.download(downloadableUrl,"Users/lamiasalsabil/Downloads/1234.pdf")
+        print("Successful pdf parsing for:"+itemId)
 
 def saveHTML(url,response,soup, j):
     # Extract item id
-    #objId = soup.find('mets:mets')['objid']    
+    #objId = soup.find('mets:mets')['objid']
+    
+
     # Create directory based on item-id
     directory = 'AIT_ETDs/'+ j+ '/'
     if not os.path.exists(directory):
@@ -212,34 +165,9 @@ def saveHTML(url,response,soup, j):
     fileName = j + '.html'
     filepath = os.path.join(directory, fileName)  
     
-    # @Dennis add if condiction
-    if not os.path.exists(filepath):
     #print(response.decode('utf-8'))
-    # @Dennis Handle the matadata download error, and print the error log
-        try:            
-            with open(filepath, 'wb') as file: # wb for override
-                file.write(response)
-            print("Successful save matadata:", fileName)
-        except urllib.error.HTTPError as e:
-            print("HTTP Error:", e)
-            print_download_Matadata_error_logs(""+fileName+" is not saved, because HTTP Error:"+ e )
-        except urllib.error.URLError as e:
-            print("URL Error:", e)
-            print_download_Matadata_error_logs(""+ fileName +" is not saved, because URL Error:"+ e )
-        except urllib.error.ContentTooShortError as e:
-            print("Content Too Short Error:", e)
-            print_download_Matadata_error_logs(""+ fileName +" is not saved, because Content Too Short Error:"+ e )
-        except ConnectionResetError as e:
-            print("Connection Reset Error:", e)
-            print_download_Matadata_error_logs(""+ fileName +" is not saved, because Connection Reset Error:"+ e )
-        except timeout:
-            print("Timeout Error")
-            print_download_Matadata_error_logs(""+ fileName +" is not saved, because Timeout Error" )
-        except Exception as e:
-            print("An unexpected error occurred:", e)   
-            print_download_Matadata_error_logs(""+ fileName +" is not saved, because An unexpected error occurred:" +e) 
-    else:
-        print(filepath,"already exsit, pass")
+    with open(filepath, 'wb') as file: # wb for override
+        file.write(response)
 
 def extractContents(url, j):             
     isWorkable = True
@@ -285,12 +213,10 @@ def extractContents(url, j):
     time.sleep(5)  # variable delay, just maintain 10s overall
 
 
-if __name__ == '__main__':  
-
+if __name__ == '__main__':
     #TODO: get url.txt lines and make handle url 
     #for urlfile in os.listdir(url_directory):
-    #@Dennis for j in range(3416,5431):
-    for j in range(1,6298):
+    for j in range(3416,5431):
         url = base+str(j)+'/'
         
         extractContents(url, str(j))
