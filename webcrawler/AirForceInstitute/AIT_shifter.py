@@ -14,20 +14,20 @@ import urllib.parse
 import re
 import requests
 
-#@Dennis
-# config = {
-#     'user': 'uddin',
-#     'password': 'TueJul271:56:04PM',
-#     'host': 'hawking.cs.odu.edu',
-#     'database': 'pates_etds'
-# }
 
 config = {
-    'user': 'Dennis',
-    'password': '1234',
-    'host': 'localhost',  # or '127.0.0.1'
-    'database': 'testdb' 
+    'user': 'uddin',
+    'password': 'TueJul271:56:04PM',
+    'host': 'hawking.cs.odu.edu',
+    'database': 'pates_etds'
 }
+
+# config = {
+#     'user': 'Dennis',
+#     'password': '1234',
+#     'host': 'localhost',  # or '127.0.0.1'
+#     'database': 'testdb' 
+# }
 
 
 import time
