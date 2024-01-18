@@ -584,8 +584,8 @@ def main():
     #etddirs = handleSuddenStop(etddirs,'metadc278485') #TODO: Change here to handle sudden production stop   #metadc53494
 
     print("#ETDs:", len(etddirs))
-    # for i in range(1201,1211):
-    for i in range(1357,len(etddirs)):
+    # for i in range(992,len(etddirs)):
+    for i in range(1,len(etddirs)):
         print('')
         print("Current ETD:", i)
         
@@ -594,17 +594,17 @@ def main():
 
         # Get the pdf. Can be with any name
         # etdPath = None
-        _etdPath = Path(harvestDirectory+'/'+str(i))
-        for item in _etdPath.glob('*.pdf'): # Return a list
-            etdPath = item
-            print("etdPath:" ,etdPath)
-
+        etdPath = Path(harvestDirectory+'/'+str(i)+'/'+str(i)+'.pdf')
+        print("etdPath",etdPath)
+       
         # Extract and insert table
-            if os.path.exists(xmlFilePath):
-                xmlfile = open(xmlFilePath, "r")
-                soup = BeautifulSoup(xmlfile, 'lxml')
-                
-                # @Dennis                 
+        if os.path.exists(xmlFilePath):
+            xmlfile = open(xmlFilePath, "r")
+            soup = BeautifulSoup(xmlfile, 'lxml')
+            
+            # @Dennis if the pdf doesn't exist, the html usually is different with others, so pass it.
+            if os.path.exists(etdPath):
+                             
                 is_exist = exists_in_etds(soup) #is_exist will be 0 or the etdid
                 print('is_exist: ',is_exist)
                 if is_exist:
@@ -616,16 +616,18 @@ def main():
                     # update the empty field
                     if not empty_fields_list:
                         update_empty_field(soup,empty_fields_list,etdid)
-                        
-                    final_pdf_path = final_pdf_dir(etdid)
-                    print(final_pdf_path)  
-                      
+                                    
+                    final_pdf_path = final_pdf_dir(etdid)                
+                    final_html_path = final_html_dir(etdid)    
                     exist_pdf_etdrepo = etdrepo_check(final_pdf_path,etdid)
+                    exist_html_etdrepo = etdrepo_check(final_html_path,etdid)
                     if not exist_pdf_etdrepo:
                         moveFileToProductionRepo(etdPath,etdid)                        
-                    
+                    if not exist_html_etdrepo:
+                        movehtml(xmlFilePath, etdid)
+                        
                     insert_haspdf_timestamp(final_pdf_path,etdid)
-                    
+                    insert_metadata_timestamp(final_html_path,etdid)
                     
                 else:   
                     etdid = insertETDs(soup) # DONE
@@ -633,29 +635,17 @@ def main():
                     insertPDFs(soup, etdid, etdPath, str(1001+i-1)) # Done
                     
                     #    Step 3: Shift the ETD to the production repo, rename & place file/folders based on ID
-                    
-                    print("etdpath",etdPath)                
+                            
                     moveFileToProductionRepo(etdPath, etdid) #Works
+                    movehtml(xmlFilePath, etdid)
                     final_pdf_path = final_pdf_dir(etdid)
                     insert_haspdf_timestamp(final_pdf_path,etdid)
-            
-        for item in _etdPath.glob('*.html'): # Return a list
-            htmlPath = item
-
-        # Extract and insert table
-            if os.path.exists(xmlFilePath):                
+                    
+                    final_html_path = final_html_dir(etdid)
+                    insert_metadata_timestamp(final_html_path,etdid)
                 
-                final_html_path = final_html_dir(etdid)
-                
-                #    Step 3: Shift the ETD to the production repo, rename & place file/folders based on ID
-                
-                print("path: ",htmlPath)
-                movehtml(htmlPath, etdid) #Works
-                insert_metadata_timestamp(final_html_path,etdid)
-                #break # Loop breaks after a run for now
-            else:
-                pass
-            
+       
+  
 
                 
 
