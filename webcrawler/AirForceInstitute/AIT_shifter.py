@@ -584,7 +584,7 @@ def main():
     #etddirs = handleSuddenStop(etddirs,'metadc278485') #TODO: Change here to handle sudden production stop   #metadc53494
 
     print("#ETDs:", len(etddirs))
-    # for i in range(992,len(etddirs)):
+
     for i in range(1,len(etddirs)):
         print('')
         print("Current ETD:", i)
