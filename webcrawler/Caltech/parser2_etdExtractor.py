@@ -173,7 +173,10 @@ if __name__ == '__main__':
     #TODO: get url.txt lines and make handle url
     url_directory = 'urls/'    
     #for urlfile in os.listdir(url_directory):
-    urlfile = 'urls00.txt' # TODO: Change filename here
+    # @Dennis
+    # urlfile = 'urls00.txt' # TODO: Change filename here
+    
+    urlfile = 'urls.txt' # TODO: Change filename here
     print_logs('URL-File Currently Handling: '+ urlfile)
     filepath = os.path.join(url_directory, urlfile) # Make relative path    
     text = open(filepath, 'r')
