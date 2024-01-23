@@ -15,19 +15,19 @@ import re
 import requests
 
 
-config = {
-    'user': 'uddin',
-    'password': 'TueJul271:56:04PM',
-    'host': 'hawking.cs.odu.edu',
-    'database': 'pates_etds'
-}
-
 # config = {
-#     'user': 'Dennis',
-#     'password': '1234',
-#     'host': 'localhost',  # or '127.0.0.1'
-#     'database': 'testdb' 
+#     'user': 'uddin',
+#     'password': 'TueJul271:56:04PM',
+#     'host': 'hawking.cs.odu.edu',
+#     'database': 'pates_etds'
 # }
+
+config = {
+    'user': 'Dennis',
+    'password': '1234',
+    'host': 'localhost',  # or '127.0.0.1'
+    'database': 'testdb' 
+}
 
 
 import time
@@ -206,7 +206,7 @@ def update_empty_field(soup,empty_list,etdid) :
 def extract_all_field(soup):
      # Title
     title = soup.find('div',{'id':'title'})
-    print("title: ",title)
+    # print("title: ",title)
     if title:
         #@Dennis title = title.find('p').get_text()
         if title.find('a'):        
@@ -217,13 +217,13 @@ def extract_all_field(soup):
             title = title.find('h1').get_text()
         else:
             title = 0
-        print("title: ",title)
+        # print("title: ",title)
 
     # Author
     author = soup.find('div',{'id':'authors'})
     if author is not None:
         author = author.find('p',{'class':'author'}).find('a').find('strong').get_text()
-        print("author: ",author)
+        # print("author: ",author)
         # if author.find(',') != 1:
         #     author = author.split(',')[:2]
         #     author = ",".join(author)
@@ -232,14 +232,14 @@ def extract_all_field(soup):
     advisor = soup.find('div',{'id':'advisor1'})
     if advisor is not None:
         advisor = advisor.find('p').get_text()
-        print("advisor: ",advisor)
+        # print("advisor: ",advisor)
    
     # print(advisor)
     # Abstract
     abstract = soup.find('div',{'id':'abstract'})
     if abstract is not None:
         abstract = abstract.find('p').get_text()
-        print("abstract: ", abstract)
+        # print("abstract: ", abstract)
     
     # Landing Page URL
     url = soup.find('div',{'id':'recommended_citation'})
@@ -253,7 +253,7 @@ def extract_all_field(soup):
         url_final = url_br.find_next_sibling(string = True)
         # print("url_final: ",url_final)
         url = url_final.strip()
-        print("url: ",url)
+        # print("url: ",url)
    
     # Year
     date = soup.find('div',{'id':'publication_date'})
@@ -361,13 +361,7 @@ def extract_all_field(soup):
 
 
 def insertETDs(soup):
-    """
-        Extract values first
-    """
-   
-    """
-        Database insertion for ETD table
-    """
+    
     # Setup Database connection
     db_connection = mysql.connector.connect(**config)
     # Insert values to database
@@ -403,7 +397,7 @@ def insertETDs(soup):
 
     return etdId
 
-def insertPDFs(soup, etdid, etdPath, etd_number):
+def insertPDFs(soup, etdid, etdPath):
     # Get the url from XML
     if (soup.find('div',{'id':'beta_7-3'})== None):
        anchortag = None
@@ -421,7 +415,7 @@ def insertPDFs(soup, etdid, etdPath, etd_number):
         else:
             hrefValue = anchortag.find('a')['href']
     urlInitials = hrefValue
-    print("urlIn: ", urlInitials)
+    # print("urlIn: ", urlInitials)
     # url = soup.find('dim:field',{'qualifier':'uri'})
     # url = url.get_text()
     # identityNumber1 = url.split('/')[-2]
@@ -538,7 +532,7 @@ def moveFileToProductionRepo(etdPath, dbETDId):
     if not os.path.isdir(etdFinalProdDir):
         os.makedirs(etdFinalProdDir) 
     
-    if etdPath is not None:
+    if etdPath is not None and os.path.exists(etdPath):
         copyfile(etdPath, etdProduction)
    
        
@@ -603,8 +597,7 @@ def main():
             soup = BeautifulSoup(xmlfile, 'lxml')
             
             # @Dennis if the pdf doesn't exist, the html usually is different with others, so pass it.
-            if os.path.exists(etdPath):
-                             
+            if etdPath and os.path.exists(etdPath):
                 is_exist = exists_in_etds(soup) #is_exist will be 0 or the etdid
                 print('is_exist: ',is_exist)
                 if is_exist:
@@ -614,14 +607,19 @@ def main():
                     empty_fields_list = empty_fields(soup,etdid)
                     print('empty_fields: ',empty_fields_list)
                     # update the empty field
-                    if not empty_fields_list:
+                    if empty_fields_list:
+                        print("Prepare updating empty fields")
                         update_empty_field(soup,empty_fields_list,etdid)
                                     
                     final_pdf_path = final_pdf_dir(etdid)                
                     final_html_path = final_html_dir(etdid)    
                     exist_pdf_etdrepo = etdrepo_check(final_pdf_path,etdid)
                     exist_html_etdrepo = etdrepo_check(final_html_path,etdid)
-                    if not exist_pdf_etdrepo:
+                    # print("final_pdf_path: ", final_pdf_path)
+                    # print("final_html_path: ", final_html_path)
+                    # print("exist_pdf_etdrepo: ",exist_pdf_etdrepo)
+                    # print("exist_html_etdrepo: ",exist_html_etdrepo)
+                    if not exist_pdf_etdrepo and etdPath:
                         moveFileToProductionRepo(etdPath,etdid)                        
                     if not exist_html_etdrepo:
                         movehtml(xmlFilePath, etdid)
@@ -632,24 +630,18 @@ def main():
                 else:   
                     etdid = insertETDs(soup) # DONE
                     # insertSubjects(soup, etdid) # DONE
-                    insertPDFs(soup, etdid, etdPath, str(1001+i-1)) # Done
-                    
+                    if etdPath:
+                        insertPDFs(soup, etdid, etdPath) # Done
+                        moveFileToProductionRepo(etdPath, etdid) #Works
                     #    Step 3: Shift the ETD to the production repo, rename & place file/folders based on ID
-                            
-                    moveFileToProductionRepo(etdPath, etdid) #Works
+                    
                     movehtml(xmlFilePath, etdid)
                     final_pdf_path = final_pdf_dir(etdid)
                     insert_haspdf_timestamp(final_pdf_path,etdid)
                     
                     final_html_path = final_html_dir(etdid)
                     insert_metadata_timestamp(final_html_path,etdid)
-                
-       
-  
-
-                
-
-
+   
 
 if __name__ == '__main__':
     main()
