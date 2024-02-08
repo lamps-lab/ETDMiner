@@ -27,12 +27,9 @@ config = {
     'database': 'testdb' 
 }
 
-
 import time
 import ssl
 from socket import timeout
-import requests
-from urllib.parse import urljoin
 # Bypassing SSL verification check
 ctx = ssl.create_default_context()
 ctx.check_hostname = False
@@ -104,188 +101,97 @@ def insertSubjects(soup, etdid):
             mycursor.close()
             db_connection.close()
 
-
-# @Dennis check if it has license.txt / no_license.txt
-def check_license_txt(cur_path):
-    license_path = os.path.join(cur_path,'license.txt')
-    if os.path.exists(license_path):
-        return True 
-    
-    no_license_path = os.path.join(cur_path,'no_license.txt')
-    if os.path.exists(no_license_path):
-        return True   
-    
-    return False
-
-# @Dennis create a new funciton to extract copyright from the uri, and go to full page, find the lience.txt, download it
-def download_copyright(m_soup,cur_path):
-    if not check_license_txt(cur_path) :    
-        url = m_soup.find('dim:field',{'qualifier':'uri'})
-        if url is not None:
-            url = url.get_text()
-        
-        time.sleep(30)
-        response = requests.get(url)
-        if response.status_code == 200:
-            # Parse HTML content
-            soup = BeautifulSoup(response.text, 'html.parser')
-            # Find the download link
-            full_uri = soup.find('a', {'class': 'btn btn-outline-primary', 'href': True})
-            if full_uri:
-                full_uri_href = full_uri['href']
-                full_uri = "https://cardinalscholar.bsu.edu/" + full_uri_href
-                print("full_uri: ",full_uri)
-                response = requests.get(full_uri)
-                # Check if the request was successful (status code 200)    
-                if response.status_code == 200:
-                    # Parse HTML content
-                    soup = BeautifulSoup(response.text, 'html.parser')
-
-                    # Find the download link
-                    download_link = soup.find('a', {'class': 'dont-break-out', 'href': True})
-                    
-                    if download_link:
-                        current_download_url = download_link['href']
-                        print("current_download_url: ", current_download_url)
-                        
-                        new_download_link = current_download_url.replace("/download", "/content")
-                        print("new_download_link: ", new_download_link)
-                        
-                        # Get the full download URL
-                        full_download_url = "https://cardinalscholar.bsu.edu/server/api/core"+ new_download_link
-                        print("full_download_url: ", full_download_url)
-
-                        # Download the content
-                        download_response = requests.get(full_download_url)
-
-                        # Check if the download request was successful
-                        if download_response.status_code == 200:
-                            # Save the content to a file (assuming it's a text file)
-                            with open(cur_path /'license.txt', 'wb') as file:
-                                file.write(download_response.content)
-                            print("license.txt downloaded successfully.")
-                        else:
-                            print(f"Failed to download license.txt code: {download_response.status_code}")
-                            with open(cur_path /'no_license.txt', 'wb') as file:
-                                file.write("0")
-                            
-                    else:
-                        print("Download link not found on the page.")
-                        with open(cur_path /'no_license.txt', 'wb') as file:
-                            file.write("0")
-            else:
-                print(f"1 Failed to retrieve content from {full_uri}. Status code: {response.status_code}")
-                with open(cur_path /'no_license.txt', 'wb') as file:
-                    file.write("0")
-        elif response.status_code == 429:
-            print(f"2 Failed to retrieve content from {url}. Status code: {response.status_code}")
-            
-
 # @Dennis create a new function extract_all_field, used to extract all field from matadata, and return a JSON.
-def extract_all_field(soup,cur_path):
+def extract_all_field(soup):
     # Title
-    title = soup.find('dim:field',{'element':'title'})
+    title = soup.find('meta',{'name':'DC.title'})
     if title is not None:
-        title = title.get_text()
+        title = title['content'].strip()
+    # print("title: ",title)
 
     # Author @Dennis
-    author_list = []
-    author_elelments = soup.find_all('dim:field',{'qualifier':'author'})
-    if not author_elelments:
-        author = None
-    else:
-        for element in author_elelments:
-            element_str = element.get_text()
-            author_list.append(element_str)
-        author = "; ".join(author_list)
+    author = soup.find('meta',{'name':'DC.creator'})
+    if author is not None:
+        author = author['content'].strip()
     # print("author: ",author)
 
     # Advisor @Dennis
     advisor_list = []
-    advisor_elelments = soup.find_all('dim:field',{'qualifier':'advisor'})
-    if not advisor_elelments:
-        advisor = None
-    else:
-        for element in advisor_elelments:
-            element_str = element.get_text()
-            advisor_list.append(element_str)
-        advisor = "; ".join(advisor_list)
+    advisor_elelments = soup.find_all('meta',{'name':'eprints.thesis_advisor_name'})
+    for element in advisor_elelments:
+        element_str = element['content'].strip()
+        advisor_list.append(element_str)
+    advisor = "; ".join(advisor_list)
     # print("advisor: ",advisor)
 
     # Abstract
-    abstract = soup.find('dim:field',{'qualifier':'abstract'})
+    abstract = soup.find('meta',{'name':'DC.description'})
     if abstract is not None:
-        abstract = abstract.get_text()
+        abstract = abstract['content'].strip()
 
     # Landing Page URL
-    url = soup.find('dim:field',{'qualifier':'uri'})
+    url = soup.find('meta',{'name':'eprints.official_url'})
     if url is not None:
-        url = url.get_text()
-    print("url: ",url)
+        url = url['content'].strip()
 
     # Year
-    date = soup.find('dim:field',{'qualifier':'issued', 'element':'date'})
+    date = soup.find('meta',{'name':'DC.date'})
     if date is not None:
-        date = date.get_text()
-        if date.find('-'):
-            date = date.split('-')[0]
+        date = date['content'].strip()       
 
     # University
-    university = soup.find('dim:field',{'qualifier':'grantor'})
+    university = soup.find('meta',{'name':'eprints.institution'})
     if university is not None:
-        university = university.get_text()
+        university = university['content'].strip()
     if university is None:
-        university = "Ball State University"
+        university = "California Institute of Technology"
 
-    # Degree  @Dennis use element="type"
-    degree = soup.find('dim:field',{'element':'type'})
+    # Degree
+    degree = soup.find('meta',{'name':'eprints.thesis_degree'})
     if degree is not None:
-        degree = degree.get_text()
-    # @Dennis use qualifier':'degree', 'element':'description'}
-    # degree = soup.find('dim:field',{'qualifier':'degree', 'element':'description'})
-    # if degree is not None:
-    #     degree = degree.get_text()
+        degree = degree['content'].strip()
     
 
 
-     # Language
-    language = soup.find('dim:field',{'qualifier':'iso', 'element':'language'})
+    # Language
+    language = soup.find('meta',{'name':"DC.language"})
     if language is not None:
-        language = language.get_text()
-    
+        language = language['content'].strip()
 
     # Department
-    department = soup.find('dim:field',{'qualifier':'sponsorship', 'element':'description'})
-    if department is not None:
-        department = department.get_text()
+    department = None
 
     # Discipline
-    discipline = soup.find('dim:field',{'qualifier':'discipline', 'element':'degree'})
-    if discipline is not None:
-        discipline = discipline.get_text()
+    discipline = None
         
         
-    # CopyRight link @Dennis    if has license.txt, read it to the copyright;  
-    copyright = None
-    license_path = cur_path / "license.txt"
-    if  os.path.exists(license_path) :
-        with open(license_path, "r", encoding="utf-8") as file:
-            copyright = file.read()
-            # print("Contents of license.txt:", copyright)
-    else:
-        print("The file license.txt does not exist.") 
-            
+    # CopyRight link @Dennis  
+    copyright = ""
+    copyright_rights = soup.find('meta',{'name':"eprints.rights"})
+    copyright_statement = soup.find('meta',{'name':"eprints.copyright_statement"})
+    
+    if copyright_rights is not None:
+        copyright_rights = copyright_rights['content'].strip()
+        copyright = copyright_rights + '\n'
+        
+    if copyright_statement is not None:
+        copyright_statement = copyright_statement['content'].strip()
+        copyright += copyright_statement    
+    
+    if copyright == "":
+        copyright = None    
+    # print("copyright: ",copyright)
+        
+        
     # identifier @Dennis
-    pri_identifier = soup.find('dim:field',{'qualifier':'uri', 'element':'identifier'})
+    pri_identifier = soup.find('meta',{'name':'eprints.id_number'})
     if pri_identifier is not None:
-        pri_identifier = pri_identifier.get_text()
-    print("pri_identifier: ", pri_identifier)   
+        pri_identifier = pri_identifier['content'].strip()
     
-    second_identifier = soup.find('dim:field',{'element':'identifier'})
+    second_identifier = soup.find('meta',{'name':'eprints.official_url'})
     if second_identifier is not None:
-        second_identifier = second_identifier.get_text()
-    print("second_identifier: ", second_identifier)   
-    
+        second_identifier = second_identifier['content'].strip()
+      
         
     data = {
         'title': title,
@@ -301,15 +207,15 @@ def extract_all_field(soup,cur_path):
         'discipline': discipline,        
         'copyright': copyright,
         'pri_identifier': pri_identifier,
-        'second_identifier': None,        
+        'second_identifier':second_identifier,        
     }
     
     # print("data: ",data)
     return data   
 
 # @Dennis create a new funciton to check if the record exists in the database
-def exists_in_etds(soup,cur_path):
-    data = extract_all_field(soup,cur_path)
+def exists_in_etds(soup):
+    data = extract_all_field(soup)
     title = data.get('title')
     pri_identifier = data.get('pri_identifier')
     # second_identifier = data.get('second_identifier')
@@ -351,7 +257,7 @@ def exists_in_etds(soup,cur_path):
 # @Dennis create a new funciton used to check if this record has any empty field
 def empty_fields(soup,etdid):
     required_fields = [
-        'title', 'author', 'advisor', 'year', 'university', 'URI', 'department', 'degree', 'discipline', 'language', 'abstract', 'copyright', 'pri_identifier', 'haspdf', 'timestamp_metadata','timestamp_pdf'
+        'title', 'author', 'advisor', 'year', 'university', 'URI', 'department', 'degree', 'discipline', 'language', 'abstract', 'copyright', 'pri_identifier', 'second_identifier','haspdf', 'timestamp_metadata','timestamp_pdf'
     ]
     
     empty_fields = []
@@ -373,8 +279,8 @@ def empty_fields(soup,etdid):
     return empty_fields
     
 # @Dennis  create a new function used to update the empty field
-def update_empty_field(soup,empty_list,etdid,cur_path) :
-    data = extract_all_field(soup,cur_path)
+def update_empty_field(soup,empty_list,etdid) :
+    data = extract_all_field(soup)
     db_connection = mysql.connector.connect(**config)
     mycursor = db_connection.cursor()
     print("start update empty feild")
@@ -386,23 +292,20 @@ def update_empty_field(soup,empty_list,etdid,cur_path) :
             params = (value,)
             mycursor.execute(query, params)
             db_connection.commit()
-            print(f"updated the field {field}")
+            print(f"updated the field {field}: {value}")
     mycursor.close()
     db_connection.close()     
     
 
 
-def insertETDs(soup,cur_path):
-   
-    """
-        Database insertion for ETD table
-    """
+def insertETDs(soup):
+    
     # Setup Database connection
     db_connection = mysql.connector.connect(**config)
 
     # Insert values to database
     mycursor = db_connection.cursor()
-    data = extract_all_field(soup,cur_path)
+    data = extract_all_field(soup)
     oads_flag = 0
     sql = "INSERT INTO etds (title, author, advisor, year, university, URI, department, degree, discipline, language, abstract, oadsclassifier, copyright, pri_identifier, second_identifier) VALUES (%s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s,%s, %s, %s)"
     val = (
@@ -433,9 +336,9 @@ def insertETDs(soup,cur_path):
 
 def insertPDFs(soup, etdid, etdPath):
     # Get the url from XML
-    urlInitials = 'https://thescholarship.ecu.edu/bitstream/handle/'
-    url = soup.find('dim:field',{'qualifier':'uri'})
-    url = url.get_text()
+    urlInitials = 'https://etd.auburn.edu/bitstream/handle/'
+    url = soup.find('meta',{'name':'eprints.official_url'})
+    url = url['content'].strip()
     identityNumber1 = url.split('/')[-2]
     identityNumber2 = url.split('/')[-1]
 
@@ -462,6 +365,7 @@ def insertPDFs(soup, etdid, etdPath):
     mycursor.close()
     db_connection.close()
 
+# @Dennis create a final_pdf_dir function, used to return a  final directory
 def final_pdf_dir(etdid):
     prodDir = os.path.join('../../', 'etdrepo')
     firstLevelDir = firstLevelDirCalculation(etdid)
@@ -567,12 +471,12 @@ def movehtml(htmlpath, dbETDId):
  
     if not os.path.isdir(etdFinalProdDir):
         os.makedirs(etdFinalProdDir) 
-    
+        
     if htmlpath is not None:
         copyfile(htmlpath, etdProduction)
-
+        
 """
-    This method finds where the code stoped and helps to resume from these
+    This method finds where the code stopped and helps to resume from these
 """
 def handleSuddenStop(etddirs, stoppedDir):
     n = 0
@@ -591,28 +495,22 @@ def main():
     Step 3: Populate 3 tables
     Step 4: Shift files to production repo 
     """
-    # harvestDirectory = 'harvest/10342'
-    # @Dennis
-    harvestDirectory = 'harvest/20.500.14291'
+    harvestDirectory = 'etds'
     print(harvestDirectory)
     etddirs = os.listdir(harvestDirectory)
     #etddirs = handleSuddenStop(etddirs,'metadc278485') #TODO: Change here to handle sudden production stop   #metadc53494
 
     print("#ETDs:", len(etddirs))
     for etddir in etddirs:
+        
         print('')
         print("Current ETD:", etddir)
         
-        xmlFilePath = os.path.join(harvestDirectory+'/'+etddir,etddir+'.xml')
-        
-        
+        xmlFilePath = os.path.join(harvestDirectory+'/'+etddir,etddir+'.html')
 
         # Get the pdf. Can be with any name
         etdPath = None
         _etdPath = Path(harvestDirectory+'/'+etddir)
-        
-        
-        
         for item in _etdPath.glob('*.pdf'): # Return a list
             etdPath = item
             print("etdPath: ",etdPath)
@@ -620,10 +518,12 @@ def main():
         # Extract and insert table
         if os.path.exists(xmlFilePath):
             xmlfile = open(xmlFilePath, "r")
-            soup = BeautifulSoup(xmlfile, 'lxml')
-            # @Dennis download license.txt first
-            download_copyright(soup,_etdPath)
-            is_exist = exists_in_etds(soup,_etdPath) #is_exist will be 0 or the etdid
+            soup = BeautifulSoup(xmlfile, 'lxml')            
+            
+            # @Dennis if the pdf doesn't exist, the html usually is different with others, so pass it.
+            # if etdPath and os.path.exists(etdPath):
+                             
+            is_exist = exists_in_etds(soup) #is_exist will be 0 or the etdid
             print('is_exist: ',is_exist)
             if is_exist:
                 etdid = is_exist
@@ -634,16 +534,16 @@ def main():
                 # update the empty field
                 if empty_fields_list:
                     print("Prepare updating empty fields")
-                    update_empty_field(soup,empty_fields_list,etdid,_etdPath)
+                    update_empty_field(soup,empty_fields_list,etdid)
                                 
                 final_pdf_path = final_pdf_dir(etdid)                
                 final_html_path = final_html_dir(etdid)    
                 exist_pdf_etdrepo = etdrepo_check(final_pdf_path,etdid)
                 exist_html_etdrepo = etdrepo_check(final_html_path,etdid)
-                # print("final_pdf_path: ", final_pdf_path)
-                # print("final_html_path: ", final_html_path)
-                # print("exist_pdf_etdrepo: ",exist_pdf_etdrepo)
-                # print("exist_html_etdrepo: ",exist_html_etdrepo)
+                print("final_pdf_path: ", final_pdf_path)
+                print("final_html_path: ", final_html_path)
+                print("exist_pdf_etdrepo: ",exist_pdf_etdrepo)
+                print("exist_html_etdrepo: ",exist_html_etdrepo)
                 if not exist_pdf_etdrepo and etdPath:
                     moveFileToProductionRepo(etdPath,etdid)                        
                 if not exist_html_etdrepo:
@@ -653,7 +553,7 @@ def main():
                 insert_metadata_timestamp(final_html_path,etdid)
                 
             else:   
-                etdid = insertETDs(soup,_etdPath) # DONE
+                etdid = insertETDs(soup) # DONE
                 # insertSubjects(soup, etdid) # DONE
                 if etdPath:
                     insertPDFs(soup, etdid, etdPath) # Done
@@ -666,11 +566,7 @@ def main():
                 
                 final_html_path = final_html_dir(etdid)
                 insert_metadata_timestamp(final_html_path,etdid)
-            
-          
-                
-           
-            
+        
 
 if __name__ == '__main__':
     main()

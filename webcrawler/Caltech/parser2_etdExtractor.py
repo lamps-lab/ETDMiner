@@ -182,11 +182,19 @@ if __name__ == '__main__':
     text = open(filepath, 'r')
     data = text.readlines()        
     #print(len(data))
-    for line in range(len(data[0:9])):
+    for line in range(len(data)):
+        
+        
+        
         link = data[line].strip().split('\n') # remove '\n' from the url on each line    
-        print(link)            
-        extractContents(link[0]) # This will bring up landing page (if exists)
-            
+        print(link)      
+        
+        item_Id = link[0].split("/")[-1]
+        directory = 'etds/'+ item_Id + '/'
+        if not os.path.exists(directory):       
+            extractContents(link[0]) # This will bring up landing page (if exists)
+        else:
+            print("pass", item_Id)    
     # print(os.listdir(url_directory)[0])
     """    
         Test Intances:

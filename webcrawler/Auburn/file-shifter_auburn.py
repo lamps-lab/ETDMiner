@@ -151,7 +151,7 @@ def extract_all_field(soup):
         university = "Auburn University"
 
     # Degree
-    degree = soup.find('dim:field',{'qualifier':'name', 'element':'degree'})
+    degree = soup.find('dim:field',{'element':'type'})
     if degree is not None:
         degree = degree.get_text()
     if degree is None:
@@ -161,11 +161,12 @@ def extract_all_field(soup):
 
 
     # Language
-    language = "en"
-    
+    language = soup.find('dim:field',{'element':"language", "qualifier":"iso"})
+    if language is not None:
+        language = language.get_text()
 
     # Department
-    department = soup.find('dim:field',{'qualifier':'department', 'element':'description'})
+    department = soup.find('dim:field',{'qualifier':'department'})
     if department is not None:
         department = department.get_text()
 
@@ -177,6 +178,11 @@ def extract_all_field(soup):
         
     # CopyRight link @Dennis       
     copyright_list = []
+    # @Dennis element="right"
+    copyright_right = soup.find('dim:field',{'element':'rights'})
+    if copyright_right:
+        copyright_list.append(copyright_right.get_text())
+    # @Dennis element="embargo"
     copyright_elelments = soup.find_all('dim:field',{'element':'embargo'})
     for element in copyright_elelments:
         element_str = element.get_text()
@@ -186,11 +192,14 @@ def extract_all_field(soup):
         
         
     # identifier @Dennis
-    pri_identifier = soup.find('dim:field',{'qualifier':'uri', 'element':'identifier'})
+    pri_identifier = soup.find('dim:field',{'qualifier':'uri'})
     if pri_identifier is not None:
         pri_identifier = pri_identifier.get_text()
-    # print("pri_identifier: ", pri_identifier)   
     
+    second_identifier = soup.find('dim:field',{'qualifier':'orcid'})
+    if second_identifier is not None:
+        second_identifier = second_identifier.get_text()
+      
         
     data = {
         'title': title,
@@ -206,7 +215,7 @@ def extract_all_field(soup):
         'discipline': discipline,        
         'copyright': copyright,
         'pri_identifier': pri_identifier,
-        'second_identifier': None,        
+        'second_identifier':second_identifier,        
     }
     
     # print("data: ",data)
@@ -256,7 +265,7 @@ def exists_in_etds(soup):
 # @Dennis create a new funciton used to check if this record has any empty field
 def empty_fields(soup,etdid):
     required_fields = [
-        'title', 'author', 'advisor', 'year', 'university', 'URI', 'department', 'degree', 'discipline', 'language', 'abstract', 'copyright', 'pri_identifier', 'haspdf', 'timestamp_metadata','timestamp_pdf'
+        'title', 'author', 'advisor', 'year', 'university', 'URI', 'department', 'degree', 'discipline', 'language', 'abstract', 'copyright', 'pri_identifier', 'second_identifier','haspdf', 'timestamp_metadata','timestamp_pdf'
     ]
     
     empty_fields = []

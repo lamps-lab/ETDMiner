@@ -28,9 +28,11 @@ from sickle import Sickle
 # In[2]:http://d-scholarship.pitt.edu/cgi/oai2
 
 
-sickle = Sickle('https://dukespace.lib.duke.edu/oai/request')
-records = sickle.ListRecords(metadataPrefix='dim', set='com_10161_1')
+sickle = Sickle('https://dukespace.lib.duke.edu/server/oai/request')
+records_1 = sickle.ListRecords(metadataPrefix='dim', set='col_10161_4')
+records_2 = sickle.ListRecords(metadataPrefix='dim', set='col_10161_2493')
 
+records = list(records_1) + list(records_2)
 
 # Before starting, make sure to check the server's robots.txt file and obey all restrictions and limits. If the ```crawl-delay``` directive is set, copy the value to a local variable. 
 
@@ -61,12 +63,21 @@ from socket import timeout
 """
 def getPDFdownloadUrl(soup):
     hrefValue = None
-    findClass = soup.find('div', {'class':'item-page-field-wrapper table word-break'})
+    # findClass = soup.find('div', {'class':'item-page-field-wrapper table'})
+    
+    # @Dennis update new findClass
+    findClass = soup.find('div', {'class':'file-section'})
+    
     if findClass:
         anchortag = findClass.find('a')
         if anchortag:
             hrefValue = anchortag['href']
-            hrefValue = "https://dukespace.lib.duke.edu/" + hrefValue
+            # hrefValue = "https://ecommons.cornell.edu" + hrefValue
+            
+            # @Dennis replace download to content
+            modified_url = hrefValue.replace("download", "content")
+            # @Dennis new hrefValue
+            hrefValue = "https://dukespace.lib.duke.edu/server/api/core" + modified_url
             # Check if there is download permission
             if 'isAllowed=n' in hrefValue:
                 hrefValue = None
@@ -78,7 +89,8 @@ def getPDFdownloadUrl(soup):
 """
 def isPDFDownloadUrlWorkable(soup):
     downloadableUrl = getPDFdownloadUrl(soup)
-
+    # print('downloadableUrl: ',downloadableUrl)
+    # print("who's false? if this show,  error happend below")
     if downloadableUrl is None: # Special Case: PDF link is not available at all
         return False
     
@@ -117,6 +129,8 @@ def download_file_stream(url, path, crawl_delay=0, allow_redirects=True):
         crawl_delay    : How long to delay before downloading 
         allow_redirects: (boolean) Allow redirects or not
     """
+    # print("starting download_file_stream")
+    
     time.sleep(crawl_delay)
 
     filename = ''
@@ -138,11 +152,17 @@ def download_file_stream(url, path, crawl_delay=0, allow_redirects=True):
         isWorkable = False
             
     if(isWorkable):
+        # print("isWorkable")
+        
         response = response.read()
+        
         soup = bs4.BeautifulSoup(response, "html.parser")
+        # print("made soup")
+        
 
         #If PDF not allowed of available, just take the XML
         if isPDFDownloadUrlWorkable(soup):
+            # print("isPDFDownloadUrlWorkable")
 
             # get the filename -- this might not always work
             downloadableUrl = getPDFdownloadUrl(soup)

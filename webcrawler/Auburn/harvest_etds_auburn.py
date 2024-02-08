@@ -33,9 +33,9 @@ records = sickle.ListRecords(metadataPrefix='dim', set='col_10415_2')
 # Before starting, make sure to check the server's robots.txt file and obey all restrictions and limits. If the ```crawl-delay``` directive is set, copy the value to a local variable. 
 
 
-crawl_delay = 0
-
-
+# crawl_delay = 0
+# @Dennis HTTPError: 429 Client Error: Too Many Requests, so set a delay
+crawl_delay = 5
 # Convenience function for downloading files:
 
 
