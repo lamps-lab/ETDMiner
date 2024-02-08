@@ -28,8 +28,10 @@ from sickle import Sickle
 # In[2]:http://d-scholarship.pitt.edu/cgi/oai2
 
 
-sickle = Sickle('https://open.bu.edu/oai/request?')
+sickle = Sickle('https://open.bu.edu/oai/request')
+
 records = sickle.ListRecords(metadataPrefix='dim', set='com_2144_898')
+
 
 
 # Before starting, make sure to check the server's robots.txt file and obey all restrictions and limits. If the ```crawl-delay``` directive is set, copy the value to a local variable. 

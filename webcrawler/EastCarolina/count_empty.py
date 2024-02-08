@@ -34,7 +34,7 @@ def count_empty_fields(column_name):
     mycursor = db_connection.cursor(dictionary=True)
 
     # Assuming 'etds' is the table name
-    query = f"SELECT COUNT(*) as count FROM etds WHERE {column_name} IS NULL AND university = 'Air Force Institute of Technology'"
+    query = f"SELECT COUNT(*) as count FROM etds WHERE {column_name} IS NULL AND university = 'East Carolina University'"
     mycursor.execute(query)
     result = mycursor.fetchone()
 
@@ -57,7 +57,7 @@ def count_total():
     
     db_connection = mysql.connector.connect(**config)
     mycursor = db_connection.cursor(dictionary=True)
-    query = f"SELECT COUNT(*) as count FROM etds WHERE university = 'Air Force Institute of Technology' "
+    query = f"SELECT COUNT(*) as count FROM etds WHERE university = 'East Carolina University' "
     mycursor.execute(query)
     result = mycursor.fetchone()
     print("Total count: ", result['count'])
@@ -68,7 +68,7 @@ def count_total():
 def count_has_no_pdf():
     db_connection = mysql.connector.connect(**config)
     mycursor = db_connection.cursor(dictionary=True)
-    query = f"SELECT COUNT(*) as count FROM etds WHERE haspdf = 0 AND university = 'Air Force Institute of Technology'"
+    query = f"SELECT COUNT(*) as count FROM etds WHERE haspdf = 0 AND university = 'East Carolina University'"
     mycursor.execute(query)
     result = mycursor.fetchone()
     print("Has no pdf: ", result['count'])
@@ -80,6 +80,4 @@ def count_has_no_pdf():
 check_empty_fields()
 count_has_no_pdf()
 count_total()
-
-
 

@@ -289,12 +289,17 @@ if __name__ == '__main__':
 
     #TODO: get url.txt lines and make handle url 
     #for urlfile in os.listdir(url_directory):
-    #@Dennis for j in range(3416,5431):
-    for j in range(1,6298):
+    for j in range(4469,5431):
+    # for j in range(265,266):
         url = base+str(j)+'/'
         
-        extractContents(url, str(j))
-        print('ETD number:', j)
+        # @Dennis if directory_new already exists, pass, do not re-download
+        directory_new = 'AIT_ETDs/'+ str(j) + '/'
+        if not os.path.exists(directory_new):
+            extractContents(url, str(j))
+            print('ETD number:', j)
+        else:
+            print(j,"pass")
     print("NOT Found ETDs: ", not_found)
        
             

@@ -29,7 +29,9 @@ from sickle import Sickle
 
 
 sickle = Sickle('http://cardinalscholar.bsu.edu/oai/request')
-records = sickle.ListRecords(metadataPrefix='dim', set='com_123456789_7')
+
+#@Dennis records = sickle.ListRecords(metadataPrefix='dim', set='com_123456789_7')
+records = sickle.ListRecords(metadataPrefix='dim', set='com_20.500.14291_7')
 
 
 # Before starting, make sure to check the server's robots.txt file and obey all restrictions and limits. If the ```crawl-delay``` directive is set, copy the value to a local variable. 
@@ -156,6 +158,9 @@ def download_file_stream(url, path, crawl_delay, allow_redirects=True):
             filename = filename + '.pdf' # Removing and adding just to be safe
             with open(path / filename, 'wb') as f:
                 f.write(response.read())
+        #@Dennis add a else to print PDF download url is not workable
+        else:
+            print("PDF download url is not workable")
 
     return (path / filename)
 
@@ -178,6 +183,7 @@ for record in records:
     identifier = identifiers[0].text
     identifier = identifier.split(':')[-1]
     pathname = identifier
+    print("pathname: ",pathname)
 
     p = Path('harvest') / pathname
     p = p.resolve()

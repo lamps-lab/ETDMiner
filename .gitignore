@@ -1,5 +1,8 @@
-**/.DS_Store
-**/.csv
-**/.zip
-**/.AIT_ETDs
-**/.etdrepo
+.DS_Store
+*.csv
+*.zip
+AIT_ETDs/
+etdrepo/
+harvest/
+etds/
+EMU_ETDs/

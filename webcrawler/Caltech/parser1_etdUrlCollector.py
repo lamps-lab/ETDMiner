@@ -24,7 +24,14 @@ if __name__ == '__main__':
     soup = make_soup(xml)
     etdLocations = get_xml_urls(soup)        
     print(len(etdLocations))    
-    with open("urls/urls01.txt", "w") as urls_file:
-        for url in etdLocations[5001:]: # 00 => 0-5000 ; 01 => 5001-rest
+    # @Dennis
+    # with open("urls/urls01.txt", "w") as urls_file:
+    #     for url in etdLocations[5001:]: # 00 => 0-5000 ; 01 => 5001-rest
+    #         print(url)
+    #         urls_file.write(url+ '\n')  
+    
+
+    with open("urls/urls.txt", "w") as urls_file:
+        for url in etdLocations: 
             print(url)
             urls_file.write(url+ '\n')  

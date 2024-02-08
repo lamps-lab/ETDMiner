@@ -28,13 +28,14 @@ from sickle import Sickle
 sickle = Sickle('https://etd.auburn.edu/oai/request')
 records = sickle.ListRecords(metadataPrefix='dim', set='col_10415_2')
 
-
+# for record in records:
+#     print(record)
 # Before starting, make sure to check the server's robots.txt file and obey all restrictions and limits. If the ```crawl-delay``` directive is set, copy the value to a local variable. 
 
 
-crawl_delay = 0
-
-
+# crawl_delay = 0
+# @Dennis HTTPError: 429 Client Error: Too Many Requests, so set a delay
+crawl_delay = 5
 # Convenience function for downloading files:
 
 
@@ -178,9 +179,13 @@ for record in records:
 
     # get the identifier and make dirs 
     identifiers = tree.xpath('//oai:identifier', namespaces={'oai': 'http://www.openarchives.org/OAI/2.0/'})
+    # print("identifiers: ",identifiers)
     identifier = identifiers[0].text
+    # print("first identifier: ",identifier)
     identifier = identifier.split(':')[-1]
+    # print("2nd identifier: ",identifier)
     pathname = identifier
+    # print("pathname: ",identifier)
 
     p = Path('harvest') / pathname
     p = p.resolve()

@@ -25,8 +25,9 @@ from sickle import Sickle
 # ```metadataPrefix=mets``` -- list the records in METS XML format (this is better than `oai-dc` but not all repositories support METS.  
 # ```set=item_type_8``` -- on this particular repository, this is the `set` containing ETDs
 
-
-sickle = Sickle('https://ecommons.cornell.edu/oai/request')
+# sickle = Sickle('https://ecommons.cornell.edu/oai/request')
+# @Dennis new oai feed:
+sickle = Sickle('https://ecommons.cornell.edu/server/oai/request')
 records = sickle.ListRecords(metadataPrefix='dim', set='col_1813_47')
 
 
@@ -59,12 +60,21 @@ from socket import timeout
 """
 def getPDFdownloadUrl(soup):
     hrefValue = None
-    findClass = soup.find('div', {'class':'item-page-field-wrapper table'})
+    # findClass = soup.find('div', {'class':'item-page-field-wrapper table'})
+    
+    # @Dennis update new findClass
+    findClass = soup.find('div', {'class':'file-section'})
+    
     if findClass:
         anchortag = findClass.find('a')
         if anchortag:
             hrefValue = anchortag['href']
-            hrefValue = "https://ecommons.cornell.edu" + hrefValue
+            # hrefValue = "https://ecommons.cornell.edu" + hrefValue
+            
+            # @Dennis replace download to content
+            modified_url = hrefValue.replace("download", "content")
+            # @Dennis new hrefValue
+            hrefValue = "https://ecommons.cornell.edu/server/api/core" + modified_url
             # Check if there is download permission
             if 'isAllowed=n' in hrefValue:
                 hrefValue = None
