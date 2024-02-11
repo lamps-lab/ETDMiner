@@ -445,7 +445,7 @@ def insertPDFs(soup, etdid, etdPath):
     
 # @Dennis create a final_pdf_dir function, used to return a  final directory
 def final_pdf_dir(etdid):
-    prodDir = os.path.join('../', 'etdrepo')
+    prodDir = os.path.join('../../', 'etdrepo')
     firstLevelDir = firstLevelDirCalculation(etdid)
     secondLevelDir = secondLevelDirCalculation(etdid)
 
@@ -455,7 +455,7 @@ def final_pdf_dir(etdid):
 
 # @Dennis create a final_html_dir(etdid) function, used to return a  final directory
 def final_html_dir(etdid):
-    prodDir = os.path.join('../', 'etdrepo')
+    prodDir = os.path.join('../../', 'etdrepo')
     firstLevelDir = firstLevelDirCalculation(etdid)
     secondLevelDir = secondLevelDirCalculation(etdid)
 
@@ -522,7 +522,7 @@ def etdrepo_check(final_dir,etdid):
         return None
 
 def moveFileToProductionRepo(etdPath, dbETDId):      
-    prodDir = os.path.join('../', 'etdrepo')     
+    prodDir = os.path.join('../../', 'etdrepo')     
     firstLevelDir = firstLevelDirCalculation(dbETDId)
     secondLevelDir = secondLevelDirCalculation(dbETDId)
 
@@ -537,7 +537,7 @@ def moveFileToProductionRepo(etdPath, dbETDId):
    
        
 def movehtml(htmlpath, dbETDId):
-    prodDir = os.path.join('../', 'etdrepo')     
+    prodDir = os.path.join('../../', 'etdrepo')     
     firstLevelDir = firstLevelDirCalculation(dbETDId)
     secondLevelDir = secondLevelDirCalculation(dbETDId)
 

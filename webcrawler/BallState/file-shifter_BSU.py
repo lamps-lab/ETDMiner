@@ -605,12 +605,9 @@ def main():
         
         xmlFilePath = os.path.join(harvestDirectory+'/'+etddir,etddir+'.xml')
         
-        
-
         # Get the pdf. Can be with any name
         etdPath = None
         _etdPath = Path(harvestDirectory+'/'+etddir)
-        
         
         
         for item in _etdPath.glob('*.pdf'): # Return a list
@@ -622,7 +619,7 @@ def main():
             xmlfile = open(xmlFilePath, "r")
             soup = BeautifulSoup(xmlfile, 'lxml')
             # @Dennis download license.txt first
-            download_copyright(soup,_etdPath)
+            # download_copyright(soup,_etdPath)
             is_exist = exists_in_etds(soup,_etdPath) #is_exist will be 0 or the etdid
             print('is_exist: ',is_exist)
             if is_exist:
