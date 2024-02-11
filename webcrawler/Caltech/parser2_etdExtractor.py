@@ -34,9 +34,14 @@ def print_logs(text):
     This module will help keep the op running just incase any URL error occurs
 """
 def isPDFDownloadUrlWorkable(soup):
-    downloadableUrl = getPDFdownloadUrl(soup)
     
+    downloadableUrl = getPDFdownloadUrl(soup)
     isWorkable = True
+    # @Dennis add if, when downloadableUrl is None, return False
+    if not downloadableUrl:
+        isWorkable = False
+        return isWorkable
+    
     try:
         response = urllib.request.urlopen(downloadableUrl)
     except urllib.error.HTTPError as exception:
@@ -68,8 +73,12 @@ def isPDFDownloadUrlWorkable(soup):
 #     return allowed
 
 def getPDFdownloadUrl(soup):
-    anchortag = soup.find('td',{'style':'text-align:center','valign':'top'}).find('a',{'class':'ep_document_link'})
-    hrefValue = anchortag['href'] #soup.find('mets:file',mimetype="application/pdf").find('mets:flocat')['xlink:href']
+    hrefValue = None
+    anchortag = soup.find('td',{'style':'text-align:center','valign':'top'})
+    if anchortag:
+        anchortag = anchortag.find('a',{'class':'ep_document_link'})
+        if anchortag:            
+            hrefValue = anchortag['href'] #soup.find('mets:file',mimetype="application/pdf").find('mets:flocat')['xlink:href']
     #downloadableUrl = urllib.parse.urljoin(base, hrefValue)
     return hrefValue
 

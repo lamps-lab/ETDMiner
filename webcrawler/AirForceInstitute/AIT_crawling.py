@@ -289,7 +289,7 @@ if __name__ == '__main__':
 
     #TODO: get url.txt lines and make handle url 
     #for urlfile in os.listdir(url_directory):
-    for j in range(4469,5431):
+    for j in range(1,5431):
     # for j in range(265,266):
         url = base+str(j)+'/'
         

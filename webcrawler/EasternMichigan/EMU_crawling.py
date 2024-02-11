@@ -216,11 +216,15 @@ if __name__ == '__main__':
     #TODO: get url.txt lines and make handle url 
     #for urlfile in os.listdir(url_directory):
     for j in range(1,1172):
-        url = base+str(j)+'/'
-        
-        extractContents(url, str(j))
-        print('ETD number:', j)
-    print("NOT Found ETDs: ", not_found)
+        # @Dennis if directory, do not download again
+        directory = 'EMU_ETDs/'+ str(j)+ '/'
+        if not os.path.exists(directory):
+            os.makedirs(directory)
+            url = base+str(j)+'/'
+            extractContents(url, str(j))
+            print('ETD number:', j)
+        else:
+            print(directory,j,".pdf already exists, pass" )
        
             
   

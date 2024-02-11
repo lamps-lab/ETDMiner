@@ -495,7 +495,8 @@ def main():
     Step 3: Populate 3 tables
     Step 4: Shift files to production repo 
     """
-    harvestDirectory = 'etds'
+    # @change the path
+    harvestDirectory = 'etds/second_parts'
     print(harvestDirectory)
     etddirs = os.listdir(harvestDirectory)
     #etddirs = handleSuddenStop(etddirs,'metadc278485') #TODO: Change here to handle sudden production stop   #metadc53494
@@ -503,7 +504,7 @@ def main():
     print("#ETDs:", len(etddirs))
     for etddir in etddirs:
         
-        print('')
+        # print('')
         print("Current ETD:", etddir)
         
         xmlFilePath = os.path.join(harvestDirectory+'/'+etddir,etddir+'.html')
@@ -530,20 +531,20 @@ def main():
                 # return a list of empty field
                 empty_fields_list = []
                 empty_fields_list = empty_fields(soup,etdid)
-                print('empty_fields: ',empty_fields_list)
+                # print('empty_fields: ',empty_fields_list)
                 # update the empty field
                 if empty_fields_list:
-                    print("Prepare updating empty fields")
+                    # print("Prepare updating empty fields")
                     update_empty_field(soup,empty_fields_list,etdid)
                                 
                 final_pdf_path = final_pdf_dir(etdid)                
                 final_html_path = final_html_dir(etdid)    
                 exist_pdf_etdrepo = etdrepo_check(final_pdf_path,etdid)
                 exist_html_etdrepo = etdrepo_check(final_html_path,etdid)
-                print("final_pdf_path: ", final_pdf_path)
-                print("final_html_path: ", final_html_path)
-                print("exist_pdf_etdrepo: ",exist_pdf_etdrepo)
-                print("exist_html_etdrepo: ",exist_html_etdrepo)
+                # print("final_pdf_path: ", final_pdf_path)
+                # print("final_html_path: ", final_html_path)
+                # print("exist_pdf_etdrepo: ",exist_pdf_etdrepo)
+                # print("exist_html_etdrepo: ",exist_html_etdrepo)
                 if not exist_pdf_etdrepo and etdPath:
                     moveFileToProductionRepo(etdPath,etdid)                        
                 if not exist_html_etdrepo:
