@@ -27,8 +27,8 @@ from sickle import Sickle
 
 # In[2]:http://d-scholarship.pitt.edu/cgi/oai2
 
-
-sickle = Sickle('https://jscholarship.library.jhu.edu/oai/request')
+# @Dennis and server before oai
+sickle = Sickle('https://jscholarship.library.jhu.edu/server/oai/request')
 records = sickle.ListRecords(metadataPrefix='dim', set='com_1774.2_836')
 
 
