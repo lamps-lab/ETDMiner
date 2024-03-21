@@ -15,19 +15,19 @@ import re
 import requests
 
 
-# config = {
-#     'user': 'uddin',
-#     'password': 'TueJul271:56:04PM',
-#     'host': 'hawking.cs.odu.edu',
-#     'database': 'pates_etds'
-# }
-
 config = {
-    'user': 'Dennis',
-    'password': '1234',
-    'host': 'localhost',  # or '127.0.0.1'
-    'database': 'testdb' 
+    'user': 'uddin',
+    'password': 'TueJul271:56:04PM',
+    'host': 'hawking.cs.odu.edu',
+    'database': 'pates_etds'
 }
+
+# config = {
+#     'user': 'Dennis',
+#     'password': '1234',
+#     'host': 'localhost',  # or '127.0.0.1'
+#     'database': 'testdb' 
+# }
 
 
 import time
@@ -273,7 +273,8 @@ def extract_all_field(soup):
        
   
     # University
-    university = "Air Force Institute of Technology"
+    # university = "Air Force Institute of Technology"
+    university = "Dennis test Air"
     # if university is not None:
     #     university = university.get_text()
     
@@ -571,7 +572,7 @@ def main():
     """
     
     #@Dennis harvestDirectory = 'UNLV_ETDs'
-    harvestDirectory = 'AIT_ETDs'
+    harvestDirectory = 'test_ETDs/AIT_ETDs'
     print(harvestDirectory)
     etddirs = os.listdir(harvestDirectory)
     print(etddirs)
