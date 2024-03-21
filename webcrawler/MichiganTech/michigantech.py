@@ -103,7 +103,7 @@ def isItemThesis(soup):
     length = len(contentTypes)
     print(contentTypes[0])
     
-    if ("Dissertations, Master's Theses and Master's Reports" in contentTypes[1].text and length is 3):
+    if ("Dissertations, Master's Theses and Master's Reports" in contentTypes[1].text and length == 3):
         isThesis = True
         
 
@@ -215,12 +215,20 @@ def extractContents(url, j):
 if __name__ == '__main__':
     #TODO: get url.txt lines and make handle url 
     #for urlfile in os.listdir(url_directory):
-    for j in range(1,1411):
+    # for j in range(1,1411):
+    # @Dennis update the these numbers
+    for j in range(1,2828):
         url = base+str(j)+'/'
         
-        extractContents(url, str(j))
-        print('ETD number:', j)
-    print("NOT Found ETDs: ", not_found)
+        # @Dennis if directory already exists, pass
+        directory = 'MichiganTech_ETDs/'+ str(j) + '/'
+        if not os.path.exists(directory):
+            extractContents(url, str(j))
+            print('ETD number:', j)
+        
+        
+        
+    # print("NOT Found ETDs: ", not_found)
        
             
   

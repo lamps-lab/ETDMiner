@@ -27,8 +27,8 @@ from sickle import Sickle
 
 # In[2]:http://d-scholarship.pitt.edu/cgi/oai2
 
-
-sickle = Sickle('https://repository.lib.ncsu.edu/oai/request')
+# @Dennis add server
+sickle = Sickle('https://repository.lib.ncsu.edu/server/oai/request')
 records = sickle.ListRecords(metadataPrefix='dim', set='col_1840.20_25')
 
 
@@ -61,22 +61,33 @@ from socket import timeout
 """
 def getPDFdownloadUrl(soup):
     hrefValue = None
-    findTable = soup.find('table', {'class':'ds-table file-list'})
-    if findTable:
-        findClass = findTable.find('tr',{'class':'ds-table-row odd'})
-        if findClass:
-            tableData = findClass.find_all('td')[0]
-            #print(tableData)
-            if tableData:
-                anchortag = tableData.find('a')
-                if anchortag:
-                    hrefValue = anchortag['href']
-                    hrefValue = "https://repository.lib.ncsu.edu/" + hrefValue
-                    # Check if there is download permission
-                    if 'isAllowed=n' in hrefValue:
-                        hrefValue = None
+    # findTable = soup.find('table', {'class':'ds-table file-list'})
+    # if findTable:
+    #     findClass = findTable.find('tr',{'class':'ds-table-row odd'})
+    #     if findClass:
+    #         tableData = findClass.find_all('td')[0]
+    #         #print(tableData)
+    #         if tableData:
+    #             anchortag = tableData.find('a')
+    #             if anchortag:
+    #                 hrefValue = anchortag['href']
+    #                 hrefValue = "https://repository.lib.ncsu.edu/" + hrefValue
+    #                 # Check if there is download permission
+    #                 if 'isAllowed=n' in hrefValue:
+    #                     hrefValue = None
 
+    # return hrefValue
+    
+    # Dennis 
+    findDs = soup.find('ds-file-download-link',{'class':'ng-star-inserted'})
+    if findDs:
+        findA = findDs.find('a')
+        if findA:
+            hrefValue = findA['href']
+            hrefValue = "https://repository.lib.ncsu.edu/server/api/core/" + hrefValue.replace("download", "content")
+            # print('hrefValue: ',hrefValue)
     return hrefValue
+    
 
 """
     This module will help keep the op running just incase any URL error occurs
@@ -151,9 +162,11 @@ def download_file_stream(url, path, crawl_delay=0, allow_redirects=True):
 
             # get the filename -- this might not always work
             downloadableUrl = getPDFdownloadUrl(soup)
+            # print('downloadableUrl: ',downloadableUrl)
             filename = downloadableUrl.split('/')[-1]
             filename = filename.split('?')[0]
             filename = filename.replace('.pdf','')
+            # print('filename: ',filename)
             # Get the PDF
             response = urllib.request.urlopen(downloadableUrl,context=ctx)
 
@@ -196,12 +209,13 @@ for record in records:
 
     # write desc metadata to file
     metadatas = tree.xpath('//dim:dim', namespaces={'dim': 'http://www.dspace.org/xmlns/dspace/dim'})
-    for metadata in metadatas:
+    for metadata in metadatas:        
         filename = identifier.split('/')[-1].lower() + '.xml'
         (p / filename).open('wb').write(etree.tostring(metadata, pretty_print=True))
-
+  
     # download content files
     files = tree.xpath('//dim:field[@element="identifier" and @qualifier="uri"]', namespaces={'dim': 'http://www.dspace.org/xmlns/dspace/dim'})
+    # print('files: ',files)
     for url in files:
         etdLandingPage = url.xpath("string()")
         print('Now on:',etdLandingPage)
