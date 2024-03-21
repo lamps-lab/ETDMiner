@@ -215,7 +215,7 @@ def extractContents(url, j):
 if __name__ == '__main__':
     #TODO: get url.txt lines and make handle url 
     #for urlfile in os.listdir(url_directory):
-    for j in range(1,1172):
+    for j in range(1,1187):
         # @Dennis if directory, do not download again
         directory = 'EMU_ETDs/'+ str(j)+ '/'
         if not os.path.exists(directory):
