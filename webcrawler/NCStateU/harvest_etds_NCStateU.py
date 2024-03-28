@@ -29,8 +29,10 @@ from sickle import Sickle
 
 # @Dennis add server
 sickle = Sickle('https://repository.lib.ncsu.edu/server/oai/request')
-records = sickle.ListRecords(metadataPrefix='dim', set='col_1840.20_25')
 
+# records = sickle.ListRecords(metadataPrefix='dim', set='col_1840.20_25')
+# @Dennis change to NC State Theses and Dissertations [com_1840.20_23]
+records = sickle.ListRecords(metadataPrefix='dim', set='com_1840.20_23')
 
 # Before starting, make sure to check the server's robots.txt file and obey all restrictions and limits. If the ```crawl-delay``` directive is set, copy the value to a local variable. 
 

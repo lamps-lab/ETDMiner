@@ -28,16 +28,14 @@ from sickle import Sickle
 # In[2]:http://d-scholarship.pitt.edu/cgi/oai2
 
 
-sickle = Sickle('https://dataspace.princeton.edu/oai/request')
-records1 = sickle.ListRecords(metadataPrefix='dim', set='com_88435_dsp019c67wm88m')
-records2 = sickle.ListRecords(metadataPrefix='dim', set='com_88435_dsp01td96k251d')
-# For Doctoral set = com_88435_dsp01td96k251d
-# For Undergrad Thesis set = com_88435_dsp019c67wm88m
+sickle = Sickle('https://www.ncbi.nlm.nih.gov/pmc/utils/oa/oa.fcgi/request')
+records = sickle.ListRecords(metadataPrefix='dim', set='com_10161_1')
+
 
 # Before starting, make sure to check the server's robots.txt file and obey all restrictions and limits. If the ```crawl-delay``` directive is set, copy the value to a local variable. 
 
 
-crawl_delay = 5
+crawl_delay = 0
 
 
 # Convenience function for downloading files:
@@ -63,20 +61,15 @@ from socket import timeout
 """
 def getPDFdownloadUrl(soup):
     hrefValue = None
-    findTable = soup.find('table',{'class':['panel-body']})
-    if findTable:
-        tableRows = findTable.findAll('tr')[1]
-        if tableRows:
-            findClass = tableRows.findAll('td', {'class':'standard'})[-1]
-            print(findClass)
-            if findClass:
-                anchortag = findClass.find('a')
-                if anchortag:
-                    hrefValue = anchortag['href']
-                    hrefValue = "https://dataspace.princeton.edu/" + hrefValue
-                    # Check if there is download permission
-                    if 'isAllowed=n' in hrefValue:
-                        hrefValue = None
+    findClass = soup.find('div', {'class':'item-page-field-wrapper table word-break'})
+    if findClass:
+        anchortag = findClass.find('a')
+        if anchortag:
+            hrefValue = anchortag['href']
+            hrefValue = "https://dukespace.lib.duke.edu/" + hrefValue
+            # Check if there is download permission
+            if 'isAllowed=n' in hrefValue:
+                hrefValue = None
 
     return hrefValue
 
@@ -177,41 +170,40 @@ def download_file_stream(url, path, crawl_delay=0, allow_redirects=True):
 from pathlib import Path
 from lxml import etree
 
-def harvest(records):
-    for record in records:
-        tree = etree.fromstring(record.raw)
+for record in records:
+    tree = etree.fromstring(record.raw)
 
-        # get the identifier and make dirs 
-        identifiers = tree.xpath('//oai:identifier', namespaces={'oai': 'http://www.openarchives.org/OAI/2.0/'})
-        identifier = identifiers[0].text
-        print(identifier)
-        identifier = identifier.split(':')[-1]
-        pathname = identifier
+    # get the identifier and make dirs 
+    identifiers = tree.xpath('//oai:identifier', namespaces={'oai': 'http://www.openarchives.org/OAI/2.0/'})
+    identifier = identifiers[0].text
+    identifier = identifier.split(':')[-1]
+    pathname = identifier
 
-        p = Path('harvest') / pathname
-        p = p.resolve()
+    p = Path('harvest') / pathname
+    p = p.resolve()
 
-        # if the directory already exists, assume we already got this one and skip to next
-        if p.is_dir(): 
-            continue
-        
-        # otherwise, create the directory
-        p.mkdir(parents=True, exist_ok=True)
+    # if the directory already exists, assume we already got this one and skip to next
+    if p.is_dir(): 
+        continue
+    
+    # otherwise, create the directory
+    p.mkdir(parents=True, exist_ok=True)
 
-        # write desc metadata to file
-        metadatas = tree.xpath('//dim:dim', namespaces={'dim': 'http://www.dspace.org/xmlns/dspace/dim'})
-        for metadata in metadatas:
-            filename = identifier.split('/')[-1].lower() + '.xml'
-            (p / filename).open('wb').write(etree.tostring(metadata, pretty_print=True))
+    # write desc metadata to file
+    metadatas = tree.xpath('//dim:dim', namespaces={'dim': 'http://www.dspace.org/xmlns/dspace/dim'})
+    for metadata in metadatas:
+        filename = identifier.split('/')[-1].lower() + '.xml'
+        (p / filename).open('wb').write(etree.tostring(metadata, pretty_print=True))
 
-        # download content files
-        # files = tree.xpath('//dim:field[@element="identifier" and @qualifier="uri"]', namespaces={'dim': 'http://www.dspace.org/xmlns/dspace/dim'})
-        # for url in files:
-        #     etdLandingPage = url.xpath("string()")
-        #     print('Now on:',etdLandingPage)
-        #     filename = download_file_stream(etdLandingPage, p, crawl_delay=crawl_delay)
-        #     if filename is None:
-        #         print(f'There was a problem downloading {url}')    
+    # download content files
+    files = tree.xpath('//dim:field[@element="identifier" and @qualifier="uri"]', namespaces={'dim': 'http://www.dspace.org/xmlns/dspace/dim'})
+    for url in files:
+        etdLandingPage = url.xpath("string()")
+        print('Now on:',etdLandingPage)
+        filename = download_file_stream(etdLandingPage, p, crawl_delay=crawl_delay)
+        if filename is None:
+            print(f'There was a problem downloading {url}')
 
-harvest(records1)
-harvest(records2)
+
+
+
