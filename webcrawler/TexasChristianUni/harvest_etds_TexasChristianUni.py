@@ -29,13 +29,13 @@ from sickle import Sickle
 
 
 sickle = Sickle('https://repository.tcu.edu/oai/request?')
-records = sickle.ListRecords(metadataPrefix='oai_dc', set='com_116099117_3887') # com_116099117_3887 , col_116099117_3888
-
+records1 = sickle.ListRecords(metadataPrefix='oai_dc', set='col_116099117_50527') # com_116099117_3887 , col_116099117_3888
+records2 = sickle.ListRecords(metadataPrefix='oai_dc', set='col_116099117_50528')
 
 # Before starting, make sure to check the server's robots.txt file and obey all restrictions and limits. If the ```crawl-delay``` directive is set, copy the value to a local variable. 
 
 
-crawl_delay = 10
+crawl_delay = 0
 
 
 # Convenience function for downloading files:
@@ -61,7 +61,7 @@ from socket import timeout
 """
 def getPDFdownloadUrl(soup):
     hrefValue = None
-    findClass = soup.find('div', {'class':'thumbnail'})
+    findClass = soup.find('div', {'class':'file-link'})
     if findClass:
         anchortag = findClass.find('a')
         if anchortag:
@@ -140,7 +140,7 @@ def download_file_stream(url, path, crawl_delay=0, allow_redirects=True):
     if(isWorkable):
         response = response.read()
         soup = bs4.BeautifulSoup(response, "html.parser")
-        print(soup)
+
         #If PDF not allowed of available, just take the XML
         if isPDFDownloadUrlWorkable(soup):
 
@@ -170,40 +170,46 @@ def download_file_stream(url, path, crawl_delay=0, allow_redirects=True):
 from pathlib import Path
 from lxml import etree
 
-for record in records:
-    print(record.raw)
-    tree = etree.fromstring(record.raw)
-   
-    # get the identifier and make dirs 
-    identifiers = tree.xpath('//oai:identifier', namespaces={'oai': 'http://www.openarchives.org/OAI/2.0/'})
-    identifier = identifiers[0].text
-    identifier = identifier.split(':')[-1]
-    pathname = identifier
+def harvest(records):
+    for record in records:
+        tree = etree.fromstring(record.raw)
+        # print('record: ',record)
+        # print('tree: ',tree)
 
-    p = Path('harvest') / pathname
-    p = p.resolve()
+        # get the identifier and make dirs 
+        identifiers = tree.xpath('//oai:identifier', namespaces={'oai': 'http://www.openarchives.org/OAI/2.0/'})
+        print('identifiers: ',identifiers)
+        identifier = identifiers[0].text
+        print('identifier: ',identifier)
+        identifier = identifier.split(':')[-1]
+        pathname = identifier
 
-    # if the directory already exists, assume we already got this one and skip to next
-    if p.is_dir(): 
-        continue
-    
-    # otherwise, create the directory
-    p.mkdir(parents=True, exist_ok=True)
+        p = Path('harvest') / pathname
+        p = p.resolve()
+        # print('p: ',p)
 
-    # write desc metadata to file
-    metadatas = tree.xpath('//oai_dc:dc', namespaces={'oai_dc': 'http://www.openarchives.org/OAI/2.0/oai_dc/'})
-    for metadata in metadatas:
-        filename = identifier.split('/')[-1].lower() + '.xml'
-        (p / filename).open('wb').write(etree.tostring(metadata, pretty_print=True))
+        # if the directory already exists, assume we already got this one and skip to next
+        if p.is_dir(): 
+            continue
+        
+        # otherwise, create the directory
+        p.mkdir(parents=True, exist_ok=True)
 
-    # download content files
-    files = tree.xpath('//dc:identifier', namespaces={'oai_dc': 'http://www.openarchives.org/OAI/2.0/oai_dc/'})
-    for url in files[-1]:
-        etdLandingPage = url.xpath("string()")
+        # write desc metadata to file
+        metadatas = tree.xpath('//oai_dc:dc', namespaces={'oai_dc':'http://www.openarchives.org/OAI/2.0/oai_dc/'})
+        for metadata in metadatas:
+            filename = identifier.split('/')[-1].lower() + '.xml'
+            print('filename: ',filename)
+            (p / filename).open('wb').write(etree.tostring(metadata, pretty_print=True))
+
+        # download content files
+        
+        etdLandingPage ="https://repository.tcu.edu:443/handle/116099117/" + identifier.split('/')[-1].lower()
         print('Now on:',etdLandingPage)
         filename = download_file_stream(etdLandingPage, p, crawl_delay=crawl_delay)
         if filename is None:
-            print(f'There was a problem downloading {url}')    
-    break
+            print(f'There was a problem downloading {etdLandingPage}')    
+        # break
 
-
+harvest(records1)
+harvest(records2)

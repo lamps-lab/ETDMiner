@@ -89,7 +89,9 @@ def isItemThesis(soup):
         return False # If breadcrumb not exists, return false already!
     
     breacrumbText = breacrumbText.get_text()
-    searchDissertations = re.search(r"(Dissertations)", breacrumbText) 
+    # Dennis
+    searchDissertations = re.search(r"(Dissertations|Theses)", breacrumbText, re.IGNORECASE)
+    # searchDissertations = re.search(r"(Dissertations)", breacrumbText) 
     # print(searchDissertations.group(0))
     if searchDissertations is not None: #and searchDissertations.group(0) == "Dissertations"
         isThesis = True
@@ -137,60 +139,71 @@ def extractMetadata(url, soup):
     """
 
     uc_metainfo = defaultdict(dict)
-
-    title = soup.find('h2', class_="c-tabcontent__main-heading")
-    date = soup.find('div', class_="c-authorlist__year")
     
-    """ Getting Author and Advisor name """
-    authorList = soup.find_all('li', {"class":"c-authorlist__begin"})#.find('span').decompose() # First cleanup "Author" text from the dom. 
-    if len(authorList): # Handling edge case: if author not present
-        for author in authorList: # Cleanup the unwanted bold texts
-            author.find('span').decompose()        
-    #author = authorList[0].get_text().strip(' ')
-    #advisor = authorList[1].get_text().strip(' ')
-    
-    etdUrl = getPDFdownloadUrl(soup)
-    
-    # Extracting abstract
+    # Dennis re rewrite 
+    title = None
+    date = None
+    author = None
+    advisor = None
+    etdUrl = None
     abstract = None
-    elementSearchForAbstract = soup.find('div', {"class":"c-tabs__content"}).find_all('details')
-    if len(elementSearchForAbstract) >= 1:
-        abstract = elementSearchForAbstract[0]
+    main_content = soup.find('main',id='maincontent')
+    if main_content:      
+        title_h2 = main_content.find('h2', class_="c-tabcontent__main-heading")
+        if title_h2:
+            title_span = title_h2.find('span')
+            if title_span:
+                title = title_span.text
+
+        date = main_content.find('time', class_="c-authorlist__year")
+        if date:
+            date = date.text        
+       
+        advisor = ''    
+        author_ul = main_content.find('ul',class_='c-authorlist__list')
+        if author_ul:
+            author_lis = author_ul.find_all('li')
+            if author_lis:
+                for index,author_li in enumerate(author_lis):
+                    if index == 0:
+                        author = author_li.text.strip()
+                    else:
+                        advisor = advisor + author_li.text.strip() +';'
+        # """ Getting Author and Advisor name """
+        # authorList = soup.find_all('li', {"class":"c-authorlist__begin"})#.find('span').decompose() # First cleanup "Author" text from the dom. 
+        # if len(authorList): # Handling edge case: if author not present
+        #     for author in authorList: # Cleanup the unwanted bold texts
+        #         author.find('span').decompose()        
+        # #author = authorList[0].get_text().strip(' ')
+        # #advisor = authorList[1].get_text().strip(' ')
+    
+        etdUrl = getPDFdownloadUrl(soup)
+    
+        # Extracting abstract
+        
+        elementSearchForAbstract = main_content.find('div', {"class":"c-tabs__content"})
+        if elementSearchForAbstract:
+            detail = elementSearchForAbstract.find('details')
+            if detail:
+                abstract_div = detail.find('div',class_='c-clientmarkup')
+                if abstract_div:
+                    abstract_p = abstract_div.find('p')
+                    if abstract_p:
+                        abstract = abstract_p.text
+        # if len(elementSearchForAbstract) >= 1:
+        #     abstract = elementSearchForAbstract[0]
     
     """
         Build dictionary with metadata
     """
     # Title
-    if title is not None:
-        uc_metainfo['title'] = title.getText().strip('\n')
-    else:
-        uc_metainfo['title'] = "NaN"
-    # Date
-    if date is not None:
-        uc_metainfo['date'] = date.getText().strip('\n')
-    else:
-        uc_metainfo['date'] = "NaN"
-    # Author
-    if len(authorList) >= 1 and authorList[0] is not None:
-        uc_metainfo['author'] = authorList[0].get_text().strip(' ')
-    else:
-        uc_metainfo['author'] = "NaN"
-    # Advisor    
-    if len(authorList) ==2 and  authorList[1] is not None:
-        uc_metainfo['advisor'] = authorList[1].get_text().strip(' ')
-    else:
-        uc_metainfo['advisor'] = "NaN"
-    # Abstract
-    if abstract is not None:
-        uc_metainfo['abstract'] = abstract.getText().strip('\n')
-    else:
-        uc_metainfo['abstract'] = "NaN"
-    # Etd-url 
-    if etdUrl is not None:
-        uc_metainfo['etdUrl'] = etdUrl
-    else:
-        uc_metainfo['etdUrl'] = "NaN"
-
+    uc_metainfo['title'] = title
+    uc_metainfo['date'] = date
+    uc_metainfo['author'] = author
+    uc_metainfo['advisor'] = advisor
+    uc_metainfo['abstract'] = abstract
+    uc_metainfo['etdUrl'] = etdUrl
+    
     #print(uc_metainfo)
     """ 
         Download and store the meta-information
@@ -217,7 +230,7 @@ def extractMetadata(url, soup):
 def extractContents(url):         
     response = urllib.request.urlopen(url)  # opens each link to be parsed
     response = response.read()
-    time.sleep(5)  # delays the program
+    time.sleep(3)  # delays the program
     soup = bs4.BeautifulSoup(response, "html.parser")
     
     # Check If item is thesis & PDF is download-able => then we'll do extraction
@@ -231,7 +244,7 @@ def extractContents(url):
 if __name__ == '__main__':
     url_directory = 'urls/'    
     #for urlfile in os.listdir(url_directory):
-    urlfile = 'url-17.txt' # Change filename here
+    urlfile = 'url-03.txt' # Change filename here
     print_logs('URL-File Currently Handling: '+ urlfile)
     filepath = os.path.join(url_directory, urlfile) # Make relative path
     text = open(filepath, 'r')

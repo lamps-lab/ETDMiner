@@ -158,12 +158,27 @@ def extract_all_field(soup):
     if language is not None:
         language = language['content'].strip()
 
-    # Department
-    department = None
-
+    # Department    
     # Discipline
-    discipline = None
-        
+    discipline = None    
+    department = None
+    table  = soup.find('table', class_="ep_block")
+    if table:
+        trs = table.find_all('tr')        
+        if trs:
+            for tr in trs:
+                th = tr.find('th')
+                if th:
+                    if th.text == "Division:":
+                        td = th.find_next_sibling('td')
+                        if td:
+                            department = td.text
+                    elif th.text == "Major Option:":
+                        td = th.find_next_sibling('td')
+                        if td:
+                            discipline = td.text
+    print('department',department)
+    print('discipline',discipline)    
         
     # CopyRight link @Dennis  
     copyright = ""
@@ -496,7 +511,7 @@ def main():
     Step 4: Shift files to production repo 
     """
     # @change the path
-    harvestDirectory = 'etds/second_parts'
+    harvestDirectory = 'etds/first_parts'
     print(harvestDirectory)
     etddirs = os.listdir(harvestDirectory)
     #etddirs = handleSuddenStop(etddirs,'metadc278485') #TODO: Change here to handle sudden production stop   #metadc53494

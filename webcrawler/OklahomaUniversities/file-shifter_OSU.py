@@ -12,14 +12,14 @@ import urllib.request
 import urllib.response
 import urllib.parse
 import re
+from datetime import datetime
 
 # config = {
-#     'user': 'rpates',
-#     'password': 'FriAug2:1316pm',
+#     'user': 'uddin',
+#     'password': 'TueJul271:56:04PM',
 #     'host': 'hawking.cs.odu.edu',
 #     'database': 'pates_etds'
 # }
-
 config = {
     'user': 'Dennis',
     'password': '1234',
@@ -101,34 +101,33 @@ def insertSubjects(soup, etdid):
             mycursor.close()
             db_connection.close()
 
-
 # @Dennis create a new function extract_all_field, used to extract all field from matadata, and return a JSON.
 def extract_all_field(soup):
     # Title
     title = soup.find('dim:field',{'element':'title'})
     if title is not None:
         title = title.get_text()
-    # print("title: ",title)
 
     # Author @Dennis
-    author = soup.find('dim:field',{'qualifier':'author'})
-    if author is not None:
-        author = author.get_text()
-    # print("title: ",title)
+    author_list = []
+    author_elelments = soup.find_all('dim:field',{'element':'creator'})
+    for element in author_elelments:
+        element_str = element.get_text()
+        author_list.append(element_str)
+    author = "; ".join(author_list)
     # print("author: ",author)
 
     # Advisor @Dennis
     advisor_list = []
-    advisor_elelments = soup.find_all('dim:field', {'qualifier':'advisor'})
+    advisor_elelments = soup.find_all('dim:field',{'qualifier':'advisor'})
     for element in advisor_elelments:
-        advisor_name = element.get_text()
-        advisor_list.append(advisor_name)
-    
+        element_str = element.get_text()
+        advisor_list.append(element_str)
     advisor = "; ".join(advisor_list)
     # print("advisor: ",advisor)
 
     # Abstract
-    abstract = soup.find('dim:field',{'element':'description', 'qualifier':'abstract'})
+    abstract = soup.find('dim:field',{'qualifier':'abstract'})
     if abstract is not None:
         abstract = abstract.get_text()
 
@@ -138,50 +137,72 @@ def extract_all_field(soup):
         URI = URI.get_text()
 
     # Year
-    date = soup.find('dim:field',{'element':'date', 'qualifier':'issued'})
+    date = soup.find('dim:field',{'qualifier':'issued', 'element':'date'})
     if date is not None:
         date = date.get_text()   
-        date = date[:4]
+        print('date_text: ',date)         
+        try:
+            # Try parsing the date as 'YYYY-MM-DD' format
+            date_obj = datetime.strptime(date, '%Y-%m-%d')
+            date = date_obj.year
+        except ValueError:
+            try:
+                # Try parsing the date as 'Month YYYY' format
+                date_obj = datetime.strptime(date, '%B %Y')
+                date = date_obj.year
+            except ValueError:              
+                try:
+                    # Try parsing the date as 'YYYY-MM-DDTHH:MM:SSZ' format
+                    date_obj = datetime.strptime(date, '%Y-%m-%dT%H:%M:%SZ')
+                    date = date_obj.year
+                except ValueError:
+                    pass
+    # # if not date.isdigit():
+    # #     date = None
+    # print('date: ',date)        
 
     # University
-    # university = soup.find('meta',{'name':'bepress_citation_author_institution'})
+    # university = soup.find('dim:field',{'qualifier':'grantor'})
     # if university is not None:
-    #     university = university['content'].strip()
+    #     university = university.get_text()
     # if university is None:
     university = "Oklahoma State University"
 
     # Degree
-    degree = soup.find('dim:field',{'element':'type'})
+    degree = soup.find('dim:field',{'element':'degree','qualifier':'genre'})
     if degree is not None:
         degree = degree.get_text()
-    
+    if degree is None:
+        degree = soup.find('dim:field', {'qualifier': 'level', 'element': 'degree'})
+        if degree is not None:
+            degree = degree.get_text()
+
 
     # Language
-    language = soup.find('dim:field',{'element':'language','qualifier':'iso'})
+    language = soup.find('dim:field',{'element':"language", "qualifier":"iso"})
     if language is not None:
         language = language.get_text()
 
-    # Department    
+    # Department
     department = soup.find('dim:field',{'qualifier':'department'})
-    if department:        
+    if department is not None:
         department = department.get_text()
 
     # Discipline
-    discipline = None
+    discipline = soup.find('dim:field',{'qualifier':'discipline', 'element':'degree'})
+    if discipline is not None:
+        discipline = discipline.get_text()
         
-    # CopyRight link @Dennis  
-    copyright = soup.find('dim:field',{'element':'rights'})
-    if copyright:        
-        copyright = copyright.get_text()
-    # print("copyright: ",copyright)
-
+        
+    # CopyRight link @Dennis       
+    copyright= soup.find('dim:field',{'element':"rights"})
+    if copyright:
+        copyright = copyright.text
         
     # identifier @Dennis
     pri_identifier = URI
-        
-    second_identifier = soup.find('dim:field',{'element':'filename'})
-    if second_identifier is not None:
-        second_identifier = second_identifier.get_text()
+    
+    second_identifier = None
       
         
     data = {
@@ -285,12 +306,11 @@ def update_empty_field(soup,empty_list,etdid) :
             db_connection.commit()
             print(f"updated the field {field}: {value}")
     mycursor.close()
-    db_connection.close()  
-
+    db_connection.close()   
 
 
 def insertETDs(soup):
-    # Setup Database connection
+     # Setup Database connection
     db_connection = mysql.connector.connect(**config)
 
     # Insert values to database
@@ -325,33 +345,18 @@ def insertETDs(soup):
     return etdId
 
 
-def insertPDFs(soup, etdid, etdPath, etd_number):
+def insertPDFs(soup, etdid, etdPath):
     # Get the url from XML
-    if (soup.find('div',{'id':'beta_7-3'})== None):
-       anchortag = None
-    else:
-        if(soup.find('div',{'id':'beta_7-3'}).find('div',{'class':'aside download-button'})== None):
-            anchortag = None
-        else:
-            anchortag = soup.find('div',{'id':'beta_7-3'}).find('div',{'class':'aside download-button'})
-    if anchortag == None:
-        hrefValue = None
-    else:
-        hrefValue = anchortag.find('a') #soup.find('mets:file',mimetype="application/pdf").find('mets:flocat')['xlink:href']
-        if hrefValue == None:
-            pass
-        else:
-            hrefValue = anchortag.find('a')['href']
-    urlInitials = hrefValue
-    print("urlIn: ", urlInitials)
-    # url = soup.find('dim:field',{'qualifier':'uri'})
-    # url = url.get_text()
-    # identityNumber1 = url.split('/')[-2]
-    # identityNumber2 = url.split('/')[-1]
+    urlInitials = 'https://dukespace.lib.duke.edu/dspace/bitstream/handle/'
+    url = soup.find('dim:field',{'qualifier':'uri'})
+    url = url.get_text()
+    identityNumber1 = url.split('/')[-2]
+    identityNumber2 = url.split('/')[-1]
 
     # Use pdfs on directory, get the names and create downloadable url
     pdfName = str(etdPath).split('\\')[-1]
-    downloadUrl = urlInitials 
+    downloadUrl = urlInitials + identityNumber1 + '/' + identityNumber2 + '/' + pdfName
+    print('Download Page:', downloadUrl)
     
     """
          Database insertion for PDFs table
@@ -371,7 +376,6 @@ def insertPDFs(soup, etdid, etdPath, etd_number):
     mycursor.close()
     db_connection.close()
 
-# @Dennis create a final_pdf_dir function, used to return a  final directory
 def final_pdf_dir(etdid):
     prodDir = os.path.join('../../', 'etdrepo')
     firstLevelDir = firstLevelDirCalculation(etdid)
@@ -449,9 +453,8 @@ def etdrepo_check(final_dir,etdid):
         return 1
     else:
         return None
-
-
-
+    
+    
 def moveFileToProductionRepo(etdPath, dbETDId):      
     prodDir = os.path.join('../../', 'etdrepo')     
     firstLevelDir = firstLevelDirCalculation(dbETDId)
@@ -466,7 +469,7 @@ def moveFileToProductionRepo(etdPath, dbETDId):
     if etdPath is not None and os.path.exists(etdPath):
         copyfile(etdPath, etdProduction)
 
-
+# @Dennis add new funciton movehtml
 def movehtml(htmlpath, dbETDId):
     prodDir = os.path.join('../../', 'etdrepo')     
     firstLevelDir = firstLevelDirCalculation(dbETDId)
@@ -480,7 +483,6 @@ def movehtml(htmlpath, dbETDId):
         
     if htmlpath is not None:
         copyfile(htmlpath, etdProduction)
-        
 """
     This method finds where the code stoped and helps to resume from these
 """
@@ -504,16 +506,19 @@ def main():
     harvestDirectory = 'harvest/11244'
     print(harvestDirectory)
     etddirs = os.listdir(harvestDirectory)
-    # print(etddirs)
     #etddirs = handleSuddenStop(etddirs,'metadc278485') #TODO: Change here to handle sudden production stop   #metadc53494
 
     print("#ETDs:", len(etddirs))
-    for etddir in etddirs:
+    for etddir in etddirs:        
         print('')
         print("Current ETD:", etddir)
-        
+        # if etddir == '1813':
+        #     continue
+        """
+            Step 1: Read the files [Directory path may vary based on arrangement]
+        """
+
         xmlFilePath = os.path.join(harvestDirectory+'/'+etddir,etddir+'.xml')
-        # print("xmlFilePath: ",xmlFilePath)
 
         # Get the pdf. Can be with any name
         etdPath = None
@@ -525,12 +530,11 @@ def main():
         # Extract and insert table
         if os.path.exists(xmlFilePath):
             xmlfile = open(xmlFilePath, "r")
-            soup = BeautifulSoup(xmlfile, 'xml')
-            # print("made soup")
+            soup = BeautifulSoup(xmlfile, 'lxml')
             
             # @Dennis if the pdf doesn't exist, the html usually is different with others, so pass it.
             # if etdPath and os.path.exists(etdPath):
-                             
+                            
             is_exist = exists_in_etds(soup) #is_exist will be 0 or the etdid
             print('is_exist: ',is_exist)
             if is_exist:
@@ -548,10 +552,10 @@ def main():
                 final_html_path = final_html_dir(etdid)    
                 exist_pdf_etdrepo = etdrepo_check(final_pdf_path,etdid)
                 exist_html_etdrepo = etdrepo_check(final_html_path,etdid)
-                # print("final_pdf_path: ", final_pdf_path)
-                # print("final_html_path: ", final_html_path)
-                # print("exist_pdf_etdrepo: ",exist_pdf_etdrepo)
-                # print("exist_html_etdrepo: ",exist_html_etdrepo)
+                print("final_pdf_path: ", final_pdf_path)
+                print("final_html_path: ", final_html_path)
+                print("exist_pdf_etdrepo: ",exist_pdf_etdrepo)
+                print("exist_html_etdrepo: ",exist_html_etdrepo)
                 if not exist_pdf_etdrepo and etdPath:
                     moveFileToProductionRepo(etdPath,etdid)                        
                 if not exist_html_etdrepo:
@@ -564,7 +568,7 @@ def main():
                 etdid = insertETDs(soup) # DONE
                 # insertSubjects(soup, etdid) # DONE
                 if etdPath:
-                    # insertPDFs(soup, etdid, etdPath) # Done
+                    insertPDFs(soup, etdid, etdPath) # Done
                     moveFileToProductionRepo(etdPath, etdid) #Works
                 #    Step 3: Shift the ETD to the production repo, rename & place file/folders based on ID
                 
@@ -574,7 +578,7 @@ def main():
                 
                 final_html_path = final_html_dir(etdid)
                 insert_metadata_timestamp(final_html_path,etdid)
-                
+        
 
 if __name__ == '__main__':
     main()
