@@ -29,9 +29,9 @@ from sickle import Sickle
 
 
 sickle = Sickle('https://krex.k-state.edu/dspace-oai/request')
-records = sickle.ListRecords(metadataPrefix='dim', set='col_2097_4234')
-
-
+records1 = sickle.ListRecords(metadataPrefix='dim', set='col_2097_4234')
+records2 = sickle.ListRecords(metadataPrefix='dim', set='col_2097_4')
+records = list(records1) + list(records2)
 # Before starting, make sure to check the server's robots.txt file and obey all restrictions and limits. If the ```crawl-delay``` directive is set, copy the value to a local variable. 
 
 

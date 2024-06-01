@@ -28,7 +28,7 @@ from sickle import Sickle
 # In[2]:http://d-scholarship.pitt.edu/cgi/oai2
 
 
-sickle = Sickle('https://ttu-ir.tdl.org/oai/request')
+sickle = Sickle('https://ttu-ir.tdl.org/server/oai/request')
 records = sickle.ListRecords(metadataPrefix='dim', set='col_2346_521')
 
 
@@ -61,15 +61,29 @@ from socket import timeout
 """
 def getPDFdownloadUrl(soup):
     hrefValue = None
-    findClass = soup.find('div', {'class':'item-page-field-wrapper table word-break'})
+    
+    # Dennis re-write download
+    findClass = soup.find('div', {'class':'file-section'})
     if findClass:
-        anchortag = findClass.find('a')
+        anchortag = findClass.find('a',class_='dont-break-out')
         if anchortag:
             hrefValue = anchortag['href']
-            hrefValue = "https://ttu-ir.tdl.org" + hrefValue
+            newHrefValue = hrefValue.replace('download', 'content')
+            hrefValue = "https://ttu-ir.tdl.org/server/api/core" + newHrefValue
             # Check if there is download permission
             if 'isAllowed=n' in hrefValue:
-                hrefValue = None
+                hrefValue = None 
+   
+    # hrefValue = None
+    # findClass = soup.find('div', {'class':'item-page-field-wrapper table word-break'})
+    # if findClass:
+    #     anchortag = findClass.find('a')
+    #     if anchortag:
+    #         hrefValue = anchortag['href']
+    #         hrefValue = "https://ttu-ir.tdl.org" + hrefValue
+    #         # Check if there is download permission
+    #         if 'isAllowed=n' in hrefValue:
+    #             hrefValue = None
 
     return hrefValue
 

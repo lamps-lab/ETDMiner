@@ -128,7 +128,7 @@ def extractPDF(url,soup, j):
         etds -> <itemID[D]> -> itemID.pdf | itemID.html
     """
     # Create directory based on item-id
-    directory = 'Rhode_ETDs/'+ j + '/'
+    directory = 'Rhode_ETDs/'+ str(j) + '/'
     if not os.path.exists(directory):
         os.makedirs(directory)
 
@@ -155,12 +155,12 @@ def saveHTML(url,response,soup, j):
     
 
     # Create directory based on item-id
-    directory = 'Rhode_ETDs/'+ j+ '/'
+    directory = 'Rhode_ETDs/'+ str(j)+ '/'
     if not os.path.exists(directory):
         os.makedirs(directory)
     
     # Define filename with item-id
-    fileName = j + '.html'
+    fileName = str(j) + '.html'
     filepath = os.path.join(directory, fileName)  
     
     #print(response.decode('utf-8'))
@@ -192,10 +192,12 @@ def extractContents(url, j):
         
         #print(soup)
         #Check If item is thesis & PDF is download-able => then we'll do extraction
-        print_logs("Now starting: "+ url)  
-        print_logs("It's thesis")    
-        if isPDFDownloadUrlWorkable(soup):                                
-            extractPDF(url, soup, j) # Completed            
+        
+        # @Dennis just save HTML first
+        # print_logs("Now starting: "+ url)  
+        # print_logs("It's thesis")    
+        # if isPDFDownloadUrlWorkable(soup):                                
+        #     extractPDF(url, soup, j) # Completed            
         saveHTML(url,response,soup,j)       
         # if isItemThesis(soup):
         #     print_logs("It's thesis")    
@@ -206,17 +208,20 @@ def extractContents(url, j):
         print('Not good')
 
 
-    time.sleep(5)  # variable delay, just maintain 10s overall
+    time.sleep(0)  # variable delay, just maintain 10s overall
 
 
 if __name__ == '__main__':
     #TODO: get url.txt lines and make handle url 
     #for urlfile in os.listdir(url_directory):
-    for j in range(1333,1377):
+    for j in range(1556,2000):
         url = base+str(j)+'/'
         
-        extractContents(url, str(j))
-        print('ETD number:', j)
+        directory = 'Rhode_ETDs/'+ str(j)+ '/'
+        if not os.path.exists(directory):        
+            print('ETD number:', j)
+            extractContents(url, str(j))
+       
         # urlfile = 'urls'+str(j)+'.txt' # TODO: Change filename here
         # print_logs('URL-File Currently Handling: '+ urlfile)
         # filepath = os.path.join(url_directory, urlfile) # Make relative path    

@@ -28,9 +28,9 @@ from sickle import Sickle
 # In[2]:http://d-scholarship.pitt.edu/cgi/oai2
 
 
-sickle = Sickle('https://uh-ir.tdl.org/oai/request')
-records = sickle.ListRecords(metadataPrefix='dim', set='com_10657_1')
-
+sickle = Sickle('https://uh-ir.tdl.org/server/oai/request')
+records1 = sickle.ListRecords(metadataPrefix='dim', set='com_10657_1')
+records2 = sickle.ListRecords(metadataPrefix='dim', set='com_10657_3932')
 
 # Before starting, make sure to check the server's robots.txt file and obey all restrictions and limits. If the ```crawl-delay``` directive is set, copy the value to a local variable. 
 
@@ -61,12 +61,13 @@ from socket import timeout
 """
 def getPDFdownloadUrl(soup):
     hrefValue = None
-    findClass = soup.find('div', {'class':'item-page-field-wrapper table word-break'})
+    # Dennis rewrite
+    findClass = soup.find('div', {'class':'file-section'})
     if findClass:
         anchortag = findClass.find('a')
         if anchortag:
-            hrefValue = anchortag['href']
-            hrefValue = "https://uh-ir.tdl.org" + hrefValue
+            hrefValue = anchortag['href'].replace('download','content')
+            hrefValue = "https://uh-ir.tdl.org/server/api/core" + hrefValue
             # Check if there is download permission
             if 'isAllowed=n' in hrefValue:
                 hrefValue = None
@@ -169,41 +170,42 @@ def download_file_stream(url, path, crawl_delay=0, allow_redirects=True):
 
 from pathlib import Path
 from lxml import etree
+def harvest(records):
+    for record in records:
+        tree = etree.fromstring(record.raw)
 
-for record in records:
-    tree = etree.fromstring(record.raw)
+        # get the identifier and make dirs 
+        identifiers = tree.xpath('//oai:identifier', namespaces={'oai': 'http://www.openarchives.org/OAI/2.0/'})
+        identifier = identifiers[0].text
+        identifier = identifier.split(':')[-1]
+        pathname = identifier
 
-    # get the identifier and make dirs 
-    identifiers = tree.xpath('//oai:identifier', namespaces={'oai': 'http://www.openarchives.org/OAI/2.0/'})
-    identifier = identifiers[0].text
-    identifier = identifier.split(':')[-1]
-    pathname = identifier
+        p = Path('harvest') / pathname
+        p = p.resolve()
 
-    p = Path('harvest') / pathname
-    p = p.resolve()
+        # if the directory already exists, assume we already got this one and skip to next
+        if p.is_dir(): 
+            continue
+        
+        # otherwise, create the directory
+        p.mkdir(parents=True, exist_ok=True)
 
-    # if the directory already exists, assume we already got this one and skip to next
-    if p.is_dir(): 
-        continue
-    
-    # otherwise, create the directory
-    p.mkdir(parents=True, exist_ok=True)
+        # write desc metadata to file
+        metadatas = tree.xpath('//dim:dim', namespaces={'dim': 'http://www.dspace.org/xmlns/dspace/dim'})
+        for metadata in metadatas:
+            filename = identifier.split('/')[-1].lower() + '.xml'
+            (p / filename).open('wb').write(etree.tostring(metadata, pretty_print=True))
 
-    # write desc metadata to file
-    metadatas = tree.xpath('//dim:dim', namespaces={'dim': 'http://www.dspace.org/xmlns/dspace/dim'})
-    for metadata in metadatas:
-        filename = identifier.split('/')[-1].lower() + '.xml'
-        (p / filename).open('wb').write(etree.tostring(metadata, pretty_print=True))
-
-    # download content files
-    files = tree.xpath('//dim:field[@element="identifier" and @qualifier="uri"]', namespaces={'dim': 'http://www.dspace.org/xmlns/dspace/dim'})
-    for url in files:
-        etdLandingPage = url.xpath("string()")
-        print('Now on:',etdLandingPage)
-        filename = download_file_stream(etdLandingPage, p, crawl_delay=crawl_delay)
-        if filename is None:
-            print(f'There was a problem downloading {url}')
+        # download content files
+        files = tree.xpath('//dim:field[@element="identifier" and @qualifier="uri"]', namespaces={'dim': 'http://www.dspace.org/xmlns/dspace/dim'})
+        for url in files:
+            etdLandingPage = url.xpath("string()")
+            print('Now on:',etdLandingPage)
+            filename = download_file_stream(etdLandingPage, p, crawl_delay=crawl_delay)
+            if filename is None:
+                print(f'There was a problem downloading {url}')
 
 
-
+harvest(records1)
+harvest(records2)
 

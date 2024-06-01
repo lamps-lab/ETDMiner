@@ -29,7 +29,8 @@ from sickle import Sickle
 
 
 sickle = Sickle('https://dataspace.princeton.edu/oai/request')
-records = sickle.ListRecords(metadataPrefix='dim', set='com_88435_dsp019c67wm88m')
+records1 = sickle.ListRecords(metadataPrefix='dim', set='com_88435_dsp019c67wm88m')
+records2 = sickle.ListRecords(metadataPrefix='dim', set='com_88435_dsp01td96k251d')
 # For Doctoral set = com_88435_dsp01td96k251d
 # For Undergrad Thesis set = com_88435_dsp019c67wm88m
 
@@ -176,38 +177,41 @@ def download_file_stream(url, path, crawl_delay=0, allow_redirects=True):
 from pathlib import Path
 from lxml import etree
 
-for record in records:
-    tree = etree.fromstring(record.raw)
+def harvest(records):
+    for record in records:
+        tree = etree.fromstring(record.raw)
 
-    # get the identifier and make dirs 
-    identifiers = tree.xpath('//oai:identifier', namespaces={'oai': 'http://www.openarchives.org/OAI/2.0/'})
-    identifier = identifiers[0].text
-    identifier = identifier.split(':')[-1]
-    pathname = identifier
+        # get the identifier and make dirs 
+        identifiers = tree.xpath('//oai:identifier', namespaces={'oai': 'http://www.openarchives.org/OAI/2.0/'})
+        identifier = identifiers[0].text
+        print(identifier)
+        identifier = identifier.split(':')[-1]
+        pathname = identifier
 
-    p = Path('harvest') / pathname
-    p = p.resolve()
+        p = Path('harvest') / pathname
+        p = p.resolve()
 
-    # if the directory already exists, assume we already got this one and skip to next
-    if p.is_dir(): 
-        continue
-    
-    # otherwise, create the directory
-    p.mkdir(parents=True, exist_ok=True)
+        # if the directory already exists, assume we already got this one and skip to next
+        if p.is_dir(): 
+            continue
+        
+        # otherwise, create the directory
+        p.mkdir(parents=True, exist_ok=True)
 
-    # write desc metadata to file
-    metadatas = tree.xpath('//dim:dim', namespaces={'dim': 'http://www.dspace.org/xmlns/dspace/dim'})
-    for metadata in metadatas:
-        filename = identifier.split('/')[-1].lower() + '.xml'
-        (p / filename).open('wb').write(etree.tostring(metadata, pretty_print=True))
+        # write desc metadata to file
+        metadatas = tree.xpath('//dim:dim', namespaces={'dim': 'http://www.dspace.org/xmlns/dspace/dim'})
+        for metadata in metadatas:
+            filename = identifier.split('/')[-1].lower() + '.xml'
+            (p / filename).open('wb').write(etree.tostring(metadata, pretty_print=True))
 
-    # download content files
-    files = tree.xpath('//dim:field[@element="identifier" and @qualifier="uri"]', namespaces={'dim': 'http://www.dspace.org/xmlns/dspace/dim'})
-    for url in files:
-        etdLandingPage = url.xpath("string()")
-        print('Now on:',etdLandingPage)
-        filename = download_file_stream(etdLandingPage, p, crawl_delay=crawl_delay)
-        if filename is None:
-            print(f'There was a problem downloading {url}')    
+        # download content files
+        # files = tree.xpath('//dim:field[@element="identifier" and @qualifier="uri"]', namespaces={'dim': 'http://www.dspace.org/xmlns/dspace/dim'})
+        # for url in files:
+        #     etdLandingPage = url.xpath("string()")
+        #     print('Now on:',etdLandingPage)
+        #     filename = download_file_stream(etdLandingPage, p, crawl_delay=crawl_delay)
+        #     if filename is None:
+        #         print(f'There was a problem downloading {url}')    
 
-
+harvest(records1)
+harvest(records2)

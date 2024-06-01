@@ -75,15 +75,37 @@ def getPDFdownloadUrl(soup):
 # Check if it is a thesis [from breadcrumb]
 def isItemThesis(soup):
     isThesis = False
-    contentType = soup.find('dim:field', element="type")    
-    if contentType is None:
-        return False # If contentType not exists, return false already!
     
-    contentTypeText = contentType.get_text()
-    if re.match("(Dissertation)+", contentTypeText) or re.match("(Thesis)+", contentTypeText) or re.match("(Theses and Dissertations)+", contentTypeText):
-        isThesis = True
+    # @Dennis re-write all the logic
+    elements = soup.find_all('div', {'class':'item-page-field'} )
+    if elements:
+        # print("found elememnts")
+        for element in elements:
+            element_div = element.find('div',{'class':'simple-view-element-body'})
+            if element_div:
+                # print("found element_div")
+                element_span = element_div.find('span',{'class':'dont-break-out ng-star-inserted'})
+                if element_span:
+                    # print("found element_span")
+                    contentTypeText = element_span.get_text()
+                    # print('contentTypeText:',contentTypeText)
+                    if re.match("\s*(Dissertation)+", contentTypeText) or re.match("\s*(Thesis)+", contentTypeText) or re.match("\s*(Theses and Dissertations)+", contentTypeText):
+                        # print("match re")
+                        isThesis = True
+                        return isThesis
+    else:
+        return isThesis
+    
+    
+    # contentType = soup.find('dim:field', element="type")    
+    # if contentType is None:
+    #     return False # If contentType not exists, return false already!
+    
+    # contentTypeText = contentType.get_text()
+    # if re.match("(Dissertation)+", contentTypeText) or re.match("(Thesis)+", contentTypeText) or re.match("(Theses and Dissertations)+", contentTypeText):
+    #     isThesis = True
 
-    return isThesis
+    # return isThesis
 
 def extractPDF(url,soup):
     # Get the PDF download-able URL
@@ -115,29 +137,29 @@ def extractPDF(url,soup):
 
     print("Successful pdf parsing for:"+itemId)
 
-def saveXML(response,soup):
+def saveXML(response,soup,itemid):
     # Extract item id
-    objId = soup.find('mets:mets')['objid']
-    itemId = objId.split("/")[-1]
-
+    # objId = soup.find('mets:mets')['objid']
+    # itemId = objId.split("/")[-1]
+    
+    # @Dennis add itemid 
     # Create directory based on item-id
-    directory = 'etds/'+ itemId + '/'
+    directory = 'etds/'+ itemid + '/'
     if not os.path.exists(directory):
         os.makedirs(directory)
     
-    # Define filename with item-id
-    fileName = itemId + '.xml'
-    filepath = os.path.join(directory, fileName)  
-    
-    #print(response.decode('utf-8'))
-    with open(filepath, 'wb') as file: # wb for override
-        file.write(response)
+        # Define filename with item-id
+        fileName = itemid + '.xml'
+        filepath = os.path.join(directory, fileName)  
+        
+        #print(response.decode('utf-8'))
+        with open(filepath, 'wb') as file: # wb for override
+            file.write(response)
 
-def extractContents(url):     
-    print(url) 
-       
-    #response = urllib.request.urlopen(url, context=ctx)  # opens each link to be parsed
-    
+# @Dennis add itemid
+def extractContents(url,itemid):     
+    # print(url)        
+    #response = urllib.request.urlopen(url, context=ctx)  # opens each link to be parsed    
     isWorkable = True
     response = None
     try:
@@ -158,18 +180,23 @@ def extractContents(url):
     if(isWorkable):
         response = response.read()
         soup = bs4.BeautifulSoup(response, "lxml")
-        print('Works!')
+        # print('Works!')
         #print(soup)
         # Check If item is thesis & PDF is download-able => then we'll do extraction
-        print_logs("Now starting: "+ url)
+        # print_logs("Now starting: "+ url)
         #ifPDFAllowed(soup)
         if isItemThesis(soup):
-            print_logs("It's thesis")            
+            # print_logs("It's thesis")            
             #If PDF not allowed of available, just take the XML
-            if ifPDFAllowed(soup):
-                extractPDF(url, soup)
             
-            saveXML(response,soup) 
+            # the pdf is locked, so pass the extractPDF, just saveXML
+            # if ifPDFAllowed(soup):
+            #     extractPDF(url, soup)
+            
+            saveXML(response,soup,itemid) 
+        # @Dennis add else
+        else:
+            print('Not thesis')
     else:
         print('Not good')
 
@@ -181,21 +208,46 @@ if __name__ == '__main__':
     #TODO: get url.txt lines and make handle url
     url_directory = 'urls/'    
     #for urlfile in os.listdir(url_directory):
-    urlfile = 'urls-01.txt' # TODO: Change filename here
+    urlfile = 'urls-00.txt' # TODO: Change filename here
     print_logs('URL-File Currently Handling: '+ urlfile)
     filepath = os.path.join(url_directory, urlfile) # Make relative path    
     text = open(filepath, 'r')
     data = text.readlines()        
+    
+    # @Dennis add a processed_urls, if the url exists in the processed_urls, do not parser again
+    processed_urls = set()
+    if os.path.exists('finished_urls0.txt'):
+        exists_url = open('finished_urls0.txt','r') 
+        processed_urls = set(exists_url.readlines())
+        
     print(len(data))
     for line in range(len(data)):
-        link = data[line].strip().split('\n') # remove '\n' from the url on each line
-        itemIdFirst = link[0].split('/')[-2]
-        itemIdSecond = link[0].split('/')[-1]
-        handleLink = base + 'metadata/handle/'+ itemIdFirst + '/' + itemIdSecond + '/' + 'mets.xml'
-        #print(handleLink)
-        extractContents(handleLink) # This will bring up metadata page (if exists)
-            
-    # print(os.listdir(url_directory)[0])
+        if data[line] not in processed_urls:
+           
+            link = data[line].strip().split('\n') # remove '\n' from the url on each line
+            # itemIdFirst = link[0].split('/')[-2]
+            itemIdSecond = link[0].split('/')[-1]
+            # handleLink = base + 'metadata/handle/'+ itemIdFirst + '/' + itemIdSecond + '/' + 'mets.xml'
+            # https://smartech.gatech.edu/handle/1853/48241
+            #print(handleLink)
+            # extractContents(handleLink) # This will bring up metadata page (if exists)
+            print("now starting: ", link[0])
+            directory = 'etds/'+ itemIdSecond + '/'
+        
+        
+            if not os.path.exists(directory):        
+                extractContents(link[0],itemIdSecond)
+            else:
+                print("exist, so pass")
+                
+            with open('finished_urls0.txt','a') as file:
+                file.write(data[line])
+        else:
+            print("skipping processed URL: ", data[line])    
+        
+        
+    
+    
     """    
         Test Intances:
         # Downloadable: https://smartech.gatech.edu/metadata/handle/1853/53031/mets.xml 

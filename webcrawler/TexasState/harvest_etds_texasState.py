@@ -28,8 +28,8 @@ from sickle import Sickle
 # In[2]:http://d-scholarship.pitt.edu/cgi/oai2
 
 
-sickle = Sickle('https://digital.library.txstate.edu/oai/request')
-records = sickle.ListRecords(metadataPrefix='dim', set='com_10877_134')
+sickle = Sickle('https://digital.library.txst.edu/server/oai/request')
+records = sickle.ListRecords(metadataPrefix='dim', set='col_10877_135')
 
 
 # Before starting, make sure to check the server's robots.txt file and obey all restrictions and limits. If the ```crawl-delay``` directive is set, copy the value to a local variable. 
@@ -61,15 +61,28 @@ from socket import timeout
 """
 def getPDFdownloadUrl(soup):
     hrefValue = None
-    findClass = soup.find('div', {'class':'file-link col-xs-6 col-xs-offset-6 col-sm-2 col-sm-offset-0'})
+    
+    # Dennis re-write download
+    findClass = soup.find('div', {'class':'file-section'})
     if findClass:
-        anchortag = findClass.find('a')
+        anchortag = findClass.find('a',class_='dont-break-out')
         if anchortag:
             hrefValue = anchortag['href']
-            hrefValue = "https://digital.library.txstate.edu" + hrefValue
+            newHrefValue = hrefValue.replace('download', 'content')
+            hrefValue = "https://digital.library.txst.edu/server/api/core" + newHrefValue
             # Check if there is download permission
             if 'isAllowed=n' in hrefValue:
                 hrefValue = None
+    
+    # findClass = soup.find('div', {'class':'file-link col-xs-6 col-xs-offset-6 col-sm-2 col-sm-offset-0'})
+    # if findClass:
+    #     anchortag = findClass.find('a')
+    #     if anchortag:
+    #         hrefValue = anchortag['href']
+    #         hrefValue = "https://digital.library.txstate.edu" + hrefValue
+    #         # Check if there is download permission
+    #         if 'isAllowed=n' in hrefValue:
+    #             hrefValue = None
 
     return hrefValue
 
@@ -200,6 +213,7 @@ for record in records:
     for url in files:
         etdLandingPage = url.xpath("string()")
         print('Now on:',etdLandingPage)
+        
         filename = download_file_stream(etdLandingPage, p, crawl_delay=crawl_delay)
         if filename is None:
             print(f'There was a problem downloading {url}')

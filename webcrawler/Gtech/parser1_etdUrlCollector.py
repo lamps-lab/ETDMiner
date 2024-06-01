@@ -28,12 +28,23 @@ if __name__ == '__main__':
         map=1 => 9145
             url-1
     """
-    xml = 'https://smartech.gatech.edu/sitemap?map=0'
+    # xml = 'https://smartech.gatech.edu/sitemap?map=0'
+    # @Dennis update the new sitemap, there are 2 sitemaps, 0 and 1    
+    # xml = 'https://repository.gatech.edu/sitemap0.xml'
+    xml = 'https://repository.gatech.edu/sitemap1.xml'
+    soup = make_soup(xml)
+    urls = get_xml_urls(soup)    
+    with open("urls/urls-01.txt", "a") as urls_file:
+        for url in urls[0:10000]:
+            print(url)
+            urls_file.write(url+ '\n')    
+            
+    xml = 'https://repository.gatech.edu/sitemap0.xml'    
     soup = make_soup(xml)
     urls = get_xml_urls(soup)    
     with open("urls/urls-00.txt", "a") as urls_file:
         for url in urls[0:10000]:
             print(url)
-            urls_file.write(url+ '\n')    
+            urls_file.write(url+ '\n')            
     
     #print(len(urls[40000:50000]))

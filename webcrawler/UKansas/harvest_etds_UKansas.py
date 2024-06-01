@@ -61,15 +61,18 @@ from socket import timeout
 """
 def getPDFdownloadUrl(soup):
     hrefValue = None
-    findClass = soup.find('div', {'class':'item-page-field-wrapper table'})
+    # Dennis rewrite
+    findClass = soup.find('div', {'class':'item-summary-view-metadata'})
     if findClass:
-        anchortag = findClass.find('a')
-        if anchortag:
-            hrefValue = anchortag['href']
-            hrefValue = "https://kuscholarworks.ku.edu/" + hrefValue
-            # Check if there is download permission
-            if 'isAllowed=n' in hrefValue:
-                hrefValue = None
+        finddiv = findClass.find('div', {'class':'item-page-field-wrapper'})
+        if finddiv:            
+            anchortag = findClass.find('a')
+            if anchortag:
+                hrefValue = anchortag['href']
+                hrefValue = "https://kuscholarworks.ku.edu" + hrefValue
+                # Check if there is download permission
+                if 'isAllowed=n' in hrefValue:
+                    hrefValue = None
 
     return hrefValue
 

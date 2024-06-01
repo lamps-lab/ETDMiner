@@ -15,19 +15,19 @@ import re
 import requests
 
 
-# config = {
-#     'user': 'uddin',
-#     'password': 'TueJul271:56:04PM',
-#     'host': 'hawking.cs.odu.edu',
-#     'database': 'pates_etds'
-# }
-
 config = {
-    'user': 'Dennis',
-    'password': '1234',
-    'host': 'localhost',  # or '127.0.0.1'
-    'database': 'testdb' 
+    'user': 'uddin',
+    'password': 'TueJul271:56:04PM',
+    'host': 'hawking.cs.odu.edu',
+    'database': 'pates_etds'
 }
+
+# config = {
+#     'user': 'Dennis',
+#     'password': '1234',
+#     'host': 'localhost',  # or '127.0.0.1'
+#     'database': 'testdb' 
+# }
 
 
 import time
@@ -205,44 +205,36 @@ def update_empty_field(soup,empty_list,etdid) :
 # @Dennis create a new function extract_all_field, used to extract all field from matadata, and return a JSON.
 def extract_all_field(soup):
      # Title
-    title = soup.find('div',{'id':'title'})
+    title = soup.find('meta',{'itemprop':'name'})
     # print("title: ",title)
     if title:
-        #@Dennis title = title.find('p').get_text()
-        if title.find('a'):        
-            title = title.find('a').get_text()
-        elif title.find('p'):
-            title = title.find('p').get_text()
-        elif title.find('h1'):
-            title = title.find('h1').get_text()
-        else:
-            title = 0
+        title = title['content'].get_text()
         # print("title: ",title)
 
     # Author
-    author = soup.find('div',{'id':'authors'})
-    if author is not None:
-        author = author.find('p',{'class':'author'}).find('a').find('strong').get_text()
+    author = soup.find('meta',{'name':'author'})
+    if author:
+        author = author['content'].get_text()
         # print("author: ",author)
         # if author.find(',') != 1:
         #     author = author.split(',')[:2]
         #     author = ",".join(author)
    
     # Advisor
-    advisor = soup.find('div',{'id':'advisor1'})
+    advisor = soup.find('meta',{'id':'advisor1'})
     if advisor is not None:
         advisor = advisor.find('p').get_text()
         # print("advisor: ",advisor)
    
     # print(advisor)
     # Abstract
-    abstract = soup.find('div',{'id':'abstract'})
+    abstract = soup.find('meta',{'id':'abstract'})
     if abstract is not None:
         abstract = abstract.find('p').get_text()
         # print("abstract: ", abstract)
     
     # Landing Page URL
-    url = soup.find('div',{'id':'recommended_citation'})
+    url = soup.find('meta',{'id':'recommended_citation'})
     if url is not None:
         # url = ''.join(url.find('p').find('br').next_siblings)
         #Dennis url = url.find('p').find('br').find_next_sibling().get_text()
@@ -256,7 +248,7 @@ def extract_all_field(soup):
         # print("url: ",url)
    
     # Year
-    date = soup.find('div',{'id':'publication_date'})
+    date = soup.find('meta',{'id':'publication_date'})
     try:
         if date is not None:
             date = date.find('p').get_text()
@@ -273,12 +265,13 @@ def extract_all_field(soup):
        
   
     # University
-    university = "Air Force Institute of Technology"
+    # university = "Air Force Institute of Technology"
+    university = "Dennis test Air"
     # if university is not None:
     #     university = university.get_text()
     
     # Degree
-    degree = soup.find('div',{'id':'degree_name'})
+    degree = soup.find('meta',{'id':'degree_name'})
     if degree is not None:
         degree = degree.find('p').get_text()
     
@@ -288,13 +281,13 @@ def extract_all_field(soup):
     #     language = language.get_text()
 
     # Department
-    department = soup.find('div',{'id':'department'})
+    department = soup.find('meta',{'id':'department'})
     if department is not None:
         department = department.find('p').get_text()
     
     # Discipline
     
-    discipline = soup.find('div',{'id': 'bp_categories'})
+    discipline = soup.find('meta',{'id': 'bp_categories'})
     if discipline is not None:
         try:
             discipline = discipline.find('p').get_text()
@@ -320,7 +313,7 @@ def extract_all_field(soup):
         if response.status_code == 200:
             content = response.content
             soup = BeautifulSoup(content, 'html.parser')
-            copyright_pra = soup.find('div',{'class': 'wpb_wrapper'})
+            copyright_pra = soup.find('meta',{'class': 'wpb_wrapper'})
             if copyright_pra is not None:
                 paragraphs = copyright_pra.find_all('p')
                 copyright = '\n'.join([paragraph.get_text() for paragraph in paragraphs])                
@@ -331,12 +324,12 @@ def extract_all_field(soup):
     copyright = extract_copyright(copyright_url)
     
     # AFIT Designator @Dennis
-    AFIT = soup.find('div',{'id':'afit_designator'})
+    AFIT = soup.find('meta',{'id':'afit_designator'})
     if AFIT is not None:
         AFIT = AFIT.find('p').get_text()
         
     # DTIC  Accession Number @Dennis
-    DTIC = soup.find('div',{'id':'dtic_accession_number'})
+    DTIC = soup.find('meta',{'id':'dtic_accession_number'})
     if DTIC is not None:
         DTIC = DTIC.find('p').get_text()
     data = {
@@ -571,7 +564,7 @@ def main():
     """
     
     #@Dennis harvestDirectory = 'UNLV_ETDs'
-    harvestDirectory = 'AIT_ETDs'
+    harvestDirectory = 'test_ETDs/AIT_ETDs'
     print(harvestDirectory)
     etddirs = os.listdir(harvestDirectory)
     print(etddirs)

@@ -28,10 +28,13 @@ from sickle import Sickle
 # In[2]:http://d-scholarship.pitt.edu/cgi/oai2
 
 
-sickle = Sickle('https://www.ideals.illinois.edu/dspace-oai/request?')
-records = sickle.ListRecords(metadataPrefix='dim', set='com_2142_5130')
+# sickle = Sickle('https://www.ideals.illinois.edu/dspace-oai/request?')
+sickle = Sickle('https://www.ideals.illinois.edu/oai-pmh')
+# records = sickle.ListRecords(metadataPrefix='dim', set='com_2142_5130')
+records1 = sickle.ListRecords(metadataPrefix='oai_dc', set='col_2142_5128')
+records2 = sickle.ListRecords(metadataPrefix='oai_dc', set='com_2142_5130')
 
-
+# records = list(records1) + list(records2)
 # Before starting, make sure to check the server's robots.txt file and obey all restrictions and limits. If the ```crawl-delay``` directive is set, copy the value to a local variable. 
 
 
@@ -61,21 +64,59 @@ from socket import timeout
 """
 def getPDFdownloadUrl(soup):
     hrefValue = None
-    findClassess = soup.find_all('tr', {'class':'ds-table-row odd'})
-    if findClassess:
-        for findClass in findClassess:
-            if findClass:
-                imgTag = findClass.find('img')
-                if imgTag['title'] == "application/pdf":
-                    anchortag = findClass.find('a')
-                    if anchortag:
-                        print(anchortag)
-                        hrefValue = anchortag['href']
-                        hrefValue = "https://www.ideals.illinois.edu/" + hrefValue
+    # findClassess = soup.find_all('tr', {'class':'ds-table-row odd'})
+    
+    # @Dennis
+    findClassess = soup.find('div', {'class': 'container-fluid'})   
+    if findClassess:       
+        findPage = findClassess.find('div',{'class':'page-content'})        
+        if findPage:  
+            print('find findPage')              
+            findFile = findPage.find('div', {'id':'file-navigator'})            
+            if findFile:
+                print("find findFile")   
+                print(findFile)             
+                findColumn = findFile.find('div',{'id':'file-navigator-thumbnail-column'})                
+                if findColumn:
+                    print("find Column")
+                    
+                
+                    findDivLast = findFile.find('div',{'class':'dropdown-menu'})
+                    
+                    if findDivLast:
+                        print("find last")
+                        
+                        findA = findDivLast.find('a',{'id':'copy-link'})
+                
+                
+                    if findA and findA['data-bitstream-url']:
+                        hrefValue = findA['data-bitstream-url']                  
                         # Check if there is download permission
                         if 'isAllowed=n' in hrefValue:
                             hrefValue = None
-                        break
+                
+        
+                # if findClass:
+            #     imgTag = findClass.find('img')
+            #     if imgTag['title'] == "application/pdf":
+            #         anchortag = findClass.find('a')
+            #         if anchortag:
+            #             print(anchortag)
+            #             hrefValue = anchortag['href']
+            #             hrefValue = "https://www.ideals.illinois.edu/" + hrefValue
+            #             # Check if there is download permission
+            #             if 'isAllowed=n' in hrefValue:
+            #                 hrefValue = None
+            #             break
+            
+                
+                # if a_element and a_element.find('i', {'clsss':'fa fa-download'}):
+                #     hrefValue = a_element['href']
+                #     hrefValue = "https://www.ideals.illinois.edu/" + hrefValue
+                #     # Check if there is download permission
+                #     if 'isAllowed=n' in hrefValue:
+                #         hrefValue = None
+                #         break
 
     return hrefValue
 
@@ -84,6 +125,7 @@ def getPDFdownloadUrl(soup):
 """
 def isPDFDownloadUrlWorkable(soup):
     downloadableUrl = getPDFdownloadUrl(soup)
+    print('downloadableUrl: ',downloadableUrl)
 
     if downloadableUrl is None: # Special Case: PDF link is not available at all
         return False
@@ -144,6 +186,7 @@ def download_file_stream(url, path, crawl_delay=0, allow_redirects=True):
         isWorkable = False
             
     if(isWorkable):
+        print(url,"download worked!!")
         response = response.read()
         soup = bs4.BeautifulSoup(response, "html.parser")
 
@@ -162,7 +205,8 @@ def download_file_stream(url, path, crawl_delay=0, allow_redirects=True):
             filename = filename + '.pdf' # Removing and adding just to be safe
             with open(path / filename, 'wb') as f:
                 f.write(response.read())
-
+        else:
+            print("isPDFDownloadUrlWorkable is false")
     return (path / filename)
 
 
@@ -176,7 +220,8 @@ def download_file_stream(url, path, crawl_delay=0, allow_redirects=True):
 from pathlib import Path
 from lxml import etree
 
-for record in records:
+print("strat for loop 1")
+for record in records1:
     tree = etree.fromstring(record.raw)
 
     # get the identifier and make dirs 
@@ -196,21 +241,67 @@ for record in records:
     p.mkdir(parents=True, exist_ok=True)
 
     # write desc metadata to file
-    metadatas = tree.xpath('//dim:dim', namespaces={'dim': 'http://www.dspace.org/xmlns/dspace/dim'})
+    # metadatas = tree.xpath('//dim:dim', namespaces={'dim': 'http://www.dspace.org/xmlns/dspace/dim'})
+    # for metadata in metadatas:
+    #     filename = identifier.split('/')[-1].lower() + '.xml'
+    #     (p / filename).open('wb').write(etree.tostring(metadata, pretty_print=True))
+
+    # # download content files
+    # files = tree.xpath('//dim:field[@element="identifier" and @qualifier="uri"]', namespaces={'dim': 'http://www.dspace.org/xmlns/dspace/dim'})
+    
+    # @Dennis change all the dim to oai_dc
+    metadatas = tree.xpath('//oai_dc:dc', namespaces={'oai_dc': 'http://www.openarchives.org/OAI/2.0/oai_dc/'})
     for metadata in metadatas:
         filename = identifier.split('/')[-1].lower() + '.xml'
         (p / filename).open('wb').write(etree.tostring(metadata, pretty_print=True))
+        
+        # @Dennis re-write the pdf download logic
+        # url = "http://hdl.handle.net/" + identifier
+        
+        # print('download pdf Now on:',url)
+        # filename = download_file_stream(url, p, crawl_delay=crawl_delay)
+        # if filename is None:
+        #     print(f'There was a problem downloading {url}')
+        
 
-    # download content files
-    files = tree.xpath('//dim:field[@element="identifier" and @qualifier="uri"]', namespaces={'dim': 'http://www.dspace.org/xmlns/dspace/dim'})
-    for url in files:
-        etdLandingPage = url.xpath("string()")
-        print('Now on:',etdLandingPage)
-        filename = download_file_stream(etdLandingPage, p, crawl_delay=crawl_delay)
-        if filename is None:
-            print(f'There was a problem downloading {url}')
+    # # download content files
+    # files = tree.xpath('//oai_dc:dc/oai_dc:identifier', namespaces={'oai_dc': 'http://www.openarchives.org/OAI/2.0/oai_dc/'})
+    
+    # print('files',files)
+
+    # for url in files:
+    #     etdLandingPage = url.xpath("string()")
+    #     print('Now on:',etdLandingPage)
+    #     filename = download_file_stream(etdLandingPage, p, crawl_delay=crawl_delay)
+    #     if filename is None:
+    #         print(f'There was a problem downloading {url}')
 
 
+print("strat for loop 2")
+for record in records2:
+    tree = etree.fromstring(record.raw)
 
+    # get the identifier and make dirs 
+    identifiers = tree.xpath('//oai:identifier', namespaces={'oai': 'http://www.openarchives.org/OAI/2.0/'})
+    identifier = identifiers[0].text
+    identifier = identifier.split(':')[-1]
+    pathname = identifier
 
+    p = Path('harvest1') / pathname
+    p = p.resolve()
+
+    if p.is_dir(): 
+        continue
+    
+    # otherwise, create the directory
+    p.mkdir(parents=True, exist_ok=True)
+
+    metadatas = tree.xpath('//oai_dc:dc', namespaces={'oai_dc': 'http://www.openarchives.org/OAI/2.0/oai_dc/'})
+    for metadata in metadatas:
+        filename = identifier.split('/')[-1].lower() + '.xml'
+        (p / filename).open('wb').write(etree.tostring(metadata, pretty_print=True))
+        
+  
+
+        
 

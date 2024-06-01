@@ -61,13 +61,17 @@ from socket import timeout
 """
 def getPDFdownloadUrl(soup):
     hrefValue = None
-    anchortag = soup.findAll('a', {'target':'_blank'})
-    if anchortag:
-        for tag in anchortag:
-            if 'r.pdf' in tag['href']:
-                hrefValue = 'https://scholarspace.manoa.hawaii.edu' + tag['href']
-                break
-
+    # Dennis rewrite
+    download_ds = soup.find('ds-file-download-link')
+    # print('download_ds',download_ds)
+    if download_ds:
+        
+        anchortag = download_ds.find('a')
+        # print('anchortag',anchortag)
+        if anchortag and anchortag['href']:
+            hrefValue = anchortag['href'].replace('download','content')
+            hrefValue = 'https://scholarspace.manoa.hawaii.edu/server/api/core' + hrefValue
+            print('hrefValue',hrefValue)
     return hrefValue
 
 """

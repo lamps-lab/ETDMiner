@@ -28,7 +28,10 @@ from sickle import Sickle
 # In[2]:http://d-scholarship.pitt.edu/cgi/oai2
 
 
-sickle = Sickle('http://mars.gmu.edu/oai/request')
+# sickle = Sickle('http://mars.gmu.edu/oai/request')
+# @Dennis new list of sets
+sickle = Sickle('http://mars.gmu.edu/server/oai/request')
+
 records = sickle.ListRecords(metadataPrefix='dim', set='com_1920_2811')
 
 
