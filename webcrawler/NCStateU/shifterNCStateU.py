@@ -19,11 +19,9 @@ import re
 #     'host': 'hawking.cs.odu.edu',
 #     'database': 'pates_etds'
 # }
-
+#Cindy changed config information to her own
 config = {
-    #Changed from Dennis to root
     'user': 'root',
-    #Changed from 1234 to my password
     'password': 'Br0wn_J0ic3',
     'host': 'localhost',  # or '127.0.0.1'
     #Changed from testdb to etds for testing purposes
@@ -331,8 +329,11 @@ def insertETDs(soup):
 
     return etdId
 
-def insertPDFs(soup, etdid, etdPath, downloadUrlInitials):
-    urlInitials = downloadUrlInitials
+def insertPDFs(soup, etdid, etdPath):
+    # Get the url from XML
+    #Cindy changed to allow 
+    print("Please insert the download url link for your designated institution: ")
+    urlInitials = input()
     url = soup.find('dim:field',{'qualifier':'uri'})
     url = url.get_text()
     identityNumber1 = url.split('/')[-2]
@@ -489,17 +490,16 @@ def main():
     Step 3: Populate 3 tables
     Step 4: Shift files to production repo 
     """
-    #Change to allow user to write directory name
-    harvestDirectory = 'harvest/' 
+    #Cindy change to allow user to write directoy name
+    harvestDirectory = 'harvest/'
     print("Write the harvest directory name: ")
     directoryName = input()
     harvestDirectory = harvestDirectory + directoryName
     etddirs = os.listdir(harvestDirectory)
-    #Cindy changed code to allow user to input the last ETD ID
-    #Needs to be changed to a try catch block
+    #Cindy changed code to allow user to input last ETD ID in designated directory
     print("Insert last ETD ID of the chosen directory: ")
-    #lastETDid = input()
-    #etddirs = handleSuddenStop(etddirs, lastETDid) #TODO: Change here to handle sudden production stop   #metadc53494
+    lastETDid = input()
+    etddirs = handleSuddenStop(etddirs, lastETDid) #TODO: Change here to handle sudden production stop   #metadc53494
 
     print("#ETDs:", len(etddirs))
     for etddir in etddirs:
