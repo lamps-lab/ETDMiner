@@ -50,6 +50,8 @@ import urllib.parse
 import bs4
 import ssl
 from socket import timeout
+#Cindy added logging import to log when the PDF cannot be downloaded
+import logging 
 
 """
     #### Utility Modules ####
@@ -84,7 +86,9 @@ def isPDFDownloadUrlWorkable(soup):
     downloadableUrl = getPDFdownloadUrl(soup)
 
     if downloadableUrl is None: # Special Case: PDF link is not available at all
-        return False
+        # Cindy added logging to log when the PDF url is not available
+        logging.warning(f"PDF download link not available for {soup.title.string}")
+        return False     
     
     isWorkable = True
     try:

@@ -21,10 +21,13 @@ import re
 # }
 
 config = {
-    'user': 'Dennis',
-    'password': '1234',
+    #Changed from Dennis to root
+    'user': 'root',
+    #Changed from 1234 to my password
+    'password': 'Br0wn_J0ic3',
     'host': 'localhost',  # or '127.0.0.1'
-    'database': 'testdb' 
+    #Changed from testdb to etds for testing purposes
+    'database': 'etds' 
 }
 
 import time
@@ -188,13 +191,16 @@ def extract_all_field(soup):
         
     data = {
         'title': title,
-        'author': author,
+        #Cindy Changed from author to creator
+        'creator': author,
         'advisor': advisor,
-        'abstract': abstract,
+        #Cindy Changed from abstract to description
+        'description': abstract,
         'date': date,
         'university': university,
         'degree': degree,
-        'url': url,
+        #Cindy Changed from url to identifier
+        'identifier': url,
         'language': language,
         'department': department,
         'discipline': discipline,        
@@ -325,9 +331,8 @@ def insertETDs(soup):
 
     return etdId
 
-def insertPDFs(soup, etdid, etdPath):
-    # Get the url from XML
-    urlInitials = 'https://krex.k-state.edu/dspace/bitstream/handle/'
+def insertPDFs(soup, etdid, etdPath, downloadUrlInitials):
+    urlInitials = downloadUrlInitials
     url = soup.find('dim:field',{'qualifier':'uri'})
     url = url.get_text()
     identityNumber1 = url.split('/')[-2]
@@ -484,9 +489,17 @@ def main():
     Step 3: Populate 3 tables
     Step 4: Shift files to production repo 
     """
-    harvestDirectory = 'harvest/2097'
+    #Change to allow user to write directory name
+    harvestDirectory = 'harvest/' 
+    print("Write the harvest directory name: ")
+    directoryName = input()
+    harvestDirectory = harvestDirectory + directoryName
     etddirs = os.listdir(harvestDirectory)
-    etddirs = handleSuddenStop(etddirs,'41401') #TODO: Change here to handle sudden production stop   #metadc53494
+    #Cindy changed code to allow user to input the last ETD ID
+    #Needs to be changed to a try catch block
+    print("Insert last ETD ID of the chosen directory: ")
+    #lastETDid = input()
+    #etddirs = handleSuddenStop(etddirs, lastETDid) #TODO: Change here to handle sudden production stop   #metadc53494
 
     print("#ETDs:", len(etddirs))
     for etddir in etddirs:
@@ -548,7 +561,10 @@ def main():
                 etdid = insertETDs(soup) # DONE
                 # insertSubjects(soup, etdid) # DONE
                 if etdPath:
-                    insertPDFs(soup, etdid, etdPath) # Done
+                    #Cindy changed the urlInitials to allow the user to inser the necessary url
+                    print("Insert the url initials achievable from the PDF download link: ")
+                    downloadUrlInitials = input()
+                    insertPDFs(soup, etdid, etdPath, downloadUrlInitials) # Done
                     moveFileToProductionRepo(etdPath, etdid) #Works
                 #    Step 3: Shift the ETD to the production repo, rename & place file/folders based on ID
                 

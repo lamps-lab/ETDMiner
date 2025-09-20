@@ -14,10 +14,14 @@ import urllib.parse
 import re
 
 config = {
-    'user': 'rpates',
-    'password': 'FriAug2:1316pm',
-    'host': 'hawking.cs.odu.edu',
-    'database': 'pates_etds'
+    #Changed from rpates to root
+    'user': 'root',
+    #Changed from FriAug2:1316pm to my password
+    'password': 'Br0wn_J0ic3',
+    #Changed from hawking.cs.odu.edu to localhost
+    'host': 'localhost',
+    #Changed from pates_etds to test_db
+    'database': 'test_db'
 }
 
 import time

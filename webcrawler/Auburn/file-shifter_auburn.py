@@ -19,12 +19,15 @@ import re
 #     'host': 'hawking.cs.odu.edu',
 #     'database': 'pates_etds'
 # }
-
+ #Changed user and password to those of mySQL server
 config = {
-    'user': 'Dennis',
-    'password': '1234',
+    #Changed from Dennis to root
+    'user': 'root',
+    #Changed from 1234 to my password
+    'password': 'Br0wn_J0ic3',
     'host': 'localhost',  # or '127.0.0.1'
-    'database': 'testdb' 
+    #Changed from testdb to test_db for testing purposes
+    'database': 'test_db' 
 }
 
 import time
@@ -343,10 +346,11 @@ def insertETDs(soup):
     return etdId
 
 def insertPDFs(soup, etdid, etdPath):
-    # Get the url from XML
+    # Get the url for the pdf from XML
     urlInitials = 'https://etd.auburn.edu/bitstream/handle/'
     url = soup.find('dim:field',{'qualifier':'uri'})
     url = url.get_text()
+    #http://hdl.handle.net/10415/40
     identityNumber1 = url.split('/')[-2]
     identityNumber2 = url.split('/')[-1]
 

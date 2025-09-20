@@ -201,6 +201,7 @@ def harvest(records):
         for url in files:
             etdLandingPage = url.xpath("string()")
             print('Now on:',etdLandingPage)
+            print(e)
             filename = download_file_stream(etdLandingPage, p, crawl_delay=crawl_delay)
             if filename is None:
                 print(f'There was a problem downloading {url}')
